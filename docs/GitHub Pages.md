@@ -1,4 +1,5 @@
-Configuring GitHub Pages.
+# GitHub Pages config
+
 
 1. Go to your repository (and keep in mind it shall be public or paid) - at Settings → Pages
 2. Enable them and add the domain name desired
