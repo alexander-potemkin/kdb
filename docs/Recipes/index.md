@@ -1,1 +1,0 @@
-Hiya. Here is my KDB, as is, shared in case if it would be of some use for anyone.
