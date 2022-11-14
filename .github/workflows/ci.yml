@@ -15,5 +15,6 @@ jobs:
       - run: echo '```' > docs/CHANGELOG.md
       - run: git log --pretty=format:'%ad:%x20%s' --date=short >> docs/CHANGELOG.md
       - run: echo "\n"'```' >> docs/CHANGELOG.md
+      - run: echo "EOF;" >> docs/CHANGELOG.md
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
