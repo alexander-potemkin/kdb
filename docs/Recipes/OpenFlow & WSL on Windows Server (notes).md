@@ -43,7 +43,7 @@ wsl --install -d Ubuntu-18.04
 this can fail during inability to choose 'yes' or 'no' - in this case \`wsl --terminate Ubuntu-18.04\` followed by \`wsl -d Ubuntu-18.04\` and \`sudo dpkg --configure -a\`, followed by running the command again
 
 ```
-wget [https://raw.githubusercontent.com/Potemkin-Co/quickies-dockers/main/nonprod-openrpa-openflow.yml](https://raw.githubusercontent.com/Potemkin-Co/quickies-dockers/main/nonprod-openrpa-openflow.yml)
+wget [https://raw.githubusercontent.com/alexander-potemkin/quickies/main/nonprod-openrpa-openflow.yml](https://raw.githubusercontent.com/alexander-potemkin/quickies-dockers/main/nonprod-openrpa-openflow.yml)
 sudo service docker start
 sudo curl -SL [https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-linux-x86\_64](https://github.com/docker/compose/releases/download/v2.6.1/docker-compose-linux-x86_64) -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose

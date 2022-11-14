@@ -35,7 +35,7 @@ followed by `sysctl -p` , as per this [page](https://www.digitalocean.com/commun
 ### Install Node.JS 16
 
 ```bash
-wget -O - https://raw.githubusercontent.com/Potemkin-Co/quickies/main/nodejs16.sh | bash
+wget -O - https://raw.githubusercontent.com/alexander-potemkin/quickies/main/nodejs16.sh | bash
 ```
 
 ### Laptop battery status

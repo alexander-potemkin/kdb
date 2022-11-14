@@ -32,7 +32,7 @@ If you still got to use it, here are some of my findings that could be of help:
 - Hypothesis - not yet battle-tested: microk8s and Rancher could be of use in some cases, as they both provide a fixed, most commonly required set of features and are relatively easy to maintain.Rancher even has Hetzner drivers (and an unofficial configuration guide), which means it brings auto-scale cluster at the cost of relatively cheap quite reliable physical machines.
 
 **Tools:**
-- CapRover - https://caprover.com - a very nice and handy single or multi-server cluster formation and management tool.Quick start I used to use is https://github.com/Potemkin-Co/quickies
+- CapRover - https://caprover.com - a very nice and handy single or multi-server cluster formation and management tool.Quick start I used to use is https://github.com/alexander-potemkin/quickies
 - Lens (The Kubernetes IDE) - https://k8slens.dev
 - k9s - https://k9scli.io - a command-line tool to check and manage your cluster.Quick start guide:  sudo snap install k9s (Linux) / brew install k9s (MacOS) followed by k9s --kubeconfig=$your-kubeconfig -n all
 - Microk8s - https://microk8s.io/docs

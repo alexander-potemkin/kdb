@@ -31,19 +31,19 @@ sudo dpkg-reconfigure tzdata #change timezone
 Install Docker first:
 
 ```bash
-wget -O - https://raw.githubusercontent.com/Potemkin-Co/quicky/main/docker_ubuntu.sh | bash
+wget -O - https://raw.githubusercontent.com/alexander-potemkin/quickies/main/docker_ubuntu.sh | bash
 ```
 
 Then actual version of npm & node.js
 
 ```bash
-wget -O - https://raw.githubusercontent.com/Potemkin-Co/quickies/main/nodejs16.sh | bash
+wget -O - https://raw.githubusercontent.com/alexander-potemkin/quickies/main/nodejs16.sh | bash
 ```
 
 Then an actual CapRover
 
 ```bash
-wget -O - https://raw.githubusercontent.com/Potemkin-Co/quickies/main/caprover_setup.sh | bash
+wget -O - https://raw.githubusercontent.com/alexander-potemkin/quickies/main/caprover_setup.sh | bash
 ```
 
 followed by
