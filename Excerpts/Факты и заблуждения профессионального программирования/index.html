@@ -1,0 +1,3578 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Гласс Роберт - Факты и заблуждения профессионального программирования - My KDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My KDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Гласс Роберт - Факты и заблуждения профессионального программирования
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My KDB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        CHANGELOG
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Excerpts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Excerpts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
+        Sprint How to Solve Big problems in 5 days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chaos%20Monkeys/" class="md-nav__link">
+        Chaos Monkeys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%20codes%20examples/" class="md-nav__link">
+        Culture codes examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gumroad/" class="md-nav__link">
+        Работа в Gumroad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hacking%20growth/" class="md-nav__link">
+        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspired/" class="md-nav__link">
+        Marty Cagan - Inspired How To
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
+        Intercom on jobs-to-be-done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
+        Jobs to Be Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marketplaces%20notes/" class="md-nav__link">
+        Про маркетплейсы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
+        Marty_Cagan___Inspired___How_To_
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Matryoshka. Как Вести Бизнес С Иностранцами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20runways%20book/" class="md-nav__link">
+        Software runways book
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Superhuman/" class="md-nav__link">
+        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
+        The Everything Store. Джефф Безос И Эра Amazon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
+        The Jobs to Be Done Playbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
+        The Knowledge Illusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
+        The Ultimate Guide to Project Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../YC%20Startup%20School/" class="md-nav__link">
+        Startup School
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zero%20to%20One/" class="md-nav__link">
+        Zero to One
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten/" class="md-nav__link">
+        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
+        Адская Паутина. Как Выжить В Мире Нарциссизма
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
+        Антихрупкость. Как Извлечь Выгоду Из Хаоса
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        "Великая шахматная доска" Збигнева Бжезинского
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
+        Бизнес В Стиле Virgin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
+        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
+        Брак Под Микроскопом. Физиология Половой Жизни Человека
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
+        Брось Себе Вызов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
+        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
+        ВкусВилл
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
+        Власть, Влияние И Политика В Организациях
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
+        Всегда Вовремя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
+        Вы, Разумеется, Шутите, Мистер Фейнман!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
+        Горник
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
+        Капра Фритьоф "Дао физики"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
+        Даосские Секреты Любви
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
+        Дж. Ханк Рейнвотер
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        Дилемма Инноватора
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
+        Доставляя Счастье
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        Заклинание Для Хамелеона
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
+        Змеи В Костюмах
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Игра Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
+        Крейг Эштон - Извините, я иностранец
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
+        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
+        Искусство Быть Другим
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
+        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
+        История веры и религиозных идей Том 1 Мирча Элиаде
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
+        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
+        Квота, Или Сторонники Изобилия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
+        Кельтские Мифы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
+        Книга по Agile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Книга
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
+        Кофе и капуста
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Боно Латеральное мышление
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
+        Легко Не Будет
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Ловушки Мышления
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
+        Лучшие Притчи Дзэн
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        Магия Утра
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
+        Мальчик, Которого Растили Как Собаку
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
+        Мир В Каждом Шаге
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
+        Мировой Порядок
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
+        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="md-nav__link">
+        На Крючке
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
+        На Пределе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Наука Общения
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
+        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
+        Не Делай Это
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
+        Невидимая Горилла
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="md-nav__link">
+        Неотвлекаемые
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
+        Никаких Правил. Уникальная Культура Netflix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения”
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
+        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
+        Он. Глубинные Аспекты Мужской Психологии
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
+        Открывая Организации Будущего
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
+        Кон М. Agile оценка и планирование проектов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
+        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
+        «По ту сторону бомб и санкций» А. Вучо
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
+        Под Тенью Сатурна
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
+        Лучшие притчи дзэн: обычные истории о людях необычайных
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
+        Пробуждение Тигра - Исцеление Травмы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Психология Влияния
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
+        Путеводитель По Лжи
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        Радикальное Принятие
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
+        Рэй Далио
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
+        Сделано, Чтобы Прилипать
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
+        Сейчас!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
+        Сказание О Кентавре Хироне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
+        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Счастливое Старение
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
+        Тайная Опора. Привязанность В Жизни Ребенка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Тень Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
+        Траблшутинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
+        Тридцать Шесть Стратагем. Китайские Секреты Успеха
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Гласс Роберт - Факты и заблуждения профессионального программирования
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Фрикомыслие. Нестандартные Подходы К Решению Проблем
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
+        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        Демарко-Т-Человеческий-фактор
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
+        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Яндекс.Книга
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Journal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
+        BeOS operating system review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
+        Kubernetes vs Docker Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
+        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
+        Заметки из Египта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
+        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
+        Нижний Новгород
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
+        Про Китай (год ~2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
+        Про Сахалин
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
+        Про Киргизию
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
+        Рейс Санкт-Петербург - Цюрих
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
+        OpenRPA & OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
+        Generic SW project hand-over
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
+        Sales channels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
+        Working Backwards: Amazon's Culture of Innovation: My notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
+        Мои заметки на основании разных лекций (кажется, YC)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        Заметки про нарциссизм и нарциссов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
+        Переговоры (заметки с тренинга)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
+        Площадки для запуска продукта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
+        Про подъём денег
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Список вопросов для подведения итогов с сотрудниками
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Про ТРИЗ, изобретатель-решатель
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
+        Мои заметки про уловки в разработке (аутсорсинг)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
+        ФРИИ, выход на американский рынок
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
+        ActivityWatch (Screen Time on Linux)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
+        Android crash debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
+        BitRise build HowTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
+        CapRover (local kind of Heroku)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
+        ChatSDK (draft)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
+        Server setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
+        CloudRon (managed apps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
+        CloudSigma API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
+        Docker (on Ubuntu)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
+        GitHub Pages config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
+        HEIC to PNG converter (not tested)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
+        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
+        InvizBox with custom OpenVPN <not working!>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Jitsi/" class="md-nav__link">
+        Jitsi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
+        Kamai time tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MacOS/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
+        Mattermost + Audio & Video calls + S3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
+        MkDocs - GitBook alternative, on GitHub pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Monit/" class="md-nav__link">
+        Monit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
+        Nessus server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
+        Network connectivity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
+        OPNSense on KVM hosting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFire/" class="md-nav__link">
+        OpenFire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
+        OpenFlow & WSL on Windows Server (notes)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
+        HowTo use OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
+        Картинки сделать в сторе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
+        PostgreSQL notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
+        Proxy (tinyproxy)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/S3%20things/" class="md-nav__link">
+        S3 things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
+        Swagger (&GitHub)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
+        Networking on Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
+        Unnattended upgrades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
+        Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
+        VPN (Wireguard)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Various/" class="md-nav__link">
+        1Password to Bitwarden migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
+        certbot wildcard certificate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
+        n8n configuration on CapRover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
+        ssmtp (e-mail sending to outside)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Clojure/" class="md-nav__link">
+        Basic information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
+        Cloud IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
+        Managed PostgreSQL self-hosted
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/ZenGarden/" class="md-nav__link">
+        ZenGarden
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="-">Гласс Роберт - Факты и заблуждения профессионального программирования</h1>
+<p>Annotation summary:</p>
+<p>--- Page 40 ---</p>
+<p>Когда нас</p>
+<p>заставляют задумываться над работой, которую до этого мы делали авто:</p>
+<p>матически, мы начинаем работать медленнее.</p>
+<p>--- Page 46 ---</p>
+<p>Среди этого шума и беспорядка, к счастью, можно услышать по:настоя:</p>
+<p>щему объективные ответы, от которых обычно никто не получает коммер:</p>
+<p>ческой выгоды независимо от того, к чему они приводят. И эти ответы по:</p>
+<p>разительным образом согласуются между собой. В них фигурируют две</p>
+<p>причины, по важности стоящие на голову выше остальных, – слабая (как</p>
+<p>правило, слишком оптимистичная) оценка и нестабильные требования.</p>
+<p>Первая преобладает в одних исследованиях, вторая – в других.</p>
+<p>В индустрии ПО дело с оценками обстоит очень</p>
+<p>плохо. В большинстве случаев наши оценки скорее напоминают желания,</p>
+<p>чем реалистичные цели. Еще хуже, что мы, похоже, вообще не представля:</p>
+<p>ем, как улучшить эту пагубную практику. В результате все гонятся за недо:</p>
+<p>стижимыми целями, поставленными в ходе оценки, отчаянно срезая углы</p>
+<p>и игнорируя хорошие практические приемы, и неизбежное отставание от</p>
+<p>графика превращается в отставание всей технологии. </p>
+<p>Пытаясь сделать наши оценки совершеннее, мы испробовали все виды</p>
+<p>подходов, кажущихся разумными. Сначала мы полагались на «экспертов»,</p>
+<p>разработчиков ПО, которые «были здесь и делали это». Изъян этого подхо:</p>
+<p>да заключается в его крайней субъективности. Разные люди, имеющие раз:</p>
+<p>ный опыт «был здесь и делал это», дают разные оценки. Действительно, где</p>
+<p>бы эти люди ни оказывались и что бы они ни делали, маловероятно, что</p>
+<p>эти обстоятельства будут в достаточной мере соответствовать текущей за:</p>
+<p>даче, чтобы экстраполяция оказалась корректной. </p>
+<p>--- Page 47 ---</p>
+<p>Затем мы проверили алгоритмические подходы.</p>
+<p>Ничего не получилось. Исследовате:</p>
+<p>ли один за другим (например, Моханти [Mohanty, 1981] показали, что, если</p>
+<p>взять гипотетический проект и заложить его данные в совокупность пред:</p>
+<p>ложенных алгоритмических приемов, эти алгоритмы генерируют ради:</p>
+<p>кально отличные (с коэффициентом от двух до восьми) результаты. Алго:</p>
+<p>ритмы давали не более согласованные оценки, чем до них это делали экс:</p>
+<p>перты. Последующие исследования с новой силой подтвердили это неуте:</p>
+<p>шительное открытие.</p>
+<p>--- Page 48 ---</p>
+<p>Получается, что сейчас, в первом десятилетии двадцать первого века,</p>
+<p>мы не знаем, что есть правильный метод, способный дать приличные</p>
+<p>оценки и уверенность, что они действительно предсказывают, когда про:</p>
+<p>ект завершится и какими будут затраты. Ничего себе итог.</p>
+<p>--- Page 49 ---</p>
+<p>В нескольких исследованиях делается вывод, что оценка – это одна из двух</p>
+<p>главных причин неуправляемости проектов. Вот две таких работы, а еще</p>
+<p>три приведены в разделе ссылок. </p>
+<p>¬ Cole, Andy. 1995. «Runaway Projects – Causes and Effects». Software</p>
+<p>World (UK) 26, no. 3. Это наилучшее предметное исследование не:</p>
+<p>управляемых проектов, их причин, следствий и поведения их участ:</p>
+<p>ников. Исследователи делают вывод, что «плохое планирование</p>
+<p>и оценка» были первыми по важности факторами в 48% проектов,</p>
+<p>вышедших из:под контроля. </p>
+<p>¬ Van Genuchten, Michiel. 1991. «Why Is Software Late?» IEEE Transactions</p>
+<p>on Software Engineering, June. Данное исследование приходит к выво:</p>
+<p>ду, что «оптимистичная оценка» является главной причиной нару:</p>
+<p>шения сроков выполнения в 51% проектов.</p>
+<p>--- Page 52 ---</p>
+<p>почти всегда за назначение нереа:</p>
+<p>листичных сроков приходится расплачиваться. Чаще всего страдают люди</p>
+<p>(их репутация, здоровье – как физическое, так и психическое и т. д.), но,</p>
+<p>как следует из этой истории, можно потерять и деньги.</p>
+<p>--- Page 56 ---</p>
+<p>Для того чтобы управлять по плану,</p>
+<p>надо установить оперативные и долгосрочные контрольные точки (в MS</p>
+<p>Project они называются вехами) и определять успешность выполнения</p>
+<p>проекта по тому, что происходит в этих контрольных точках. Вы отстали</p>
+<p>от графика в точке 26? Плохо дело. </p>
+<p>А как иначе руководить программными проектами? Приведу несколько</p>
+<p>примеров, чтобы показать, что управление по плану – это не единствен:</p>
+<p>ный способ. </p>
+<p>– Можно ориентироваться на продукт. Об успешности или неуспеш:</p>
+<p>ности проекта можно судить по тому, какая часть конечного продук:</p>
+<p>та создана и работоспособна. </p>
+<p>– В управлении проектом можно ориентироваться на возникающие</p>
+<p>проблемы. Успех или неудача определяются в зависимости от того,</p>
+<p>как хорошо и как быстро разрешаются проблемные моменты, кото:</p>
+<p>рые всегда возникают в ходе выполнения проекта. </p>
+<p>– Можно руководить, ориентируясь на риск. Критерием успеха или</p>
+<p>неудачи могла бы стать демонстрация того, как преодолеваются</p>
+<p>риски, определенные в начале проекта.</p>
+<p>--- Page 57 ---</p>
+<p>Мы могли бы руководить, ориентируясь на бизнес:цели. Об успеш:</p>
+<p>ности можно судить по тому, насколько хорошо программный про:</p>
+<p>дукт улучшает ведение дел.</p>
+<p>--- Page 60 ---</p>
+<p>Джеффри и Ло:</p>
+<p>уренс [Jeffery, Lawrence, 1985] обнаружили, что «проекты, в которых оценка</p>
+<p>не делалась вовсе, были лучшими в смысле продуктивности» (за ними шли</p>
+<p>проекты, в которых оценки делали технические специалисты, а наихуд:</p>
+<p>шие показатели были у проектов, оцениваемых менеджерами). Ландсбаум</p>
+<p>и Гласс [Landsbaum, Glass, 1992] установили «очень сильную корреляцию</p>
+<p>между уровнем продуктивности и чувством контроля» (т. е. когда програм:</p>
+<p>мисты чувствовали, что распоряжаются собственной судьбой, они были</p>
+<p>гораздо более продуктивными). Другими словами, управление, сосредото:</p>
+<p>ченное на контроле, не обязательно делает проект лучшим или даже более</p>
+<p>производительным.</p>
+<p>--- Page 74 ---</p>
+<p>Вследствие сложности, прису:</p>
+<p>щей созданию и сопровождению значительных программных систем (мы</p>
+<p>вернемся к этой идее в последующих фактах), модификация уже создан:</p>
+<p>ного ПО может быть достаточно трудна. Обычно программную систему</p>
+<p>создают в некоторой проектной среде (схема, которая одновременно дает</p>
+<p>возможность решить задачу и ограничивает избранное решение) и в соот:</p>
+<p>ветствии с некоторыми принципами проектирования (разные люди выби:</p>
+<p>рают очень разные приемы реализации одного и того же программного</p>
+<p>решения). За исключением тех случаев, когда тот, кто пробует модифици:</p>
+<p>ровать часть программного кода, понимает эти ограничения и принимает</p>
+<p>эти принципы, очень сложно успешно довести изменения до конца. </p>
+<p>Более того, часто проектная среда очень хорошо соответствует постав:</p>
+<p>ленной задаче, но может полностью исключить решение любой задачи, ко:</p>
+<p>торую не охватывает данная среда проектирования, подобно задаче много:</p>
+<p>кратного использования компонента в различных предметных областях.</p>
+<p>--- Page 81 ---</p>
+<p>Кроме того, он проясняет и многие другие факты этой книги. </p>
+<p>– Почему так важен человеческий фактор? (Потому что для преодоле:</p>
+<p>ния сложностей требуются значительные умственные способности</p>
+<p>и мастерство.)</p>
+<p>--- Page 82 ---</p>
+<p>Почему так сложно оценивать? (Потому что наши решения намного</p>
+<p>сложнее, чем выглядят наши задачи.) </p>
+<p>– Почему масштабное повторное использование так безуспешно?</p>
+<p>(Потому что сложность делает проблему многообразия более выра:</p>
+<p>женной.)</p>
+<p>Почему так много различных корректных подходов к проектирова:</p>
+<p>нию решения одной задачи? (Потому что пространство решений</p>
+<p>так многогранно.) </p>
+<p>– Почему лучшие проектировщики выбирают итеративные и эври:</p>
+<p>стические подходы? (Потому что простые и очевидные проектные</p>
+<p>решения встречаются редко.) </p>
+<p>– Почему проектное решение редко оптимизируется? (Поскольку опти:</p>
+<p>мизация практически невозможна ввиду значительной сложности.) </p>
+<p>– Почему стопроцентный уровень тестового покрытия редко возмо:</p>
+<p>жен и в любом случае недостаточен? (Вследствие громадного числа</p>
+<p>веток в большинстве программ и поскольку программная слож:</p>
+<p>ность приводит к ошибкам, которые не удается отловить.)</p>
+<p>Почему инспекция (рецензирование) является наиболее эффектив:</p>
+<p>ным методом устранения ошибок? (Потому что нужен человек, что:</p>
+<p>бы разложить всю эту сложность по полочкам и распознать ошибки.) </p>
+<p>– Почему сопровождение ПО отнимает столько времени? (Потому</p>
+<p>что в самом начале почти никогда нельзя определить все ответвле:</p>
+<p>ния решения задачи.) </p>
+<p>– Почему понять, как устроен готовый продукт, – это самая главная</p>
+<p>и сложная задача сопровождения ПО? (Потому что существует масса</p>
+<p>корректных методов решения любой задачи.) </p>
+<p>– Почему программы содержат столько ошибок? (Потому что трудно</p>
+<p>сделать все правильно с самого начала.)</p>
+<p>--- Page 91 ---</p>
+<p>Трудности в данном случае обусловлены тем, что заказчики</p>
+<p>и пользователи программного решения не совсем точно знают, какую</p>
+<p>именно задачу требуется решить. Изначально они могут предполагать, что</p>
+<p>знают это, а в процессе развития проекта обнаруживают, что задача, кото:</p>
+<p>рую они собирались решать, или слишком упрощенная или нереалистич:</p>
+<p>ная, а может выясниться что:то еще, чего они не ожидали. Кроме того, сна:</p>
+<p>чала они и вправду могут ничего не знать и просто исследуют решения не:</p>
+<p>ясной проблемы.</p>
+<p>--- Page 92 ---</p>
+<p>Вначале большинство специалис:</p>
+<p>тов, занятых в индустрии ПО, полагало, что проблема заключена в слабом</p>
+<p>управлении, и ее можно решить, придерживаясь изначального набора тре:</p>
+<p>бований, настаивая при этом, что заказчикам и пользователям придется</p>
+<p>принять то решение этой задачи, которое представит команда. Именно</p>
+<p>в этот период компьютерные специалисты выдвинули идею формальных</p>
+<p>спецификаций, сугубо математического способа представления этих</p>
+<p>устойчивых требований. </p>
+<p>Этот прием оказался не очень эффективным. Конечное решение не со:</p>
+<p>ответствовало ни одной из задач, стоявших перед заказчиками и пользова:</p>
+<p>телями, и поэтому такие решения игнорировались и в конечном итоге от</p>
+<p>них отказывались. Все потраченные на создание программных решений</p>
+<p>деньги и время вылетали прямехонько в трубу. А вместе с ними и все эти</p>
+<p>красивые, но чересчур строгие математические технические задания. И уж</p>
+<p>слишком часто то же самое происходило с отношениями между заказчи:</p>
+<p>ками и организацией:разработчиком. </p>
+<p>Как только разработчики осознали, что им придется приспосабливаться</p>
+<p>к проблеме изменяющихся требований, были опробованы совершенно</p>
+<p>иные методы решений. Была поставлена задача исследовать требования,</p>
+<p>чтобы привести их в устойчивое состояние, и решение было найдено в соз:</p>
+<p>дании прототипов. В соответствии с этим подходом разработчики строи:</p>
+<p>ли пробное решение и давали пользователям возможность проверить его</p>
+<p>на предмет соответствия их желаниям. (Применение метода создания про:</p>
+<p>тотипа было вызвано многими причинами, но здесь мы говорим только о</p>
+<p>его использовании для определения требований.) По мере того как стано:</p>
+<p>вилось необходимым все более и более интенсивное участие пользовате:</p>
+<p>лей, была разработана методология, получившая название совместной [с</p>
+<p>пользователями] разработки приложений (Joint Application Development –</p>
+<p>JAD). (Я никогда толком не понимал, что означает разработка в данном</p>
+<p>контексте, т. к. мне всегда казалось, что данный метод должен называться</p>
+<p>совместным анализом требований к приложению (Joint Application Re+</p>
+<p>quirements Resolution – JARR).) Методы создания прототипа и JAD находят</p>
+<p>применение и по сей день, особенно в случаях малопонятных требований.</p>
+<p>--- Page 93 ---</p>
+<p>Проблема нестабильных и эволюционирующих требований в индуст:</p>
+<p>рии ПО исследуется и сейчас. Мы довольно хорошо представляем, что</p>
+<p>с этим можно делать (см. раздел «Обсуждение» Факта 22), но не так хоро:</p>
+<p>шо у нас получается сделать то, что мы должны. Вдобавок проекты в инду:</p>
+<p>стрии ПО становятся все сложнее и разнообразнее, и видоизменение тре:</p>
+<p>бований становится все обыденнее. Во многих известных проектах, вы:</p>
+<p>шедших из:под контроля пользователи и разработчики позволили требо:</p>
+<p>ваниям изменяться настолько стихийно, что дело так и не дошло до реше:</p>
+<p>ния хоть какой:нибудь задачи. (Как классический пример можно назвать</p>
+<p>автоматизированную систему оформления и обработки багажа аэропорта</p>
+<p>Денвера [Glass, 1998], где требования были изменены так радикально, что</p>
+<p>в конечном итоге была загублена вся работа. До сегодняшнего дня эта сис:</p>
+<p>тема так и не была реализована в своем изначальном виде, и все авиаком:</p>
+<p>пании в Денвере, кроме United, пользуются ручными системами.)</p>
+<p>--- Page 107 ---</p>
+<p>Проектирование – это сложный итеративный процесс. Первоначальное про</p>
+<p>ектное решение, скорее, всего окажется неверным и, безусловно, не опти</p>
+<p>мальным.</p>
+<p>--- Page 108 ---</p>
+<p>Данные, полученным Кертисом и Соловьем [Curtis, Soloway, 1987], сви:</p>
+<p>детельствуют, что проектирование – это отнюдь не предсказуемый, струк:</p>
+<p>турируемый, стандартизируемый процесс; он основан на методе проб</p>
+<p>и ошибок и весьма запутан. И помните, что эти результаты получены при</p>
+<p>наблюдении за работой лучших проектировщиков.</p>
+<p>--- Page 111 ---</p>
+<p>Программисты переходят от проектирования к кодированию тогда,</p>
+<p>когда задача разобрана до уровня «примитивов», которыми владеет</p>
+<p>проектировщик. Если кодировщик и проектировщик – это разные лю</p>
+<p>ди, то примитивы проектировщика, вероятно, не будут совпадать с при</p>
+<p>митивами кодировщика и это приведет к неприятностям.</p>
+<p>--- Page 112 ---</p>
+<p>По моему мнению, вследствие этого обстоятельства, разделение проект:</p>
+<p>ной работы и кодирования обычно является ошибкой. Мак:Брин [McBre:</p>
+<p>en, 2000] вторит мне, говоря, что «традиционное разделение труда неэф:</p>
+<p>фективно в разработке ПО». Конечно, если задача очень велика, то выбора</p>
+<p>может и не быть.</p>
+<p>--- Page 113 ---</p>
+<p>Мир веб:приложений породил целую новую культуру программирова:</p>
+<p>ния. Проекты, обитающие в ней, малы (3 × 3 – три человека на три месяца)</p>
+<p>и сильно ограничены временем. В этих условиях этап проектирования за:</p>
+<p>частую отсутствует вовсе – малые проекты имеют малые проектные нужды,</p>
+<p>и данная проблема возникает редко. Вот почему в мире гибкой разработки</p>
+<p>ПО и экстремального программирования не найти упоминания о ней –</p>
+<p>сторонники этих концепций в некоторых случаях даже подвергают сомне:</p>
+<p>нию необходимость какого бы то ни было проектирования.</p>
+<p>--- Page 117 ---</p>
+<p>Фаза устранения ошибок – самая трудоемкая в жизненном цикле.</p>
+<p>Но что действительно важно в данной фазе, так это то, что процесс</p>
+<p>устранения ошибок для большинства программных продуктов требует</p>
+<p>--- Page 118 ---</p>
+<p>больше времени, чем сбор требований, проектирование или кодирование</p>
+<p>решения вместе взятые – фактически примерно вдвое больше.</p>
+<p>Данные о процентной доле времени, потраченного на устранение</p>
+<p>ошибок, с годами менялись, но обычные цифры составляют 20–20–20–40.</p>
+<p>То есть 20% на сбор требований, 20% на проектирование, 20% на кодирова:</p>
+<p>ние (интуиция подсказывает большинству программистов, что время ухо:</p>
+<p>дит именно здесь, но тут интуиция сильно ошибается) и 40 на устранение</p>
+<p>ошибок [Glass, 1992]. (В последнее время нагрузку стараются перераспре:</p>
+<p>делить на ранние стадии жизненного цикла, уделяя больше внимания сбо:</p>
+<p>ру требований и проектированию, поэтому цифры, говорят, изменились</p>
+<p>на примерно такие: 25–25–20–30.)</p>
+<p>--- Page 119 ---</p>
+<p>Glass, Robert L. 1992. Building Quality Software. Englewood Cliffs, NJ:</p>
+<p>Prentice:Hall.</p>
+<p>Оказывается, что в ПО, о котором типичный программист думает, что оно</p>
+<p>тщательно протестированно, нередко проверено выполнение лишь 55–60%</p>
+<p>логических путей. Применение автоматизированных средств, таких как</p>
+<p>анализаторы покрытия, позволяет повысить эту долю примерно до 85–90%.</p>
+<p>Протестировать 100% логических путей ПО практически невозможно.</p>
+<p>--- Page 123 ---</p>
+<p>Даже если бы 100%%тестовое покрытие было возможно, оно не годилось бы</p>
+<p>на роль критерия достаточности тестирования. Примерно 35% дефектов ПО</p>
+<p>вызвано пропущенными логическими путями и еще 40% связаны с выпол</p>
+<p>нением уникальной комбинации логических путей. Их не выявить при 100%</p>
+<p>покрытии тестами.</p>
+<p>--- Page 124 ---</p>
+<p>Анализируя эти сообще:</p>
+<p>ния об ошибках, я обнаружил, что можно успешно выполнить каждый ло:</p>
+<p>гический путь по отдельности, но столкнуться с тем, что некоторая комби:</p>
+<p>нация таких логических путей окажется неправильной. Приведем баналь:</p>
+<p>ный, но вопиющий пример: представьте, что переменная, необходимая в</p>
+<p>одном логическом пути, правильно инициализируется во всех предшест:</p>
+<p>вующих ему, за исключением одного. При выполнении именно этого по:</p>
+<p>--- Page 125 ---</p>
+<p>следнего логического пути и следующего за ним программа сработает не:</p>
+<p>правильно. </p>
+<p>Это естественным образом порождает вопрос о том, как часто случают:</p>
+<p>ся такие ошибки. Ответ, по крайней мере тот, который мне удалось найти</p>
+<p>в изученных мною базах данных ошибок, неутешителен – «чрезвычайно</p>
+<p>часто». Доля ошибок пропущенной логики в этих базах составила 35%.</p>
+<p>(Действительно, в более позднем исследовании [Glass, 1981] я установил,</p>
+<p>что значительное количество «живучих» программных ошибок – тех, ко:</p>
+<p>торые просочились сквозь все ячейки сита тестирования и «дожили» до</p>
+<p>стадии эксплуатации программного продукта, – принадлежит именно</p>
+<p>к этому типу.) Ошибки комбинаторики составили, что удивительно, еще</p>
+<p>40% Таким образом, всеобъемлющее (100%) структурное тестирование от:</p>
+<p>нюдь не приближает нас к безошибочному ПО и представляет собой под:</p>
+<p>ход привлекательный, но недостаточный – недостаточный с оценкой 75%</p>
+<p>(то есть полное покрытие структурным тестированием гарантирует обна:</p>
+<p>ружение всего лишь 25% ошибок в программном продукте).</p>
+<p>--- Page 128 ---</p>
+<p>Худшие последствия жестких требований графика выполнения ра:</p>
+<p>бот проявляются ближе к концу жизненного цикла. Нередко на тес:</p>
+<p>тирование остается слишком мало времени. Поэтому тестируют</p>
+<p>впопыхах, пытаясь уложиться в график. Для того чтобы иметь дело</p>
+<p>с этим инструментарием, необходимо быть внимательным до нача:</p>
+<p>ла тестирования и прикладывать усилия во время его выполнения,</p>
+<p>а и того и другого слишком часто просто нет.</p>
+<p>--- Page 130 ---</p>
+<p>Тесты редко автоматизируются. То есть определенные процессы тестиро</p>
+<p>вания могут и должны быть автоматизированы. Но значительную часть ра</p>
+<p>боты, связанной с тестированием, автоматизировать нельзя.</p>
+<p>--- Page 132 ---</p>
+<p>Тестирование, как и программирование, – задача слиш:</p>
+<p>ком сложная для автоматизации. И это не должно мешать нам применять</p>
+<p>инструменты, которые действительно автоматизируют выполнение тех</p>
+<p>задач, которые могут быть автоматизированы. Но отсюда не следует, что</p>
+<p>надо игнорировать любые заявления о том, что тестирование кем:то пол:</p>
+<p>ностью автоматизировано.</p>
+<p>--- Page 134 ---</p>
+<p>Важным дополнением к инструментам тестирования является созданный</p>
+<p>программистом встроенный отладочный код, желательно, включаемый</p>
+<p>в объектный код в зависимости от директив компиляции.</p>
+<p>--- Page 137 ---</p>
+<p>В результате, хотя инспекция обходится дешевле, чем ее альтернативы,</p>
+<p>мало где проверяют каждую строчку кода производимых программ. Итак,</p>
+<p>мы еще раз убедились, что процесс избавления от ошибок построен на не:</p>
+<p>которых важнейших компромиссах, то есть необходимо определить, ка:</p>
+<p>кие участки каких фрагментов программного кода надо проверять. Ответ,</p>
+<p>похоже, звучит так: «Критические участки критически важного кода».</p>
+<p>А значение этого ответа, конечно, зависит от приложения.</p>
+<p>--- Page 139 ---</p>
+<p>Создание ПО – это сложная деятельность, чреватая ошибками.</p>
+<p>Ошибки есть субстанция трудноуловимая и многоликая. А программисты</p>
+<p>обладают теми же человеческими слабостями, что и все остальные. Нет се:</p>
+<p>ребряной пули, которая избавит нас от ошибок. </p>
+<p>--- Page 140 ---</p>
+<p>Вспомним: об инспекциях говорят, что они</p>
+<p>обнаруживают до 90% ошибок в ПО (Факт 37). Вспомним, что анализ по:</p>
+<p>крытия тестами может обеспечить охват до 90% программного продукта,</p>
+<p>но что даже 100% покрытия тестами далеко не достаточно (Факты 32 и 33).</p>
+<p>Вспомним, что из:за уже упоминавшегося здесь лавинообразного роста</p>
+<p>требований 100% тестирование на их основе даже с натяжкой нельзя счи:</p>
+<p>тать удовлетворительным методом (этот и другие подходы рассмотрены в</p>
+<p>Факте 32). Вспомним, что автоматизация тестирования совершенно не оп:</p>
+<p>равдала связанных с ней надежд (Факт 35). Было установлено, что фор:</p>
+<p>мальная верификация (псевдоним доказательства корректности) так же</p>
+<p>подвержена ошибкам, как и собственно программирование, и не годится</p>
+<p>на роль серебряной пули как по этой, так и по другим причинам [Glass,</p>
+<p>2002]. </p>
+<p>Очень многое говорит в пользу того, что устранение программных</p>
+<p>ошибок всегда будет сложной темой.</p>
+<p>--- Page 141 ---</p>
+<p>Если принять во внимание все факты, изложенные выше, то наличие оши:</p>
+<p>бок в свежевыпущенном программном продукте не должно вызывать</p>
+<p>удивления. Как не должно вызывать удивления и то, что жизненный цикл</p>
+<p>программного продукта не настолько безмятежен, насколько этого хоте:</p>
+<p>лось бы всем участникам группы разработки.</p>
+<p>И насколько удивительно, что мы как отрасль проявляем тенденцию</p>
+<p>совершенно игнорировать такое положение. Да, мы не перестаем выиски:</p>
+<p>вать ошибки – с помощью таких подходов, как альфа: и бета:тестирова:</p>
+<p>ние, регрессионные тесты и т. д., обдумываем результаты и записываем</p>
+<p>свои соображения о том, как в следующий раз сделать все это лучше.  </p>
+<p>И каков результат? По окончании типичного программного проекта</p>
+<p>все уроки, извлеченные из него, или отвергаются или выбрасываются</p>
+<p>на ветер. Почему? Потому, что в безумной гонке сроков, которой охвачена</p>
+<p>индустрия софтостроения, программисты, работающие над вчерашним</p>
+<p>проектом, уже перебежали в проект завтрашний. А там они слишком связа:</p>
+<p>ны требованиями нового расписания, чтобы остановиться и обдумать то,</p>
+<p>что случилось сколько:то месяцев тому назад. </p>
+<p>Месяцев? Здравый смысл подсказывает, что сразу после завершения</p>
+<p>проекта, может быть, слишком рано суммировать его уроки (потому что</p>
+<p>многие результаты использования ПО еще неизвестны). Большинство сто:</p>
+<p>--- Page 147 ---</p>
+<p>Стоимость сопровождения обычно составляет от 40 до 80% (в среднем 60%)</p>
+<p>стоимости ПО. Следовательно, эта фаза его жизненного цикла, возможно,</p>
+<p>самая важная.</p>
+<p>Сопровождение ПО не устает поставлять сюрпризы тем, кто не слишком</p>
+<p>хорошо ориентируется в производстве ПО. Во:первых, есть вопрос о том,</p>
+<p>что же в этом контексте означает слово сопровождение. В большинстве</p>
+<p>других областей оно означает, что производитель берется ремонтировать</p>
+<p>то, что сломалось или обветшало. Но природа ПО такова, что оно никогда</p>
+<p>не ломается и не ветшает. Программный продукт есть субстанция неосяза:</p>
+<p>емая, не имеющая конкретной физической формы, поэтому в нем нечему</p>
+<p>ветшать и ломаться.</p>
+<p>Но в программном обеспечении могут быть ошибки. Оно может быть</p>
+<p>модифицировано с целью расширения его функциональности. (Вот отку:</p>
+<p>да берется soft в слове software. Это очень податливый материал, отчасти</p>
+<p>потому, что он так «нематериален».) Дело в том, что ошибки в ПО обуслов:</p>
+<p>лены не усталостью вещества, они скорее совершаются на стадии созда:</p>
+<p>ния или изменения программ. Таким образом, сопровождение связано</p>
+<p>с исправлением этих ошибок по мере их обнаружения и с внесением из:</p>
+<p>менений в ПО, когда это становится необходимо. И даже если все это зву:</p>
+<p>чит бессмысленно для представителей других профессий, то для програм:</p>
+<p>мистов имеет конкретный смысл.</p>
+<p>Во:вторых, сопровождение во временном и денежном выражении об:</p>
+<p>ходится на удивление дорого. Затраты на создание среднего программно:</p>
+<p>го продукта составляют от 20 до 60%, а оставшиеся 40–80% приходятся</p>
+<p>на сопровождение. (По причинам, которые станут ясными далее, мы соби:</p>
+<p>раемся грубо оценить затраты на сопровождение как составляющие 60%</p>
+<p>от затрат на весь жизненный цикл.) С точки зрения стоимости сопровож:</p>
+<p>дение представляет собой доминирующую фазу разработки ПО. На его мо:</p>
+<p>дификацию и исправление ошибок уходит уйма часов и долларов. И поэто:</p>
+<p>му сопровождение, наверное, – самая важная фаза жизненного цикла ПО.</p>
+<p>Это противоречит здравому смыслу, даже на взгляд программистов.</p>
+<p>Они уверены, что в их программах ошибок нет, как уверены в том, что их</p>
+<p>--- Page 148 ---</p>
+<p>программы после запуска в эксплуатацию будут работать в первозданном</p>
+<p>виде годами, если не десятилетиями. Интересной иллюстрацией роли со:</p>
+<p>провождения может служить «проблема 2000». (Она заключалась в необ:</p>
+<p>ходимости исправить ПО, в котором год был представлен двузначными</p>
+<p>числами, т. к. в некоторых программах при переходе календаря с 1999 (99)</p>
+<p>года на 2000 (00) время начинало идти вспять.) С этой проблемой было</p>
+<p>связано два сюрприза. Первый состоял в том, насколько она оказалась все:</p>
+<p>проникающей, а второй – в том, какими долгожителями оказались нуж:</p>
+<p>дающиеся в исправлении программы (многие из них были созданы в 70:х</p>
+<p>или даже 60:х годах XX века).</p>
+<p>В качестве следствия я бы хотел привести здесь одну старую програм:</p>
+<p>мистскую поговорку:</p>
+<p>Старые компьютеры выходят из употребления, а старые программы вво</p>
+<p>дятся в эксплуатацию каждый день.</p>
+<p>--- Page 149 ---</p>
+<p>Примерно 60% расходов на сопровождение приходится на улучшение кода</p>
+<p>и около 17% – на исправление ошибок. Таким образом, в основном сопро</p>
+<p>вождение и поддержка ПО заключается в добавлении в него новых воз</p>
+<p>можностей, а не в его исправлении.</p>
+<p>Целых 60% средств, затрачиваемых на сопровож:</p>
+<p>дение, уходят на модификацию – изменения, преследующие цель сделать</p>
+<p>программу более полезной. Они называются также модернизацией и, как</p>
+<p>правило, вызваны новыми требованиями (нуждами бизнеса) – функциями</p>
+<p>программного продукта, не учтенными при первичной разработке. (Ино:</p>
+<p>гда это требования, реализация которых была отложена по соображениям</p>
+<p>цены и сроков.)</p>
+<p>--- Page 150 ---</p>
+<p>Трудность в том, что во время пер:</p>
+<p>вичной разработки программного продукта заказчики и будущие пользо:</p>
+<p>ватели на самом деле лишь частично видят, что этот продукт сможет и бу:</p>
+<p>дет для них делать. Только после того как пользователи некоторое время</p>
+<p>поработают с продуктом, они начинают понимать, сколько еще надо в нем</p>
+<p>изменить. И они часто требуют, чтобы эти изменения были внесены.</p>
+<p>В этом факте больше всего удивляет то, что так мало</p>
+<p>уходит на исправление ошибок. Исследования одно за другим показывают,</p>
+<p>что их доля в жизненном цикле ПО упала почти что ниже уровня шума –</p>
+<p>на исправление ошибок затрачивается лишь 17% от всех средств, уходя:</p>
+<p>щих на сопровождение. Несмотря на все разговоры о кишащих ошибками</p>
+<p>программах, сводка расходов на сопровождение опровергает любые заяв:</p>
+<p>ления о том, что ПО подвержено ошибкам</p>
+<p>Отлично, итак, 60 + 17 = 77. Куда же уходят остальные деньги? Восемна:</p>
+<p>дцать процентов – на так называемое адаптивное сопровождение – обес:</p>
+<p>печение работоспособности ПО в условиях изменяющейся среды. Оно</p>
+<p>должно работать на новом компьютере, в новой операционной системе,</p>
+<p>взаимодействовать с новыми пакетами или с новыми устройствами. За:</p>
+<p>метьте, что эти 18% лишь на ничтожно малую величину превосходят 17%,</p>
+<p>в каковые обходится исправление ошибок. Действительно, доля этих рас:</p>
+<p>ходов в жизненном цикле ПО не превышает уровень шума.</p>
+<p>Между прочим, а где еще 5%? В вездесущей графе «Прочее». Сюда, что</p>
+<p>достаточно интересно, входят расходы на сопровождение и поддержку</p>
+<p>ПО, призванные сделать программы более пригодными для сопровожде:</p>
+<p>ния. (Раньше это называлось превентивным сопровождением. Позднее для</p>
+<p>обозначения этой деятельности был изобретен термин рефакторинг</p>
+<p>[Fowler, 1999].)</p>
+<p>--- Page 151 ---</p>
+<p>Правило 60/60: 60% затрат на производство ПО составляют затраты</p>
+<p>на сопровождение, а 60% от них составляют затраты на модернизацию. Таким образом, модернизация старого ПО имеет важнейшее значение.</p>
+<p>--- Page 152 ---</p>
+<p>Слишком уж многие видят в сопровождении ПО неприятность, нечто</p>
+<p>такое, что следует упразднить и даже, возможно, уничтожить. Тем самым</p>
+<p>они демонстрируют собственное невежество. Сопровождение ПО могло</p>
+<p>бы быть проблемой в единственном случае – если бы оно почти целиком</p>
+<p>состояло из исправления ошибок. А мы уже видели, что это не так. Далеко</p>
+<p>не так.</p>
+<p>Наоборот, сопровождение дает индустрии ПО уникальное решение</p>
+<p>проблемы «мы создали эту программу, а теперь хотим создать нечто чуть:</p>
+<p>чуть другое». В производстве, где фигурируют материальные ресурсы, это</p>
+<p>очень трудно. Например, тот, кто когда:нибудь перестраивал дом, знает,</p>
+<p>насколько трудным и непредсказуемым может оказаться переделка мате:</p>
+<p>риального продукта. </p>
+<p>--- Page 153 ---</p>
+<p>Если сравнивать задачи разработки и сопровождения ПО, то они по большей</p>
+<p>части одинаковы, – за исключением дополнительной задачи сопровожде</p>
+<p>ния, формулируемой как «изучение сопровождаемого продукта». Она за</p>
+<p>нимает примерно 30% времени, уходящего на сопровождение в целом,</p>
+<p>и этот вид деятельности преобладает в сопровождении. Таким образом,</p>
+<p>можно сказать, что сопровождение более трудоемко, чем разработка.</p>
+<p>--- Page 154 ---</p>
+<p>Не забудьте, что жизненный цикл разработки укладывается в формулу</p>
+<p>20–20–20–40, где 20% приходится на требования, 20% – на проектирова:</p>
+<p>ние, 20% – на написание кода и 40% – на устранение ошибок. Жизненный</p>
+<p>цикл сопровождения и поддержки хотя и похож на него, но отличается</p>
+<p>в одном важнейшем аспекте. Вот его структура, согласно Фьелстеду</p>
+<p>и Гамлену [Fjelsted and Hamlen, 1979]:</p>
+<p>– Определение и осмысливание изменений – 15%</p>
+<p>– Ознакомление с документацией по продукту – 5%</p>
+<p>– Трассировка логики – 25%</p>
+<p>– Внесение изменений – 20%</p>
+<p>– Тестирование и отладка –30%</p>
+<p>– Обновление документации –5%</p>
+<p>А теперь установим корреляцию между этими задачами и жизненным</p>
+<p>циклом разработки:</p>
+<p>– Определение и осмысливание (15%) соответствуют определению</p>
+<p>требований (20%).</p>
+<p>– Ознакомление с документацией и трассировка логики (30%) соот:</p>
+<p>ветствуют проектированию (20%).</p>
+<p>--- Page 155 ---</p>
+<p>Внесение изменений (20%) аналогично написанию программного</p>
+<p>кода (20%)</p>
+<p>– Тестирование и отладка (30%) соответствуют устранению ошибок</p>
+<p>(40%)</p>
+<p>– В жизненном цикле разработки обновление документации (5%), как</p>
+<p>правило, не фигурирует в виде отдельной задачи.</p>
+<p>--- Page 161 ---</p>
+<p>Работа менеджера состоит отнюдь не в том, чтобы прини:</p>
+<p>мать на себя ответственность за достижение качества, а в том, чтобы пре:</p>
+<p>доставить специалистам условия для работы, после чего не мешать им.</p>
+<p>Почему мы не можем измерить качество? Потому что не только качество</p>
+<p>с трудом поддается определению, но то же самое можно сказать и о свойст:</p>
+<p>вах, перечисленных в Факте 46. Практически невозможно выразить в виде</p>
+<p>числа понятность, модифицируемость, тестируемость или б льшую часть</p>
+<p>других признаков качества. Да, мы можем выразить в числах надежность</p>
+<p>и, до некоторой степени, эффективность, но ужасно скользкий склон, веду:</p>
+<p>щий к измеряемости качества, не становится от этого менее скользким.</p>
+<p>--- Page 163 ---</p>
+<p>Под качеством в индустрии ПО понимают совокупность семи свойств,</p>
+<p>которыми должен обладать программный продукт: переносимости (porta:</p>
+<p>bility), надежности (reliability), эффективности (efficiency), удобства в ис:</p>
+<p>пользовании (usability, или учета человеческого фактора), тестируемости</p>
+<p>(testability), понятности (understandability) и модифицируемости (modifi:</p>
+<p>ability). Разные специалисты дают этим свойствам не совсем одинаковые</p>
+<p>названия, но данный список принят подавляющим большинством и суще:</p>
+<p>ствует почти тридцать лет.</p>
+<p>Каков же смысл этих свойств?</p>
+<ol>
+<li>Переносимость означает, что программный продукт можно без тру:</li>
+</ol>
+<p>да перенести на другую платформу.</p>
+<ol>
+<li>Надежность – это свойство программного продукта надлежащим</li>
+</ol>
+<p>образом выполнять свои функции.</p>
+<ol>
+<li>Под эффективностью программного продукта понимают эконом:</li>
+</ol>
+<p>ное расходование им времени и занимаемого места.</p>
+<ol>
+<li>Принятие в расчет человеческого фактора (что называют также сло:</li>
+</ol>
+<p>вом «юзабилити») подразумевает, что с программным продуктом</p>
+<p>легко и удобно работать.</p>
+<ol>
+<li>Тестируемость ПО есть не что иное, как свойство, характеризующее</li>
+</ol>
+<p>легкость его тестирования.</p>
+<ol>
+<li>Понятность ПО – это свойство, характеризующее, насколько легко</li>
+</ol>
+<p>(или трудно) специалисту, сопровождающему программный про:</p>
+<p>дукт, понять его работу.</p>
+<ol>
+<li>Модифицируемым называют ПО, изменение которого не вызывает</li>
+</ol>
+<p>трудностей.</p>
+<p>--- Page 166 ---</p>
+<p>Удовлетворение пользователя = Выполнение требований </p>
+<p>– своевременная поставка </p>
+<p>– приемлемая стоимость </p>
+<p>– качественный продукт</p>
+<p>--- Page 172 ---</p>
+<p>Больше избыточности! Повторю еще раз: я упоминаю об этом здесь пото:</p>
+<p>му, что избыточность заслуживает возведения в ранг самостоятельного</p>
+<p>факта, к которому мы не должны добираться попутно, влекомые к нему</p>
+<p>другими фактами. </p>
+<p>В программах всегда будут необнаруженные дефекты, даже после само:</p>
+<p>го тщательного из процессов устранения ошибок. Мы должны свести к ми:</p>
+<p>нимуму количество и особенно серьезность этих остаточных дефектов.</p>
+<p>Принципиально важно, говоря об ошибках в ПО, ввести понятие кри:</p>
+<p>тичности ошибки (error severity). Критические ошибки в программных</p>
+<p>продуктах должны быть устранены. Хорошо было бы устранить и все</p>
+<p>остальные ошибки (например, ошибки документирования, ошибки избы:</p>
+<p>точного кода, ошибки недоступных путей, алгоритмические ошибки, не</p>
+<p>влияющие на вычисления), но это не всегда необходимо</p>
+<p>От ошибок никуда не деться. Цель состоит в том, чтобы избежать критиче</p>
+<p>ских ошибок или свести их к минимуму.</p>
+<p>--- Page 191 ---</p>
+<p>Обсуждение</p>
+<p>Данное высказывание призвано указать на то, что значимость измерений</p>
+<p>для менеджеров невозможно переоценить. Ясно, что менеджеру необхо:</p>
+<p>димо знать ответы на такие вопросы, как «сколько стоит?», «когда?» и «с ка:</p>
+<p>ким качеством?» В индустрии ПО образовалась целая ниша, занятая опре:</p>
+<p>делением метрик для ПО, и новые параметры, требующие измерения (и</p>
+<p>инструменты измерения давно известных явлений и процессов), сыплют:</p>
+<p>ся как из рога изобилия.</p>
+<p>В продукции этой ниши интересно то, что она не находит широкого</p>
+<p>применения. В обзорах инструментальных средств и технологий для ме:</p>
+<p>неджеров, работающих в сфере ПО, средства получения метрик, как пра:</p>
+<p>вило, упоминаются ближе к концу. Конечно, есть и исключения – некото:</p>
+<p>рые компании (например, IBM, Motorola и Hewlett:Packard) обращают</p>
+<p>на метрики пристальное внимание. Но по большей части методы, осно:</p>
+<p>ванные на метриках, совершенно игнорируются. Почему? Может быть, ме:</p>
+<p>неджеры не уверены, что в этих методах есть рациональное зерно. А может</p>
+<p>быть, какие:то необходимые данные трудно собрать.</p>
+<p>Однако была проведена масса исследований, посвященных как выго:</p>
+<p>дам, обусловленным метриками, так и затратам на их получение. В боль:</p>
+<p>шинстве исследований содержались позитивные результаты. К примеру,</p>
+<p>в исследованиях центра Годдарда было показано, что текущая стоимость</p>
+<p>сбора необходимых метрических данных не должна превышать 3% (сбор</p>
+<p>Заблуждение 1 Невозможно управлять тем, что невозможно измерить.</p>
+<p>--- Page 192 ---</p>
+<p>Спо:</p>
+<p>собы сбора метрик начали становиться хоть сколько:нибудь рациональ:</p>
+<p>ными, лишь когда появилась методика GQM (Goal/Question/Metric – Цель/</p>
+<p>Вопрос/Метрика, которую первым предложил Вик Бэсили (Vic Basili)), со:</p>
+<p>стоявшая из трех шагов: установить Цели, которых требуется достичь по:</p>
+<p>средством сбора метрик; определить Вопросы, ответив на которые, можно</p>
+<p>узнать, достигнуты ли Цели; и наконец собрать Метрики, позволяющие от:</p>
+<p>ветить на эти вопросы.</p>
+<p>есть даже список «10 важнейших» метрик ПО, на практике при:</p>
+<p>меняемых чаще других. В качестве ответа на вопрос «Что такое метрики</p>
+<p>ПО?» приведу следующую таблицу.</p>
+<p>Метрики ПО Частота применения (%) </p>
+<p>Сколько ошибок обнаружено после выхода релиза 61</p>
+<p>Количество изменений (или запросов на изменения) 55</p>
+<p>Удовлетворение пользователей или покупателей 52</p>
+<p>Количество ошибок, обнаруженных во время разработки 50</p>
+<p>Полнота/точность документации</p>
+<p>--- Page 193 ---</p>
+<p>193</p>
+<p>Возможно, что не менее интересно взглянуть на 5 метрик, замыкающих</p>
+<p>список: </p>
+<p>(Эти данные взяты из работы Гетцеля [Hetzel, 1993]. Нет оснований по:</p>
+<p>лагать, что годы, прошедшие с 1993, сильно изменили этот список, хотя</p>
+<p>апологеты балльной оценки функциональности ПО заявляют, что в по:</p>
+<p>следнее время этот метод стал применяться шире.)</p>
+<p>Полемика</p>
+<p>В постулате «невозможно управлять тем, что невозможно измерить» плохо</p>
+<p>то, что мы только и делаем, что управляем тем, что не можем измерить, –</p>
+<p>и поэтому данный постулат превращается в заблуждение. Мы управляем</p>
+<p>исследованиями рака. Мы руководим проектированием программ. Какими</p>
+<p>только процессами мы не управляем – глубоко интеллектуальными, даже</p>
+<p>творческими, – совершенно не представляя себе, каким числами мы долж:</p>
+<p>ны при этом руководствоваться. Хороший менеджер, руководящий работ:</p>
+<p>никами умственного труда, стремится оценивать качественные показате:</p>
+<p>ли, а не количественные.</p>
+<p>Время на поиск/коррекцию ошибок 40</p>
+<p>Распределение ошибок по типам/классам 37</p>
+<p>Ошибки в основных функциях/функциональных </p>
+<p>особенностях</p>
+<p>32</p>
+<p>Покрытие спецификаций тестами 31</p>
+<p>Покрытие кода тестами 31</p>
+<p>Метрики ПО</p>
+<p>Частота </p>
+<p>применения (%)</p>
+<p>Сложность модуля/проекта 24</p>
+<p>Количество строк программного кода 22</p>
+<p>Объем/сложность документации 20</p>
+<p>Количество повторно использованных строк кода 16</p>
+<p>Оценка функциональности в баллах 10</p>
+<p>Метрики ПО Частота применения (%)</p>
+<p>В постулате «невозможно управлять тем, что невозможно измерить» плохо</p>
+<p>то, что мы только и делаем, что управляем тем, что не можем измерить, –</p>
+<p>и поэтому данный постулат превращается в заблуждение. Мы управляем</p>
+<p>исследованиями рака. Мы руководим проектированием программ. Какими</p>
+<p>только процессами мы не управляем – глубоко интеллектуальными, даже</p>
+<p>творческими, – совершенно не представляя себе, каким числами мы долж:</p>
+<p>ны при этом руководствоваться. Хороший менеджер, руководящий работ:</p>
+<p>никами умственного труда, стремится оценивать качественные показате:</p>
+<p>ли, а не количественные.</p>
+<p>--- Page 194 ---</p>
+<p>То обстоятельство, что это заблуждение, не должно, однако, заслонять</p>
+<p>от нас скрытую в нем истину. Руководить, имея данные, намного лучше,</p>
+<p>чем руководить, не имея данных. На самом деле числа помогают нам по:</p>
+<p>нять суть вещей – такова природа руководителей (и людей вообще).</p>
+<p>Мы обожаем считать очки и секунды. Мы обожаем считать голы, подборы</p>
+<p>под корзиной и голевые передачи, изобретать термины, вроде тройного</p>
+<p>дубля, обозначающие их комбинацию. Мы изобретаем данные даже тогда,</p>
+<p>когда и считать:то нечего, например в фигурном катании и прыжках в во:</p>
+<p>ду (судьи оценивают выступления спортсменов в баллах).</p>
+<p>Факт в данном случае состоит в том, что измерения имеют важнейшее</p>
+<p>значение для руководства, а заблуждение кроется в немного вычурном вы:</p>
+<p>сказывании, при помощи которого мы пытаемся этот факт зафиксировать.</p>
+<p>--- Page 223 ---</p>
+<p>Сложность программных продуктов и процессов, связанных с ни:</p>
+<p>ми, определяет многое из того, что мы делаем в этой области и знаем</p>
+<p>о ней. От сложности никуда не деться, и не надо с ней бороться, ско:</p>
+<p>рее надо научиться с ней управляться. К ней имеют отношение пят:</p>
+<p>надцать фактов в этой книге, а некоторые факты ею определяются. </p>
+<p>– Убийственную роль в индустрии ПО играют неправильная оценка</p>
+<p>и обусловленное ею давление сроков сдачи. В большинстве случаев</p>
+<p>выход программного проекта из:под контроля связан не с плохими</p>
+<p>методами создания ПО, а с тем, что были поставлены задачи, плохо</p>
+<p>соотносящиеся с реальностью. С этой темой связаны десять фактов.</p>
+<p>– Между менеджерами и программистами существует разрыв. Этим,</p>
+<p>в частности, объясняется то, что обстоятельства, ведущие к провалу</p>
+<p>программных проектов, вышедших из:под контроля, нередко из:</p>
+<p>вестны заранее, но им не уделяют внимания, когда начинают проект.</p>
+<p>Об этом разрыве говорится в пяти фактах. </p>
+<p>– Рекламный звон и стремление изобрести гуттаперчевый подход,</p>
+<p>пригодный для всего на свете, подрывают нашу способность гене:</p>
+<p>рировать разумные, сильные, ориентированные на конкретный</p>
+<p>проект решения. Мы продолжаем поиски Святого Грааля, хотя ум:</p>
+<p>--- Page 224 ---</p>
+<p>ные люди говорят, что нам не удастся его найти. Этой галлюцинации</p>
+<p>посвящены четыре факта.</p>
+<p>--- Page 225 ---</p>
+<p>Реальность – это убийство прекрасной теории бандой мерзких фактов.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-footer__link md-footer__link--next" aria-label="Next: Фрикомыслие. Нестандартные Подходы К Решению Проблем" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Фрикомыслие. Нестандартные Подходы К Решению Проблем
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

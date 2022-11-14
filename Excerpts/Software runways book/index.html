@@ -1,0 +1,3100 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Software runways book - My KDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My KDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Software runways book
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My KDB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        CHANGELOG
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Excerpts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Excerpts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
+        Sprint How to Solve Big problems in 5 days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chaos%20Monkeys/" class="md-nav__link">
+        Chaos Monkeys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%20codes%20examples/" class="md-nav__link">
+        Culture codes examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gumroad/" class="md-nav__link">
+        Работа в Gumroad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hacking%20growth/" class="md-nav__link">
+        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspired/" class="md-nav__link">
+        Marty Cagan - Inspired How To
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
+        Intercom on jobs-to-be-done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
+        Jobs to Be Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marketplaces%20notes/" class="md-nav__link">
+        Про маркетплейсы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
+        Marty_Cagan___Inspired___How_To_
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Matryoshka. Как Вести Бизнес С Иностранцами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Software runways book
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Superhuman/" class="md-nav__link">
+        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
+        The Everything Store. Джефф Безос И Эра Amazon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
+        The Jobs to Be Done Playbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
+        The Knowledge Illusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
+        The Ultimate Guide to Project Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../YC%20Startup%20School/" class="md-nav__link">
+        Startup School
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zero%20to%20One/" class="md-nav__link">
+        Zero to One
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten/" class="md-nav__link">
+        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
+        Адская Паутина. Как Выжить В Мире Нарциссизма
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
+        Антихрупкость. Как Извлечь Выгоду Из Хаоса
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        "Великая шахматная доска" Збигнева Бжезинского
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
+        Бизнес В Стиле Virgin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
+        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
+        Брак Под Микроскопом. Физиология Половой Жизни Человека
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
+        Брось Себе Вызов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
+        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
+        ВкусВилл
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
+        Власть, Влияние И Политика В Организациях
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
+        Всегда Вовремя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
+        Вы, Разумеется, Шутите, Мистер Фейнман!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
+        Горник
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
+        Капра Фритьоф "Дао физики"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
+        Даосские Секреты Любви
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
+        Дж. Ханк Рейнвотер
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        Дилемма Инноватора
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
+        Доставляя Счастье
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        Заклинание Для Хамелеона
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
+        Змеи В Костюмах
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Игра Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
+        Крейг Эштон - Извините, я иностранец
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
+        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
+        Искусство Быть Другим
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
+        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
+        История веры и религиозных идей Том 1 Мирча Элиаде
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
+        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
+        Квота, Или Сторонники Изобилия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
+        Кельтские Мифы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
+        Книга по Agile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Книга
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
+        Кофе и капуста
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Боно Латеральное мышление
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
+        Легко Не Будет
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Ловушки Мышления
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
+        Лучшие Притчи Дзэн
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        Магия Утра
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
+        Мальчик, Которого Растили Как Собаку
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
+        Мир В Каждом Шаге
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
+        Мировой Порядок
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
+        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="md-nav__link">
+        На Крючке
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
+        На Пределе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Наука Общения
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
+        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
+        Не Делай Это
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
+        Невидимая Горилла
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="md-nav__link">
+        Неотвлекаемые
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
+        Никаких Правил. Уникальная Культура Netflix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения”
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
+        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
+        Он. Глубинные Аспекты Мужской Психологии
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
+        Открывая Организации Будущего
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
+        Кон М. Agile оценка и планирование проектов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
+        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
+        «По ту сторону бомб и санкций» А. Вучо
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
+        Под Тенью Сатурна
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
+        Лучшие притчи дзэн: обычные истории о людях необычайных
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
+        Пробуждение Тигра - Исцеление Травмы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Психология Влияния
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
+        Путеводитель По Лжи
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        Радикальное Принятие
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
+        Рэй Далио
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
+        Сделано, Чтобы Прилипать
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
+        Сейчас!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
+        Сказание О Кентавре Хироне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
+        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Счастливое Старение
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
+        Тайная Опора. Привязанность В Жизни Ребенка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Тень Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
+        Траблшутинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
+        Тридцать Шесть Стратагем. Китайские Секреты Успеха
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Гласс Роберт - Факты и заблуждения профессионального программирования
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Фрикомыслие. Нестандартные Подходы К Решению Проблем
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
+        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        Демарко-Т-Человеческий-фактор
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
+        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Яндекс.Книга
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Journal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
+        BeOS operating system review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
+        Kubernetes vs Docker Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
+        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
+        Заметки из Египта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
+        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
+        Нижний Новгород
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
+        Про Китай (год ~2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
+        Про Сахалин
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
+        Про Киргизию
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
+        Рейс Санкт-Петербург - Цюрих
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
+        OpenRPA & OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
+        Generic SW project hand-over
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
+        Sales channels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
+        Working Backwards: Amazon's Culture of Innovation: My notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
+        Мои заметки на основании разных лекций (кажется, YC)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        Заметки про нарциссизм и нарциссов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
+        Переговоры (заметки с тренинга)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
+        Площадки для запуска продукта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
+        Про подъём денег
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Список вопросов для подведения итогов с сотрудниками
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Про ТРИЗ, изобретатель-решатель
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
+        Мои заметки про уловки в разработке (аутсорсинг)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
+        ФРИИ, выход на американский рынок
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
+        ActivityWatch (Screen Time on Linux)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
+        Android crash debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
+        BitRise build HowTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
+        CapRover (local kind of Heroku)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
+        ChatSDK (draft)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
+        Server setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
+        CloudRon (managed apps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
+        CloudSigma API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
+        Docker (on Ubuntu)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
+        GitHub Pages config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
+        HEIC to PNG converter (not tested)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
+        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
+        InvizBox with custom OpenVPN <not working!>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Jitsi/" class="md-nav__link">
+        Jitsi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
+        Kamai time tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MacOS/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
+        Mattermost + Audio & Video calls + S3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
+        MkDocs - GitBook alternative, on GitHub pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Monit/" class="md-nav__link">
+        Monit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
+        Nessus server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
+        Network connectivity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
+        OPNSense on KVM hosting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFire/" class="md-nav__link">
+        OpenFire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
+        OpenFlow & WSL on Windows Server (notes)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
+        HowTo use OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
+        Картинки сделать в сторе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
+        PostgreSQL notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
+        Proxy (tinyproxy)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/S3%20things/" class="md-nav__link">
+        S3 things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
+        Swagger (&GitHub)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
+        Networking on Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
+        Unnattended upgrades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
+        Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
+        VPN (Wireguard)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Various/" class="md-nav__link">
+        1Password to Bitwarden migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
+        certbot wildcard certificate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
+        n8n configuration on CapRover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
+        ssmtp (e-mail sending to outside)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Clojure/" class="md-nav__link">
+        Basic information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
+        Cloud IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
+        Managed PostgreSQL self-hosted
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/ZenGarden/" class="md-nav__link">
+        ZenGarden
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Software runways book</h1>
+
+<p>Software Runways - Robert L. Glass<br />
+Lessons learned from Massive Software Project Failures</p>
+<p>For at least a decade, the software industry has heard the advice "do a post mortem". The advice is to spend a few days after a software project completes analyzing what went right and what went wrong during the project. The advice falls on a deaf ears usually. However, it is only through analyzing our success and failures that we can possibly improve.</p>
+<ol>
+<li>Most of the runaway projects are (or were) huge. It is well known in he field that huge projects are much more troublesome than smaller ones. These stories support that finding.</li>
+<li>Most runaway projects results from a multiplicity of causes. There may or may not be one dominant cause, but there are always several problems contributing to runaway.</li>
+<li>Many of the runaway projects were lauded early in their history as being "breakthroughs", significant advances over the systems they were replacing. It appeared that visibility into the possibility of failure did not emerge until the project was well under way.</li>
+</ol>
+<p>But the unpredictable is much more fascinating. Here are some characteristics of these runaway projects that none of my reading (and I suspect yours as well) prepared me for:</p>
+<ol>
+<li>Technology was just as often a cause of failure as management. The literature, especially in the software engineering field, tends to say that major failures are usually due to management. But for nearly half of these 16 failure stories the dominant problem was technical.</li>
+<li>There were two especially surprising and dominant technical problems. The first was the use of the new technology. Four of the projects, fully expecting to be breakthroughs because they were using the latest in software engineering concepts, instead failed because of them! One used a megapackage approach to replacing its old, legacy software, betting the company on the approach - and losing. Another used a Fourth Generation Language ("4GL", a problem-focused programming language) for a large project, and found (after the work was complete!) that is was not capable of meeting performance goals for the (on-line) system. Yet another tried to port an existing mainframe system to client/server, and found the complexity increase got out of hand. And the fourth put together so many new technologies that the project foundered from their sheer weight (that didn't prevent some of the project's principals from proclaiming the project a success in their company's house organ!).</li>
+<li>The second dominant technical problem was performance. Many of these runaway projects were in some sense real-time (that in itself is a pertinent finding), and all too often the as-built systems simple were too slow to be useful. This is particularly interesting because most academic curricula now downplay the importance of system efficiency, with the thought that brute force hardware speed has done away with the need for more subtle software solutions. This data, at least, suggests that the field may have overplayed that hand.</li>
+</ol>
+<p>... software runaway... is a project that goes out of control primarily because of the difficulty of the building the software needed by the system.<br />
+The implication of "out of control" is that the project become unmanageable; it was not possible to manage it to meet its original target goals, or to come even close to them. If those goals are thought of in terms of schedule - and this is the most likely kind of runaway - then the project consumed close to double of its allotted estimated time or more. If the goal was cost, and usually projects that go well over budget also exceed cost targets, then the project consumed close to double its estimated cost or more. If the  goal was a reliable product that met its functional requirements, then the product could not meet those targets, and in fact, all too often, failed to meet any targets at all because the project had to be canceled.</p>
+<p>It is now 1998, and we are only 40 something years into the history of the software field. At this primitive, early stage, the most common problem in building software systems is not the construction of them itself, but rather the estimation of the costs of that construction.<br />
+&lt;...&gt;<br />
+Because the construction of software is an extremely complex task - some say - it is the most complex task ever undertaken by human beings.</p>
+<p>Most of those who cry crisis and are trying to sell or promote something are offering a better technology to build software. But most of the case studies of software failure find that poor management technique, not poor technology, is the cause of the problems.</p>
+<p>Study after study of software estimation in practice has shown that most often cost and schedule targets are set by marketers or customers, next most often by managers, and least often by the technologists who will do the work. Without control of their own destiny, practitioners still get blamed when things go wrong.</p>
+<p>Crunch Mode is a term used by John Boddle in his book of the same name [Boddie, 1987]. It is a term describing the status of a project. A project that is in crunch mode is there due to a threat to its reaching its original targets (cost, schedule, functionality, ...), and the project team is working very hard to try to overcome that dilemma. "We're in crunch mode, and I won't be home 'til after midnight," a software specialist might say in a call from the office to this life partner. The life partner won't be surprised - crunch mode tends to last for days, weeks or even months, depending on the duration of the project itself, and the degree to which it is off-target.</p>
+<p>Death Match is a term used by Ed Yourdon in his book of the same name [Yourdon 1997]. It is a term that also describes the status of a project. A project is a death march if the parameters for that project exceed the norm by at least 50 percent.</p>
+<ol>
+<li>Crunch mode is used to describe a project that has an extremely tight schedule. It speaks to the pressure being felt by the project participants.</li>
+<li>Death match is used to describe a project that has a nearly impossible schedule. It speaks to the oppressive smell of potential failure surrounding the project participants.</li>
+<li>Runaway is used to describe a project nearing or after its termination. It speaks to the failure of the project to stay within its boundaries. Often it speaks about a project that has either already failed (usually in a spectacular way), or is about to.</li>
+</ol>
+<p>A typical project to which these terms might apply could progress in the following way: The project looks from the outset to be crunch mode because someone has promised project results that are too much, too soon. As the project gets underway, project participants all too soon find themselves on a death match, trying to achieve these increasingly unachievable targets. When it becomes obvious that the project probably cannot succeed and will fail in a major way, the project becomes a runaway.</p>
+<p>Not all projects that are death marches fail, of course (remember that the death march is the normal way of running a project these days, according to [Yourdon 1997]. Although some of those death marches become runaways, others will become successes). But all of them, successes or failures, will have functioned in crunch mode.</p>
+<p>Software personnel are motivated by things such as challenging projects and/or a chance to use new technology rather than the mote traditional ones of power or money.</p>
+<p>Because we know so little about accurate schedule estimation, and because estimates are usually made by the people who are least able to make accurate estimates (e.g., marketers and customers), it is simply the norm that schedule targets, and thus cost targets, are unreasonably short. Thus project achievement of them is at best problematic.<br />
+&lt;...&gt;<br />
+The problem for systems and software is worsened, however, by the fact that the field is so young, and because we know so little about it compared to other fields, we are really never quite sure that the unreasonable schedule is, in fact, THAT unreasonable.</p>
+<p>Research on the computing field is all about too often focused on theory to the exclusion of practice. That is, computing researches are very interested in developing new algorithms, new data representations, or new formal methods, but very seldom are they interested in the formalization of the best practices or the learning experience that be derived from worst practices.<br />
+That is an important failure of the computing research field.<br />
+&lt;...&gt; the invention of the steam engine preceded the development of the theory of thermodynamics, and the invention of the airplane preceded the development of theory of aerodynamics. In a newly-emerging feild - and what field in our time is more "newly-emerging" that software? - there is a great deal that theory can learn by studying practice (some theorists even say that "theory is the formalization of practice"), and computing theorists are not taking advantage of that possibility.</p>
+<p>{Findings from the studies}<br />
+1. Many of the runway projects are (or were) "overly ambitious". It is well known in the field that large projects are problematic.<br />
+2. Most of the projects failed from a multiplicity of causes. There may or may not have been a dominant cause, but there were several problems contributing to many of the runaways.<br />
+3. Management problems were more frequently a dominant cause than technical problems. But see the list of surprising findings below.<br />
+4. Schedule overruns were more common (89 percent) then cost overruns (62 percent).</p>
+<p>The surprising findings are:<br />
+1. Survey respondents though that there would be more runaways in the government and financial sectors, and fewer in service and manufacturing. But the survey findings found all such sectors equally suspectible.<br />
+2. Respondents were optimistic about the trend in runaways; 42 percent believed they would decrease in number, while only 8 percent felt they would increase.<br />
+3. The use of packaged software did not help in reducing the incidence of runaways. Of the runaway projects studied, 47 percent consisted of mixed custom and packaged software; 24 percent were custom software; and 22 percent were packaged software.<br />
+4. Runaway projects showed their true colors early in the project history. More than half started showing symptoms during system development, and 25 percent showed those symptoms during initial planning.<br />
+5. In spite of the above, visibility into the existence of a runaway came first of all from the project team (72 percent); only 19 percent were spotted initially at the senior management level.<br />
+6. Technology is dramatically increasing as a cause of runaways. "Technology is new to the organization" was the fourth most common problem in the runaways projects. See this topic discussed also under trends, below.<br />
+7. Risk management appears more and more frequently in the software management literature. But 55 percent of the runaway projects had not performed any risk management, and of those 38 percent who did (some respondees did not know whether it was used or not), half of them did not use the risk findings once the project was underway.</p>
+<p>The trends are:<br />
+1. Companies were much more reluctant to discuss runaway project in 1995 than they were in 1989. The number of respondees in the newer study was half that of the earlier one in spite of the fact that the survey population (about 250 major organizations) was roughly the same.<br />
+2. Technology is a rapidly increasing cause of the runaway projects. Whereas in 1989 only 7 percent reported it as a cause, in 1995 the figure was 45 percent. (Interestingly, only 16 percent of respondents felt the technology was "wrong" for the job.)<br />
+     [KPMG 1995} concludes "Technology is developing faster than the skills of the developers." (This conclusion will be questioned in what follows.)</p>
+<p>&lt;...&gt;<br />
+There are two other conclusions that might be drawn from our own runaway reports in this book that are not found in the KPMG study. They are:<br />
+1. Early on, those responsible for our runaway project often bragged about the "breakthrough" nature of the project, either in terms of its business relevance or its technical (computing) advances. There seemed to be little or no understanding by those making such claims of the perilous course they were undertaking. &lt;...&gt;<br />
+2. Of all the technology problems noted earlier, the most dominant one in our own findings in this book is that performance is a frequent cause of failure. &lt;...&gt;</p>
+<p>"Frankly, one of the challenges facing Microsoft is that many of its employees have not suffered much failure yet. Quite a few have never been involved with a project that didn't succeed. As a result, success may be taken for granted, which is dangerous... When you're failing, you're forced to be creative, to dig deep and think hard, night and day. Every company needs people who have been through that."<br />
+-- Bill Gates, in "The importance of Making Mistakes,"<br />
+USAur Magazine, July 1995</p>
+<p>&lt;...&gt; runway projects could be categorized by their primary cause. These causes, in order of decreasing importance &lt;...&gt; are:<br />
+1. Project Objectives Not Fully Specified - 51%<br />
+2. Bad Planning and Estimating - 48%<br />
+3. Technology New to the Organization - 45%<br />
+4. Inadequate / No Project Management Methodology - 42%<br />
+5. Insufficient Senior Staff on the Team - 42%<br />
+6. Poor Performance by Suppliers of Hardware/Software - 42%<br />
+7. Other - Performance (Efficiency) Problems</p>
+<p><strong>Project Objectives Not Fully Specified</strong><br />
+There is little doubt that project requirements are the single biggest cause of trouble on the software project front. Study after sutdy has found that where there is a failure, requirements problems are usually found at the heart of the matter.</p>
+<p>Requirements problems occur when:<br />
+1. There are far too many of them. Huge projects fail far more often than smaller ones.<br />
+2. They are unstable. The user cannot decide what problem they really want to solve.<br />
+3. They are ambiguous. it is not possible to determine what the requirements really mean.<br />
+4. They are incomplete. There is insufficient information to allow a system to be built.</p>
+<p>There are other possible problems with requirements, but the above list covers the most common ones. And, in fact, the first two rise head and shoulders above the others. Huge projects as well as projects whose requirements cannot be pinned down dominate the list of project runaway causes.</p>
+<p>&lt;...&gt;</p>
+<p>De-scoping the massive project to a more modest but achievable target appears now to be the way out of the morass.</p>
+<p><strong>Bad planning and estimating</strong></p>
+<p>&lt;....&gt; projects are often in schedule trouble simply because the estimate was far too optimistic to match the reality of the task to be performed.<br />
+&lt;...&gt;<br />
+"Hofstadter's Law": "Software development always takes longer than you think, even when you take into account Hofstadter's Law".</p>
+<hr />
+<p>The business of creating new computer software - the programs that make computer work - is one of the most complex, painstaking even exasperating job around.<br />
+&lt;...&gt;<br />
+So difficult is the process that it baffle even such industry stars as Mitch Kapor, the founder of Lotus Development Corp., and Peter Miller, a well-known veteran.<br />
+&lt;...&gt;<br />
+Besides the inherent complexity of the work, there are other problems. Most software-development planning stinks. A joke in the industry is that programmers spend 90% of their time on the first 80% of a project, then 90% of the remaining time on the final 20%. And most design stinks too: Programmers either don't understand their customers well enough or load up products with features that please themselves but perplex everyone else.</p>
+<hr />
+<p>&lt;...&gt; two truths in software design: Simplicity is paramount, and less is often more.</p>
+<hr />
+<p>Jeff Gibbons, a 37-year-old senior programmer, says it is relatively easy to know how long it will take to add a feature, but hard to know how log it will take to turn a feature from bug-ridden code into a finished version.</p>
+<hr />
+<p><strong>Technology New to the Organization</strong></p>
+<p>New technology, often touted as the cure to software's problems, is frequently not the solution to, but the cause of, some of those problems.<br />
+&lt;...&gt;<br />
+In the stories that follow, the technologies in question were used on projects where:<br />
+- They did not scale up (it is important that the limitations of the new technologies - and they all have them - are well understood before they are used on a major project)<br />
+- They are a solution to the wrong problem (just because a technology is new does not mean it is appropriate for any problem you may be trying to solve).<br />
+- They did not have the required functional capability (on one of our stories below, the new technology could not address one facet of the user's problem. Not now, not ever!).</p>
+<p>In other words, the mix of inexperienced people using immature technologies is a dangerous one.<br />
+&lt;...&gt;<br />
+The lessons learned on these projects are nicely presented in this collection of pithy quotes:<br />
+- "If you've got enough cinder blocks (untried technologies) in a rowboat, it's going to sink," even if not one of them alone would cause a failure.<br />
+- "Elegant solutions based on new technology often seem great in theory, but are difficult and expensive to learn and deploy"<br />
+- "The DMV's operation fell apart ... because of their prescribed remedy rather than the problem they had diagnosed."<br />
+- "If there appears to be more buzzword than substance, turn off the money spigot..."</p>
+<hr />
+<p>Sweeping automation, when it works, can bring about greater efficiencies and reap big savings for a company. But the dark side of computerizing organizations is that often it doesn't work.</p>
+<hr />
+<p>No software arrives in the marketplace bug-free and in final working form. Many problems surface only after extended use. The vendor provides fixes and adds functions and features - enhancements - when it developers complete them. The "maturing" process proceeds unpredictably.<br />
+&lt;...&gt;<br />
+Users should approach any vendor's claims with some skepticism. </p>
+<hr />
+<p>Large development projects frequently encounter legitimate, unexpected costs overruns. Rational compromises in such situations - perhaps a sharing of the extra expenses by developer and client for contract jobs or a budget revision for in-house projects - allow for happy endings to these situations.</p>
+<hr />
+<p>I think it was here that I began really forming doubts about CS90. There's a strong buzzword flavor to this page. We've already seen an "engine", "reuse", "object-orientation", and "formal-approaches". None of these things necessarily characterize a project doomed for failure, of course, but the buzzword-to-reality ration is getting dangerously high.</p>
+<hr />
+<p>... as someone wiser than I once said, "if it sounds too good to be true, it probably is"<br />
+&lt;...&gt;<br />
+When some crazy-sounding new proposal comes along, watch the buzzword quotient. If there appears to be more buzzword than substance to the proposal, turn off the money spigot. And don't let it flow again until those buzzwords are converted, perhaps in pilot studies with small (read "inexpensive") teams of key players, into something real, something with technical credibility.<br />
+If that doesn't happen, just think of it this way. Better to stay with your old, non-buzzword technology, than to appear on the pages of the news media. With your name paired in a headline with the word "Runaway".</p>
+<hr />
+<p><strong>Inadequate / No Project Management Methodology</strong><br />
+It is clear from the preceding war stories in this chapter that no runaway project gets that way because of a single problem occurred. There may be technical snafus, or poor planning, or shaky requirements, but there are lots of other things going wrong as well.<br />
+One of the most prominent of those "lots of other things" is mis-begotten project management. After all, with suitable management it is often possible to avoid many technical snafus, improve planning, and stabilize requirements. The historic software engineering belief that poor management is the cause of the most software project failures is solidly founded.<br />
+&lt;...&gt;<br />
+Management, for all the knowledge and skills required of those in charge of software projects, in and will probably be an art. There is no blueprint, or recipe, or methodology that can convert a poor manager into a good one.</p>
+<hr />
+<p>Some of those lessons are painfully obvious: The keys to success remain string leadership, technical competence and clearly stated goals and targets. Other nuggets of advice include the following:<br />
+- <strong>Avoid big bangs.</strong> "The words 'IT' and 'megaprojects' do not belong in the same sentence, " said Gopal K. Kapur, president of the Center for Project Management in San Ramon, Calif. He and others advise "chunking" projects into small, stand-alone. modules, that deliver value in themselves. "You need to ask, 'If the project were halted today, would we be able to use what we delivered?' If the answer is no, go back," said John Hammitt, former chief information officer at United Technologies Corp. and now a vice president at Giga Information Group in Cambridge, Mass.<br />
+- <strong>Pin down committed leadership.</strong> At the IRS, critics say the lack of clear project champions has been a big problem.</p>
+<hr />
+<ul>
+<li><strong>Use small time frames.</strong> &lt;...&gt;</li>
+<li><strong>Make sure you have the talent to do the work.</strong> &lt;...&gt;</li>
+<li><strong>Use your best people to manage subcontractors.</strong> &lt;...&gt;</li>
+<li><strong>Set your customer service sights high.</strong> &lt;...&gt;</li>
+<li><strong>Start fresh if necessary.</strong> Don't be afraid to kill a runaway project, said Michael Hammer, president of Hammer and Company in Cambridge, Mass.<br />
+  "Burn it down and start again," he said. "By not doing that, you make the project worse."</li>
+</ul>
+<hr />
+<p><strong>The Five-Risk Analysis</strong> [of the technology projects before start - A.P.]<br />
+&lt;...&gt;<br />
+1. Financial Risk [can company accept the risk of loosing investments into the project - A.P.]<br />
+2. Technical Risk - ... the possibility that the project just cannot be accomplished because the supporting technology is not available. &lt;...&gt;<br />
+3. Project Risk - ... the possibility that the firm cannot execute the task. ... possibilities as the project is too large or complex or the skills and expertise of the staff do not match the needs of the project. Project risk has the broadest reach and thus demands detail along many different dimensions. Therefore, this section will be broken into five subsections.<br />
+    a. Management Philosophy and Vision<br />
+    b. Consultants<br />
+    c. Management Capability and Continuity<br />
+    d. Organizational Factors<br />
+    e. Other System Projects [as an overloading factor on the company - A.P.]<br />
+4. Functional Risk - ... the possibility that the completed project either does not do what the user wants or users needs have changed enough to make the system useless.<br />
+   &lt;...&gt; [system] functionality was additionally complex because it had to satisfy so many different groups.<br />
+5. Systemic Risk - ... the possibility that the system has such a large impact that it alters the environment and all assumptions about costs and benefits. ... very little can be done to combat it.</p>
+<hr />
+<p>The idea behind the visionary is more than the strong guidance. The organization that sees upper management concerned and excited about its project will be motivated to perform to high standards.</p>
+<hr />
+<p><strong>Insufficient Senior Staff on the Team</strong></p>
+<p>One of the best known books in the software field is Software Engineering Economics, by Barry Boehm. On the cover of that book there is a bar chart that presents the most important factors that affect software productivity. There are things like programming languages, and tools, and methods, and lots of other information. But head and shoulders above the rest in terms of its impact on productivity is the quality of the people and the team doing the work.<br />
+&lt;...&gt;<br />
+Research studies over the years have found that individual software workers differ by factors of anywhere from 5:1 to 30:1 in their capabilities. Savvy software managers hire carefully and fire frequently in order to get and keep the best possible people: those 30:1 hotshots who can make the difference between a successful project and a failed one. It is no surprise that one of the important causes of runaway projects is the lack of appropriate people to do the job.<br />
+There are many ways of identifying those "appropriate people"; the research study from which we borrowed our categories used the term "senior staff." Certainly senior, experienced people bring enormous value to a project simply through that experience. Here, we choose to broaden the meaning of of "senior staff" to all those whose capabilities are considerably stronger than the norm.</p>
+<hr />
+<p>[when] Things turned ugly [in a project failures], and when accusations begin flying, truth is usually the first casualty.</p>
+<hr />
+<p>Companies must be careful not to underestimate the amount of training required to move to a new warehouse system, says Ron Gable, managing partner of Systecon Logistics, a distribution division of Coopers &amp; Lybrand in Atlanta. "These kinds of virtually instantaneous change-overs result in all kind of chaos."</p>
+<hr />
+<p>Principles for Managers of the Service Provider</p>
+<ol>
+<li>In the business of software development, you always know when you start a project, but you never know when you will complete it. &lt;...&gt; When outlining the project schedule, be realistic and include an adequate "slack" time. Technical and other problems may occur. Problems often occur when a project involves interfacing two or more IS. Trying to entice the client with an unrealistically short schedule is not only unethical, but may eventually hurt your own effort.</li>
+<li>When the phases must be sequential to assure quality, never start phase <em>n</em> before you resolve all of the problems of the phase <em>n-1</em>, and avoid shortcuts. &lt;...&gt;</li>
+<li>Executives should not make any "calming" statements about the project status before they learn the facts. Making uncorroborated statements is not only unethical to the client; it may also send wrong signals to employees.</li>
+<li>Adopt a Code of Professional Standards and communicate it to the employees. The code should detail what an employee is to do when experiencing a persistent problem with a systems under development, to whom he or she should report the problem, and what steps he or she should take if immediate supervisors are not responsive to complaints. A clear policy ensures that both managers and their employees know what is expected of them, and fosters more ethical behavior.</li>
+<li>Most important: being dishonest may hurt your client, but it may also hurt you and your company. The financial impact of lost business because of a failure due to lies may prove much greater than the lost income from a single mishap. if it is not the monetary gain that drives your judgement but the reluctance to admit professional weakness, think again. Failure to disclose the real status of the project to the client may exacerbate the damage. Unfortunately, honesty if not always in one's economic self-interest. Often, there is economic incentive to lying (e.g., when the transaction is a one-shot deal and if information of the incident does not spread). But in the age of fast communication, especially in the IS industry, the news will travel fast. And your own employees may follow the bad example: they will lie to their superiors.</li>
+</ol>
+<p>Principles for Employees</p>
+<p>The first to observe technical problems are, usually, the employees: system analysts and programmers. Employees have an obligation both to their employer and the client. When you realize there is a persistent problem, notify your supervisor. &lt;...&gt;</p>
+<p>Principles  for Clients<br />
+1. &lt;...&gt; Previous success does not guarantee success with the system that is developed for you. Check the status of the project periodically. If you do not have qualified personnel, hire an independent consultant to do that for you.<br />
+2. &lt;...&gt; Communicate to the developers exactly what your requirements from the new system are. You must realize that later modifications may result in a higher price and a latter completion date.<br />
+3. Pay attention to alerting signals. When executives and other employees of the developer are either massively dismissed or voluntarily looking for new positions, ask questions. When the rats abandon the ship, it is probably sinking.</p>
+<hr />
+<p>An ancient proverb says: "You are a wise person if you do not make mistakes; you are a clever person if you make mistake but do not repeat it; you are a stupid person if you make a mistake and repeat it." If may be hard to be wise the first time around, but let us not be stupid, either. As professionals, we are expected to learn from our own and our colleagues' mistakes.<br />
+&lt;...&gt;<br />
+Large development projects rarely proceed exactly exactly as planned. This is true of IS development efforts as well. Management should be deeply involved in the progress of large-scale projects. If the professional team cannot overcome difficulties to comply with promised cost and timetable, it is the professionals' responsibility to disclose the difficulties to the client and mutually outline a resolution.</p>
+<hr />
+<p><strong>Poor performance by supplier of hardware/software</strong></p>
+<p>It is interesting to note, in the war stories that have preceded this section, that most of these runaways have occurred in spite of the best efforts of vendors, consultants, and service firms. In other words, these projects typically did not fail for a lack of (at least claimed) technical expertise. When the runaway projects sand, some of the best companies in the supplier community were on board!<br />
+That fact is something of surprise. It is easy to imagine that runaway projects are staffed with inept people who are in over their heads on the projects in question, and stubbornly resistant to the idea of obtaining help. That, from our stories to date, does not seem to be the case.<br />
+[There will be no stories here because] ... there was not enought blame in these stories to cause suppliers to be called a dominant cause of failure.</p>
+<hr />
+<p><strong>Other - performance (efficiency) problems</strong><br />
+What is surprising, however, is that our "Other" category turned out to represent only one additional type of failure. Several of the war stories above, and in particular the two stories that follow, were plagued by efficiency problems. The developed software system simply could not operate quickly enough to solve the user's needs on a timely basis. In the software engineering community, such problems are called "performance" problems.<br />
+This is a surprising finding because it resurrects an issue that mosts of us in the software business thought had been put firmly to rest several decades ago. In the early days of computing, it was not unusual to find a software developer spending half of his or her time to write a program, and the other half in making it operate faster. Machine time was valuable; machines were relatively slow (compared to today), and good programmers were those who could not only build software but optimize it.<br />
+All that died, we thought, with the advent of cheap and huge powerful computers. &lt;...&gt;<br />
+Something had gone wrong with that belief. That change probably began with the popularity of interactive computing. [People expects results interactively now and don't want to wait for batch processing.]</p>
+<hr />
+<p><strong>Software Runaway Remedies</strong></p>
+<p><em>At last I've found the secret that guarantees success. To err, and err, and err again, but less, and less, and less.</em><br />
+<em>-- Ogden Nash</em></p>
+<hr />
+<p>For another thing, Jone's concern about "low productivity" is also arguable. One notable software expert, Tom DeMarco, has been known to respond to the statement that programmers are relatively unproductive with the question "compared to what?" We do know one thing about the production of software; it is deeply intellectual exercise, using no raw materials, producing a product that is constructed purely out of intellect. There are few if any comparable disciplines; although it is easy to say that five function points per month seem low, it is not at all easy to suggest that it should be, or could be made, higher.</p>
+<hr />
+<p><strong>Issue management</strong><br />
+Risks are problems that are (or at least may be) anticipated prior to the beginning of project work. Issues, on the other hand, are problems that arise while the project is in process. If all issues could be identified in advance, they would probably be addressed as risks. But, given the complexity of software constructions, there will always be plenty of (surprise) issues arising as work proceeds.<br />
+&lt;...&gt;<br />
+It may strike you that issue management is a bit like "crisis management," the usually-derided practice of firefighting (addressing problems as they arise on a helter-skelter basis) rather than planning. But there are some significant differences:<br />
+1. There are some generic issues that project managers must watch for, and can plan for.<br />
+2. There are some measurement techniques that can be used to evaluate the status of both the generic issues as well as some project-specific issues.<br />
+3. There are some management techniques that can be applied to management by issue. Issue management works best in a climate of openness and helpfulness. That is, for issue management to work well, technologists must feel open to discuss issues with their managers as they arise, and the managers must demonstrate that they are capable of helping resolve the issues that are brought to their attention. In some organizations, the management response to issues is blame. Blame kills openness, which makes issue management impossible. In a climate of blame rather than openness, lying to management is a common reaction (to learn more about the unfortunately widespread practice of lying to management in the software field, see [Glass 1993].<br />
+&lt;...&gt;<br />
+It is not simple, of course, to manage by issues. There is no one management approach that those who manage by issue can utilize, because the issues that arise typically are extremely project-specific. Managers who manage by issue must be nimble, reacting to ongoing events rather than relying on a formula or methodology that will tell then what to do next.<br />
+But at the same time, as the (somewhat profane) bumper sticker says, "Shit happens.". Issues are the excrement that threaten to derail the software project; the manager who is not managing issues is probably not managing terribly well at all.<br />
+Fortunately, there is some advice regarding issues to supplement what might otherwise be an essentially ad hoc approach. in a military-funded guidebook [JLC 1996], issues form the basis for the management approach it proposes (the guidebook says, "Program issues and objectives guide the measurement process."). The guidebook suggests this taxonomy of issues:<br />
+1. schedule/progress (this is where "management by schedule" comes in, but as an issue)<br />
+2. resource/cost<br />
+3. growth/stability<br />
+4. product quality (here is where managing the product comes in)<br />
+5. development performance (this, growth/stability, and resource/cost subsume process)<br />
+6. technical adequacy</p>
+<hr />
+<p>[Following software runaways] there is plenty of emotional destruction. A team of people, probably, operating in crunch mode on a death march quest, went down to defeat. Their hopes and plans for the future were probably dashed. There was probably blame and recrimination as the end approached, and relationships were bent or broken. Self-belief came under attach, and for some participants it was probably plower under.<br />
+I have participated on a lot of software projects. A small percentage of them have failed. &lt;...&gt; Perhaps because software is a product built from no physical resources, a product constructed purely out of intellect, it is especially devastating to the psyche when it fails.</p>
+<hr />
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Matryoshka. Как Вести Бизнес С Иностранцами" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Matryoshka. Как Вести Бизнес С Иностранцами
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Superhuman/" class="md-footer__link md-footer__link--next" aria-label="Next: How Superhuman Built an Engine to Find Product-Market Fit First Round Review" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

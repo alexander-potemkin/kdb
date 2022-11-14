@@ -1,0 +1,3059 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Капра Фритьоф "Дао физики" - My KDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My KDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Капра Фритьоф "Дао физики"
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My KDB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        CHANGELOG
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Excerpts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Excerpts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
+        Sprint How to Solve Big problems in 5 days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chaos%20Monkeys/" class="md-nav__link">
+        Chaos Monkeys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%20codes%20examples/" class="md-nav__link">
+        Culture codes examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gumroad/" class="md-nav__link">
+        Работа в Gumroad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hacking%20growth/" class="md-nav__link">
+        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspired/" class="md-nav__link">
+        Marty Cagan - Inspired How To
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
+        Intercom on jobs-to-be-done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
+        Jobs to Be Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marketplaces%20notes/" class="md-nav__link">
+        Про маркетплейсы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
+        Marty_Cagan___Inspired___How_To_
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Matryoshka. Как Вести Бизнес С Иностранцами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20runways%20book/" class="md-nav__link">
+        Software runways book
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Superhuman/" class="md-nav__link">
+        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
+        The Everything Store. Джефф Безос И Эра Amazon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
+        The Jobs to Be Done Playbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
+        The Knowledge Illusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
+        The Ultimate Guide to Project Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../YC%20Startup%20School/" class="md-nav__link">
+        Startup School
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zero%20to%20One/" class="md-nav__link">
+        Zero to One
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten/" class="md-nav__link">
+        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
+        Адская Паутина. Как Выжить В Мире Нарциссизма
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
+        Антихрупкость. Как Извлечь Выгоду Из Хаоса
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        "Великая шахматная доска" Збигнева Бжезинского
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
+        Бизнес В Стиле Virgin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
+        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
+        Брак Под Микроскопом. Физиология Половой Жизни Человека
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
+        Брось Себе Вызов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
+        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
+        ВкусВилл
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
+        Власть, Влияние И Политика В Организациях
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
+        Всегда Вовремя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
+        Вы, Разумеется, Шутите, Мистер Фейнман!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
+        Горник
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Капра Фритьоф "Дао физики"
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
+        Даосские Секреты Любви
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
+        Дж. Ханк Рейнвотер
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        Дилемма Инноватора
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
+        Доставляя Счастье
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        Заклинание Для Хамелеона
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
+        Змеи В Костюмах
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Игра Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
+        Крейг Эштон - Извините, я иностранец
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
+        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
+        Искусство Быть Другим
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
+        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
+        История веры и религиозных идей Том 1 Мирча Элиаде
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
+        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
+        Квота, Или Сторонники Изобилия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
+        Кельтские Мифы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
+        Книга по Agile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Книга
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
+        Кофе и капуста
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Боно Латеральное мышление
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
+        Легко Не Будет
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Ловушки Мышления
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
+        Лучшие Притчи Дзэн
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        Магия Утра
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
+        Мальчик, Которого Растили Как Собаку
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
+        Мир В Каждом Шаге
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
+        Мировой Порядок
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
+        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="md-nav__link">
+        На Крючке
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
+        На Пределе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Наука Общения
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
+        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
+        Не Делай Это
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
+        Невидимая Горилла
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="md-nav__link">
+        Неотвлекаемые
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
+        Никаких Правил. Уникальная Культура Netflix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения”
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
+        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
+        Он. Глубинные Аспекты Мужской Психологии
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
+        Открывая Организации Будущего
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
+        Кон М. Agile оценка и планирование проектов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
+        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
+        «По ту сторону бомб и санкций» А. Вучо
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
+        Под Тенью Сатурна
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
+        Лучшие притчи дзэн: обычные истории о людях необычайных
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
+        Пробуждение Тигра - Исцеление Травмы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Психология Влияния
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
+        Путеводитель По Лжи
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        Радикальное Принятие
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
+        Рэй Далио
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
+        Сделано, Чтобы Прилипать
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
+        Сейчас!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
+        Сказание О Кентавре Хироне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
+        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Счастливое Старение
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
+        Тайная Опора. Привязанность В Жизни Ребенка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Тень Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
+        Траблшутинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
+        Тридцать Шесть Стратагем. Китайские Секреты Успеха
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Гласс Роберт - Факты и заблуждения профессионального программирования
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Фрикомыслие. Нестандартные Подходы К Решению Проблем
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
+        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        Демарко-Т-Человеческий-фактор
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
+        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Яндекс.Книга
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Journal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
+        BeOS operating system review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
+        Kubernetes vs Docker Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
+        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
+        Заметки из Египта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
+        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
+        Нижний Новгород
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
+        Про Китай (год ~2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
+        Про Сахалин
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
+        Про Киргизию
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
+        Рейс Санкт-Петербург - Цюрих
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
+        OpenRPA & OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
+        Generic SW project hand-over
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
+        Sales channels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
+        Working Backwards: Amazon's Culture of Innovation: My notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
+        Мои заметки на основании разных лекций (кажется, YC)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        Заметки про нарциссизм и нарциссов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
+        Переговоры (заметки с тренинга)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
+        Площадки для запуска продукта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
+        Про подъём денег
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Список вопросов для подведения итогов с сотрудниками
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Про ТРИЗ, изобретатель-решатель
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
+        Мои заметки про уловки в разработке (аутсорсинг)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
+        ФРИИ, выход на американский рынок
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
+        ActivityWatch (Screen Time on Linux)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
+        Android crash debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
+        BitRise build HowTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
+        CapRover (local kind of Heroku)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
+        ChatSDK (draft)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
+        Server setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
+        CloudRon (managed apps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
+        CloudSigma API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
+        Docker (on Ubuntu)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
+        GitHub Pages config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
+        HEIC to PNG converter (not tested)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
+        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
+        InvizBox with custom OpenVPN <not working!>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Jitsi/" class="md-nav__link">
+        Jitsi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
+        Kamai time tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MacOS/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
+        Mattermost + Audio & Video calls + S3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
+        MkDocs - GitBook alternative, on GitHub pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Monit/" class="md-nav__link">
+        Monit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
+        Nessus server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
+        Network connectivity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
+        OPNSense on KVM hosting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFire/" class="md-nav__link">
+        OpenFire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
+        OpenFlow & WSL on Windows Server (notes)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
+        HowTo use OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
+        Картинки сделать в сторе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
+        PostgreSQL notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
+        Proxy (tinyproxy)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/S3%20things/" class="md-nav__link">
+        S3 things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
+        Swagger (&GitHub)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
+        Networking on Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
+        Unnattended upgrades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
+        Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
+        VPN (Wireguard)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Various/" class="md-nav__link">
+        1Password to Bitwarden migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
+        certbot wildcard certificate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
+        n8n configuration on CapRover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
+        ssmtp (e-mail sending to outside)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Clojure/" class="md-nav__link">
+        Basic information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
+        Cloud IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
+        Managed PostgreSQL self-hosted
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/ZenGarden/" class="md-nav__link">
+        ZenGarden
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">Капра Фритьоф "Дао физики"</h1>
+<p>«Каждый путь-это всего лишь путь, и ни в тебе, ни в других нет ничего, что препятствовало бы тебе покинуть его, если таково веление твоего сердца... Смотри на всякий путь. пристально и внимательно. Испытывай его столько раз, сколько тебе представляется необходимым. Затем задай себе, и только себе, один вопрос... Обладает ли этот путь сердцем? Если да, этот путь хорош; если нет, он бесполезен».      </p>
+<p>Карлос КАСТАНЕДА, «Учение дона Хуана»</p>
+<p>Подобное ощущение посетило однажды ночью Сиддхарту Гаутаму, последовав за семилетней аскетической жизнью в лесах. Сидя в глубокой медитации под знаменитым деревом Бодхи, Деревом Просветления, он внезапно почувствовал, что на него снизошло ощущение «непревзойденного, абсолютного пробуждения», сделавшее смешным все былые искания и сомнения. Благодаря этому он стал Буддой, то есть «Просветленным». На Востоке изображение Будды, погруженного в глубокую медитацию, значит не меньше, чем распятие на Западе, и служило, и продолжает служить источником вдохновения для большого количества художников и скульпторов, создающих величественных рукотворных Будд.  </p>
+<p>Согласно традиции, непосредственно после пробуждения Будда отправился в Олений парк Бенареса для того, чтобы открыть свое учение своим бывшим товарищам-отшельникам. Учение было облечено им в форму Четырех Благородных истин, которые чем-то напоминают медицинское заключение, в котором сначала констатируется факт заболевания, а затем выражается уверенность в том, что болезнь излечима, и предписывается надежное лекарство.  </p>
+<p>Первая Благородная истина утверждает, что основной характеристикой человеческого существования является ДУХКХА, то есть страдание и разочарование. Разочарование коренится в нашем нежелании признать тот очевидный факт, что все вокруг нас не вечно и преходяще. «Все вещи возникают и исчезают» — говорил Будда, и в основе учения буддизма лежит представление о том, что текучесть и изменчивость — основные свойства природы. По мнению буддистов, страдание возникает в том случае, если мы начинаем сопротивляться течению жизни и стараемся удержать некие устойчивые формы, которые, будь это вещи, явления, люди или мысли, все является МАЙЕЙ. Принцип непостоянства воплощается также в представлениях о том, что не существует особого эго, особого "я", которое было бы субъектом наших изменяющихся впечатлений, постоянным субъектом. Буддисты считают, что наша уверенность в существовании отдельного индивидуального "я" — еще одна иллюзия, еще одна форма МАЙИ, интеллектуальное понятие, лишенное связи с действительностью. Если мы будем придерживаться подобных взглядов, как и любых других устойчивых категорий мышления, мы неизбежно испытаем разочарование.  </p>
+<p>Вторая Благородная истина разъясняет причину страданий, называя ее «ТРИШНА», то есть «привязанность». Это бессмысленная привязанность к жизни, проистекающая из невежества, называемого буддистами «АВИДЬЯ». Вследствие своего невежества мы пытаемся разделить воспринимаемый нами мир на отдельные и самостоятельные части, и таким образом воплотить текучие формы реальности в фиксированных категориях мышления. До тех пор, пока мы рассуждаем так, нас ждет разочарование за разочарованием. Стараясь устанавливать отношения с вещами, которые кажутся нам твердыми и постоянными, являясь, тем не менее, преходящими и изменчивыми, мы попадаем в порочный круг, в котором любое действие порождает дальнейшей действие, а ответ на любой вопрос ставит новые вопросы. В буддизме этот порочный круг известен как САНСАРА, круговорот рождений и смертей, движущей силой которого является КАРМА, непрекращающаяся цепочка причин и следствий.  </p>
+<p>Согласно Третьей Благородной истине, можно прекратить страдания и разочарования. Можно покинуть порочный круговорот САНСАРЫ, освободиться от уз КАРМЫ и достичь состояния полного освобождения, которое называется НИРВАНА. В этом состоянии уже не существуют ложные представления об отдельном "я", и постоянным и единственным ощущением становится переживание единства всего сущего. НИРВАНА соответствует МОКШЕ индуистов и не может быть описана более подробно, так как это состояние сознания лежит вне области интеллектуальных понятий. Достичь НИРВАНЫ означает пробудиться, то есть стать Буддой.  </p>
+<p>Четвертая Благородная истина указывает средство избавления от страданий, призывая следовать Восьмеричному Пути самосовершенствования, которое ведет к достижению состояния Будды. Как уже упоминалось, два первых шага на этом пути имеют отношение к правильному видению и истинному знанию, то есть к правильному пониманию человеческой жизни. Еще четыре шага имеют отношение к правильному действию. Они содержат описание правил, которым должен следовать буддист, — Срединного Пути, лежащего на равном удалении от противоположных крайностей. Последние два шага достигают правильного осознания и правильной медитации и непосредственного мистического восприягия реальности, которое и составляет конечную и высшую цель Пути. </p>
+<p>Будда рассматривал свое учение не как последовательную философскую систему, а как средство достижения просветления. Его высказывания об этом мире имеют одну задачу — подчеркнуть непостоянство всего сущего. Он предостерегал последователей от слепого почитания каких-либо авторитетов, включая и себя самого, говоря, что может лишь указать путь к Буддовости, в то время как каждый волен сам решать, идти ли по этому пути, прилагая свои собственные усилия. Последние слова Будды на смертном одре характеризуют все ег о мировоззрение и учение. Перед тем, как покинуть этот мир, он сказал: «Разложение — удел всех составленных вещей. Настойчиво трудитесь» ["Дигха Никайя", 2,154]. </p>
+<p>Ашвагхоша оказал сильное влияние на Нагарджуну, самого высокоинтеллектуального философа Махаяны, который применил сложную диалектику для доказательства ограниченности возможностей использования всех понятий, которые используются людьми для восприятия и описания реальности. При помощи блестящих рассуждений он опроверг общепринятые метафизические взгляды своего времени и таким образом продемонстрировал, что, в конечном итоге, реальность не может быть постигнута в понятиях и рассуждениях. Поэтому он назвал ее «ШУНЬЯТА», то есть «пустота», которое эквивалентно «ТАТХАТЕ», или «таковости», Ашвагхоши: если признать, что концептуальное мышление бессмысленно, то реальность будет восприниматься как чистая «таковость».  </p>
+<p>По этой причине заявление Нагарджуны относительно того, что пустота — глубинная сущность действительности, не следует понимать в нигилистическом смысле, как это слишком часто делается. Оно лишь означает, что все понятия человеческого мышления пусты, лишены абсолютного содержания. Сама же Действительность, или Пустота, не просто состояние незаполненности, а единственный источник всей жизни и единственное содержание всех форм. </p>
+<p>Два направления — две противоположные стороны китайской философии, но в Китае в них всегда видели противоположные стороны единой природы человека, и поэтому считали их взаимодополняющими. Давая образование детям, которым предстояло усвоить правила и условности общественной жизни, обращались к конфуцианству, а к прибежищу даосизма обычно стремились пожилые люди, которые хотели восстановить и развить утраченную спонтанность, умерщвленную условностями общественной жизни. </p>
+<p>Индийский буддизм разработавший учение о непостоянстве, обладал похожими представлениями, однако в этой религии они играли роль только в области человеческой психологии. Китайцы же не только считали, что текучесть и изменчивость свойственны всему мирозданию, но также были уверены в существовании устойчивых образцов, или схем, в соответствии с которыми происходят все изменения. Мудрец стремится распознать эти схемы и действовать в соответствии с ними. Таким образом, он становится «человеком с Дао», живущим в гармонии с природой и преуспевающим во всех своих начинаниях. По словам Хуэй Нань-цзы, философа, жившего во втором веке до н. э.: «Тому, кто подчиняется течению Дао, следуя естественным процессам Неба и Земли, не сложно управлять всем миром» [60, 51 ].  </p>
+<p>Какими же устойчивыми, постоянно повторяющимися формами обладает космический Путь, который надлежит постичь человечеству? Основной признак Дао — цикличность его бесконечного движения и изменений. «Движение Дао есть возвращение, — говорил Лао-цзы. — Уйти далеко означает вернуться» [48, гл. 25, 40]. Имеется в виду, что все процессы в природе и во внутреннем мире человек а цикличны и имеют фазы приближения и удаления, расширения и сжатия.  </p>
+<p>Прообразом этих представлений, вне всякого сомнения, послужили движения Солнца и Луны и смена времен года, воспринятые китайским народом как проявление вселенской закономерности. Китайцы верят, что если ситуация в своем развитии доходит до крайности, то недолго остается ждать, пока она начнет развиваться в противоположном направлении и превратится в противоположную крайность. Эта уверенность придавала им сил в эпохи бедствий, предостерегая от бахвальства и гордости в благоприятные времена. В результате сформировалось учение о золотой середине, общее для конфуцианцев и даосов. «Мудрец — говорил Лао-цзы, — избегает излишеств, сумасбродства и потворства своим слабостям» [48, гл. 29].  </p>
+<p>По мнению китайцев, лучше иметь слишком мало, чем слишком много: лучше оставлять дело незавершенным, чем слишком усердствовать, поскольку, в последнем случае, действуя таким образом, невозможно заметное продвижение. Тем не менее, можно быть уверенным в том, ч то идешь в правильном направлении. Как человек, желающий идти все дальше и дальше на восток, в результате окажется на западе, так и преуспевшие в накоплении и стяжательстве окончат дни свои в нищете. Красноречивым примером действия этой закономерности является современное индустриальное общество, в котором считается идеалом все более значительное повышение «уровня жизни» при одновременном и не менее значительном снижении качества жизни всех членов общества. </p>
+<p>В книге Чжуан-цзы не один раз отражается даосское презрение к рассуждениям и доказательствам. Так, он пишет: «Собаку не называют хорошей за то, что она громко лает, а человека не называют мудрым за то, что речи его искусны» [17, гл. 24], а также: «Спор говорит об отсутствии ясного видения» [17. гл. 21]. </p>
+<p>Представление о движении Дао как о последовательном взаимодействии противоположностей послужили обоснованием двум даосским правилам поведения. Они говорят, что если хочешь добиться чего-либо, следует начать с его противоположности. Послушаем Лао-цзы: «Для того, чтобы что-то уменьшить, безусловно, следует сначала увеличить его. Для того, чтобы ослабить, безусловно, следует сначала придать сил. Для того, чтобы низвергнуть, безусловно, сначала следует превозносить. Для того, чтобы взять, сначала, безусловно, следует дать. Это называется утонченной мудростью» [48, гл. 36].  </p>
+<p>С другой стороны, если мы хотим сохранить что-либо, мы должны привнести в него какую-то долю его противоположности: «Будь согнутым, и ты останешься прямым. Будь незаполненным, и ты останешься полным. Будь изношенным, и ты останешься новым» [48, гл. 22]. </p>
+<p>Такой образ жизни ведет мудрец, который достиг более высокого воззрения, той перспективы, с которой ясно воспринимается относительная и полярная взаимосвязь всех противоположностей. И среди них, в первую очередь, находятся понятия добра и зла, соотносящиеся так же, как ЯН и ИНЬ. Признавая относительность этих понятий, а следовательно, и норм морали, даосский мудрец не стремится к добру, а, скорее, старается поддерживать динамическое равновесие между добром и злом.</p>
+<p>Дорога вниз и дорога вверх одна и та же,</p>
+<p>Когда мы говорим о даосском понятии перемен, важно отметить, что любое изменение рассматривается даосами не как результат воздействия какой-то внешней силы, а как проявление внутренне присущей всем вещам склонности изменяться. Движения Дао не навязаны ему извне, они происходят естественно и спонтанно. Спонтанность — это принцип действия Дао, а поскольку человеческое поведение должно следовать Дао, все поступки тоже должны быть спонтанными. Таким образом, для даосов поступать в согласии с природой означает поступать спонтанно и в соответствии со своей истинной сущностью. Это означает доверять своему интуитивному восприятию, которое внутренне присуще человеческому сознанию подобно тому, как способность и склонность изменяться внутренне присуща окружающим нас вещам.  </p>
+<p>Таким образом, все поступки даосского мудреца спонтанно продолжаются его интуитивной мудростью, не нарушая гармонии с Окружающей средой. Ему не приходится применять принуждение по отношению к себе и другим, он просто соотносит свои поступки с движениями Дао. По словам Хуэй Нань-цзы, «Те, кто следуют естественному порядку вещей, движутся в общем потоке Дао» [60, 88].  </p>
+<p>Такое поведение называется даосами у-вэй, что буквально переводится как «недеяние», а в переводе Джозефа Нидэма выглядит как «отказ от деяний, противоречащих природе»: это толкование подкрепляется ссылкой на Чжуан-цзы: «Применять недеяние не значит бездействовать и хранить молчание. Пусть всему будет предоставлена возможность делать то, что назначено ему природой, естественно для него так, чтобы удовлетворялась его природа» [60, 68].  </p>
+<p>Если отказаться от поступков, противоречащих природе, или, как говорит Нидэм, «не гладить против шерсти», можно обрести согласие с Дао и сделать все свои начинания успешными. В этом и заключается смысл, казалось бы, столь загадочных слов Лао-цзы: «Все может быть сделано при помощи недеяния» [48, гл. 48].  </p>
+<p>Контраст ИНЬ и ЯН не только является принципом, организующим всю китайскую культуру, но также отражается в двух основных философских направлениях Китая. Конфуцианство отдает предпочтение всему рациональному, мужскому, активному и преобладающему. Даосизм же, напротив, предпочитает интуитивное, женское, мистическое и поддающееся. «Лучшее знание — это незнание о своем знании, — говорит Лао-цзы. — Мудрец занимается своими делами, не прибегая к действию, и учит, не прибегая к помощи слов» [48, гл 71, 72].  </p>
+<p>Даосы верили, что при том условии, что человек проявляет женственные свойства человеческой природы, ему проще вести полностью уравновешенную жизнь в гармонии с Дао. Этот идеал наиболее исчерпывающим образом описан в следующем отрывке из «Чжуан-цзы» в виде некоего даосского рая: «В древности, когда семена непокоя еще не были посеяны, людям были присущи покой и безмятежность, характерные для всего мироздания. Тогда ИНЬ и ЯН находились в гармонии и покое, их неподвижность и движение сменяли друг друга без каких-либо нарушений, четыре времени года имели свой определенный срок, ни одной вещи не приходилось изведать ущерб, и ни одно живое создание не оканчивало свои дни преждевременно. Люди могли обладать способностями к овладению знаниями, но им не представлялось возможности для их использования. Таким было то, что называют состоянием совершенного единства. В те времена ни с чьей стороны не было действия — только постоянные проявления спонтанности» [17, гл. 16]. </p>
+<p>Когда китайцы впервые познакомились с индийской философией в форме буддизма (произошло это примерно в первом веке н. э.), это знакомство имело два одновременных последствия. С одной стороны, китайские мыслители, побуждаемые переводом на китайский язык буддийских сутр, стали интерпретировать учение индийца Будды в свете своих философских концепций. Это привело к исключительно плодотворному идейному обмену, получившему наилучшее воплощение в учении китайской школы буддизма Хуаянь (санскрит: Аватамсака) и японской школы Кэгон.  </p>
+<p>С другой стороны, прагматическая сторона китайского образа мышления выделила в учении индийского буддизма его практические аспекты, создав на их основе особую духовную дисциплину под названием «чань», что обычно переводится как «медитация». Примерно в 1200 г. н. э. философия чань стала известна в Японии и развивалась там в качестве живой традиции вплоть до наших дней. </p>
+<p>Дзэн представляет собой уникальное смешение философских систем, принадлежащих трем различным культурам. Это типично японский образ жизни, который, тем не менее, включает в себя даосскую любовь к простоте, естественности и спонтанности и всеохватывающий прагматизм конфуцианства.  </p>
+<p>Несмотря на специфику, дзэн в своей основе — разновидность буддизма, так как его последователи ставят перед собой цели, аналогичные тем, к которым стремился сам Будда — достижение просветления, ощущения, называемого в дзэн «САТОРИ». Переживание просветления — основной момент во всех школах восточной философии, но только в дзэн имеет значение одно лишь просветление, и ни малейшего внимания не уделяется какому-либо истолкованию и объяснению последнего. По словам Судзуки: «Дзэн — это упражнение в просветлении». С точки зрения дзэн, все содержание буддизма сводится к пробуждению Будды и его учению о том, что каждый может достичь пробуждения. Остальная часть доктрины буддизма, содержащаяся в пространных сутрах, рассматривается как дополнительная.  </p>
+<p>Итак, опыт дзэн — это опыт САТОРИ. и, поскольку этот опыт лежит вне всех категорий мышления, дзэн интересуется абстракциями и построением концепций. Он не располагает специальным учением или философией, формальными символами веры или догмами и утверждает, что именно свобода ото всех установленных убеждений делает его духовное содержание подлинным. Сильнее, чем какая -либо другая школа восточного мистицизма, дзэн убежден в том, что слова не могут выразить высшую истину. Очевидно, это наследие даосизма, характеризовавшегося похожей бескомпромиссностью. «Если один спрашивает о Дао, а другой отвечает ему, — писал Чжуан-цзы, — его не знает ни один из них» [17, гл. 22]. </p>
+<p>Эта техника «непосредственного воззвания» представляет собой специфическую особенность дзэн. Она типична для японского типа мышления — скорее интуитивного, чем интеллектуального и предпочитающего излагать факты без пространных пояснений. Наставников дзэн нельзя было упрекнуть в многословности и склонности к теоретизированию и рассуждениям. Благодаря этому были разработаны методы непосредственного указания истины при помощи внезапных спонтанных реплик или действий, которые делают очевидной парадоксальность понятийного мышления и, подобно уже упоминавшимся мною Коанам, предназначены для того, чтобы остановить мыслительный процесс и подготовить ученика к мистическому восприятию действительности. В следующих образцах коротких бесед между наставником и учеником хорошо виден принцип действия этой техники. В такой ситуации наставники стремятся говорить как можно меньше и отвлечь внимание учеников от абстрактных рассуждений, обратив его на конкретную действительность.  </p>
+<p>Монах, пришедший просить о наставничестве, сказал Бодхидхарме:  </p>
+<p>— Мое сознание неспокойно. Пожалуйста, успокойте мое сознание.  </p>
+<p>— Принеси мне сюда свое сознание, — ответил Бодхидхарма, — и я его успокою!  </p>
+<p>— Но когда я ищу свое сознание, — сказал монах, — я не могу найти его.  </p>
+<p>— Вот! — хлопнул в ладоши Бодхидхарма. — Я успокоил твое сознание! [79,87]"  </p>
+<p>Некий монах сказал Дзёсю: «Я только что пришел в монастырь. Пожалуйста, дайте мне наставление». Дзёсю ответил: «Ты уже съел свою рисовую кашу?». Монах сказал: «Да». Слова Дзёсю: «Тогда тебе лучше пойти и вымыть свою миску» [63,96].  </p>
+<p>Благодаря этим диалогам становится очевидным еще один аспект дзэн. Просветление в дзэн означает не удаление от мира, а, наоборот, активное участие в повседневных делах. Такой подход очень характерен для китайского образа мышления, в котором значительное внимание уделялось практической, производительной жизни и идее преемственности поколений и для которого монастырский характер индийского буддизма был совершенно неприемлем. Китайские наставники всегда подчеркивали, что чань, или дзэн, — это наши повседневные впечатления, «ежедневное сознание», как утверждал Ма -цзу. Они уделяли наибольшее внимание пробуждению в гуще повседневных дел, не скрывая того, что рассматривают повседневную жизнь в качестве не только средства достижения просветления, но и самого просветления.  </p>
+<p>САТОРИ в дзэн означает мгновенное восприятие Буддовости всего сущего, и в первую очередь — вещей, дел и людей, принимающих участие в повседневной жизни. Поэтому дзэн, хотя и подчеркивает повседневные нужды, тем не менее, является глубоко мистическим явлением. Живя только настоящим и уделяя все внимание повседневным делам, </p>
+<p>человек, достигший САТОРИ, каждый миг переживает ощущение чуда и таинственности жизни: «Как удивительно это, как таинственно! Я подношу дрова, я таскаю воду» [74, 16]  </p>
+<p>Таким образом, идеал дзэн заключается в том, чтобы естественно и спонтанно жить своей повседневной жизнью. Когда Бо-чжана попросили дать определение дзэн, он сказал: «Когда голоден — ешь, когда устал — спи». Хотя это кажется простым и очевидным, как многие другие положения дзэн, на самом деле это довольно сложная задача. Достижение первоначальной естественности требует продолжительной работы над собой и может считаться значительным успехом. Согласно известному дзэнскому учению: «Пока ты не знаком с учением дзэн, горы — это горы, реки — это реки; когда ты изучаешь дзэн, горы перестают быть горами, а реки — реками; но после того, как ты достиг просветления горы — это снова горы, а реки — снова реки». </p>
+<p>Интерес дзэн к естественности и спонтанности, безусловно, объясняется его даосским происхождением, но причина этого интереса — одно из положений буддизма. Это уверенность в совершенстве нашей первоначальной сущности, восприятие процесса просветления как возвращения к тому состоянию, в котором мы находимся изначально. Когда дзэнского наставника Бо-чжана спросили о том, как он представляет себе поиски природы Будды, он ответил: «Это похоже на то, как если бы кто-то ездил на быке в поисках этого быка».  </p>
+<p>Сегодня в дзэн существуют две основные школы, обладающие разными подходами. Школа Риндзай, или «внезапная», использует для обучения коаны, описанные в предыдущей главе, и уделяет основное внимание периодическим беседам ученика с учителем, проходящим в формал ьной обстановке. Такие беседы называются САНЬДЗЭН, и их основная идея заключается в том, что ученик описывает достигнутое им восприятие КОАНА. Для решения КОАНА необходимы длительные периоды усиленной концентрации, которые в итоге приводят к внезапному прозрению — САТОРИ. Опытный наставник может распознать то состояние ученика, при котором он находится на грани внезапного просветления, и «втолкнуть» его в САТОРИ при помощи неожиданного поступка — удара палкой или крика.  </p>
+<p>Школа Сото, или «постепенная», избегает шоковых методов Риндзай и ставит своей целью подготовку постепенного созревания дзэн, подобную «весеннему ветерку, ласкающему цветок, помогая ему распуститься» [41, 49]. Применяются две основные формы медитации: «тихую сидячую» и повседневные занятия и работу. Обе эти школы придают первостепенное значение ДЗАДЗЭН, то есть сидячей медитации, ежедневно практикующейся в дзэнских монастырях на протяжении нескольких часов. Первое, что узнает новичок, — как занять правильное положение и правильно дышать при медитации. В дзэн направления Риндзай ДЗАДЗЭН используется для того, чтобы подготовить интуитивное сознание к постижению смысла КОАНА, а школа Сото считает его важнейшим методом подготовки созревания ученика и его продвижения к САТОРИ. Более того, ДЗАДЗЭН рассматривается в качестве действительного осознания учеником своей природы Будды; душа и тело сливаются в гармоническом единстве, выше которого нет ничего. Как говорится в одном дзэнском стихотворении:    </p>
+<p>"Сижу в тишине, ничем не занимаясь.  Приходит весна, и трава растет сама по себе" [79,134].  </p>
+<p>Так как дзэн утверждает, что просветление может воплощаться в любом повседневном занятии, он оказал огромное влияние на все стороны традиционного образа жизни японцев. Среди них не только искусства (живописи, каллиграфии, садоводства и т.д.), и различные ремесла, но также разнообразие церемоний, например: чаепития и составления букета, воинские искусства: стрельба из лука, фехтование и ДЗЮДО. Каждый из этих видов деятельности в Японии называется ДО, то есть Дао, или Путь к просветлению. Все они исследуют различные аспекты дзэнского мировосприятия и могут использоваться для подготовки слияния индивидуального сознания с высшей реальностью.  </p>
+<p>Я уже рассказывал о медленных, установленных ритуалом движениях участников чаепития, называемого японцами тя-но-ю, о спонтанном росчерке пера или кисти в живописи или каллиграфии, а также о духовном кодексе БУСИДО, «Пути воина». Во всех этих искусствах воплощаются спонтанность, простота и абсолютное присутствие духа, характерные для дзэнского образа жизни. Хотя все они требуют совершенства техники, истинное мастерство достигается только лишь тогда, когда возможности техники исчерпаны, и искусство становится «безыскусным искусством», прямым продолжением подсознания.  </p>
+<p>Настоящим сокровищем для нас является книга Юджина Херригеля «Дзэн в искусстве стрельбы из лука», содержащая описание одного из таких «безыскусных искусств». Херригель провел в обществе одного прославленного японского мастера более пяти лет, стремясь постигнуть его секреты, и в своей книге он рассказывает о своих собственных впечатлениях. Он пишет, что стрельбу из лука его наставник описывал как религиозный ритуальный танец, исполняемый при помощи спонтанных, не напряженных и не имеющих очевидной цели движений. Ему понадобилось много лет упорных занятий для того, чтобы научиться тому, как натягивать лук «духовно», при помощи некоей разновидности силы, не требующей усилий, и «ненамеренно» спускать тетиву, позволяя выстрелу «отпасть от лучника, подобно созревшему плоду». Эти годы совершенно изменили его личность. Когда лучник достигает верха совершенства, лук, стрела, мишень и он сам сплавляются воедино, и он не стреляет — «это» происходит само по себе. </p>
+<p>Херригель дал одно из лучших описаний дзэн, поскольку книга его не содержит никаких рассуждений о последнем. </p>
+<p>Хотя духовные традиции, описанные в предыдущих пяти главах, отличаются во многих деталях, их характеризует одно и то же мировоззрение. Оно основано на мистическом, то есть прямом, не опосредованном рассудком восприятии действительности, которое имеет определенное количество характерных черт, не зависящих от того, на каком географическом, историческом и культурном фоне разворачивается данная традиция. Индуист и даос могут выделять разные аспекты этого мировосприятия, японский и индийский буддисты могут по-разному описывать свои ощущения, но основные элементы мировоззрения всех этих традиций совпадают. Кроме того, все говорит о том, что эти элементы наличествуют и в мировоззрении современной физики.  </p>
+<p>Самая важная характерная черта восточного мировоззрения, можно сказать, его сущность, — осознание единства и взаимосвязанности всех вещей и явлений, восприятие всех явлений природы в качестве проявлений лежащего в основе единства. Все вещи рассматриваются как взаимозависимые и нераздельно связанные части этого космического целого, как различные проявления одной и той же высшей реальности. Восточные традиции неоднократно упоминают о высшей, неделимой реальности, воплощениями которой служат все вещи, являясь, таким образом, ее составными частями. В индуизме она называется Брахман, в буддизме — ДХАРМАКАЙЯ, в даосизме — Дао. Поскольку она находится вне всех понятий и категорий, буддисты также называют ее ТАТХАТА, или «таковость»: «То, что в душе, называется „таковостью“, есть единство множественности вещей, великое всеобъемлющее целое» [2,55].  </p>
+<p>В обычной жизни мы не осознаем этого единства, разделяя мир на самостоятельные предметы и события. Безусловно, это разделение помогает нам иметь дело с нашим повседневным окружением, не являясь, тем не менее, фундаментальным свойством действительности. Это абстракция, порожденная нашим разграничивающим и категоризирующим интеллектом. Уверенность в реальности наших абстрактных понятий самостоятельных «вещей» и «событий» — не более, чем иллюзия. Индуисты считают, что эта иллюзия порождена АВИДЬЕЙ, то есть неведением ума, околдованного МАЙЕЙ. Поэтому основной задачей восточных мистических традиций является «исправление» сознания при помощи медитации, которая делает его уравновешенным и спокойным. САМАДХИ, что значит на санскрите «медитация», буквально переводится как «душевное равновесие». Здесь имеется в виду то уравновешенное и безмятежное состояние сознания, при котором становится возможным восприятие принципиального единства Вселенной: "Входя в чистейшее САМАДХИ, обретаешь проницательнейшее прозрение, позволяющее осознать абсолютное единство Вселенной [2, 93].  </p>
+<p>Принципиальное единство Вселенной осознается не только мистиками, это — одно из основных открытий, или, вернее сказать, откровений современной физики. Оно становится очевидным уже на уровне атома и делается все более несомненным по мере дальнейшего проникновения в толщу вещества, вплоть до мира субатомных частиц. Сравнивая современную физику с восточной философией, мы будем постоянно обращаться к теме единства всех вещей и событий. Обсуждая различные модели субатомной физики, мы увидим, что они снова и снова воплощают одно и то же прозрение, заключающееся в том, что все составные части материи и основные явления, в которых они принимают участие, взаимосвязанны, родственны и взаимозависимы, что они не могут иметь различную природу, и должны рассматриваться в качестве неотъемлемых частей одного целого. </p>
+<p>Технический язык классической физики — лишь очищенный и усовершенствованный повседневный язык, и для описания результатов экспериментов мы не располагаем ничем иным. </p>
+<p>Квантовая теория описывает наблюдаемые системы в терминах вероятностей. Это значит, что мы никогда не можем с точностью утверждать, где будет находиться в определенный момент субатомная частица и каким образом будет происходить тот или иной атомный процесс. Все, что мы можем сделать, это предсказать вероятности. Например, большинство частиц, известных в настоящее время, неустойчивы, то есть они, по прошествии определенного времени, распадаются, или «разлагаются», на другие частицы. И точно сказать, когда это произойдет, нельзя. Мы можем только предсказать вероятность распада частицы по прошествии определенного времени, то есть указать среднюю продолжительность существования большей части частиц какой-то определенной разновидности. То же самое можно сказать о «способе» распада. Как правило, частица может распасться на различное количество разнообразных частиц, и снова мы не можем предугадать, какие именно частицы станут продуктом распада исходной частицы. Единственное, что мы можем сказать, это то, что из некоторого большого количества частиц, скажем, шестьдесят процентов частиц распадутся одним образом, еще тридцать — другим, и, наконец, еще десять процентов — третьим. Понятно, что для того, чтобы проверить истинность таких статистических выкладок, нужно произвести множество измерений. И это действительно так — ведь для того, чтобы произвести один эксперимент в области физики высоких энергий, фиксируются и подвергаются анализу десятки тысяч столкновений частиц, и только тогда можно определить вероятность какого-либо процесса.  </p>
+<p>Важно осознать, что статистические формулировки законов атомной и субатомной физики не отражают нашего незнания физической ситуации, как в случае с использованием вероятностей страховыми компаниями или игроками в азартные игры. В квантовой теории вероятность следует воспринимать как основополагающее свойство атомной действительности, управляющее ходом всех процессов и даже существованием материи. Субатомные частицы не столько существуют в определенное время в определенных местах, сколько «могут существовать», а атомные явления не столько происходят определенным образом в определенные моменты времени, сколько «могут происходить».  </p>
+<p>Так, мы не можем точно сказать, где в данный момент находится электрон данного атома. Его местонахождение зависит от действия силы притяжения ядра и воздействия других электронов того же атома. Эти обстоятельства создают вероятностную модель местонахождения электрона в различных областях атома. Иллюстрация на рис. 9 может служить примером нескольких вероятностных моделей. Электрон, вероятнее всего, находится там, где фон светлый, и, менее вероятно, там, где фон темный. Очень важный момен т — то, что весь паттерн соответствует одному электрону в данный момент. Внутри паттерна мы не можем указать конкретное местонахождение электрона, мы можем лишь с какой-то вероятностью указать область его пребывания. На языке формальной математики эти тенденции, или вероятности, выражаются вероятностной функцией — математической величиной, характеризующей вероятности местонахождения электрона в разных точках в разное время. </p>
+<p>Так, квантовая теория свидетельствует о принципиальном единстве Вселенной. Она показывает, что нельзя разложить мир на независящие друг от друга мельчайшие составляющие. </p>
+<p>Итак, на уровне атома твердые материальные объекты классической физики превращаются в вероятностные схемы, которые, к тому же, отражают не столько вероятности вещей, сколько вероятности соединений между ними. Квантовая теория заставляет нас взглянуть на мир не как на коллекцию физических объектов, а как на сложную сеть взаимоотношений различных частей единого целого.</p>
+<p>«Материальный объект превращается в нечто отличное от того, что мы видим перед со бой в настоящий момент, это не самостоятельный объект на фоне или в окружении остальной природы, а неотъемлемая часть и сложное проявление единства всего того, что мы видим» [3,993].    </p>
+<p>«Вещи получают свое существование и свою природу посредством взаимозависимости и не являются ничем сами по себе» [59, 138].  </p>
+<p>Если эти утверждения могут служить образцом того, какой представляется природа восточным мистикам, то два следующих утверждения, сделанных атомными физиками, могут рассматриваться в качестве точного описания мистического мировосприятия:  </p>
+<p>«Любая элементарная частица — это не независимая неразложимая на части единица. В сущности, это набор отношений, связывающих частицу с внешним миром» [70, 1310].    </p>
+<p>«Таким образом, мир предстает перед нами в качестве сложной ткани из различных событий, в которой соединения различных типов чередуются, накладываются друг на друга или сочетаются, определяя таким образом структуру целого» [34, 107]. </p>
+<p>законы атомной физики говорят нам, с какой вероятностью будет атомный объект порождать определенное ощущение если мы позволим ему взаимодействовать с нами. «</p>
+<p>Определяющей чертой атомной физики является то, что человек-наблюдатель необходим не только для того, чтобы наблюдать свойства объекта, но и для того, чтобы дать определение самим этим свойствам. В атомной физике мы не можем говорить о свойствах объекта как таковых. Они имеют значение только в контексте взаимодействия объекта с наблюдателем. По словам Гейзенберга, «то, с чем мы имеем дел о при наблюдении, это не сама природа, но природа, доступная нашему методу задавать вопросы» [34, 58]. Наблюдатель решает, каким образом он будет осуществлять измерения, и в зависимости от его решения получают характеристику свойства наблюдаемого объекта. Если эксперимент проводится по-другому, то свойства наблюдаемого объекта тоже изменяются. </p>
+<p>Следовательно, в атомной физике ученый не может играть роль стороннего наблюдателя, он обречен быть частью наблюдаемого им мира до такой степени, что он сам воздействует на свойства наблюдаемых объектов. Джон Уилер считает, что активное участие наблюдателя — самая важная особенность квантовой теории, и предлагает поэтому заменить слово «наблюдатель» словом «участник». По словам самого Уилера: «Самое важное в квантовом принципе — это то, что он разрушает представление о мире, „бытующем вовне“, когда наблюдатель отделен от своего объекта плоским стеклянным экраном толщиной в двадцать сантиметров. Даже для того, чтобы наблюдать такой крошечный объект, как электрон, приходится разбить стекло. Наблюдатель должен забраться под стекло сам, разместить там свои измерительные приборы. Он должен сам решить, что измерять — импульс или местонахождение. Если ввести туда оборудование, способное измерить одну из этих величин, это исключит возможность размещения аппаратуры, способной измерить другую. Более того, в процессе измерения изменяется состояние самого электрона. После этого Вселенная никогда не станет такой, какой она была раньше. Для того, чтобы описать то, что происходит, нужно зачеркнуть слово „наблюдатель“ и написать „участник“. В каком-то непредвиденном смысле, наша Вселенная — это участвующая Вселенная» [56, 244]. </p>
+<p>при помощи глубокого погружения в медитацию достигают состояния, при котором отличия наблюдателя от наблюдаемого исчезают, не оставляя малейшего следа, а субъект и объект сливаются в единое неразделимое целое.</p>
+<p>Противоположности — это абстрактные понятия из области мышления, что обуславливает их относительный характер. Противопоставление возникает в тот самый момент, когда мы сосредотачиваем внимание на любом единичном понятии. Как говорит Лао-цзы, «когда все на свете признают прекрасное прекрасным, тогда существует и уродство: когда все на свете признают добродетель добром, тогда существует зло» [48, гл. 1]. Мистики покидают пределы мира интеллектуальных понятий, и благодаря этому создают относительность и полярное соотношение всех противоположностей. Они видят, что хорошее и плохое, удовольствие и боль, жизнь и смерть — не абсолютные категории, а только две стороны одной и той же действительности. Одна из высших целей человека в духовных традициях Востока — осознание того факта, что все противоположности полярны, а значит — едины. Кришна в «Бхагавадгите» советует: «Пребывай в вечной истине, вне земных противопоставлений!», и точно такой же совет получают буддисты. Так, Д. Т. Судзуки пишет: «Фундаментальное положение буддизма — необходимость выйти за пределы мира проти воположностей; мира, построенного интеллектуальными разграничениями и эмоциональными омрачениями, и осознать духовный мир неразличения, который предполагает достижение абсолютной точки зрения» [71, 18]. </p>
+<p>Представление о том, что все противоположности полярны — что свет и тьма, приобретение и потеря, добро и зло — лишь различные объекты одного и того же явления — определяет характер всего восточного образа жизни. Поскольку все противоположности связаны между собой, их борьба не может завершиться победой одной из них и будет лишь проявлением их взаимодействия. Поэтому на востоке добродетельным называют не того, кто ставит перед собой невыполнимую задачу бороться за добро и уничтожать зло; скорее, того, кто способен поддерживать динамическое равновесие между добром и злом. </p>
+<p>Это понятие динамического равновесия играет ключевую роль в представлении восточных мистиков о единстве противоположностей. Это не неподвижное, постоянное равенство, а динамическое чередование двух крайностей. Наилучшее выражение это представление получило в символике архетипической пары противоположных начал: ИНЬ и ЯН. Китайские мыслители называли это единство, лежащее в основе ИНЬ и ЯН — Дао, и рассматривали его как процесс, приводящий к чередованию этих начал: «То, что позволяет явиться то мраку, то свету, и есть Дао» [86, 297]. </p>
+<p>Современная физика самым драматическим образом подтвердила одно из основных положений восточного мистицизма, смысл которого заключается в том, что все используемые нами для описания природы понятия ограничены, что они являются не свойствами действительности, как кажется нам, а продуктами мышления — частями карты, а не местности. При любом расширении сферы наших знаний становится очевидной ограниченность возможностей рационального мышления, и нам приходится изменить некоторые из наших понятий, или даже отказаться от них. </p>
+<p>Наши представления о пространстве и времени накладывают большой отпечаток на всю картину мира. Они упорядочивают вещи и явления, которые окружают нас в повседневной жизни, а также при попытках науки и философии объяснить мир. </p>
+<p>Уверенность в том, что геометрия внутренне присуща природе, а не нашим предс тавлениям о ней, берет начало в греческой философии. Демонстративная геометрия представляла собой основной раздел греческой математики и оказала сильное воздействие на греческую философию. Греческая философия усвоила ее метод построения теорем на основе принятых на веру без доказательства аксиом при помощи дедукции, и поэтому геометрия лежала в основе любой умственной деятельности, и обучение философии включало в себя геометрию. Говорят, что на воротах Академии Платона в Афинах было выбито изречение: «Вам не позволяется заходить сюда, если вы не сведущи в геометрии». Греки считали, что их математические теоремы были выражениями вечных неоспоримых истин, а геометрические формы воплощают в себе абсолютную красоту. Геометрия считалась совершенным соединением логического и прекрасного, и поэтому ей приписывалось божественное происхождение. Отсюда и афоризм Платона: «Бог — это геометр».  </p>
+<p>Поскольку геометрия рассматривалась в качестве божественного откровения, нет ничего странного в том, что греки считали, что небеса имеют правильную геометрическую форму. Это означало, что небесные тела движутся по окружностям. Для того, чтобы сделать картину еще более геометричной, считалось, что каждое из них закреплено на концентрической хрустальной сфере. Сферы должны были дви гаться как единое целое, и в центре этого движения находилась Земля. В последующее время греческая геометрия продолжала оказывать влияние на западную философию и науку. До начала нашего века «Элементы» Евклида использовались в европейских школах в качестве учебника, и на протяжении более чем двух тысячелетий считалось, что евклидова геометрия отражает истинную сущность пространства. Для того, чтобы заставить ученых и философов признать, что законы геометрии не присущи природе изначально, а обязаны формулированием человеку, нужен был «целый» Эйнштейн. По словам Генри Маргенау, «Основное открытие теории относительности заключается в том, что геометрия... — продукт деятельности интеллекта. Только при условии признания этого факта наш рассудок может отказаться от устаревших представлений о времени и пространстве, исследовать возможности их нового определения и избрать ту формулировку, которая не противоречит наблюдениям» [68,250].  </p>
+<p>В отличие от греческой, восточная философия всегда утверждала, что пространство и время — порождение ума. Восточные мистики относятся к ним точно так же, как ко всем интеллектуальным понятиям — как к относительным, ограниченным и иллюзорным. Так, в одном из буддийских сочинений говорится: «О монахи, Будда учил, что... прошлое, будущее, физическое пространство... и личность, все это — лишь имена, формы мышления, об щеупотребительные слова, попросту искусственная, вымышленная действительность» [59,198].  </p>
+<p>Поэтому на Дальнем Востоке геометрии не было суждено приобрести такой вес, как в древней Греции, что, впрочем, не означает, что индийцы и китайцы не имели о ней никакого представления. Они использовали ее при строительстве храмов совершенных геометрических форм, измеряя землю и составляя карту звездного неба, но не для того, чтобы выражать в геометрической форме вечные абстрактные истины. Да и древняя восточная наука не считала нужным вместить все явления природы в жесткую схему из прямых линий и окружностей. Слова Джозефа Нидэма о китайской астрономии представляют собой интерес в этом отношении: «Китайцы-астрономы не считают нужным объяснять явления геометрически: по их мне нию, все организмы, составляющие всеобщий организм, следуют своему Дао в соответствии со своей природой, а их движения могут быть описаны в терминах „непоказательной“, по своей сущности, алгебры. Таким образом, китайцам было не знакомо такое отношение к окружности, которое бытовало в Европе, как и средневековая тюрьма хрустальных сфер» [60, 458].  </p>
+<p>Итак, древние восточные философы и ученые считали, что геометрические построения не являются абсолютными и неизменными характеристиками природы, будучи продуктом деятельности рассудка. Теория относительности исходила из такого же представления о геометрии. По словам Ашвагхоши, «Да будет известно всем, что понятие пространства — лишь одно из порождений разграничивающего сознания, что за ним не стоит никакой реальности... Пространство существует только по отношению к нашему разграничивающему сознанию» [2,107].  </p>
+<p>То же самое можно сказать о понятии времени. Восточные мистики считают, что эти понятия — понятия пространства и времени — привязаны к определенным состояниям сознания. Медитация позволяла им выйти за пределы обычного состояния и осознать, что условные и относительные представления о пространстве и времени не представляют собой высшей истины. Новые, более совершенные понятия пространства и времени, которые возникают в результате мистического опыта, во многом напоминают понятия, которыми оперирует современная физика, и в частности, теория относительности.  </p>
+<p>Как же теория относительности описывает пространство и время? В чем новизна ее подхода? Она исходит из того факта, что все измерения в пространстве и времени относительны. Конечно, об относительности пространственных координат было известно и раньше. Задолго до Эйнштейна люди поняли, что положение любого объекта в пространстве может быть определено только по отношению к какому-либо другому объекту. Это обычно делается при помощи трех координат и точки отсчета, которую мы можем назвать «положение наблюдателя». </p>
+<p>Эйнштейн обнаружил, что все временные характеристики тоже относительны и зависят от конкретного наблюдателя. В повседневной жизни мы привыкли думать, что последовательность событий носит универсальный характер. Это убеждение порождено тем, что скорость света в сравнении с любой другой знакомой нам скоростью чрезвычайно высока, и мы можем считать, что наблюдаем явления в тот момент, когда они происходят. Однако это не совсем так. Свету требуется некоторое время для того, чтобы преодолеть расстояние между объектом и наблюдателем. Как правило, этот промежуток времени очень невелик, и перемещение света можно считать мгновенным; однако в том случае, если наблюдатель движется с высокой скоростью относительно наблюдаемых явлений, промежуток времени между событием и его наблюдением играет решающую роль при определении последовательности событий. Эйнштейн осознавал, что в таком случае наблюдатели, движущиеся с различными скоростями, будут располагать события во времени по-разному. Для того, чтобы прийти к этому выводу, нужно помнить о том, что скорость света одинакова для всех наблюдателей. Два явления, происходящие одновременно для одного наблюдателя, могут происходить в различной последовательности для других. При обычных скоростях эти различия так малы, что их нельзя выявить, однако если скорости приближаются к скорости света, это приводит к возникновению эффектов, которые можно без труда измерить. Относительность времени проявляется и подтверждается многочисленными экспериментами физики высоких энергий, где событиями являются взаимодействия движущихся почти со скоростью света частиц. Отметим, что в последнем случае наблюдатель в лаборатории неподвижен, но наблюдаемые им частицы движутся с различными скоростями. Результат тот же самый. Важно движение наблюдателя относительно объекта. Не имеет значения, что движется относительно лаборатории — наблюдатель или объект.  </p>
+<p>Относительность времени тоже заставляет нас отказаться от ньютоновского абсолютного пространства. Считалось, что это пространство в каждый определенный момент содержит каким-то определенным образом распределенную материю; однако сейчас мы знаем, что нет абсолютного времени, что какой-либо момент времени может быть определен только для одного наблюдателя в какой-то определенный момент, однако для остальных наблюдателей оно может произойти раньше или позже этого момента. Поэтому мы не можем говорить о «Вселенной в некоторый момент» в абсолютном смысле, и абсолютного пространства, существующего независимо от наблюдателя, тоже не может быть. Так, теория относительности показала, что все изменения в пространстве и времени утрачивают абсолютное значение, и заставила нас отказаться от классических понятий пространства и времени. Исключительное значение этого открытия раскрыто в следующих словах Менделя Закса: «Истинно революционное содержание теории Эйнштейна в том, что... она отрицает объективный характер пространственно-временной системы координат. Теория относительности утверждает, что пространственные и временные координаты — лишь элементы языка, которым пользуется наблюдатель, описывающий окру жающую среду» [66,53].  </p>
+<p>Это явление, сделанное современным физиком, обнаруживает близкое сходство представлений о времени и пространстве, которые, как уже говорилось выше, считают, что пространство и время — «всего лишь имена, формы мышления, общеупотребительные слова». Поскольку вследствие этого пространству и времени отводится лишь субъективная роль элементов языка, которым тот или иной наблюдатель пользуется при описании явлений природы, каждый наблюдатель будет описывать явления по-своему. Для того, чтобы вывести на основании их описания универсальные законы природы, им придется сформулировать эти законы таким образом, чтобы они имели одну и ту же форму во всех системах координат, то есть для всех наблюдателей в относительном движении. Это требование, известное как принцип относительности, послужило отправной точкой для всей теории относительности. Интересно, что в шестнадцать лет Эйнштейн осознал существование парадокса, который в зародыше содержал в себе теорию относительности. Он попытался представить себе, каким бы увидел луч света наблюдатель, передвигающийся в направлении луча со скоростью света, и пришел к выводу о том, что этот наблюдатель увидел бы электромагнитное поле, колеблющееся назад и вперед, не продвигаясь в каком-либо направлении, то есть не образуя волны. Эйнштейн понял, что то, что будет хорошо известным электромагнитным явлением для одного наблюдателя, для другого окажется явлением, которое противоречит законам физики, и не мог понять этого. На склоне лет Эйнштейн осознал, что принцип относительности можно удовлетворительно применять в описании электромагнитных явлений только тогда, когда все пространственные и временные составляющие относительны. Законы механики, которые управляют явлениями, связанными с движением тел, и законы электродинамики, теории электричества и магнетизма можно сформулировать в общепринятых «относительных» рамках, которые включают время в свои трехмерные координаты в качестве четвертой координаты, рассматриваемой наблюдателем как относительной. Для того, чтобы проверить, удовлетворяет ли описание принципу относительности, то есть выглядят ли уравнения теории одинаково во всех системах координат, нужно провести все обозначения пространственного и временного положения из одной системы координат в другую. Такие операции перевода, или трансформации, были хорошо известны и широко использовались в классической физике. На рис. 16 мы видим, что каждая из двухкоординат наблюдателя А (одна горизонтальная и одна вертикальная, как обозначают линии со стрелками) представлена в виде суммы двух координат наблюдателя В, и наоборот. Элементарная геометрия позволяет вычислить точные соотношения координат двух наблюдателей. </p>
+<p>В релятивистской физике ситуация изменяется, так как к трем пространственным координатам добавляется координата времени — четвертого измерения. Поскольку переход от одной системы координат к другой предусматривает, что каждая координата одной системы в другой системе выражается при помощи суммы координат, пространственная координата одной системы предстает в виде суммы координат пространства и времени. Эта ситуация действительно является совершенно новой. Любое изменение системы координат смешивает пространство и время точно определяемым в математическом отношении образом. Их уже нельзя отделить друг от друга: то, что для одного наблюдателя является пространством, для другого будет соединением пространства и времени. Теория относительности обнаружила, что пространство не трехмерно, а время не самостоятельно. Будучи тесно и неразрывно связанны, они образуют четырехмерный континуум, который называется «пространство-время». Понятие пространства-времени было впервые употреблено Германом Минковским в 1908 году в его знаменитой лекции: «Воззрения на природу пространства и времени, которые я хочу изложить, взросли на почве экспериментальной физики, и именно в этом их сила. Они радикальны. Поэтому пространство само по себе, как и время само по себе, обречены на то, чтобы отойти в прошлое, и независимой действительностью является только их соединение» [25, 75].  </p>
+<p>Представление о пространстве и времени настолько важны при описании природных явлений, что при их изменении меняется весь подход к описанию природы. При этом новом подходе пространство и время рассматриваются на одном и том же основании и считаются неразделимыми. Когда в релятивистской физике мы говорим о пространстве, мы не можем не говорить о времени, и наоборот. Нужно использовать новый подход при участии высоких скоростей в описываемых явлениях.  </p>
+<p>Задолго до создания теории относительности астрономы уже обнаружили в одном контексте тесную связь пространства и времени. Астрономы и астрофизики имеют дело с очень большими расстояниями, и поэтому для них важным является тот факт, что свету требуется определенное время для того, чтобы переместиться от наблюдаемого объекта к наблюдателю. Поскольку скорость света не является бесконечно большой, наблюдатель видит не настоящее положение небесных тел, а то, каким оно было некоторое время назад. Свет проходит расстояние между Солнцем и Землей за восемь минут, и поэтому мы, когда бы ни взглянули на Солнце, всегда увидим его таким, каким оно было восемь минут назад. Подобно этому, мы видим ближайшую звезду такой, какой она была четыре года тому назад, а мощные телескопы позволяют нам наблюдать за процессами, которые происходили в других галактиках миллионы лет тому назад.  </p>
+<p>Безусловно, астрономические наблюдения только бы выиграли в том случае, если бы скорость света стала мгновенной, но и в том, что это не так, с одержится положительный элемент. Благодаря этому астрономы могут наблюдать эволюцию звезд, их скоплений и галактик на всех стадиях. Разнообразные явления, происходившие на протяжении миллионов лет, можно сейчас наблюдать в определенных участках неба. Потому астрономы хорошо знают о важном значении связи пространства и времени. Открытие теории относительности заключается в том, что эта связь важна не только при наличии больших расстояний, но и при наличии высоких скоростей. Даже на Земле измерение зависит от времени, учитывая состояние движения наблюдателя. </p>
+<p>Многолетние исследования в области теории относительности помогли нам познать ее математическое совершенство, но наша интуиция до сих пор здесь беспомощна. Мы не можем наглядно представить себе четырехмерное пространство-время, как и все остальные релятивистские понятия. Когда мы сталкиваемся с явлениями природы, в которых принимают участие скорости, близкие к скорости света, у нас всегда возникают затруднения. Такие явления сложно представить себе и описать при помощи обычного языка.  </p>
+<p>Например, классическая физика признает, что длины движущегося и покоящегося стержня одинаковы. Однако теория относительности обнаружила ложность этого утверждения. Длина объекта зависит от его движения относительно наблюдателя и изменяется в зависимости от скорости. Это изменение таково: объект сокращается в направлении движения. Максимальную длину стержень имеет в той системе координат, в которой он покоится, а при увеличении скорости относительно наблюдателя он становится короче. В физике высоких энергий используются эксперименты, в которых частицы сталкиваются на таких больших скоростях что сплющиваются и приобретают форму блина.  </p>
+<p>Важно понимать, что вопрос об «истинной» длине объекта не имеет смысла, как и вопрос об истинной длине вашей тени. Тень-это проекция точек, находящихся в трехмерном пространстве, на двухмерную плоскость, и ее длина зависит от угла проецирования. Точно так же длина движущегося объекта — это проекция точек, находящихся в четырехмерном пространстве-времени, в трехмерном пространстве, и его длина зависит от выбора системы координат.  </p>
+<p>Что верно для пространственных измерений, то верно и для интервалов времени. Они тоже зависят от выбора системы координат, но, в отличие от расстояний в пространстве, они увеличиваются при увеличении скорости. Это означает, что движущиеся часы ходят медленнее, время замедляется. Часы могут быть какими угодно: механическими, атомными, биением человеческого сердца. Если бы один из близнецов отправился в головокружительное путешествие через космос, то, вернувшись домой, он оказался бы моложе своего брата, так как все его «часы»: сердцебиение, кровообращение, нервные импульсы и т.д. — замедлились бы во время путешествия (с точки зрения человека на поверхности Земли). Однако сам путешествеиник не заметил бы этого, и лишь по возвращении обнаружил бы, что брат старше его. Возможно, этот «парадокс близнецов»-самый известный парадокс современной физики. Он много обсуждался в научных журналах, и еще не все дискуссии по этому поводу завершились. Красноречивое доказательство того, что реальность, описанная теорией относительности, не может быть воспринята и объяснена с помощью наших обычных понятий.  </p>
+<p>Замедление хода часов при движении, каким бы невероятным оно ни казалось, находит подтверждение в физике частиц. Большая часть субатомных частиц неустойчива: через некоторое время они распадаются на несколько других частиц. Многочисленные эксперименты подтвердили тот факт, что продолжительность существования такой неустойчивой частицы зависит от скорости ее движения относительно наблюдателя. (Видимо, здесь стоит упомянуть об одной технической детали. Когда мы говорим о продолжительности существования некоторого вида субатомных частиц, мы всегда имеем в виду среднюю величину. Об отдельных частицах мы ничего не знаем в силу статистического характера субатомного мира). Частицы, движущиеся со скоростью, равной восьмидесяти процентам от скорости света, существуют примерно в 1,7 раза дольше, чем их медлительные «близнецы», а на скорости, равной девяноста девяти процентам от скорости света, они существуют примерно в семь раз дольше. Опять же, это не означает, что изменяется внутренне присущая частицам продолжительность существования. С точки зрения частицы, продолжительность ее существования постоянна, но с точки зрения наблюдателя в лаборатории «внутренние часы» частицы замедлили свой ход, и поэтому время ее существования увеличилось.  </p>
+<p>Все эти релятивистские выводы кажутся странными лишь потому, что мы не можем воспринимать четырехмерный мир пространства-времени при помощи наших чувств, наблюдая лишь его трехмерные «фотографии». Трехмерные образцы выглядят по-разному в разных системах координат, движущиеся предметы не похожи на покоящиеся; часы, двигаясь, замедляют свой ход. Эти выводы кажутся нам парадоксальными лишь потому, что мы не осознаем, что все эти неожиданные эффекты — лишь последствия проекции четырехмерных явлений в трехмерном мире наших чувств, подобно тому, как тени — лишь проекции трехмерных предметов. Если бы мы могли увидеть, услышать — ощутить при помощи данных нам чувств четырехмерное пространство-время, парадоксы исчезли бы навсегда.  </p>
+<p>Как уже говорилось ранее, восточные мистики, очевидно, способны достигать необычных состояний сознания, в которых они выходят за пределы трехмерного мира повседневной жизни и воспринимают более высокую многомерную реальность. Так, Ауробиндо говорит о «неуловимом изменении, которое дает зрительную способность в некоем четвертом измерении» [3, 993]. Измерения в этих состояниях сознания могут отличаться от измерений релятивистской физики, однако поразительно, что мистики разделяют взгляды на пространство и время, которые очень близки к релятивистским.  </p>
+<p>Все развитие восточного мистицизма обнаруживает удивительное единство в вопросе о неразделимом «пространственно-временном» характере действительности. Они вновь и вновь подчеркивают тот факт, что пространство и время неразрывно связаны (вспомним: ведь теория относительности говорит о том же). Видимо, наиболее ясное выражение эти интуитивные представления о пространстве и времени получили в буддизме, в частности, в школе Аватамсака буддизма Махаяны. «Аватамсака-сутра», на котором основано учение этой школы, содержит яркое описание мировосприятия, достигаемого в момент просветления. Эта сутра упоминает об особом ощущении «взаимопроникновения пространства и времени» — прекрасное обозначение сущности пространства-времени, которое рассматривается в качестве важнейшей характеристики просветления. По словам Д. Т. Судзуки, "Можно осознать значение «Аватамсаки» и ее философию только в том случае, если мы однажды достигнем состояния, в котором наше "я" полностью растворяется, и исчезают разграничения между телом и сознанием, субъектом и объектом... каждая вещь связана с остальными вещами... не только в пространственном, но и во временном отношении... Мы невооруженным глазом видим, что не существует пространства без времени и времени без пространства — они пронизывают друг друга" [76, 33].  </p>
+<p>Вряд ли можно лучше описать релятивистское понятие пространства-времени. Сравнивая утверждение Судзуки со словами Минковского, процитированными выше, интересно отметить, что оба они — и физик, и буддист — подчеркивают тот факт, что их представления о пространстве -времени имеют эмпирическое происхождение и подтверждаются в одном случае — научными экспериментами, в другом — мистическим опытом. </p>
+<p>Теория относительности в том виде, в котором мы имели с ней дело до сих пор, называется «специальной теорией относительности». Она подводит единую основу под описание движения тел, электричества и магнетизма. Основные характеристики ее подхода — относительность времени и пространства и их объединение под именем четырехмерного пространства-времени. «Общая теория относительности» применяет подход специальной теории также по отношению к гравитации. Согласно общей относительности, гравитация должна искривлять пространство-время. И наглядно представить себе, как это может проис ходить, опять же, непросто. Мы можем без труда представить себе искривленную трехмерную поверхность — такую, как, например, поверхность яйца, — поскольку мы можем видеть такие искривленные поверхности в трехмерном пространстве. Получается, что слово «искривление» имеет четко определенное значение для двухмерных искривленных поверхностей, но наше воображение отказывается справиться с ситуацией, когда дело доходит до трехмерного пространства, не говоря уже о четырехмерном пространстве-времени. Поскольку мы не можем посмотреть на трехмерное пространство «снаружи», мы не можем представить себе, как оно может быть «искривлено в том или ином направлении».  </p>
+<p>--- Page 56 ---</p>
+<p>Рядом с любым тяжелым объектом пространство искривляется, и степень этого искривления, то есть несоответствия данного участка пространства законам евклидовой геометрии, зависит от величины массы этого объекта.  </p>
+<p>Уравнения, описывающие соотношения между искривлением пространства и распределением материи в этом пространстве, называются уравнениями поля Эйнштейна. При их помощи можно не только определить степень искривленности пространства вблизи от звезд и планет, но и выяснить, существует ли всеобщее, крупномасштабное искривление пространства. Одним словом, уравнение Эйнштейна позволяет определить структуру Вселенной как целого. К сожалению, они могут быть решены не единственным способом. Возможно несколько вариантов решения таких уравнений, каждый из которых представляет модель строения Вселенной, рассматриваемую в космологии (некоторые из них будут охарактеризованы в следующей главе). Главная задача современной космологии — определить, которая из моделей наилучшим образом описывает строение нашей Вселенной. Поскольку в теории относительности время не может быть отделено от пространства, искривление, вызванное гравитацией, имеет место не только в трехмерном пространстве, но и в четырехмерном пространстве -времени, поскольку именно об этом говорит нам общая теория относительности. В искривленном пространстве-времени искажения затрагивают не только пространственные соотношения, описываемые геометрией, но и продолжительность промежутков времени. Время здесь течет с другой скоростью, отличающейся от течения времени в «плоском пространстве -времени», и скорость изменяется вместе со степенью искривления пространства в зависимости от наличия вблизи тяжелых тел. Однако важно не выпускать из виду то обстоятельство, что изменения в скорости течения времени может заметить только такой наблюдатель, который удален от часов, фиксирующих эти изменения. Если же наблюдатель отправится в некоторое место, где время течет медленнее, все его часы тоже замедлили бы ход, и он потерял бы всякую надежду измерить эффект.  </p>
+<p>Здесь, на Земле, гравитация воздействует на пространство и время крайне незначительно, но в астрофизике, которая имеет дело с телами исключительно большой массы — такими, как планеты, звезды и галактики, — искривление пространства-времени является чрезвычайно важным фактором. До сих пор все наблюдения в данной области подтверждали правильность выводов Эйнштейна и вселяли в нас уверенность в том, что пространство-время в самом деле искривлено. Наиболее своеобразным проявлением искривления представляются процессы, происходящие во время гравитационной гибели звезд. Согласно современной астрофизике, каждая звезда достигнет определенного этапа своего развития, на котором она прекращает свое существование вследствие взаимного гравитационного притяжения частиц, составляющих ее. Поскольку, по мере сокращения расстояния между частицами, это притяжение резко возрастает, процесс уничтожения получает ускорение, и если звезда обладает достаточно большой массой, что означает, что ее масса не менее, чем в два раза больше массы Солнца, ни один известный нам процесс не может предотвратить гибель звезды, которая, к тому же, будет происходить совершенно непредсказуемым образом.  </p>
+<p>По мере того, как звезда уменьшается в размерах, увеличивая свою плотность, гравитация на ее поверхности проявляется все сильнее и сильнее, и пространство-время вблизи нее искривляется. Благодаря возрастанию гравитации на поверхности звезды становится все сложнее и сложнее удалить что-либо от нее, и в результате звезда достигает такой стадии, на которой ничто, включая свет, не может оторваться от ее поверхности. На этой стадии мы говорим, что вокруг звезды формируется «событийный горизонт», поскольку ни один сигнал не способен донести до окружающего мира известия о том, что происходит на поверхности звезды. Пространство, окружающее звезду, очень сильно искривлено, и даже свет не может вырваться из этой тюрьмы. Мы не можем увидеть та кую звезду, поскольку ее свет не может дойти до нас. По этой причине такие звезды называются «черными дырами». Существование «черных дыр» было предсказано уже в 1916 году, и об этом впоследствии вспомнили в связи с недавно открытыми звездными явлениями, которые могут косвенно доказать существование «черных дыр», так как свидетельствуют о том, что тяжелая звезда движется по орбите вокруг некоего невидимого объекта, который может представлять собой «черную дыру».  </p>
+<p>«Черные дыры» принадлежат к числу наиболее загадочных и необычных объектов, исследуемых современной астрофизикой, и служат иллюстрацией действия теории относительности. Сильная искривленность пространства-времени в районе черной дыры не только не позволяет лучам света достичь нас, но также оказывает значительное влияние на время. Если бы на поверхности звезды, которая приближается к своей гибели, находились часы, доступные нашему зрению, то мы увидели бы, что течение времени на циферблате этих часов постепенно замедляется по мере того, как звезда приближается к своей гибели, а когда звезда превращается в «черную дыру» показания часов вообще перестанут доходить до нас со светом. Для стороннего наблюдателя поток времени на поверхности звезды замедляется по мере продвижения звезды к гибели и полностью останавливается на уровне событийного горизонта. Поэтому можно утверждать, что процесс абсолютной гибели звезды бесконечен. Однако с самой звездой в момент достижения ею событийного горизонта ничего особенного не происходит. Течение времени остается тем же, и через некоторый, конечный период времени звезда прекращает свое существование, сокращаясь до размеров точки, имеющей невероятно большую плотность. Итак, сколько времени занимает продвижение звезды к гибели — бесконечность или некоторый промежуток времени? В мире теории относительности такой вопрос просто не имеет никакого смысла. Продолжительность существования гибнущей звезды, как и все прочие промежутки времени, относительна и зависит от системы координат, выбранной наблюдателем.  </p>
+<p>Общая теория относительности полностью отказывается от классических представлений о пространстве и времени, как о категориях, имеющих абсолютную и самостоятельную природу. Относительны не только все измерения в пространстве и времени, зависящие от состояния движения наблюдателя, но и сама структура пространства-времени </p>
+<p>--- Page 57 ---</p>
+<p>определяется тем или иным распределением вещества во Вселенной. В различных частях Вселенной пространство характеризуется той или иной степенью искривленности, и время течет с разной скоростью. Таким образом, мы приходим к выводу о том, что наши представления о трехмерном евклидовом пространстве и о линейном времени коренятся в области наших повседневных знаний о физическом мире и оказываются бесполезными за пределами этой области.  </p>
+<p>Восточные мудрецы тоже говорят о том, что переход к более высоким состояниям сознания обогащает человеческое восприятие, и признают, что одной из неотъемлемых характеристик необычных состояний сознания является радикально новый подход к понятиям времени и пространства. Они подчеркивают не только тот факт, что медитация открывает путь в многомерное пространство, но и тот факт, что при этом исчезает привычное ощущение хода времени. Вместо линейной последовательности отдельных мгновений они имеют дело с бесконечным, безвредным и, тем не менее, динамически настоящим — по их собственным утверждениям. </p>
+<p>--- Page 60 ---</p>
+<p>Основная цель восточного мистицизма — достижение такого мировосприятия, при котором все явления воспринимаются как манифестации одной и той же высшей реальности. В этой реальности восточные мистики видят первосущность Вселенной, лежащую в основе всего многообразия наблюдаемых нами предметов и явлений. Индуисты называют ее «Брахман», буддисты — «Дхармакайя» («Тело Сущего») или «Татхата» («таковость»), а даосы — «Дао»; при этом все они утверждают, что эта реальность лежит за пределами интеллектуального восприятия, и поэтому не может получить более точного определения.</p>
+<p>Упанишады говорят о Брахмане как о «чем-то неоформленном, бессмертном, пребывающем в движении», соотнося его, таким образом, с идеей движения, несмотря на то, что Брахман лежит вне всех форм. </p>
+<p>Говоря словами «Бхагавадгиты», «все деяния проистекают во времени благодаря переплетению сил природы» [54, 8, 3]</p>
+<p>В индуизме динамическая природа Вселенной описывается при помощи мифологических образов. Кришна говорит в «Гите»: «Если бы я не участвовал в движении, эти миры прекратили бы свое существование» [54, 3, 24]. Шива, Космический Танцор, представляет собой наилучшее воплощение идеи динамической Вселенной. В процессе танца Шивы получают становление многочисленные явления нашего мира, все сущее объединяется единой пульсацией ритма этого танца и принимает в нем непосредственное участие. Таков величественный образ, иллюстрирующий динамическое единство Вселенной.  </p>
+<p>Индуисты воспринимают мир как гармоничный, растущий и ритмически сокращающийся космос, в котором все подвержено беспрестанным изменениям, и все устойчивые формы представляют собой воплощение «майи», то есть существуют только в качестве иллюзорных понятий. Последняя идея — идея непостоянства всего сущего — стала отправной точкой для буддизма. Будда учил, «что все составные вещи не вечны», и что все страдания на свете продолжаются нашей приверженностью к устойчивым формам — предметам, людям и понятиям, которая заслоняет от нас мир в его истинном облике — в движении и изменчивости.</p>
+<p>--- Page 61 ---</p>
+<p>Буддисты называют этот вечно становящийся мир «САНСАРОЙ» (буквально — «в непрерывном движении»), и утверждают, что ничто в этом мире не заслуживает привязанности. Поэтому просветленная личность для буддистов — это такой человек, который не сопротивляется естественному течению жизненного процесса, а движется вместе с ним. </p>
+<p>С динамическим аспектом материи мы сталкиваемся в квантовой теории, описывающей двойственную природу субатомных частиц, одновременно обладающих свойствами частиц и волн, и, в еще большей степени, — в теории относительности, в которой единство пространства и времени, как мы увидим далее, предполагается, что материя не может существовать вне движения. Следовательно, свойства субатомных частиц можно объяснить только в контексте динамической картины мира, то есть в терминах перемещений, взаимодействий и преобразований. </p>
+<p>Современные физики представляют материю вовсе не как пассивную и инертную, но как пребывающую в непрестанном танце и вибрации, ритмические паттерны которых определяются молекулярными, атомарными и ядерными структурами. Таков же образ видения материального мира и восточными мистиками. Все они подчеркивают, что Вселенную надо рассматривать в целом динамической, ибо она движется, вибрирует и танцует; что природа пребывает не в статическом, а в динамическом равновесии. Или, словами даосского текста: «Покой в покое не есть истинный покой. Только тогда, когда покой в движении, только тогда и может проявиться духовный ритм, который наполняет собой Небеса и Землю» [50, 229]. </p>
+<p>--- Page 62 ---</p>
+<p>Совокупности вращающихся, расширяющихся, сжимающихся и взрывающихся звезд образуют галактики различной формы — плоские диски, сферы, спирали и так далее, которые тоже, в свою очередь, не бывают в неподвижности. Млечный Путь, наша галактика, представляет собой огромный диск, состоящий из звезд и газообразных скопление веществ, вращающихся в пространстве, подобно гигантскому колесу. При этом все входящие в галактику звезды описывают вокруг ее центра окружности разного диаметра. Вселенная состоит из колоссального множества беспорядочно движущихся галактик, рассеянных в бескрайнем пространстве.  </p>
+<p>Изучая Вселенную как единое космическое целое, мы достигаем наивысшего уровня пространства-времени и с удивлением обнаруживаем, что даже здесь вещество не утрачивает своего непреодолимого стремления к движению и изменчивости: мы сталкиваемся с явлениями расширения Вселенной! Это явление было одним из последних открытий современной астрономии. Тщательное изучение данных позволило ученым обнаружить, что совокупность галактик постоянно расширяется, причем скорость удаления галактик от наблюдателя прямо пропорциональна разделяющему их расстоянию: при двукратном увеличении расстояния скорость тоже возрастает в два раза. Это утверждение верно не только для нашей галактики, но и для всех остальных. В какой бы галактике мы ни оказались, остальные — соседние — будут удаляться от нас с большей скоростью, а скорость движения самых дальних галактик приблизится к скорости света. Свет, исходящий от еще более удаленных галактик, просто не мог бы дойти до нас быстрее скорости света. Говоря словами сэра Артура Эддингтона, их свет был бы похож «на бегуна, бегущего по дорожке стадиона, которая постоянно растет, так что финишная черта удаляется от него быстрее, чем может бежать он сам». </p>
+<p>--- Page 65 ---</p>
+<p>знания о «взаимопроникновении» времени и пространства привело восточных мистиков к выработке в высшей степени динамического мировосприятия. Сочинения мистиков доказывают, что они не только воспринимают мир в терминах становления и изменения, но также интуитивно ощущают «пространственно-временную» сущность всех материальных объектов, описанию которой посвящены все важнейшие теории современной физики. Физикам приходится учитывать единство времени и пространства при изучении субатомного мира, то есть частицы в терминах энергии, работы и процессов. Как представляется автору, необычные состояния сознания обнаруживают для мистиков связь между пространством и временем на макроскопическом уровне, вследствие чего их восприятие макроскопических объектов оказывается весьма близким к представлениям физиков о субатомных частицах. Особенно это бросается в глаза в буддизме. Одно из важнейших наставлений Будды звучит следующим образом: «Все составные вещи не вечны». В оригинальном тексте этого изречения на языке пали для выражения понятия «вещь» используется слово «САНКХАРА» (на санскрите — «САМСКАРА»), которое, в первую очередь, имеет значение «событие» или «происшествие», а также «деяние» или «свершение», и только потом — значение «существующая вещь». Это доказывает, что буддисты воспринимают мир динамически и видят в каждой вещи единичное проявление процесса вечного становления. По словам Д. Т. Судзуки, «Буддисты воспринимают объект как событие, а не как вещь или материальную субстанцию... Буддийское представление о вещи, как о „самскаре“ (или „санкхара“), то есть как о „деяниях“ или „событиях“, ясно указывает, что буддисты рассматривали восприятие человека в терминах времени и движения» [71,55].  </p>
+<p>Так же, как современные физики, буддисты видят во всех материальных объектах не вещи, а процессы, отрицания существования материальной субстанции. Этот подход является общим для всех школ и направлений буддизма. Китайские философы тоже близки к подобному пониманию материального мира. Они воспринимают все его объекты как переходящие этапы бесконечного течения Дао. Их гораздо больше интересуют законы, регулирующие взаимоотношения отдельных объектов, а не решение проблемы мельчайших составляющих материи. «В то время, как европейская философия склонна находить реальность в веществе, — пишет Джозеф Нидэм, — китайские философы склонны находить ее во взаимосвязях» [60, 478].  </p>
+<p>Динамическое мировоззрение восточных мистиков и современных физиков исключает возможность существования каких-либо устойчивых форм, а также какой бы то ни было материальной субстанции. Основными составляющими Вселенной являются динамические паттерны — преходящие этапы «нескончаемого тока преобразований и видоизменений», как говорил Чжуанцзы. </p>
+<p>Поскольку все субатомные частицы имеют релятивистскую природу, мы не можем понять их свойства вне их взаимодействий. В результате основополагающего взаимопереплетения явлений субатомного мира мы не можем понять сущность одной частицы, не уяснив сущности всех остальных.</p>
+<p>--- Page 66 ---</p>
+<p>Гравитационные поля подтверждаются всеми массивными телами и воздействуют на них же. Возникающие при этом силы всегда являются силами притяжения, в отличие от ситуации с электромагнитными полями, которые оказывают воздействия только на заряженные тела, порождая и силы притяжения, и силы отталкивания. Подходящей теорией поля для рассматриваемого гравитационного поля будет общая теория относительности, которая утверждает, что воздействие массивного тела на окружающее пространство имеет гораздо более далеко идущие последствия, чем аналогичное последствие заряженного тела в электродинамике. В данном случае пространство вокруг массивного тела тоже «упорядочивается» таким образом, что находящиеся поблизости тела начинают испытывать действие силы гравитации, но важнейшее отличие от электродинамики заключается в том, что это упорядочивание затрагивает геометрию пространства, то есть структуру.  </p>
+<p>Вещество и пустое пространство — наполненное и пустота — представляют собой два фундаментально различающихся понятия, на которых построен атомизм Демокрита и Ньютона. В общей теории относительности эти два понятия превращаются в одно. Массивное тело не может существовать, не создавая гравитационного поля, проявляющего себя в искривлении окружающего это тело пространства. Не следует, тем не менее, считать, что поле «наполняет» пространство, и тем самым искривляет его. Одно не может быть отдельным от другого: поле само по себе является искривленным пространством! </p>
+<p>Массивные тела не только определяют структуру окружающего пространства, но и, в свою очередь, испытывают воздействие со стороны среды. Согласно представлениям физика и философа Эрнста Маха, инерция материального тела, то есть его сопротивление направленным извне ускорениям является не неотъемлемым свойством материи, а мерой ее взаимодействия со всей остальной Вселенной. По Маху, вещество обладает инерцией только потому, что во Вселенной есть другое вещество. Когда тело вращается, его инерция порождает центробежную силу (которая используется, в частности, в центрифуге для отжимки мокрого белья), одна эта сила получает проявление только потому, что тело вращается «относительно неподвижных звезд», как выражается Мах. Если бы неподвижные звезды неожиданно исчезли, вместе с ними исчезла бы и инерция, и центробежная сила внутри вращающегося тела. </p>
+<p>--- Page 67 ---</p>
+<p>Эти «теории квантового поля» преодолевают унаследованное от классической физики противопоставление между твердыми материальными частицами и окружающим их пространством. Квантовому полю приписывается самостоятельная физическая природа — природа протяженной среды, пронизывающей или наполняющей все пространство. Частицы представляют собой лишь точки «сгущения» этой среды, возникающие и исчезающие энергетические узлы. Частицы утрачивают свою независимость и растворяются в окружающем пространстве. По словам А. Эйнштейна, «Итак, мы можем считать, что вещество состоит из таких участков пространства, в которых поле достигает особой интенсивности... В новой физике нет места как понятию поля, так и понятию вещества, поскольку единственная существующая реальность включает в себя понятие поля» [8,319].  </p>
+<p>Представление о физических объектах и явлениях как о преходящих проявлениях лежащей в их основе фундаментальной сущности, есть не только основной элемент квантовой теории поля, но и основной элемент восточного мировоззрения. Подобно Эйнштейну, восточные мистики рассматривали эту фундаментальную сущность в качестве единственной реальности: ВСЕ ее проявления рассматривались как преходящие и иллюзорные. </p>
+<p>После возникновения понятия поля физики стали стремиться к тому, чтобы выработать единую концепцию поля, в рамках которой могли бы получить объяснение все частные разновидности полей. Так, Эйнштейн потратил последние годы своей жизни на поиск такой концепции. Такие понятия, как «Брахман» в индуизме, «Дхармакайя» в буддизме и «Дао» в даосизме могут рассматриваться в качестве эквивалента наивысшей степени абстракции понятия поля — поля, в котором берут начало не только физические явления, но и все явления вообще.  </p>
+<p>Согласно восточным представлениям, реальность, лежащая в основе всех явлений, лишена какой бы то ни было оформленности и не может быть описана или определена. Поэтому ее часто называют бесформенной и пустой. Однако слово «пустота» не означает в данном случае «незаполненность» или «несуществование». Напротив, пустота является сущностью всех форм и источником всякого существования. Так в Упанишадах говорится: «Брахман есть жизнь. Брахман есть наслаждение. Брахман есть пустота... Наслаждение, воистину, — то же, что Пустота. Пустота, воистину, — то же, что наслаждение». «Чхандогья Упанишада», 4, 10, 4  </p>
+<p>То же самое имеют в виду и буддисты, называя высшую реальность «ШУНЬЯТОЙ», то есть «Пустотой», и утверждая, что эта наделенная жизнью Пустота порождает все формы феноменального бытия. Даосы приписывают Дао аналогичные свойства быть вечным источником творения и тоже называют Дао пустым. «Дао Небес — пустое и бесформенное», — говорит Гуань-цзы [47]. Лао-цзы же использует для объяснения пустоты Дао несколько метафор. В частности, он сравнивает Дао с долиной между гор или с сосудом, который всегда остается пустым, сохраняя таким образом способность содержать внутри себя всю бесконечную множественность вещей.  </p>
+<p>Используя термины «пустота», «пустое», восточные мудрецы обращают внимание СВОИХ последователей на то, что под Брахманом, Шуньятой и Дао понимается не обычная пустота, а Пустота с большой буквы — Пустота, являющаяся неисчерпаемым источником творения. Поэтому мы можем сравнить Пустоту в понимании восточных мистиков с квантовым полем современной физики.</p>
+<p>--- Page 68 ---</p>
+<p>Как и субатомные частицы, феноменальные воплощения мистической Пустоты имеют не статическую а неподвижную, но динамическую и преходящую сущность. Они постоянно появляются и исчезают в процессе бесконечного танца движения и энергии. Как и субатомный мир для физика, так и для восточного мистика феноменальное существование представляет собой САНСАРУ — мир беспристрастных рождений и смертей. Будучи временными воплощениями Пустоты, предметы этого мира не имеют фундаментальной, устойчивой сущности. В особенности это характерно для буддийской философии, которая отрицает существование какой бы то ни было материальной субстанции и находит иллюзорными представления о постоянном "я", последовательно претерпевающем различные ощущения. Буддисты нередко сравнивают иллюзию существования материальной субстанции и постоянного "я" с волнами на поверхности воды. В последнем случае движение молекул воды "вверхвниз внушает нам, что по ее поверхности в горизонтальном направлении перемещается некоторое «количество воды»</p>
+<p>--- Page 69 ---</p>
+<p>Первоначальное понятие поля связывалось с понятием силы, и даже в теории квантового поля оно сохраняет связь с силами взаимодействующих частиц. Так, электромагнитное поле может представляться в виде «свободного поля», то есть перемещающихся волн, или фотонов, а также может играть роль силового поля, возникающего в пространстве между заряженными частицами. </p>
+<p>--- Page 71 ---</p>
+<p>Мы можем окончательно убедиться в неразрывном единстве понятий вещества и пустого пространства, узнав о том, что виртуальные частицы могут спонтанно возникать «из пустоты» и снова растворяться «в пустоте» даже в том случае, если поблизости нет нуклонов или каких-либо других частиц, которые могут участвовать в сильных взаимодействиях. На рис. 33 представлен так называемый «вакуумный график», на котором изображен один из подобных процессов: три части — протон (Р), антипротон (Р-) и пион (пи) — образуются из вакуума, а потом снова превращаются в вакуум. Теория поля утверждает, что события такого рода происходят постоянно. Поэтому вакуум не может считаться пустым, напротив, он содержит бесчисленное множество беспорядочно возникающих и исчезающих частиц. Здесь материал современной физики заставляет нас вспомнить о понятии Пустоты в восточном мистицизме. Подобно восточной Пустоте, «физический вакуум», как он именуется в теории поля, не является просто состоянием абсолютной незаполненности и отсутствия всякого существования, но содержит в себе возможность существования всех возможных форм мира частиц. Эти формы, в свою очередь, представляют собой не самостоятельные физические единицы, а всего лишь переходящие воплощения Пустоты, лежащей в основе всего бытия. Как говорится в известной нам сутре, «форма есть пустота, а пустота, в свою очередь, есть форма».  </p>
+<p>Соотношение между виртуальными частицами и вакуумом имеет в высшей степени динамическую природу; вакуум — это «живая пустота» в полном смысле этого слова, в пульсации которой берут начало бесконечные ритмы рождений и разрушений. Большинство физиков считают открытие динамической сущности вакуума одним из важнейших достижений современной физики. Из пустого вместилища всех физических явлений пустота превратилась в динамическую величину первой важности. Таким образом, результаты исследований современной физики подтверждают правоту высказываний великого мыслителя Цзая Цая: «Для того, кто знает, что Великая Пустота наполнена ци, нет такого понятия, как несуществование» [60, 33]. </p>
+<p>В ходе изучения субатомного мира в двадцатом веке физики обнаружили, что вещество имеет динамическую природу, а составные части атома, субатомные частицы представляют собой динамические структуры, существующие не в виде самостоятельных единиц, а в виде неотъемлемых компонентов неразрывной сети взаимодействий. Эти взаимодействия питает бесконечный поток энергии, воплощающийся в обменах частицами, динамическом чередовании стадий созидания и разрушения, а также в беспрестанных изменениях энергетических паттернов. В результате взаимодействий образуются все более устойчивые единицы, из которых и состоят материальные тела. Эти единицы, в свою очередь, тоже не остаются неподвижными, но ритмически колеблются. Таким образом, вся Вселенная оказывается вовлеченной в бесконечный процесс движения и деятельности — в постоянный космический танец энергии. </p>
+<p>Все атомы, а значит, и все материальные тела </p>
+<p>--- Page 72 ---</p>
+<p>вокруг нас представляют собой сочетания всего лишь трех материальных частиц, обладающих массой: протона, нейтрона и электрона. Четвертая частица, фотон, не имеет массы и является единицей электромагнитного излучения. Протон, электрон и фотон представляют собой устойчивые частицы, что означает, что их существование не прерывается до тех пор, пока они не принимают участия в столкновениях с другими частицами, угрожающими им аннигиляцией. </p>
+<p>Как уже говорилось выше, для каждой частицы существует аналогичная античастица с такой же массой и противоположным зарядом. Античастицей для фотона является сам фотон, античастица электрона называется позитроном; помимо них, нам известны антипротон и антинейтрино.</p>
+<p>--- Page 73 ---</p>
+<p>Казалось бы, при таком раскладе итоговое количество возможных типов взаимодействий между частицами может быть очень большим, однако по какой-то причине, которая остается неизвестной, все взаимодействия делятся на четыре разновидности, характеризующиеся различной степенью взаимодействия. Перечислим эти разновидности:  </p>
+<p>— Сильные взаимодействия.  </p>
+<p>— Электромагнитные взаимодействия.  </p>
+<p>— Слабые взаимодействия.  </p>
+<p>— Гравитационные взаимодействия. </p>
+<p>--- Page 76 ---</p>
+<p>В своей книге «Мир элементарных частиц» Кеннет Форд приводит сложный пример такого процесса (см. рис. 44), в ходе которого происходит образование и аннигиляция десяти виртуальных частиц, сопровождая график следующим замечанием: «Этот график представляет собой изображение одной из подобных цепочек явлений, на первый взгляд производящее довольно устрашающее впечатление, но, тем не менее, вполне соответствующее действительности. Каждый протон время от времени принимает участие в этом танце творения и разрушения» [28,209].  </p>
+<p>Форд — не единственный физик, использовавший выражение типа «танец творения и разрушения», «танец энергии». При попытке представить себе поток энергии, преобразующейся в различные динамические структуры, или частицы, мы естественным образом начинаем сравнивать это с ритмичным танцем. Современная физика обнаружила, что подвижность и изменчивость принадлежат к числу основных свойств материи, и вся материя, независимо от того, где она находится — у нас, на Земле, или в космосе, — всегда принимает участие в непрекращающемся космическом танце. </p>
+<p>Метафора космического танца нашла наибольшее воплощение в индуизме в образе танцующего бога Шивы. Шива, один из древнейших и наиболее почитаемых божеств Индии, обладающих множеством перерождений, является Королем Танцоров. Согласно представлениям индуистов, любая человеческая жизнь представляет собой составную часть всеобщего ритмического процесса творения и разрушения, смерти и воскрешения, а танец Шивы символизирует ритм вечной пульсации между жизнью и смертью, характеризующийся безначальной и бесконечной цикличностью. По словам Ананды Кумарасвами: «Во время ночи Брахмана природа сохраняет неподвижность и не может танцевать до тех пор, пока этого не захочет Шива: он восстает из своего экстаза и, танцующий, пронизывает неподвижную материю волнами несущего пробуждения звука, и-чу! — материя тоже начинает танцевать, окружая Его в своей вечной славе. Танцуя, он поддерживает существование многообразных явлений природы. По истечении времени, все еще продолжая танцевать, Он уничтожает в огне все формы и имена, и снова дает Природе отдых. Это поэзия, и в То же время — наука» [20, 78].  </p>
+<p>Танец Шивы символизирует не только последовательные циклы творения и разрушения, но и ритм повседневных рождений и смертей, который в индуизме считается основой всякого бытия. В то же время Шива, творящий разнообразные формы материального мира и вновь растворяющий их в плавном течении своего танца, напоминает нам о том, что все формы есть майя, что они не имеют фундаментальной сущности, являясь преходящими и иллюзорными. Генрих Циммер описывает это положение индуистской философии в следующих выражениях: «Его движения — одновременно резкие и исполненные грации — порождают космическую иллюзию; его стремительно движущиеся руки, ноги, и изгиб торса порождают беспрестанное сотворение-уничтожение Вселенной, а точнее — являются таковыми, причем смерть полностью уравновешивает жизнь, и исчезновение полагается закономерным исходом всякого возникновения» [89,155].  </p>
+<p>Индийские скульпторы десятого — двенадцатого веков создали много бронзовых изображений танцующего Шивы с четырьмя руками, удивительная симметричность и, в то же время, динамичность расположения которых в пространстве передает идею ритмичности и единства проявлений жизни. Каждому жесту Шивы индуистская традиция приписывает особое символическое значение. В правой верхней руке бог держит бубен, символизирующий </p>
+<p>--- Page 77 ---</p>
+<p>первозданный звук творения; на его левой верхней ладони мы видим пламя, символизирующее разрушение. Уравновешенность двух верхних рук символизирует динамическое равновесие процессов созидания и разрушения в нашем мире, которое становится еще более очевидным при взгляде на отрешенное лицо Шивы, находящееся на одинаковом удалении от обеих рук и воплощающее идею трансцендирования противопоставления между сотворением и разрушением. Вторая правая рука воздета в успокаивающем жесте, символизирующем состояние защищенности и умиротворения, тогда как вторая левая рука указывает на приподнятую ступню, что означает освобождение от чар майи. Шива изображается танцующим на теле поверженного демона, олицетворяющего человеческое невежество, которое стоит на пути тех, кто стремится к освобождению.  </p>
+<p>Танец Шивы, по словам Кумарасвами, представляет собой «яснейший образ божественной деятельности, которым по праву могла бы гордиться любая религия и любое искусство» [20, 67]. Поскольку божество является одной из персонификаций Брахмана, его деятельность сводится к порождению и уничтожению мириадов материальных воплощений последнего. Танец Шивы — это танцующая Вселенная, бесконечный поток энергии, принимающий бесчисленное множество рисунков, которые склонны плавно переливаться друг в друга.  </p>
+<p>Современная физика пришла к выводу, что ритм сотворения и разрушения присутствует не только в чередовании времен года и физическом рождении и гибели живых существ, но и выступает в качестве основной сущности неорганической материи. Согласно теории квантового поля, все взаимодействия между составными частями материи осуществляются посредством испускания и поглощения виртуальных частиц. Более того, танец творения и разрушения представляет собой единственно возможную форму существования самого вещества, так как все материальные частицы «самовзаимодействуют», испуская и поглощая виртуальные частицы. Таким образом, современная физика постулирует то положение, согласно которому, каждая частица принимает участие в танце энергии, одновременно ЯВЛЯЯСЬ этим танцем, пульсирующим процессом творения и разрушения.  </p>
+<p>Рисунки этого танца характеризуют сущность каждой частицы и ее свойства. Так, например, запас энергии, необходимый для испускания и поглощения виртуальной частицы, эквивалентен определенному количеству массы, которое добавляется к массе самовзаимодействующей частицы. Различные частицы принимают разное участие в этом танце; каждая из них имеет своя параметры энергии и массы. Наконец, виртуальные частицы не только представляют собой единственное средство осуществления взаимодействий между частицами, а, соответственно, и объяснение их свойств, но могут порождаться вакуумом и черпать свою энергию из него. Таким образом, в космическом танце принимает участие не только материя, но и Пустота, бесконечно творя и разрушая энергетические паттерны.  </p>
+<p>Современные физики воспринимают танец Шивы как танец субатомной материи. Как и в индуистской мифологии, последний представляет собой бесконечный танец сотворения и разрушения, в котором принимает участие весь космос; основу всякого бытия и всех явлений природы. Столетия тому назад индийские скульпторы создавали величественные бронзовые изваяния танцующего Шивы. В наше время физики разработали сложнейшие приборы для того, чтобы получить портрет Вселенной в ее космическом Танце. Фотографии пузырьковой камеры, на которых запечатлены взаимодействия частиц, тоже являются изображениями рисунка танца Шивы, которые не уступают по красоте и значению своим индуистским аналогам. Эти фотографии доказывают, что Вселенная постоянно претерпевает процессы ритмического сотворения и разрушения. Таким образом, метафора космического танца объединяет древнюю мифологию, религиозное искусство и современную физику. Как говорит Кумарасвами, эта метафора представляет собой «поэзию, и в то же время — науку». </p>
+<p>--- Page 91 ---</p>
+<p>Ашвагхоша утверждает:  </p>
+<p>«Все вещи по своей фундаментальной природе не могут быть названы или объяснены. Они не могут получить адекватное выражение при помощи форм языка» [2, 56].  </p>
+<p>По этой причине восточные мудрецы, как правило, проявляют интерес не к объяснению вещей, а к непосредственному, нерассудочному восприятию единства всех вещей. Такой подход использовал Будда, отвечающий на все вопросы о смысле жизни, происхождении мира и о сущности НИРВАНЫ «благородным молчанием». Кажущиеся бессмысленными ответы дзэнских наставников на просьбы объяснить что-либо служат той же цели — показать ученику, что каждая вещь представляет собой следствие, вытекающее из всего остального мира; что «объяснить» природу — значит просто продемонстрировать ее единство и что, в конечном счете, объяснять нечего. Когда какой-то монах задал Тодзану, взвешивавшему лен, вопрос: «Что есть Будда?», — Тодзан сказал: «Этот лен весит три фунта»; когда Дзесю спросили о том, зачем Бодхидхарма приехал в Китай, наставник ответил: «В саду дуб» [63, 104-119].  </p>
+<p>Одна из основных задач восточного мистицизма — освобождение человеческого сознания от слов и объяснений. Как буддисты, так и даосы употребляют выражение «сеть слов», или «сеть понятий», распространяя, таким образом, область применения образа неразрывной сети на деятельность человеческого мышления. До тех пор, пока мы стремимся объяснять что-то, мы остаемся связанными узами КАРМЫ, запутываемся в своей собственной понятийной сети. Отказаться от слов и объяснений — значит разорвать узы КАРМЫ и обрести освобождение. </p>
+<p>--- Page 96 ---</p>
+<p>Лао-цзы более 2000 лет назад, когда говорил:  </p>
+<p>"Тот, кто знает, не говорит.  </p>
+<p>Тот, кто говорит, не знает" [48, гл. 81].  </p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Горник" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Горник
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-footer__link md-footer__link--next" aria-label="Next: Даосские Секреты Любви" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Даосские Секреты Любви
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

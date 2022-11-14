@@ -1,0 +1,3024 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Chaos Monkeys - My KDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chaos-monkeys" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My KDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chaos Monkeys
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My KDB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        CHANGELOG
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Excerpts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Excerpts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
+        Sprint How to Solve Big problems in 5 days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Chaos Monkeys
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Chaos Monkeys
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    Metadata
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    Highlights
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%20codes%20examples/" class="md-nav__link">
+        Culture codes examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gumroad/" class="md-nav__link">
+        Работа в Gumroad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hacking%20growth/" class="md-nav__link">
+        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspired/" class="md-nav__link">
+        Marty Cagan - Inspired How To
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
+        Intercom on jobs-to-be-done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
+        Jobs to Be Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marketplaces%20notes/" class="md-nav__link">
+        Про маркетплейсы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
+        Marty_Cagan___Inspired___How_To_
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Matryoshka. Как Вести Бизнес С Иностранцами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20runways%20book/" class="md-nav__link">
+        Software runways book
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Superhuman/" class="md-nav__link">
+        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
+        The Everything Store. Джефф Безос И Эра Amazon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
+        The Jobs to Be Done Playbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
+        The Knowledge Illusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
+        The Ultimate Guide to Project Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../YC%20Startup%20School/" class="md-nav__link">
+        Startup School
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zero%20to%20One/" class="md-nav__link">
+        Zero to One
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten/" class="md-nav__link">
+        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
+        Адская Паутина. Как Выжить В Мире Нарциссизма
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
+        Антихрупкость. Как Извлечь Выгоду Из Хаоса
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        "Великая шахматная доска" Збигнева Бжезинского
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
+        Бизнес В Стиле Virgin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
+        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
+        Брак Под Микроскопом. Физиология Половой Жизни Человека
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
+        Брось Себе Вызов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
+        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
+        ВкусВилл
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
+        Власть, Влияние И Политика В Организациях
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
+        Всегда Вовремя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
+        Вы, Разумеется, Шутите, Мистер Фейнман!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
+        Горник
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
+        Капра Фритьоф "Дао физики"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
+        Даосские Секреты Любви
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
+        Дж. Ханк Рейнвотер
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        Дилемма Инноватора
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
+        Доставляя Счастье
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        Заклинание Для Хамелеона
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
+        Змеи В Костюмах
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Игра Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
+        Крейг Эштон - Извините, я иностранец
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
+        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
+        Искусство Быть Другим
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
+        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
+        История веры и религиозных идей Том 1 Мирча Элиаде
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
+        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
+        Квота, Или Сторонники Изобилия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
+        Кельтские Мифы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
+        Книга по Agile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Книга
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
+        Кофе и капуста
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Боно Латеральное мышление
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
+        Легко Не Будет
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Ловушки Мышления
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
+        Лучшие Притчи Дзэн
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        Магия Утра
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
+        Мальчик, Которого Растили Как Собаку
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
+        Мир В Каждом Шаге
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
+        Мировой Порядок
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
+        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="md-nav__link">
+        На Крючке
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
+        На Пределе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Наука Общения
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
+        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
+        Не Делай Это
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
+        Невидимая Горилла
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="md-nav__link">
+        Неотвлекаемые
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
+        Никаких Правил. Уникальная Культура Netflix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения”
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
+        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
+        Он. Глубинные Аспекты Мужской Психологии
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
+        Открывая Организации Будущего
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
+        Кон М. Agile оценка и планирование проектов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
+        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
+        «По ту сторону бомб и санкций» А. Вучо
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
+        Под Тенью Сатурна
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
+        Лучшие притчи дзэн: обычные истории о людях необычайных
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
+        Пробуждение Тигра - Исцеление Травмы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Психология Влияния
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
+        Путеводитель По Лжи
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        Радикальное Принятие
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
+        Рэй Далио
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
+        Сделано, Чтобы Прилипать
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
+        Сейчас!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
+        Сказание О Кентавре Хироне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
+        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Счастливое Старение
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
+        Тайная Опора. Привязанность В Жизни Ребенка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Тень Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
+        Траблшутинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
+        Тридцать Шесть Стратагем. Китайские Секреты Успеха
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Гласс Роберт - Факты и заблуждения профессионального программирования
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Фрикомыслие. Нестандартные Подходы К Решению Проблем
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
+        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        Демарко-Т-Человеческий-фактор
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
+        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Яндекс.Книга
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Journal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
+        BeOS operating system review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
+        Kubernetes vs Docker Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
+        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
+        Заметки из Египта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
+        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
+        Нижний Новгород
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
+        Про Китай (год ~2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
+        Про Сахалин
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
+        Про Киргизию
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
+        Рейс Санкт-Петербург - Цюрих
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
+        OpenRPA & OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
+        Generic SW project hand-over
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
+        Sales channels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
+        Working Backwards: Amazon's Culture of Innovation: My notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
+        Мои заметки на основании разных лекций (кажется, YC)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        Заметки про нарциссизм и нарциссов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
+        Переговоры (заметки с тренинга)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
+        Площадки для запуска продукта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
+        Про подъём денег
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Список вопросов для подведения итогов с сотрудниками
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Про ТРИЗ, изобретатель-решатель
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
+        Мои заметки про уловки в разработке (аутсорсинг)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
+        ФРИИ, выход на американский рынок
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
+        ActivityWatch (Screen Time on Linux)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
+        Android crash debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
+        BitRise build HowTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
+        CapRover (local kind of Heroku)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
+        ChatSDK (draft)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
+        Server setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
+        CloudRon (managed apps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
+        CloudSigma API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
+        Docker (on Ubuntu)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
+        GitHub Pages config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
+        HEIC to PNG converter (not tested)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
+        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
+        InvizBox with custom OpenVPN <not working!>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Jitsi/" class="md-nav__link">
+        Jitsi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
+        Kamai time tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MacOS/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
+        Mattermost + Audio & Video calls + S3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
+        MkDocs - GitBook alternative, on GitHub pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Monit/" class="md-nav__link">
+        Monit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
+        Nessus server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
+        Network connectivity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
+        OPNSense on KVM hosting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFire/" class="md-nav__link">
+        OpenFire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
+        OpenFlow & WSL on Windows Server (notes)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
+        HowTo use OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
+        Картинки сделать в сторе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
+        PostgreSQL notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
+        Proxy (tinyproxy)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/S3%20things/" class="md-nav__link">
+        S3 things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
+        Swagger (&GitHub)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
+        Networking on Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
+        Unnattended upgrades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
+        Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
+        VPN (Wireguard)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Various/" class="md-nav__link">
+        1Password to Bitwarden migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
+        certbot wildcard certificate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
+        n8n configuration on CapRover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
+        ssmtp (e-mail sending to outside)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Clojure/" class="md-nav__link">
+        Basic information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
+        Cloud IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
+        Managed PostgreSQL self-hosted
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/ZenGarden/" class="md-nav__link">
+        ZenGarden
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    Metadata
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    Highlights
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="chaos-monkeys">Chaos Monkeys</h1>
+<p><img alt="rw-book-cover" src="https://is4-ssl.mzstatic.com/image/thumb/Publication117/v4/ab/3d/93/ab3d9358-f2c4-335a-8751-3b8269ccba8f/9781473550322.jpg/1400x2198w.jpg" /></p>
+<h2 id="metadata">Metadata</h2>
+<ul>
+<li>Author: [[Antonio Garcia Martinez]]</li>
+<li>Full Title: Chaos Monkeys</li>
+<li>Category: #books</li>
+</ul>
+<h2 id="highlights">Highlights</h2>
+<ul>
+<li>The décor was standard-issue Silicon Valley tech: industrial shag (Location 65)</li>
+<li>Wall Street is even simpler than religion. Your entire worth as a human is defined by one number: the compensation number your boss tells you at the end of the year. Pay on Wall Street works as follows: your base salary is actually quite modest, but your “bonus” is where the real money is. That bonus is completely discretionary, and can vary anywhere from zero to a multiple of your base salary. (Location 386)</li>
+<li>In all my experience in both startups and large companies, including and especially at Facebook, I would always prefer—a hundred times prefer—being subject to the rigors of the market, the fickleness of luck, and the whims of users than to navigate the popularity-contest politics of a large company, surrounded by the mediocre duffers who’ve succeeded in life through nothing more than guile and appearances. (Location 436)</li>
+<li>Every new form of media initially emulates the forms of the past. The first radio shows were merely people reading books on air, or playing instruments, with no use of clever sound effects or editing. The first TV shows were quiz shows that had originally appeared on radio, with mere headshots of the contestants. No sophisticated panning shots or jump cuts; simply the addition of a face to the spoken word. Internet advertising has the same atavistic resemblance to the newspaper advertising that preceded it. The first such ads were run in La Presse, a Parisian paper, in 1836. Advertisement was originally a scheme to lower the paper’s selling price and capture market share. A successful strategy, it was soon copied by all newspapers. The ads themselves were rectangular frames of advertiser-created content, placed either below or alongside regular content, and marked as distinct by their blocky frame and large, garish lettering. Sound like an ad you saw on nytimes.com recently? Of course, advertising isn’t the only place where this happens. We refer to spacecraft as “ships” given their resemblance to the seafaring kind, and given the intellectual origins of space travel in the mathematics and engineering of marine navigation. This emulation is merely a result of the organic progression of our mad and clever species from one technological toy to another. In the same way, marketers refer to websites and mobile apps as “publishers,” a quaint reflection of the advertising world’s origins in that of ink and newsprint. The “publisher” is simply the entity that brings the eyeballs to the auction block, whether via Pulitzer Prize–winning writing or a game in which you launch irate birds against antagonistic pigs. During the early days of Internet advertising, the publisher played a critical and powerful role. (Location 504)</li>
+<li>Note that the goal is the same in both: to make you buy shit you likely don’t need with money you likely don’t have. (Location 552)</li>
+<li>What is writing? It’s me, the author, taking the state inside my mind and, via the gift of language, grafting it onto yours. But man invented language in order to better deceive, not inform. That state I’m transmitting is often a false one, but you judge it not by the depth of its emotion in my mind, but by the beauty and pungency of the thought in yours. Thus the best deceivers are called articulate, as they make listeners and readers fall in love with the thoughts projected into their heads. It’s the essential step in getting men to write you large checks, women to take off their clothes, and the crowd to read and repeat what you’ve thought. All with mere words: memes of meaning strung together according to grammar and good taste. Astonishing when you think about it. (Location 653)</li>
+<li>When confronted with any startup idea, ask yourself one simple question: How many miracles have to happen for this to succeed? If the answer is zero, you’re not looking at a startup, you’re just dealing with a regular business like a laundry or a trucking business. All you need is capital and minimal execution, and assuming a two-way market, you’ll make some profit. To be a startup, miracles need to happen. But a precise number of miracles. Most successful startups depend on one miracle only. For Airbnb, it was getting people to let strangers into their spare bedrooms and weekend cottages. This was a user-behavior miracle. For Google, it was creating an exponentially better search service than anything that had existed to date. This was a technical miracle. For Uber or Instacart, it was getting people to book and pay for real-world services via websites or phones. This was a consumer-workflow miracle. For Slack, it was getting people to work like they formerly chatted with their girlfriends. This is a business-workflow miracle. For the makers of most consumer apps (e.g., Instagram), the miracle was quite simple: getting users to use your app, and then to realize the financial value of your particular twist on a human brain interacting with keyboard or touchscreen. That was Facebook’s miracle, getting every college student in America to use its platform during its early years. While there was much technical know-how required in scaling it—and had they fucked that up it would have killed them—that’s not why it succeeded. The uniqueness and complete fickleness of such a miracle are what make investing in consumer-facing apps such a lottery. It really is a user-growth roulette wheel with razor-thin odds. The classic sign of a shitty startup idea is that it requires at least two (or more!) miracles to succeed. This was what was wrong with ours. We had a Bible’s worth of miracles to perform: (Location 680)</li>
+<li>That was five miracles, just for starters (not to even mention practical ones like raising money and getting along with cofounders). It was four miracles too far. (Location 700)</li>
+<li>Even in our jackass naïveté, we started realizing this soon after the YC interview, which is why we eventually did that classic startup move: a pivot. (Location 703)</li>
+<li>“Plan A.” But there you have it, dear reader: we made a “pivot.” Plié! (Location 710)</li>
+<li>she changed her mind. I had brunch with her and her female confidante. (Location 763)</li>
+<li>encomium of RTM was as absolute as it was brief: “He’s never wrong.” (Location 841)</li>
+<li>loopholes, found a solution. His longtime Turkish girlfriend, Simla, (Location 975)</li>
+<li>The reality is, Silicon Valley capitalism is very simple: Investors are people with more money than time. Employees are people with more time than money. Entrepreneurs are simply the seductive go-betweens. Startups are business experiments performed with other people’s money. Marketing is like sex: only losers pay for it. Company culture is what goes without saying. There are no real rules, only laws. Success forgives all sins. People who leak to you, leak about you. Meritocracy is the propaganda we use to bless the charade. Greed and vanity are the twin engines of bourgeois society. Most managers are incompetent and maintain their jobs via inertia and politics. Lawsuits are merely expensive feints in a well-scripted conflict narrative between corporate entities. Capitalism is an amoral farce in which every player—investor, employee, entrepreneur, consumer—is complicit. But hey, look at these shiny iPhones. Right? (Location 1024)</li>
+<li>and is a welcome respite from the grinding toil and stomach-churning stress. I always tried to sit directly (Location 1053)</li>
+<li>Despite all this techie fix-it boosterism, not every problem has an engineering solution. That doesn’t mean, of course, that you can’t sell one. (Location 1144)</li>
+<li>People go into startups thinking that the technical problems are the challenges. In practice, the technical stuff is easy, unless you’re incompetent or really at the hairy edge of human knowledge—for example, putting a man on Mars. No, every real problem in startups is a people problem, and as such they’re the hardest to solve, as they often don’t have a real solution, much less a ready software fix. Startups are experiments in group psychology. As CEO, you’re both the therapist leader, and the patient most in need of therapy. (Location 1266)</li>
+<li>craft him a mantra that would both humble the proud and console (Location 1311)</li>
+<li>tech and life at Goldman Sachs, those would be our first two forays (Location 1340)</li>
+<li>symbolically, technology entrepreneurs are society’s chaos monkeys, pulling the plug on everything from taxi medallions (Uber) to traditional hotels (Airbnb) to dating (Tinder). One industry after another is simply knocked out via venture-backed entrepreneurial daring and hastily shipped software. Silicon Valley is the zoo where the chaos monkeys are kept, and their numbers only grow in time. With the explosion of venture capital, there is no shortage of bananas to feed them. The question for society is whether it can survive these entrepreneurial chaos monkeys intact, and at what human cost. (Location 1401)</li>
+<li>Startups are business experiments performed with other people’s money. Here’s how you fund the experiment: The first money in is known as the seed round, as if germinating a mighty redwood tree. Historically, this money came from the proverbial friends and family, or from angels like Russ, or from the pseudoangels (as we’ll soon see) like Chris Sacca. Companies from measly AdGrok to mighty General Motors are funded via a mix of debt and equity. In the startup world the first money in is usually in debt form, which is counterintuitive, and also deceptive, as it’s not really debt that is paid off. All early-stage companies, except those that raise an exceptionally large round of funding from the get-go, raise on what’s called a convertible note. Despite the fancy name, it’s essentially debt with a nominal interest rate. Should the company be acquired or raise yet more money, this note converts into equity in the company, such that you became an actual owner rather than a creditor. Sounds more complicated than it is. What it boils down to is this: I “lend” you $100,000 to start a company. When you raise your next round of cash, I expect to get $100,000 in equity, at whatever the going price of equity is at that point. Here’s a simple example, with numbers chosen for ease of exposition, not business reality. An investor writes you a check for $100,000 to get the startup going. A year later, after hitting some product or usage milestones, you raise $1 million on a $10 million valuation (your typical postseed funding round, referred to as a “series A”). That debt—the original $100,000—converts into equity in the company. Given that the valuation is $10 million, and the investor put in $100,000, he now owns 1 percent of the company. From the point of the view of the investor, this is actually problematic. Say you’re the hot startup of the moment in the midst of a bubble, and you raise on some crazy valuation, such as $100 million. Well, pity our poor angel investor; he gets only 0.1 percent of the company. In essence, the better the company does, the less of it he gets. While he’s guaranteed (in theory) to get a price per share equal to follow-on investors, that’s actually a gross mispricing of his risk, as he put his money in far earlier, when the company was far riskier. Enter the investor’s great friend: the cap. The cap dictates the maximum number at which the company will be valued, for the purposes of calculating the investor’s stake when the company takes more investment capital. In our previous example, say the initial $100,000 investment had been done at a cap of $3 million. Then, despite the company’s raising later at a valuation of $10 million, the angel’s stake amounts to $100,000 ÷ $3 million = 3.3%, a much bigger slice. The angel’s effective price per share is that of the cap (rather than that of the valuation), giving him a huge discount on the equity compared with investors who just put money in. As a result, this cap is perceived in essence, if not in contractual reality, to be a proxy for the valuation of the company at the time of the angel’s investment. Early-stage entrepreneurs will bandy about their cap number as if it were a real company valuation, when in truth it’s an input to a hypothetical calculation that may or may not play out in the future. Funding a company via equity, rather than debt, is a different beast. With a capped note, there’s no universal agreed-upon value. You can bounce from investor to investor, like a bee from flower to flower gathering pollen, getting notes signed at various caps, and no one need be the wiser. In priced-equity rounds, however, everyone has to agree on a share price and a total amount sold, and everyone must sign on the dotted line at once. Typically there’s a round lead, usually the biggest investor in that round, who will help you herd the other investor cats into the deal. Also, the contractual legal work is more complex, and hence more expensive. Then the bank wires fly and you’re money. To make an analogy, a capped note is like having to seduce five women one after the other, while an equity round is having to convince five women to do a fivesome with you. The latter is exponentially harder than the former.<em> Why all this obsession with either a cap or a real valuation? Does it matter more than mere phallic jockeying for a big number? Yes, because the great enemy of every entrepreneur, the villain hiding in each cap table, is that monster of gradual, withering decay: dilution (!).</em> This refers to the obvious numerical fact that a company is in some ways a big, creamy cheesecake. You and your cofounders might own 90 percent of it to begin with (with 10 percent left for the eventual employee-option pool), but the more money you take in, the smaller the founders’ segment becomes. The higher the valuations (or the caps), the less the investors’ take, even for the same amount of money they give you. And so with each successive round of funding, the smaller your piece of cheesecake gets, no matter how the investors take their share, via debt or equity—and that’s why entrepreneurs struggle to keep that cap (or valuation) as high as possible. It’s effectively setting the price of that cheesecake wedge they’re selling, as well as its size. The higher the price, the less cheesecake they have to sell for the same amount of funding cash in the bank. (Location 1530)</li>
+<li>In the summer of 2010, for the prechosen YC elite, a good cap was in the $6 million range. A stellar cap was around $8 million, and only a really buzzy company like Hipmunk, a travel startup that was a Reddit founder’s second act, got close to that. The middle of the YC pack (where we were) was in the $3 million to $4 million range. By the time this dinner-table conversation took place, Demo Day had come and gone, and we were talking to several investors. I had felt them out and realized we were safely in $3 million cap territory, and perhaps more. (Location 1572)</li>
+<li>There are various flowery titles that the VC set adorn themselves with: “associate,” “principal,” “analyst,” “partner,” “operating partner,” “managing partner,” “general partner,” and so forth. The main distinction is whether one earns what’s called “carry” or not. Simply put, carry is a piece of the financial upside in the fund whose money the firm invests. (Location 1753)</li>
+<li>One quick way to cut through the shit: ask your pretender-to-influence, “Do you have decision-making power?” If he or she even remotely hesitates or hedges, you’re speaking to a lackey (whether he or she acts like one or not). His or her only utility is to get you to the person who does have that power; everything else is so much pig swill. So route around such people if a real investment check is your goal. Arguably (and this is the canonical YC advice) don’t even accept a meeting from someone who can’t answer yes honestly to the above question. You’re wasting your time. (Location 1759)</li>
+<li>passed on to others. Despite my fears, MRM stuck (Location 1850)</li>
+<li>Here is a key insight for any startup: You may think yourself a puny midget among giants when you stride out into a marketplace, and suddenly confront such a giant via litigation or direct competition. But the reality is that larger companies often have much more to fear from you than you from them. For starters, their will to fight is less than yours. Their employees are mercenaries who don’t deeply care, and suffer from the diffuse responsibility and weak emotional investment of a larger organization. What’s an existential struggle to you is merely one more set of tasks to a tuned-out engineer bored of his own product, or another legal hassle to an already overworked legal counsel thinking more about her next stock-vesting date than your suit. Also, large companies have valuable public brands they must delicately preserve, and which can be assailed by even small companies such as yours, particularly in a tight-knit, appearances-conscious ecosystem like that of Silicon Valley. America still loves an underdog, and you’ll be surprised at how many allies come out of the woodwork when some obnoxious incumbent is challenged by a scrappy startup with a convincing story. So long as you maintain unit cohesion and a shared sense of purpose, and have the basic rudiments of living, you will outlast, outfight, and out-rage any company that sets out to destroy you. Men with nothing to lose will stop at nothing to win. (Location 1855)</li>
+<li>Murthy declared that this going-away present was a posthumous homage (Location 1871)</li>
+<li>costs, or legal expenses, the AdGrok airplane would not stay airborne. (Location 1911)</li>
+<li>Ted Wang didn’t want to accept equity now that we presumably (Location 1983)</li>
+<li>There are worse ways of monetizing sociopathy than startups. If you know better ways, I’m listening. How did Microsoft secure a monopoly on the PC desktop, creating multiple billion-dollar fortunes, and ensuring a tech hegemony that has lasted decades? Briefly: Bill Gates came from wealthy Seattle aristocracy. During the early eighties, his mother served on the executive committee of the United Way, along with IBM’s then CEO John Opel. This allowed William Henry Gates III (her son) to score a meeting with IBM about providing a code compiler for IBM’s new, epoch-making product, the IBM PC. What IBM really wanted, though, was an operating system, the core code that manages memory and runs programs. Gates, whose nascent company, Microsoft, didn’t have anything like an entire operating system, honestly referred IBM to a company run by Gary Kildall, a pioneer in operating systems when the real money in computers was still in the hardware. In a story couched in legend, Kildall was off flying his personal plane when IBM representatives physically came knocking at his company’s office. His wife (the company’s business manager) refused to sign IBM’s aggressive nondisclosure agreement and sent them packing, and so IBM grudgingly went back to Gates asking about operating systems. Gates, smelling an opportunity, offered to provide one, hiring a local Seattle programmer to clone Kildall’s operating system, then called QDOS (Quick and Dirty Operating System), which eventually shipped in the IBM PC as DOS (Disk Operating System). Gates, correctly suspecting that other hardware companies would copy IBM’s approach of bundling software separately from hardware, retained copyright over this hacked and copied DOS. As a result, the proceeds from the new computing world where hardware was interchangeable, but software was not (rather than the reverse, which was the status quo in 1980), accrued to Gates and Microsoft rather than IBM. That licensing arrangement became what we now know as Microsoft, as it grew to provide everything from word processing (can we still use that term?) to browsers, calendars, and all the rest of the worker-bee software armamentarium. And Kildall? IBM eventually threw him a bone by offering his (original) operating system alongside Microsoft’s, but it was too little, too late, and it flopped. Fast-forward thirty-five years: Gates now tours Africa as a great philanthropist and single-handedly cures malaria. Kildall eventually succumbed to alcoholism, dying in mysterious circumstances—probably a drunken brawl—in a Monterrey biker bar at age fifty-two. To quote Balzac, “The secret of great fortunes without apparent cause is a forgotten crime, as the crime was properly done.” Never was a crime better concealed. Steve Jobs? If I were to even attempt a brief account of Jobs’s crimes, based on his well-documented biographies, it would fill the rest of the book. A representative anecdote: In 1975 Steven Jobs was a (literally) smelly hippie, fresh from a religious pilgrimage to India, working as a low-level technician at Atari. He was an arrogant, destructive presence who pissed off everyone except Atari’s CEO, Nolan Bushnell, who was impressed with Jobs’s wide-ranging intellect and saved him from being fired. Bushnell wanted to turn Pong, the legendary two-player game that launched the video game revolution, into a single-player version that would eventually be called Breakout (older readers will surely remember). Back in the day, a new game required hardware as well as software, with the former being more important. Bushnell announced a $700 prize for anyone who could design a hardware-software combo that would power the game, with a $1,000 bonus for every chip that was saved in manufacturing the circuit (chips used to be expensive). Jobs convinced his eventual Apple cofounder, Steve “Woz” Wozniak, to take on the project, stipulating it had to be done in four days to fit his social schedule (he had to go pick apples at a utopian commune). Woz worked like hell, with Jobs doing the manual labor of testing the designed circuits, and they made the deadline. Jobs, however, never told Woz about the bonuses, having mentioned only the base prize. He gave Woz $350, shortchanging his collaborator, who had made the entire thing possible, and used the stolen cash to finance his lifestyle. Steve Jobs was all smoldering ambition, ruthless will to power, and narcissistic amour propre; by all accounts of people who actually worked with him, he was a mediocre engineer who had good taste and knew how to recognize in others talents he didn’t posses, and got them to work like hell for him, while fending off competitors in the meantime. In that sense, he was the absolute exemplar of your successful startup CEO, even if not in the way people commonly think. Oh, and Zuckerberg? As is now public record, the Facebook idea (not that ideas alone are worth much) was stolen from a pack of entitled Ivy League brats (now notable angel investors) who had contracted him to implement it. He implemented, but then decided he rather liked the idea and ran with it. Eventually, Facebook would pay tens of millions in damages to the aforementioned Ivy Leaguers (though not without evidently shortchanging them even in the settlement).* We can come down from the rarefied heights of Gates and Jobs now. You’ll have to trust me on this: the story of just about every early-stage startup is peppered with tales such as mine. (Location 2007)</li>
+<li>In the startup game, there are no real rules, only laws, and weakly enforced ones at that. In the end, success would forgive any sins, as it did for Gates and Jobs, and continues to do for countless startup entrepreneurs. Do we begrudge David the use of his sling, after all, against the towering giant Goliath? (Location 2055)</li>
+<li>There are two weak points for tech companies, no matter how large: their investors and their potential business partners. The former influence even obdurate company leaders both by personal sway and by the fact that they often occupy voting seats on the board. If the founders lack leverage at fund-raising time, the CEO will be outnumbered on the board, and he serves at the pleasure of voting board members. This is how CEOs get voted out of office, like prime ministers via a no-confidence vote in parliamentary democracies. If keeping your job depends on pleasing someone else, even if your business card says “CEO,” you’ve got a collar around your neck attached to a leash, and that leash can be yanked. The other weakness is potential business partners. Shipping new product is one thing, but deals are where the startup rubber hits the revenue road. If the product is enterprise software, as it was for Adchemy, that meant a handful of deals a year was the company’s entire commercial livelihood. A few big contracts, and that’s what sustained the long-term value. If these were partnerships rather than deals—that is, an almost matrimonial coupling between (usually) a larger company and a smaller—then the stakes were even higher. These partnerships, like some potential royal marriage, hinged on a delicate combination of greed, long-term strategy, and a certain mutual seduction. Ugly realities like lawsuits, no matter how petty, dissolved the magic, and would send the more powerful partner fleeing. Even large companies with billions in capital fear public shaming and legal quagmires. (Location 2064)</li>
+<li>potential business partners. The former influence even obdurate (Location 2065)</li>
+<li>getting locked out in the early rounds likely meant the same in the even juicier later ones. (Location 2161)</li>
+<li>Driving on the 280, I saw his number flash on my phone and pulled (Location 2198)</li>
+<li>What’s it take to do startups? It certainly isn’t intelligence. (Location 2225)</li>
+<li>First, the ability to monomaniacally and obsessively focus on one thing and one thing only, at the expense of everything else in life. (Location 2235)</li>
+<li>Second, the ability to take and endure endless amounts of shit. I (Location 2242)</li>
+<li>Sure, there are times when an entrepreneur’s life will make you feel like you’ve got the world by the tail. (Location 2248)</li>
+<li>But those moments are far outnumbered by the countless moments of gnawing doubt, nauseating anxiety, and endless toil. If you’ve got a great relationship with your cofounders, then that camaraderie can maintain you. In fact, as in sports or war, the overpowering desire to not let down your fellows is often all that keeps you going. But if you have no cofounders, or if that band-of-brothers relationship isn’t there, then the only thing keeping the whole construct going is sheer, stubborn bloody-mindedness. (Location 2251)</li>
+<li>To paraphrase Jon Bond, an agency guy we had pitched: marketing was like sex; only the losers paid for it. Like losers, we paid for it in this case, hiring a PR agency to juice the metaphorical printing presses for us. (Location 2328)</li>
+<li>Inside the Y Combinator lair, a faded drawing on a whiteboard faced the main dining/meeting hall. It featured the simple L shape of X and Y axes, along with a squiggle running from left to right accounting for the passage of time. The height represented how well a startup was doing, and the shape started with a sharp rise from zero, cresting to an apex labeled “Launch!” The peak was followed by a sudden crash and then a low plateau that ran almost the length of the plot. After much flatlining, the curve edged up slightly, before dipping again (label: “misconfigured analytics code”), and then increased at a steady pace until “acquisition.” The big, yawning space between launch peak and gradual takeoff was labeled ominously in large letters: “THE TROUGH OF DESPAIR.” Put yourself in the mind of a startup founder for a moment: You’ve managed to cobble together a product and maybe some VC money. You’ve launched, gotten a wave of PR, and everything is firing on all cylinders. You open the analytics dashboard that tracks usage, and you see what seems like an ocean of interested users clicking around and toying with every hard-fought feature you managed to ship. Then a few weeks go by. The media cycle has moved on to other new, shiny things. Your analytics graphs look like the heart-rate monitor on a heart attack victim. New user sign-ups have slowed to the trickle they were prelaunch. (Location 2343)</li>
+<li>There are infinite reasons for not making it across the trough, but it almost always involves some impediment to paying users being scalably acquired or serviced. What’s the solution? The trendy answer is that you need to find what’s called “product-market fit,” which is a fancy way of saying that you need to build a thing people are willing to pay for. It turns out that’s pretty hard, because you don’t know what people will pay for until you ask them to, and if what you’re building is truly novel, there’s no history for you to go on. Fortunately, the iteration cycle in a software business is fast (we don’t need to retool milling machines here), and from some approximately correct starting point we can converge on a final product, almost like successive guesses at the solution to an equation. The quicker we iterate, the more steps we can take in the direction of this mythical point of perfect fit. Each such step costs money in wages, server costs, and lost time. When that cash balance goes to zero, the game is over and we’ve lost. If, however, we get close enough to that perfect product-market fit, in which users pay more money for the product than it costs to operate (and than it cost to acquire those users to begin with), we’ve escaped the financial free fall. (Location 2367)</li>
+<li>Here’s more startup training for you: Walking into any meeting, you should know every goddamn thing there is to know about the other person; if you don’t, you’re failing. (Location 2391)</li>
+<li>That means a combined Facebook-Twitter-LinkedIn stalk at least. You should have done that on all the players in your space already, incidentally. Read between the lines of their idealized and cosmetically enhanced CVs: less than a year at a company means they didn’t vest their first year of equity, which means either they or the company sucked, possibly both. Leaving at precisely four years means they’re plodders, punching the equivalent of the white-collar Silicon Valley clock until the next shift. Which friends or connections do you have in common? Do they know your dipshit douche friends you maintain for career reasons, or the ones you actually respect? As true now as in Machiavelli’s time, men are judged by the company they keep. Where do they hang out? Cheap tastes or expensive? Do they have that “lean and hungry look” of Cassius in Julius Caesar, and eat at dingy taquerias, or perhaps live off cheap staples like ramen or food substitutes? Those are the truly dangerous ones, the ones who live like organized crime trigger men, guerrilla fighters, or sailors at sea—eating shitty food and living in cheap, dumpy crash pads—and who couldn’t give a damn about quality of life.* Those are the people to fear, because they don’t need anything an antagonist can deprive them of. Or do they have a score of check-ins at Benu, Saison, and Quince? If they’re not financially independent, then they are harmless tools; they’ll do anything to keep the parade of fungi terrine monkfish and tangerine-peel abalone coming. (Location 2394)</li>
+<li>Know what they want—whether money, power, social approval of various flavors, or merely a comfortable life—and you can predict 90 percent of what they eventually do. (Location 2421)</li>
+<li>huddled. This was the first time we’d heard the term “acquisition” (Location 2527)</li>
+<li>any decent startup will get a dozen acquisition offers as it rises to prominence. I use the word “offer” lightly; companies will mention the possibility, but often the entire process is just an excuse for dissecting a company on the founders’ time, the market intelligence a big company does to remain relevant, as well as keep from getting blindsided by an upstart. (Location 2530)</li>
+<li>gear when Twitter sent us that sine qua non of startup scheming, (Location 2596)</li>
+<li>Like the best Valley law firms, they played the long game, and were big believers in the “first dose is free” business model. They knew that down the line there’d be expensive legal work in the offing, and so based on nothing but an introduction, the Y Combinator badge, and a half-hour conversation with me, they politely asked us to send them our incorporation docs. The following week, I had spent hour after comped hour on the phone with Yu, going through our legal health report. (Location 2613)</li>
+<li>Here’s another lesson for the aspiring startupista: don’t skimp on lawyers. (Location 2618)</li>
+<li>relevant product team. The second is the informal and clandestine. (Location 2644)</li>
+<li>YC companies fresh out of their batch were raising at more than $5 million. The market price for acquired engineers in the Valley then was anywhere from half a million to $2 million each. That refers to the total equity vesting (probably) over four years. The salary, which was something in the $90,000 to $150,000 range, just paid for rent and beer, and wasn’t part of the total sum quoted. So $5 million for three hires plus intellectual property Twitter might use, with a premium for YC bling and “thought leadership” evinced via our glorious blog, was way too cheap. We hadn’t risked everything from our finances to our sanity for just over a million each that would take four years to earn. (Location 2763)</li>
+<li>cocked an eyebrow. “Like you, Amin, (Location 2847)</li>
+<li>going back to our visits to their developer events. The daylong hazing (Location 3007)</li>
+<li>The human need for immortality projects—those ends that dole out meaning and purpose beyond ourselves—hasn’t changed since the pyramids. (Location 3521)</li>
+<li>DONE IS BETTER THAN PERFECT, (Location 3548)</li>
+<li>Keeper of a messianic vision that, though mercurial and stinting (Location 3768)</li>
+<li>DONE IS BETTER THAN PERFECT and PERFECT IS THE ENEMY OF THE GOOD, (Location 3843)</li>
+<li>Product managers must either apply the brakes to impatient engineers who want their creations to see the light of day, or conversely, whip and drive to get perfectionist engineers to stop mucking with the code and procure some real users already. In general, be it at startups or aggressive companies like Facebook, there should be a cultural bias for launching. The perfect is very often the enemy of the good, and as the Facebook poster screamed from every wall: DONE IS BETTER THAN PERFECT. Very few companies have died due to launching early; at worst, you’ll have a onetime product embarrassment (as Apple did with the first version of its iPhone Maps app). However, countless companies have died by losing the nerve to ship, and freezing into a coma of second-guessing, hesitation, and internal indecision. As in life, so in business: maintain a bias for action over inaction. (Location 3928)</li>
+<li>I had safely shipped new product the market seemed to want, leveraging an engineering team that respected my product guidance, and with a plan to iterate the product going forward, with metrics to mark our progress. In a nutshell, that’s what Facebook expected of its product managers. (Location 3942)</li>
+<li>As product manager, you were like a portfolio manager, betting on sets of ideas, hoping to back a winner, often based on little more than intuition. (Location 4024)</li>
+<li>(fewer expensive humans!). (Location 4172)</li>
+<li>This study would lay the groundwork for Festinger’s theory of “cognitive dissonance”: the mental stress people suffer when presented with realities contrary to their deeply held beliefs. The key takeaway is that humans naturally avoid this discomfort, skirting situations that aggravate it, or ignoring data that make their mental contradiction more apparent. (Location 4802)</li>
+<li>When it came to product marketing in tech, that old Fleet Street mantra was law: never let the facts get in the way of a good story. (Location 4924)</li>
+<li>The ecstatic throes of cultish product development resemble fog in more than one way. As with fog, when you’re in the middle of it, you can’t really see it. The fog obscures the farthest reaches of your vision, but everything in your vicinity looks normal. The true density of a fog bank can be seen only from a distance, at a remove. (Location 4934)</li>
+<li>Growth for the sake of growth is the ideology of the cancer cell. —Edward Abbey, The Journey Home (Location 4957)</li>
+<li>What’s an IPO, exactly? A company decides it wants to “float” part of its equity on the public markets, allowing employees and founders to sell private shares to pay them off for years of service, as well as sell shares out of the corporate treasury to have some money in the bank. Large investment banks (such as my former employer Goldman Sachs) form what’s called a “syndicate” (“mafia” might be a better term) wherein they offer to effectively buy those shares from Facebook, and then sell them into the capital markets, usually by pushing it via their sales force onto wealthy clients or institutional investors. That syndicate either guarantees a price (“firm commitment”) or promises to get the best price it can (“best effort”). In the former case, the bank is taking real execution risk, and stands to lose money if it doesn’t engineer a “pop” in the stock on opening day. To mitigate the risk, the bank convinces the offering company to expect a lower price, while simultaneously jacking up what real price the market will bear with a zealous sales pitch to the market’s deepest pockets. Thus, it is absolutely jejune to think that a stock’s rise on opening day is due to clamoring and unexpected interest. (Location 5546)</li>
+<li>How does the first price of the day in IBM get set? Back in the days of floor traders, the “specialists” responsible for trading that stock weighed the amount of buying versus selling interest, and calculated a reasonable “midmarket” price. They then offered to buy at slightly less, and sell at slightly more, than that price when the market opened, supplying the liquidity they’re paid to provide via the narrow bid-ask spread they pocket on every trade. Modern electronic exchanges have replaced the manual process with an algorithmic one, but it’s essentially the same. On opening, trading initiates smoothly from a stew of overnight speculation and imaginary price movements into real trades and shares changing hands. How often does one see 20 to 30 percent price changes on opening in US exchanges? Never, basically, other than after catastrophic events like market meltdowns or 9/11. (Location 5559)</li>
+<li>When it came to monetization, Facebook had no interest in real innovation. It liked its faxes. Like any large company, Facebook would always aim to create monopoly pricing power and maintain information asymmetry, rather than drive true innovation. If Facebook played with the outside world, it always played with loaded dice. (Location 5638)</li>
+<li>big-company (Location 5867)</li>
+<li>Venture capitalists (VCs for short) are the bettors at the startup casino, funding startups from the earliest stages, at which investments are the price of a new car or less, to the latest, in which funding rounds can be in the hundreds of millions of dollars. (Location 7577)</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../5days%20problem%20solving%20spring/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sprint How to Solve Big problems in 5 days" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Sprint How to Solve Big problems in 5 days
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Culture%20codes%20examples/" class="md-footer__link md-footer__link--next" aria-label="Next: Culture codes examples" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Culture codes examples
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

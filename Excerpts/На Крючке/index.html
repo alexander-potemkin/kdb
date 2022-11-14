@@ -1,0 +1,3005 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>На Крючке - My KDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My KDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              На Крючке
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My KDB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        CHANGELOG
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Excerpts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Excerpts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
+        Sprint How to Solve Big problems in 5 days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chaos%20Monkeys/" class="md-nav__link">
+        Chaos Monkeys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%20codes%20examples/" class="md-nav__link">
+        Culture codes examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gumroad/" class="md-nav__link">
+        Работа в Gumroad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hacking%20growth/" class="md-nav__link">
+        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspired/" class="md-nav__link">
+        Marty Cagan - Inspired How To
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
+        Intercom on jobs-to-be-done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
+        Jobs to Be Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marketplaces%20notes/" class="md-nav__link">
+        Про маркетплейсы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
+        Marty_Cagan___Inspired___How_To_
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Matryoshka. Как Вести Бизнес С Иностранцами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20runways%20book/" class="md-nav__link">
+        Software runways book
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Superhuman/" class="md-nav__link">
+        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
+        The Everything Store. Джефф Безос И Эра Amazon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
+        The Jobs to Be Done Playbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
+        The Knowledge Illusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
+        The Ultimate Guide to Project Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../YC%20Startup%20School/" class="md-nav__link">
+        Startup School
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zero%20to%20One/" class="md-nav__link">
+        Zero to One
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten/" class="md-nav__link">
+        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
+        Адская Паутина. Как Выжить В Мире Нарциссизма
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
+        Антихрупкость. Как Извлечь Выгоду Из Хаоса
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        "Великая шахматная доска" Збигнева Бжезинского
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
+        Бизнес В Стиле Virgin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
+        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
+        Брак Под Микроскопом. Физиология Половой Жизни Человека
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
+        Брось Себе Вызов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
+        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
+        ВкусВилл
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
+        Власть, Влияние И Политика В Организациях
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
+        Всегда Вовремя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
+        Вы, Разумеется, Шутите, Мистер Фейнман!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
+        Горник
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
+        Капра Фритьоф "Дао физики"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
+        Даосские Секреты Любви
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
+        Дж. Ханк Рейнвотер
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        Дилемма Инноватора
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
+        Доставляя Счастье
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        Заклинание Для Хамелеона
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
+        Змеи В Костюмах
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Игра Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
+        Крейг Эштон - Извините, я иностранец
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
+        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
+        Искусство Быть Другим
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
+        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
+        История веры и религиозных идей Том 1 Мирча Элиаде
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
+        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
+        Квота, Или Сторонники Изобилия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
+        Кельтские Мифы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
+        Книга по Agile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Книга
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
+        Кофе и капуста
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Боно Латеральное мышление
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
+        Легко Не Будет
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Ловушки Мышления
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
+        Лучшие Притчи Дзэн
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        Магия Утра
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
+        Мальчик, Которого Растили Как Собаку
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
+        Мир В Каждом Шаге
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
+        Мировой Порядок
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
+        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          На Крючке
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        На Крючке
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    Metadata
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    Highlights
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
+        На Пределе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Наука Общения
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
+        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
+        Не Делай Это
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
+        Невидимая Горилла
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="md-nav__link">
+        Неотвлекаемые
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
+        Никаких Правил. Уникальная Культура Netflix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения”
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
+        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
+        Он. Глубинные Аспекты Мужской Психологии
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
+        Открывая Организации Будущего
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
+        Кон М. Agile оценка и планирование проектов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
+        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
+        «По ту сторону бомб и санкций» А. Вучо
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
+        Под Тенью Сатурна
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
+        Лучшие притчи дзэн: обычные истории о людях необычайных
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
+        Пробуждение Тигра - Исцеление Травмы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Психология Влияния
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
+        Путеводитель По Лжи
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        Радикальное Принятие
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
+        Рэй Далио
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
+        Сделано, Чтобы Прилипать
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
+        Сейчас!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
+        Сказание О Кентавре Хироне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
+        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Счастливое Старение
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
+        Тайная Опора. Привязанность В Жизни Ребенка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Тень Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
+        Траблшутинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
+        Тридцать Шесть Стратагем. Китайские Секреты Успеха
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Гласс Роберт - Факты и заблуждения профессионального программирования
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Фрикомыслие. Нестандартные Подходы К Решению Проблем
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
+        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        Демарко-Т-Человеческий-фактор
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
+        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Яндекс.Книга
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Journal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
+        BeOS operating system review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
+        Kubernetes vs Docker Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
+        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
+        Заметки из Египта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
+        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
+        Нижний Новгород
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
+        Про Китай (год ~2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
+        Про Сахалин
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
+        Про Киргизию
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
+        Рейс Санкт-Петербург - Цюрих
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
+        OpenRPA & OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
+        Generic SW project hand-over
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
+        Sales channels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
+        Working Backwards: Amazon's Culture of Innovation: My notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
+        Мои заметки на основании разных лекций (кажется, YC)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        Заметки про нарциссизм и нарциссов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
+        Переговоры (заметки с тренинга)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
+        Площадки для запуска продукта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
+        Про подъём денег
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Список вопросов для подведения итогов с сотрудниками
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Про ТРИЗ, изобретатель-решатель
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
+        Мои заметки про уловки в разработке (аутсорсинг)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
+        ФРИИ, выход на американский рынок
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
+        ActivityWatch (Screen Time on Linux)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
+        Android crash debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
+        BitRise build HowTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
+        CapRover (local kind of Heroku)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
+        ChatSDK (draft)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
+        Server setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
+        CloudRon (managed apps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
+        CloudSigma API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
+        Docker (on Ubuntu)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
+        GitHub Pages config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
+        HEIC to PNG converter (not tested)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
+        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
+        InvizBox with custom OpenVPN <not working!>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Jitsi/" class="md-nav__link">
+        Jitsi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
+        Kamai time tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MacOS/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
+        Mattermost + Audio & Video calls + S3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
+        MkDocs - GitBook alternative, on GitHub pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Monit/" class="md-nav__link">
+        Monit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
+        Nessus server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
+        Network connectivity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
+        OPNSense on KVM hosting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFire/" class="md-nav__link">
+        OpenFire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
+        OpenFlow & WSL on Windows Server (notes)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
+        HowTo use OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
+        Картинки сделать в сторе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
+        PostgreSQL notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
+        Proxy (tinyproxy)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/S3%20things/" class="md-nav__link">
+        S3 things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
+        Swagger (&GitHub)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
+        Networking on Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
+        Unnattended upgrades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
+        Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
+        VPN (Wireguard)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Various/" class="md-nav__link">
+        1Password to Bitwarden migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
+        certbot wildcard certificate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
+        n8n configuration on CapRover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
+        ssmtp (e-mail sending to outside)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Clojure/" class="md-nav__link">
+        Basic information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
+        Cloud IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
+        Managed PostgreSQL self-hosted
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/ZenGarden/" class="md-nav__link">
+        ZenGarden
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    Metadata
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    Highlights
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">На Крючке</h1>
+<p><img alt="rw-book-cover" src="https://readwise-assets.s3.amazonaws.com/static/images/default-book-icon-2.dae1dc4d332b.png" /></p>
+<h2 id="metadata">Metadata</h2>
+<ul>
+<li>Author: [[Нир Эяль, Райан Хувер]]</li>
+<li>Full Title: На Крючке</li>
+<li>Category: #books</li>
+</ul>
+<h2 id="highlights">Highlights</h2>
+<ul>
+<li>Для многих продуктов формирование привычки — залог выживания. Поскольку за наше внимание конкурирует бесконечное количество отвлекающих факторов, компании-производители учатся доводить до совершенства методы, позволяющие им оставаться актуальными в глазах пользователей. Сегодня недостаточно привлечь миллионы клиентов. Компании все чаще замечают, что их стоимость на бирже напрямую зависит от силы привычки, которую они создают. Борясь за лояльность потребителей, мечтая о продукте, который они будут использовать регулярно, нужно научиться не только привлекать, но и приручать пользователей. (Location 67)</li>
+<li>именно привычка заставляет заскучавшего человека заглянуть в Twitter. Почувствовав одиночество, он, не успев даже осознать этого, заходит в Facebook и начинает просматривать ленты новостей. Возник вопрос? Мы не пытаемся найти ответ сами, а запускаем поиск Google. Выигрывает тот, чье название первым приходит в голову. (Location 86)</li>
+<li>Переменные вознаграждения — это один из наиболее мощных механизмов, используемых компаниями, чтобы посадить потребителей на крючок. Подробно они описаны в четвертой главе. Известно, что когда мозг ожидает награду, резко увеличивается уровень нейротрансмиттера дофамина11. Усиливает этот эффект фактор изменчивости, в результате введения которого у человека подавляется активность областей, отвечающих за суждение и размышление, и активизируются области, отвечающие за желание12. И хотя классическими примерами этого считаются игровые автоматы и лотереи, переменные вознаграждения используются во многих продуктах, вызывающих привыкание. (Location 192)</li>
+<li>Недавно один читатель моего блога написал: «Если что-то не может использоваться во вред, это не сила». Он прав. (Location 247)</li>
+<li>ЗАПОМНИТЕ САМИ И РАССКАЖИТЕ ДРУГИМ Привычки — это действия, которые мы совершаем почти (или совсем) не задумываясь. Благодаря сочетанию доступа в интернет, данных и скорости мир становится местом, где все легче создавать привычки. Компании, формирующие покупательские привычки, обладают значительным конкурентным преимуществом. Модель крючка описывает пользовательский опыт, призванный связывать проблему потребителя с решением, предлагаемым компанией достаточно часто для того, чтобы сформировать у него привычку. Модель крючка состоит из четырех этапов: триггер, действие, переменное вознаграждение и инвестиция (Location 298)</li>
+<li>Многие решения, которые мы принимаем в течение дня, означают лишь одно: в прошлом мы именно таким образом смогли разрешить какие-то ситуации. Мозг автоматически приходит к заключению, что если решение помогло вчера, то вполне безопасно принять его и сегодня. Так действие превращается в привычку. (Location 351)</li>
+<li>ПОЧЕМУ ПРИВЫЧКИ ХОРОШИ ДЛЯ БИЗНЕСА Если запрограммированное поведение так твердо стоит на страже наших повседневных действий, то ясно, что приручение этой силы — благо для игроков любой отрасли. Ведь научившись эффективно создавать привычки, мы тем самым увеличим прибыль компании. (Location 358)</li>
+<li>Известный инвестор и СЕО компании Berkshire Hathaway Уоррен Баффет как-то сказал: «Силу компании вы можете определить по тому, насколько плохо на ее бизнесе сказывается повышение цен»20. (Location 410)</li>
+<li>Баффет и Мангер знают, что привычка обеспечивает большую гибкость и возможность повышать цены. Например, в сегменте условно бесплатных видеоигр разработчики активно используют стандартный прием: они откладывают просьбу об оплате до тех пор, пока стремление играть не превратится у пользователей в насущную необходимость. Когда у них появляется потребность играть в новую игру и растет желание достичь в ней прогресса, их гораздо легче превратить в потребителей, готовых платить. Так на продаже виртуальных товаров, дополнительных жизней и специальных видов оружия делаются вполне реальные деньги. (Location 417)</li>
+<li>Если потребители долгое время считают продукт ценным для себя, они с большей вероятностью расскажут о нем друзьям. Частое использование создает больше возможностей для того, чтобы поощрять людей приглашать знакомых, делиться контентом и передавать информацию о проекте из уст в уста. Попавшие на крючок клиенты становятся евангелистами бренда, рупорами вашей компании и приводят новых клиентов почти (или совсем) бесплатно. (Location 451)</li>
+<li>Часто используемые продукты обладают большим потенциалом роста по сравнению с конкурентами. Например, Facebook обогнал всех конкурентов, включая MySpace и Friendster, несмотря на то что довольно поздно появился на вечеринке социальных сетей. Соперники Марка Цукерберга к моменту запуска его сайта, предназначавшегося поначалу исключительно для студентов Гарвардского университета, уже могли похвастаться быстрыми темпами роста и миллионами пользователей. Но именно его компания стала в итоге доминировать в отрасли. Отчасти успех Facebook является результатом правила, которое я называю «больше-больше»: частое использование обеспечивает быстрый вирусный рост. Как отмечает Дэвид Скок, предприниматель в области высоких технологий, ставший венчурным капиталистом, самый важный фактор ускорения роста — это «длительность вирусного цикла»25. Длительность вирусного цикла — это время, необходимое пользователю, чтобы пригласить другого пользователя. Оно может иметь большое значение в судьбе продукта. «Например, если длительность вирусного цикла два дня, то через двадцать дней у вас будет 20 470 пользователей, — пишет Скок. — Но если вы сократите ее в два раза, до одного дня, то получите свыше 20 миллионов пользователей! Понятно, что чем больше циклов, тем лучше, но насколько лучше — это уже не так очевидно». (Location 456)</li>
+<li>Отчасти успех Facebook является результатом правила, которое я называю «больше-больше»: частое использование обеспечивает быстрый вирусный рост. Как отмечает Дэвид Скок, предприниматель в области высоких технологий, ставший венчурным капиталистом, самый важный фактор ускорения роста — это «длительность вирусного цикла»25. Длительность вирусного цикла — это время, необходимое пользователю, чтобы пригласить другого пользователя. Оно может иметь большое значение в судьбе продукта. «Например, если длительность вирусного цикла два дня, то через двадцать дней у вас будет 20 470 пользователей, — пишет Скок. — Но если вы сократите ее в два раза, до одного дня, то получите свыше 20 миллионов пользователей! Понятно, что чем больше циклов, тем лучше, но насколько лучше — это уже не так очевидно». Увеличение доли клиентов, ежедневно обращающихся к вашему сервису, идет ему на пользу по двум причинам. Во-первых, люди, ежедневно посещающие сервис, чаще инициируют новый вирусный цикл (скажем, отмечают друга на фотографии в Facebook). Во-вторых, чем больше активных пользователей каждый день, тем больше ответов и реакций на приглашение. Вирусный цикл не просто поддерживает этот процесс, но и ускоряет его, все активнее вовлекая в него пользователей. (Location 463)</li>
+<li>Привычки потребителей — конкурентное преимущество. Продукты, меняющие привычки, менее уязвимы перед атаками со стороны других компаний. Многие предприниматели наступают на одни и те же грабли: создают продукты, лишь ненамного лучше имеющихся на рынке, и думают, будто этого достаточно для переманивания клиентов. Если речь идет об отказе от давних привычек, то новые продукты не всегда побеждают. Особенно это заметно, когда давно существующий продукт-конкурент стал привычным для большого количества потребителей. (Location 481)</li>
+<li>В классической работе Джона Гурвилла, маркетолога и профессора Гарвардской школы бизнеса, говорится, (Location 488)</li>
+<li>Гурвилл утверждает: шанс у новых игроков появляется тогда, когда они в девять раз лучше прежних. Почему именно на столько? Потому что старые привычки очень живучи, и, чтобы изменить сложившийся порядок вещей, новые продукты должны предложить пользователям радикальные улучшения. По мнению ученого, продукты, требующие значительных изменений в поведении, обречены на провал даже в том случае, когда выгода от их использования очевидна и велика. Например, технология, которую я использую при написании этой книги, во многом уступает существующим альтернативам. Имеется в виду клавиатура с раскладкой QWERTY, изобретенная еще в 1870-х годах для безнадежно устаревших пишущих машинок. (Location 492)</li>
+<li>Раскладка QWERTY выживает из-за высоких психологических издержек, связанных с необходимостью изменить поведение пользователей. Начиная учиться печатать, мы тюкаем по клавишам обычно одним-двумя пальцами. После нескольких месяцев практики привыкаем использовать все пальцы, стремясь угнаться за мыслями и почти (или совсем) не прилагая сознательных усилий. А слова при этом так и устремляются на экран. Переход к незнакомой раскладке — пусть и более эффективной — вынудит нас переучиваться. Ну уж нет! (Location 509)</li>
+<li>покупательские привычки создаются благодаря хранящейся в продуктах ценной информации, что значительно снижает вероятность переключения на альтернативные решения. Например, все сообщения электронной почты, отправленные и полученные при помощи почтовой службы Google Gmail, хранятся неограниченное время. (Location 517)</li>
+<li>Ценную информацию, созданную и хранящуюся в таких продуктах, обычно невозможно перенести, что удерживает пользователя от перехода. (Location 526)</li>
+<li>Примеров успешного изменения давних привычек чрезвычайно мало. Изменение поведения людей требует понимания нескольких вещей: как заставить их выполнить определенное действие (скажем, когда они впервые открывают ваш сайт)? Как добиться, чтобы они повторяли эти действия в течение длительного периода, а в идеале — всю жизнь? (Location 536)</li>
+<li>в искусстве создания привычек есть законы, объясняющие, почему одни продукты меняют нашу жизнь, а другие — нет. Для начала напомню, что у непривычного поведения короткий «период полураспада», поскольку наш мозг склонен возвращаться к хорошо знакомому способу мышления и поступкам. (Location 542)</li>
+<li>поведение подчиняется правилу LIFO: «последним пришел — первым ушел». Иными словами, недавно приобретенные привычки, скорее всего, забудутся раньше других. (Location 549)</li>
+<li>У формирования новых привычек есть враг — привычки старые. И исследования показывают, что это крепкий орешек. Даже когда мы меняем свое поведение, существующие нейронные связи в мозгу остаются и могут заработать вновь, стоит только нам расслабиться31. В этом особая трудность для разработчиков, пытающихся создать революционную линейку продуктов (или бизнес), в основе которых лежит формирование привычек. Чтобы непривычные действия закрепились, они должны быть частыми. (Location 557)</li>
+<li>Примером сервиса, построенного на частых действиях, помогающих сформировать у пользователей привычку, может служить поиск Google. Если вы скептически относитесь к мысли о том, что Google вызывает привыкание (и при этом часто им пользуетесь), попробуйте поиск Bing. По эффективности эти продукты практически одинаковы33. Даже если гении из Google действительно разработали ускоренный алгоритм, объем сэкономленного времени не заметит никто, кроме поисковых роботов и Спока[6]. Миллисекунды важны, но не они удерживают пользователей. Так почему же пользователи Google не переходят на Bing? Лояльными их делает привычка. Если человеку хорошо знаком интерфейс одного поисковика, переключение на другой потребует заметных познавательных усилий. И хотя во многих аспектах Bing аналогичен Google, даже небольшое, в несколько пикселей, отличие в расположении элементов означает для потенциального пользователя необходимость заново учиться взаимодействовать с сайтом. Именно задача адаптации к различиям в интерфейсе, а не технология поиска останавливает пользователей Google и заставляет Bing чувствовать себя в подчиненном положении. Поиск в интернете — настолько частое явление, что Google способен укорениться в мозгу привычного пользователя в качестве единственно возможного решения. И человеку больше не нужно думать, применять Google или нет, он просто делает это. Более того, если компания способна идентифицировать пользователя при помощи технологий слежения, то может, основываясь на его прежнем поведении, повысить качество результатов поиска. Она сделает их более точными, учитывающими его личный опыт, чем сильнее привяжет пользователя к поисковику. Чем чаще используется продукт, тем лучше работает алгоритм, и поэтому он чаще применяется. В результате возникает образцовый цикл поведения, вызывающего привыкание, — и доминирование Google на рынке (Location 570)</li>
+<li>ПРИВЫЧКА КАК СТРАТЕГИЯ Иногда менее частые действия, чем применение зубной нити или поиск в интернете, все равно приводят к появлению привычки. Чтобы это стало возможным, результат должен быть очень ценным для пользователя — а это или получение удовольствия, или уменьшение дискомфорта. Возьмем в качестве примера Amazon: этот интернет-магазин явно стремится стать самым крупным в мире, при этом настолько уверен в своей способности формировать у пользователя привычки, что продает рекламное место на своем сайте прямым конкурентам35. Посетители Amazon часто видят рекламное объявление о товаре, который они чуть было не купили, и узнают, что он продается в другом месте по более низкой цене. Пользователи могут попасть туда буквально за один клик. Для кого-то это путь, ведущий к катастрофе, а для Amazon — прозорливая стратегия ведения бизнеса. Amazon не только получает деньги за рекламу конкурентов, но и использует их доллары для формирования привычки в мозгу пользователей. Интернет-гигант стремится стать универсальным решением часто возникающей задачи — желания найти товар, который вам нужен. Облегчая посетителям поиск лучшего ценового предложения, Amazon, даже не совершая продажу, завоевывает их лояльность и укрепляет доверие к себе. Разумность этой тактики подтверждается исследованием 2003 года, из которого видно: когда в интернет-магазине доступна информация о ценах конкурентов, его привлекательность в глазах пользователей повышается36. Подобной тактики придерживается страховая компания Progressive, специализирующаяся на автостраховании. Благодаря этому она увеличила выручку от продажи полисов с 3,4 миллиарда долларов до 15 миллиардов. Amazon приобретает в глазах посетителей огромную ценность, позволяя им сравнивать свои цены и стоимость товаров у сторонних продавцов. И хотя покупки на этом сайте происходят реже, чем поиск Google, с каждой успешной сделкой компания все сильнее закрепляется в умах пользователей как магазин «по умолчанию». Людям настолько удобно сравнивать цены на Amazon, что они часто проверяют их при помощи мобильного приложения компании, находясь в торговых залах розничных магазинов. Нередко покупки совершаются прямо с территории конкурента37. (Location 597)</li>
+<li>Компания может начать оценку потенциала привыкания к своему продукту с рассмотрения двух факторов: частоты (часто ли совершаются действия) и воспринимаемой ценности (насколько полезным представляется продукт в уме потребителя по сравнению с альтернативными решениями). Поиском Google люди пользуются постоянно, но каждый раз его итог лишь ненамного лучше результата конкурентов вроде Bing. Покупки на сайте Amazon совершаются реже, однако потребители высоко ценят его, поскольку знают, что найдут в этом единственном в своем роде универсальном магазине все что угодно38. Как показано на рис. 1, действия, совершаемые часто и обладающие большой воспринимаемой ценностью, попадают в «зону привычки» и становятся «действиями по умолчанию». Если же какой-то из этих показателей невысок и действие попадает в нижнюю зону под кривой, вероятность его превращения в привычку снижается. (Location 630)</li>
+<li>Некоторые действия никогда не становятся привычными, несмотря на их ценность, потому что происходят недостаточно часто. Эти действия остаются сознательными, в них отсутствует автоматическая реакция, присущая привычке. А вот к другой оси кривая примыкает, то есть даже если с действием связана хотя бы минимальная воспринимаемая ценность, оно может стать привычным, потому что происходит часто. (Location 645)</li>
+<li>Ученые также обнаружили, что на скорость формирования привычки влияет степень сложности действия и то, насколько оно значимо для человека. (Location 656)</li>
+<li>Давайте представим себе продукты, которые вы охарактеризовали бы как вызывающие привыкание. Большинство из них используются ежедневно или по нескольку раз в день. (Location 661)</li>
+<li>Никогда прежде не удавалось так легко создать новый продукт, и тем не менее большинство новых проектов заканчиваются неудачей. Почему? Это происходит по разным причинам: у компаний кончаются деньги, продукт выходит на рынок слишком рано или слишком поздно, потребители не нуждаются в том, что предлагает компания, или основатели в какой-то момент сдаются. Как и неудача, успех тоже может быть вызван множеством факторов. Однако у всех успешных инноваций есть одно общее: они решают какую-то проблему. Это может показаться очевидным, но на самом деле формулировка проблемы, которую решает новый продукт, часто становится предметом ожесточенных споров. (Location 666)</li>
+<li>Но так бывает в случае многих инноваций: мы не знаем, что нуждаемся в них, пока они не становятся частью нашей повседневной жизни. Прежде чем принимать решение по поводу витаминов и болеутоляющих в контексте самых успешных технологических компаний мира, обдумайте следующее: привычка — это когда боль возникает из-за отсутствия действия. (Location 707)</li>
+<li>Тут важно внести ясность: термин «боль», который часто используется в бизнес-школах и учебниках по маркетингу, представляет собой гиперболу. На самом деле ощущение, о котором мы говорим, больше похоже на зуд, только психологический. Оно вызывает дискомфорт и проходит, только когда желание удовлетворяется. И вызывающие привыкание продукты просто дают нам некоторое облегчение. Гораздо проще «почесать», воспользовавшись определенным продуктом, чем терпеть, пока «зуд» пройдет сам. А когда мы попадаем в зависимость от инструмента, ничего больше не остается. Мой ответ на вопрос о витаминах и болеутоляющих таков: технологии, вызывающие покупательские привычки, — это и то и другое. Поначалу они кажутся приятными необязательными витаминами, а когда вырабатывается привычка, начинают утолять боль. У всех видов живых существ два главных мотиватора — стремление получить удовольствие и избежать боли. Ощущая дискомфорт, мы хотим избавиться от этого чувства. В следующей главе поговорим о том, как эмоции — часто негативные — становятся триггером, побуждающим потребителей обращаться к тем или иным продуктам. Пока достаточно запомнить, что вызывающие привыкание продукты формируют в мозгу пользователей определенные ассоциации, а затем облегчают боль. (Location 711)</li>
+<li>некоторые люди считают термины «привычка» и «зависимость» синонимами, это не одно и то же. Зависимость — постоянная, навязчивая склонность к какому-либо поведению или веществу. Она саморазрушительна. Создавать продукты, основанные на формировании и поддержании у потребителей зависимости, безответственно, поскольку это означает намеренное причинение вреда. Привычка — поведение, которое может положительно влиять на жизнь людей. Привычки могут быть полезными и вредными. (Location 729)</li>
+<li>разработчики формируют привычку, проводя потребителей через четыре этапа модели крючка — триггер, действие, переменное вознаграждение и инвестиция. (Location 749)</li>
+<li>ЗАПОМНИТЕ САМИ И РАССКАЖИТЕ ДРУГИМ Для некоторых компаний формирование привычек — ключевой фактор успеха, но это нужно не каждому бизнесу. В случае удачного формирования привычки можно получить большую пользу, в частности: более высокую пожизненную ценность клиента, гибкое ценообразование, ускоренный рост и усиление конкурентной позиции. Привычки не могут сформироваться вне «зоны привычки», в которой действие повторяется с высокой частотой и имеет ценность в глазах потребителя. Вызывающие привыкание продукты вначале, пока привычка еще не сформировалась, кажутся лишь желательными (витаминами) и только потом становятся обязательными (болеутоляющими). Вызывающие привыкание продукты облегчают боль потребителей, то есть избавляют их от явно ощущаемого «зуда». Технологии создания покупательских привычек — своего рода манипулирование. Прежде чем цеплять пользователей на крючок, их создателям следует убедиться, что они формируют у потребителей здоровые привычки, а не пагубную зависимость (подробнее об этом — в восьмой главе). СДЕЛАЙТЕ ПРЯМО СЕЙЧАС Если вы занимаетесь разработкой вызывающих привыкание продуктов, письменно ответьте на следующие вопросы: Какие привычки требуются для вашей бизнес-модели? Какую проблему потребителей решает ваш продукт? Как пользователи решают эту проблему сейчас и почему она требует решения? Насколько часто потребители будут обращаться к вашему продукту? Какие действия людей вы хотите превратить в привычку? (Location 752)</li>
+<li>ПРИВЫЧКИ НЕ ВОЗНИКАЮТ, ОНИ ВЫРАБАТЫВАЮТСЯ Привычки похожи на жемчуг. Натуральные жемчужины вырастают в раковинах устриц, слой за слоем, на протяжении нескольких лет. Но почему на перламутре вдруг начинает формироваться жемчужина? Триггером для организма устрицы становится попавший в раковину посторонний предмет, например песчинка или мелкий паразит, вокруг которого происходит отложение перламутра. Привычкам также требуется основа, на которой они будут вырабатываться. Такой основой и стимулом изменения поведения становятся триггеры. Задумайтесь на мгновение о своей жизни. Что подняло вас с кровати сегодня утром? Что заставило чистить зубы? Что побудило читать эту книгу? Триггеры могут принимать форму обычных сигналов вроде звонка будильника и менее явных, неосознанных сигналов, способных, однако, эффективно влиять на наше поведение. Триггер — исполнительный механизм действия, песчинка в раковине, кладущая начало жемчужине. Он заставляет нас предпринимать те или иные действия. Триггеры бывают двух типов: внешние и внутренние. (Location 804)</li>
+<li>ВНЕШНИЕ ТРИГГЕРЫ Технологии создания покупательских привычек начинают изменять поведение, цепляя пользователя призывом к действию. Эти сенсорные раздражители в изобилии представлены в нашем окружении. Во внешние триггеры встроена информация, которая подсказывает потребителю, что ему делать дальше. Внешний триггер говорит о действии, которое следует предпринять. Часто это выражается чрезвычайно прямолинейно. Например (Location 821)</li>
+<li>предлагает вам освежиться кока-колой. Подпись «Хочешь пить?» под фотографией передает его слова, обращенные к вам, и предполагает, что следующее ваше действие — вставить монету и выбрать напиток. (Location 830)</li>
+<li>При наличии большого количества вариантов пользователю приходится оценивать их все. Когда их слишком много или они плохо сформулированы, то способны вызвать раздражение, замешательство или самое плохое — отказ от любых действий44. Чем меньше нужно думать для совершения следующего действия, тем выше вероятность, что оно будет выполнено бессознательно (Location 846)</li>
+<li>Однако внешние триггеры могут также содержать скрытую информацию о следующем действии, ожидаемом от потребителя. Например, все мы знаем, что на ссылки нужно кликать, а иконок мобильных приложений — касаться. Единственная цель этих широко распространенных визуальных триггеров — побудить пользователя к действию. А поскольку такие элементы дизайна интерфейса известны всем, они представляют собой призывы к действию, механизм работы которых объяснять не нужно. То есть эта информация встроена в них изначально. (Location 853)</li>
+<li>ТИПЫ ВНЕШНИХ ТРИГГЕРОВ Чтобы побудить клиента совершить требуемые действия, компании могут использовать внешние триггеры четырех типов. 1. Платные триггеры Для привлечения внимания пользователей и побуждения их к действиям широко применяются рекламные объявления, контекстная реклама и другие платные каналы. Платные триггеры — эффективный, но затратный механизм. Компании, разрабатывающие вызывающие привыкание продукты, как правило, не полагаются на платные триггеры в долгосрочной перспективе, если вообще используют их. Представьте себе, что Facebook или Twitter пришлось бы покупать рекламу для стимулирования пользователей вернуться на их сайты! Они быстро стали бы банкротами. Поскольку плату за возвращение потребителей не способно выдержать большинство бизнес-моделей, организации, как правило, применяют платные триггеры для привлечения новых клиентов, а затем добиваются их возвращения при помощи триггеров другого типа. 2. Бесплатные триггеры Эти триггеры бесплатны в том смысле, что их нельзя купить напрямую, но часто требуют инвестиций в форме времени, потраченного на связи с общественностью и СМИ. К эффективным способам привлечь к себе внимание относятся положительные отклики в прессе, популярные вирусные видео и удачное размещение приложения в App Store. Компании могут убедить себя, что рост скачиваний или скачок продаж означает долгосрочный успех, но обычно известность, вызванная бесплатными триггерами, недолговечна. Чтобы бесплатные триггеры постоянно привлекали новых потребителей, компании должны все время держать свои продукты в центре внимания, а это трудная задача с почти непредсказуемым результатом. 3. Триггеры отношений Когда один человек рассказывает другому о продукте, это может быть высокоэффективным внешним побудителем к действию. Часто именно рекомендации друзей или родственников — в форме электронного приглашения, лайка в Facebook или просто доброго совета — становятся ключевым компонентом распространения технологий. Именно триггеры отношений способны создать вирусный гиперрост, о котором мечтают все предприниматели. Иногда это действительно удается, поскольку люди любят рассказывать друг другу о чудесных предложениях. Например, трудно превзойти успех вирусного распространения PayPal в конце 1990-х годов45. Команда проекта знала: как только люди начнут переводить друг другу деньги через интернет, они тут же осознают огромную ценность этого сервиса. Удовольствие от того, что кто-то только что прислал вам перевод, была сильным стимулом для открытия счета, и PayPal быстро рос, поскольку был одновременно и вирусным, и полезным. (Location 860)</li>
+<li>Чтобы триггеры отношений работали правильно, нужно создать сообщество заинтересованных пользователей, которые будут с энтузиазмом рассказывать другим о преимуществах вашего продукта. (Location 905)</li>
+<li>
+<ol>
+<li>Внедренные триггеры Внедренные триггеры занимают устойчивое место в окружении пользователя. Они постоянно попадаются ему на глаза, хотя именно потребитель решает, стоит ли впускать их в свою жизнь. Например, иконка на экране мобильного телефона, новостная рассылка по электронной почте или уведомление об обновлении приложения появляются лишь в том случае, если пользователь этого хочет. И пока человек готов получать такие триггеры, компания, которая их инициирует, фактически гарантированно привлекает его внимание. Внедрение триггеров происходит только после того, как пользователи заводят себе аккаунт, оставляют свой электронный адрес в процессе подписки на новости, устанавливают приложение или еще каким-то способом подтверждают готовность поддерживать контакт. Если задача платных и бесплатных триггеров, а также триггеров отношений состоит в том, чтобы привлекать новых пользователей, то внедренные триггеры обеспечивают их постоянное обращение к продукту до тех пор, пока не сформируется привычка. Без внедренных триггеров и молчаливого согласия потребителя на их постоянное появление трудно побуждать его использовать продукт настолько часто, чтобы изменить поведение. (Location 908)</li>
+</ol>
+</li>
+<li>Внешние триггеры — это лишь первый шаг. Конечная цель всех внешних триггеров — втянуть пользователей в модель крючка и заставить их пройти все ее этапы по нескольку раз, чтобы после множества успешных циклов они больше не нуждались в стимулировании извне. Когда у потребителей сформируется привычка, ими управляют уже другие триггеры — внутренние. ВНУТРЕННИЕ ТРИГГЕРЫ Внутренние триггеры возникают в том случае, когда продукт становится тесно связанным с мыслями, чувствами или предыдущим опытом людей. В отличие от внешних триггеров, в которых используются сенсорные раздражители вроде звонка будильника или гигантской кнопки «Войти», внутренние невозможно увидеть, услышать или потрогать. Они проявляются в мозгу автоматически. Умение связать внутренние триггеры с продуктом — высший пилотаж для разработчиков потребительских товаров. (Location 925)</li>
+<li>Эмоции, особенно негативные, — это мощные внутренние триггеры, которые сильно влияют на наше поведение. Скука, одиночество, разочарование, замешательство и нерешительность часто провоцируют чувство дискомфорта или раздражения и приводят к неосознанным действиям, призванным подавить негативные ощущения. (Location 942)</li>
+<li>Наша жизнь наполнена мелкими стрессами, и мы, как правило, не задумываемся о своей привычной реакции на них. В качестве внутренних триггеров выступают и позитивные эмоции. Впрочем, они сами иногда возникают вследствие потребности подавить беспокойство. В конце концов, используя любые продукты, мы стремимся решить какие-то проблемы. Желание развлечься — это потребность избавиться от скуки. А стремление поделиться хорошими новостями — попытка установить и поддерживать социальные связи. (Location 949)</li>
+<li>Наша цель как разработчиков продуктов — решить проблему потребителей, помочь им избавиться от боли, унять «зуд». Если пользователи найдут продукт, облегчающий их боль, со временем у них сформируются по отношению к нему прочные позитивные ассоциации. После продолжительного применения возникают связи — вроде слоев перламутра вокруг песчинки — между продуктом и пользователем, нуждающимся в его помощи. Постепенно такие связи превращаются в привычку, и человек начинает обращаться к продукту под влиянием определенных внутренних триггеров. (Location 956)</li>
+<li>электронная почта (возможно, прообраз всех технологий создания покупательских привычек) — это всегда готовое решение для множества наших ежедневных проблем. С ее помощью мы подтверждаем свою важность (или даже оправдываем свое существование), проверяя, не понадобились ли кому-то, и пытаемся убежать от серых будней. (Location 987)</li>
+<li>Оказавшись на крючке у этих продуктов, люди перестают нуждаться в каких-то явных призывах ими пользоваться. Теперь все происходит в соответствии с автоматической реакцией на чувства, определяющие желаемое поведение. Привязанные к этим внутренним триггерам продукты обеспечивают пользователям быстрое облегчение. Как только в голове утвердилась мысль, что данный продукт — это решение проблемы, мозг сам будет возвращаться к нему, не нуждаясь во внешних триггерах. В случае внутренних триггеров информация о том, что делать дальше, закодирована в памяти пользователя в виде заученной ассоциации. Но ассоциация между внутренним триггером и вашим продуктом не формируется за один день. Чтобы внутренние триггеры стали подавать нужные сигналы, требуются недели и месяцы частого использования. Новые привычки возникают благодаря внешним триггерам, но на крючке потребителя держат именно ассоциации с внутренними триггерами. (Location 991)</li>
+<li>СОЗДАНИЕ ТРИГГЕРОВ Вызывающие привыкание продукты смягчают какую-то конкретную проблему, избавляя от вполне определенной боли. Чтобы добиться этого, разработчикам нужно знать внутренние триггеры потребителей, то есть понимать, от какой боли они стремятся избавиться. Но эту информацию невозможно почерпнуть из стандартных опросов. Требуется более глубокое погружение в чувства людей. Конечная цель разработчиков вызывающих привыкание продуктов — избавить пользователя от боли, создав у него ощущение, что источник облегчения — вот этот продукт. Во-первых, компания должна определить конкретный источник беспокойства или болезненных ощущений в терминах эмоций, а не свойств продукта. Но как это сделать? Лучшая стартовая точка — изучение побуждающих мотивов, лежащих в основе успешных продуктов, вызывающих привыкание. Это нужно не для того, чтобы их копировать, а для понимания, как именно они решают проблемы пользователей. Такое изучение позволит вам попрактиковаться в погружении в мозг потребителей и познакомит с желаниями, общими для всех людей. Как сказал Эван Уильямс, один из основателей Blogger и Twitter, интернет — это «гигантская машина, призванная давать людям то, что они хотят»48. И добавил: «Мы часто думаем, что интернет позволяет делать что-то новое… Но люди хотят лишь того, что они делали всегда». Такие общие потребности универсальны и не подвержены влиянию времени. Но чтобы их обнаружить, разговаривать с пользователями практически бесполезно. Они сами не знают, какими эмоциями руководствуются. Люди просто не думают об этом. Вы столкнетесь с тем, что «декларируемые предпочтения» (то, чего, по их словам, они хотят) сильно расходятся с «реальными предпочтениями» (тем, что они в действительности делают). (Location 1011)</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-footer__link md-footer__link--next" aria-label="Next: На Пределе" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              На Пределе
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

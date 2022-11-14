@@ -1,0 +1,3131 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Демарко-Т-Человеческий-фактор - My KDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My KDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Демарко-Т-Человеческий-фактор
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My KDB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        CHANGELOG
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Excerpts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Excerpts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
+        Sprint How to Solve Big problems in 5 days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chaos%20Monkeys/" class="md-nav__link">
+        Chaos Monkeys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%20codes%20examples/" class="md-nav__link">
+        Culture codes examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gumroad/" class="md-nav__link">
+        Работа в Gumroad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hacking%20growth/" class="md-nav__link">
+        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspired/" class="md-nav__link">
+        Marty Cagan - Inspired How To
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
+        Intercom on jobs-to-be-done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
+        Jobs to Be Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marketplaces%20notes/" class="md-nav__link">
+        Про маркетплейсы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
+        Marty_Cagan___Inspired___How_To_
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Matryoshka. Как Вести Бизнес С Иностранцами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20runways%20book/" class="md-nav__link">
+        Software runways book
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Superhuman/" class="md-nav__link">
+        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
+        The Everything Store. Джефф Безос И Эра Amazon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
+        The Jobs to Be Done Playbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
+        The Knowledge Illusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
+        The Ultimate Guide to Project Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../YC%20Startup%20School/" class="md-nav__link">
+        Startup School
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zero%20to%20One/" class="md-nav__link">
+        Zero to One
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten/" class="md-nav__link">
+        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
+        Адская Паутина. Как Выжить В Мире Нарциссизма
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
+        Антихрупкость. Как Извлечь Выгоду Из Хаоса
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        "Великая шахматная доска" Збигнева Бжезинского
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
+        Бизнес В Стиле Virgin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
+        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
+        Брак Под Микроскопом. Физиология Половой Жизни Человека
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
+        Брось Себе Вызов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
+        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
+        ВкусВилл
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
+        Власть, Влияние И Политика В Организациях
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
+        Всегда Вовремя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
+        Вы, Разумеется, Шутите, Мистер Фейнман!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
+        Горник
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
+        Капра Фритьоф "Дао физики"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
+        Даосские Секреты Любви
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
+        Дж. Ханк Рейнвотер
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        Дилемма Инноватора
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
+        Доставляя Счастье
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        Заклинание Для Хамелеона
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
+        Змеи В Костюмах
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Игра Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
+        Крейг Эштон - Извините, я иностранец
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
+        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
+        Искусство Быть Другим
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
+        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
+        История веры и религиозных идей Том 1 Мирча Элиаде
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
+        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
+        Квота, Или Сторонники Изобилия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
+        Кельтские Мифы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
+        Книга по Agile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Книга
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
+        Кофе и капуста
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Боно Латеральное мышление
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
+        Легко Не Будет
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Ловушки Мышления
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
+        Лучшие Притчи Дзэн
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        Магия Утра
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
+        Мальчик, Которого Растили Как Собаку
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
+        Мир В Каждом Шаге
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
+        Мировой Порядок
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
+        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="md-nav__link">
+        На Крючке
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
+        На Пределе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Наука Общения
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
+        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
+        Не Делай Это
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
+        Невидимая Горилла
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="md-nav__link">
+        Неотвлекаемые
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
+        Никаких Правил. Уникальная Культура Netflix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения”
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
+        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
+        Он. Глубинные Аспекты Мужской Психологии
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
+        Открывая Организации Будущего
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
+        Кон М. Agile оценка и планирование проектов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
+        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
+        «По ту сторону бомб и санкций» А. Вучо
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
+        Под Тенью Сатурна
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
+        Лучшие притчи дзэн: обычные истории о людях необычайных
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
+        Пробуждение Тигра - Исцеление Травмы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Психология Влияния
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
+        Путеводитель По Лжи
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        Радикальное Принятие
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
+        Рэй Далио
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
+        Сделано, Чтобы Прилипать
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
+        Сейчас!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
+        Сказание О Кентавре Хироне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
+        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Счастливое Старение
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
+        Тайная Опора. Привязанность В Жизни Ребенка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Тень Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
+        Траблшутинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
+        Тридцать Шесть Стратагем. Китайские Секреты Успеха
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Гласс Роберт - Факты и заблуждения профессионального программирования
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Фрикомыслие. Нестандартные Подходы К Решению Проблем
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
+        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Демарко-Т-Человеческий-фактор
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
+        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Яндекс.Книга
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Journal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
+        BeOS operating system review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
+        Kubernetes vs Docker Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
+        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
+        Заметки из Египта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
+        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
+        Нижний Новгород
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
+        Про Китай (год ~2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
+        Про Сахалин
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
+        Про Киргизию
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
+        Рейс Санкт-Петербург - Цюрих
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
+        OpenRPA & OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
+        Generic SW project hand-over
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
+        Sales channels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
+        Working Backwards: Amazon's Culture of Innovation: My notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
+        Мои заметки на основании разных лекций (кажется, YC)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        Заметки про нарциссизм и нарциссов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
+        Переговоры (заметки с тренинга)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
+        Площадки для запуска продукта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
+        Про подъём денег
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Список вопросов для подведения итогов с сотрудниками
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Про ТРИЗ, изобретатель-решатель
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
+        Мои заметки про уловки в разработке (аутсорсинг)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
+        ФРИИ, выход на американский рынок
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
+        ActivityWatch (Screen Time on Linux)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
+        Android crash debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
+        BitRise build HowTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
+        CapRover (local kind of Heroku)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
+        ChatSDK (draft)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
+        Server setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
+        CloudRon (managed apps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
+        CloudSigma API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
+        Docker (on Ubuntu)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
+        GitHub Pages config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
+        HEIC to PNG converter (not tested)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
+        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
+        InvizBox with custom OpenVPN <not working!>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Jitsi/" class="md-nav__link">
+        Jitsi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
+        Kamai time tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MacOS/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
+        Mattermost + Audio & Video calls + S3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
+        MkDocs - GitBook alternative, on GitHub pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Monit/" class="md-nav__link">
+        Monit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
+        Nessus server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
+        Network connectivity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
+        OPNSense on KVM hosting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFire/" class="md-nav__link">
+        OpenFire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
+        OpenFlow & WSL on Windows Server (notes)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
+        HowTo use OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
+        Картинки сделать в сторе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
+        PostgreSQL notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
+        Proxy (tinyproxy)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/S3%20things/" class="md-nav__link">
+        S3 things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
+        Swagger (&GitHub)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
+        Networking on Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
+        Unnattended upgrades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
+        Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
+        VPN (Wireguard)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Various/" class="md-nav__link">
+        1Password to Bitwarden migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
+        certbot wildcard certificate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
+        n8n configuration on CapRover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
+        ssmtp (e-mail sending to outside)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Clojure/" class="md-nav__link">
+        Basic information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
+        Cloud IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
+        Managed PostgreSQL self-hosted
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/ZenGarden/" class="md-nav__link">
+        ZenGarden
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="-">Демарко-Т-Человеческий-фактор</h1>
+<p>Если вам приходилось участвовать в серьѐзных проектах по разработке, вы практически наверняка знакомы с мудростью поговорки «Первый блин комом». Только закончив работу, вы обладаете полноценным знанием о том, как еѐ следовало делать. Очень редко удаѐтся сделать шаг назад и выполнить работу заново, но приятно было бы иметь такую возможность.</p>
+<p>Фольклор пестрит простыми рецептами: возьмите оценку трудоѐмкости, данную сотрудником, и умножьте еѐ на два. Не снижайте давления; не позволяйте людям работать дома, они станут филонить. На страницах книги есть какие угодно рецепты, кроме простых. Они привлекают ваше внимание к сложным потребностям человеческой индивидуальности, к острой внутриполитической обстановке офисной среды, к головоломке удержания ценных кадров, к интригующим и порой неимоверно раздражающим вопросам командной работы и наконец – к труднодостижимому состоянию удовлетворения.</p>
+<p>--- Page 7 ---</p>
+<p>Мы, руководители, в большинстве своѐм подвержены одной характерной ошибке: мы склонны управлять людьми так, словно они – модульные компоненты. Вполне очевидно, откуда берѐтся эта тенденция. Вспомните, как происходит подготовка к руководству: считается, что мы вполне подходим на руководящие роли, если хорошо себя зарекомендовали в качестве исполнителей, техников и разработчиков. От исполнителей часто требуется организация ресурсов в модули: фрагменты программного кода, микросхемы и другие рабочие блоки. Подобным модулям присущи свойства чѐрного ящика, так что их внутреннее своеобразие можно спокойно игнорировать. Они задуманы как предметы, имеющие стандартные интерфейсы. Мы полагаемся на модульные методы в течение многих лет, и не удивительно, что в качестве начинающих руководителей пытаемся применить их для управления человеческими ресурсами. Увы, для человеческих ресурсов эти методы не совсем пригодны. Первая часть этой книги начинает наше исследование совершенно иного способа думать о людях и управлять ими. И этот способ требует привыкания к совершенно не модульному характеру человеческого ресурса.</p>
+<p>--- Page 8 ---</p>
+<p>По сути, именно эта мысль и проходит красной нитью через всю книгу: Серьѐзные проблемы в нашей работе имеют не столько технологическую сколько социологическую природу.  Многие руководители готовы согласиться с тем, что сталкиваются больше с человеческим фактором, нежели с техническими сложностями.</p>
+<p>Однако они редко учитывают это на практике. Они руководят так, будто их главной заботой является именно технология. Они проводят столько времени в размышлениях о самых запутанных и интересных головоломках, которые предстоит решать подчинѐнным, будто сами собираются делать эту работу, а не руководить коллективом. Они находятся в вечном поиске технологического прибамбаса, который должен автоматизировать часть работы (более подробно об этом эффекте рассказано в главе 6 «Лаетрил»), тогда как направление их деятельности, связанное с человеческим ресурсом, зачастую получает низший приоритет. Причиной такому феномену служит отчасти процесс воспитания среднего руководителя. Его учили тому, как выполнять работу, а не как руководить работой. Редко когда новый руководитель может похвастаться чем-то, что указывало бы на его способность или склонность к руководству. У них мало опыта руководства и отсутствует осмысленная практика. Но каким же образом новым руководителям удаѐтся убедить себя, что они могут спокойно тратить большую часть своего времени на размышления о технологии и совсем чуть-чуть (или нисколько) на размышления о человеческой стороне проблемы?  </p>
+<p>Миражи высоких технологий  </p>
+<p>Ответ, возможно, кроется в явлении, которое мы окрестили миражами высоких технологий. Это распространѐнная убеждѐнность людей, имеющих дело с любым аспектом новой технологии (а кто из нас не имеет?), что они работают в сфере действительно высоких</p>
+<p>--- Page 9 ---</p>
+<p>технологий. Они потворствуют развитию этой иллюзии, объясняя на какой-нибудь вечеринке, что работают «в области компьютеров» или же «в области телекоммуникаций» или занимаются «электронным переводом денежных средств», намекая тем самым, что принадлежат к миру высоких технологий. Между нами говоря, обычно это не так. Исследователи, совершающие фундаментальные прорывы в перечисленных областях, действительно из мира высоких технологий. А мы лишь используем результаты их труда. Компьютеры и прочие элементы новых технологий служат нам для организации собственных предприятий. Наши рабочие единицы – команды, проекты и взаимосвязанные рабочие группы, а потому наша область деятельности – преимущественно человеческое взаимодействие. Наш успех напрямую зависит от качественного человеческого взаимодействия всех участников предприятия, а наши неудачи являются прямым следствием недостатка человеческого взаимодействия. Главная причина, по которой мы склонны сосредоточивать усилия на технической, а не на человеческой стороне работы, – вовсе не приоритет первой перед второй. Технические вопросы проще решать. Гораздо проще организовать установку нового оптического привода, чем выяснить, почему Хорас в замешательстве или почему Сьюзен выражает недовольство компанией уже после нескольких месяцев работы. Человеческие взаимодействия сложны, их проявления не бывают очевидными и прозрачными, но они имеют большее значение, чем любой другой аспект работы. И если вы концентрируетесь больше на технологии, чем на социологии, то уподобляетесь персонажу водевиля, который потерял ключи на тѐмной улице, а ищет их на соседней, потому что, как объясняет он сам: «Там не так темно».</p>
+<ol>
+<li>Сделал чизбургер – продай его  </li>
+</ol>
+<p>Разработка по природе своей отличается от производства. Однако руководителям предприятий по разработке и смежных с ними свойственен образ мышления, уходящий корнями исключительно в производственную среду. Представьте на секунду, что вы – менеджер местного предприятия быстрого питания. Перечисленные ниже меры повышения эффективности производства, причѐм в любой комбинации, будут полностью оправданны: • Исключить ошибки. Заставить машину (коллектив) работать гладко, насколько возможно. • Занять жѐсткую позицию в отношении сотрудников, склонных филонить на рабочем месте. • Считать служащих взаимозаменяемыми винтиками. • Оптимизировать стабильное состояние. (Даже не задумываясь о том, как производство вышло на полную мощность или каким образом его возможно остановить.) • Стандартизировать процедуру. Делать все по инструкции. • Исключить эксперименты – за это получают деньги те, кто сидит в штаб-квартире. Подобные меры были бы разумными для бизнеса быстрого питания (или любой производственной среды), но вы работаете в другой сфере. Подход «сделал чизбургер – продай его» может стать фатальным для вашей разработки. Он способен лишь подавить дух сотрудников и отвлечь их внимание от проблем, подлежащих решению. Такой стиль управления противоречит сути работы. </p>
+<p>Чтобы эффективно управлять людьми в области интеллектуального труда 3 , необходимо принимать меры, противоположные перечисленным выше. Эти противоположные меры описаны в последующих разделах.</p>
+<p>--- Page 10 ---</p>
+<p>Для большинства работников, занятых в сфере интеллектуального труда, допускаемые время от времени ошибки – вполне естественная и безопасная составляющая деятельности. Но иногда между ошибкой в работе и грехом проводятся почти библейские ассоциации. Для того чтобы изменить подобное отношение, необходимо принять действительно серьѐзные меры.</p>
+<p>Поощрение атмосферы, не позволяющей допускать ошибки, просто заставляет людей занимать оборонительные позиции. Они не пробуют подходы, способные закончиться отрицательным результатом. Вы же поощряете такое поведение, пытаясь упорядочить процесс и использовать жѐсткие методологии, ради исключения ошибок запрещающие сотрудникам принимать ключевые стратегические решения. Любые меры, препятствующие совершению ошибок, могут лишь ненамного поднять уровень технологии, а вот социология команды может пострадать весьма серьѐзно. Противоположный подход – поощрение  нечастых ошибок. Время от времени спрашивайте у своих подчинѐнных, с какими тупиковыми ситуациями они столкнулись, и постарайтесь объяснить, что ответ «такого не было» – не самый лучший. Когда люди совершают ошибки, их следует поздравлять, потому что они получают деньги в том числе и за ошибки.</p>
+<p>Посредством пинков вы сможете в лучшем случае активизировать сотрудников, но не добиться от них творческого подхода, вдумчивости и изобретательности.</p>
+<p>нет ничего более обескураживающего для любого работника, чем чувство, что его собственной мотивации не хватает и потому требуются «добавки» со стороны начальства.</p>
+<p>--- Page 11 ---</p>
+<p>Уникальность каждого человека – постоянный раздражитель для руководителя, слепо уверовавшего в стиль управления, взятый из производственной сферы. Руководитель, умеющий работать с людьми, напротив, осознает, что именно уникальность участников является залогом активности и эффективности внутрипроектных отношений.</p>
+<p>--- Page 12 ---</p>
+<p>Можно подумать, существует работа, не подверженная давлению сроков.</p>
+<p>--- Page 14 ---</p>
+<p>Это не совсем производительность (скорее мошенничество), но такова повседневная деятельность многих американских менеджеров. Кнутом и пряником они заставляют своих людей работать дольше. Они внушают, насколько важна дата выдачи продукта (хотя дата эта может быть совершенно произвольной, конец света не наступит только из-за того, что проект на месяц опоздал). Они заставляют людей принимать безнадѐжно жѐсткие графики, заставляют принести в жертву все, чтобы уложиться в сроки, и делают все возможное, чтобы заставить людей работать дольше и усерднее.  </p>
+<p>Письмо из дома  </p>
+<p>Возможно, ваш персонал на работе находится под воздействием принципа «работай больше и усерднее», однако дома человек находится во власти совсем иных мыслей. Например, таких: «Жизнь проходит. Нестираное бельѐ переполняет шкаф, детей некому обнять, супруг(а) начинает смотреть налево. Карусель жизни совершает лишь один оборот, и есть только один шанс добиться успеха. А ты тратишь свою жизнь на COBOL…»  </p>
+<p>But you know when the truth is told, That you can get what you want or you can just get old. You're going to kick off before you even get halfway through. When will you realize... Vienna waits for you?  </p>
+<p>«The Stranger», Billy Joeli6  </p>
+<p>(Но если совсем уж по правде сказать, Можешь выиграть приз или старым ты стать, И концы ты отдашь, полпути не пройдя, Когда ты поймѐшь, что… Вена ждѐт тебя?)  </p>
+<p>Вена, которая, по словам Билли Джоэла, ждѐт тебя, – это последняя остановка на твоѐм жизненном пути. Когда ты окажешься там, все будет кончено. Если вам кажется, что участников проекта никогда не интересуют такие серьѐзные вещи, подумайте получше. Ваши люди очень остро понимают, что человеку дана лишь одна короткая жизнь, и они слишком хорошо знают, что в этой жизни должно быть что-то поважнее, чем их глупая работа.</p>
+<p>--- Page 15 ---</p>
+<p>Для руководителя, следующего испанской теории, недоработанное время невидимо точно так же, как и сверхурочные, поскольку он всегда считает, что в рабочей неделе сорок часов независимо от того, сколько на самом деле потратили сотрудники. Это время невозможно увидеть в чьѐм-либо расписании. Это время разговоров по телефону, бесед в курилке или просто отдыха. Нет такого человека, который мог бы постоянно работать намного больше сорока часов в неделю, сохраняя уровень интенсивности, необходимый для творчества. Сверхурочные похожи на спринт: он имеет смысл на последней стометровке марафонской дистанции для тех людей, у которых ещѐ остались силы, но если начать спринт на первом километре, вы только зря потеряете время. Если заставлять людей постоянно бежать в темпе спринта, они лишь потеряют уважение к руководителю. Лучшие из сотрудников уже все это проходили – они будут молчать и закатывать глаза, пока руководитель бредит, что эту работу просто необходимо закончить к апрелю. После этого они воспользуются компенсирующими недоработками и в конечном итоге каждую неделю будут работать не более сорока часов. Так реагируют лучшие; все остальные – просто трудоголики.</p>
+<p>Трудоголики не компенсируют свои сверхурочные. Они согласны работать лишние часы, пусть и с понижающейся эффективностью. При достаточном давлении трудоголик способен далеко зайти по пути разрушения собственной личной жизни. Но это все лишь на время. </p>
+<p>--- Page 16 ---</p>
+<p>Переварив эту идею, сотрудник навсегда перестаѐт быть полезным для проекта. Осознание того, что большие ценности (семья, любовь, дом, молодость) принесены в жертву меньшим (работа), разрушительно. Оно заставляет человека, совершившего столь глупую жертву, искать отмщения. Он не пойдѐт к шефу, чтобы спокойно и вдумчиво объяснить, что положение вещей должно измениться; он просто уйдѐт – ещѐ один человек, который сгорел на работе. Так или иначе, его больше не будет. Трудоголизм – это заболевание, но оно не похоже на алкоголизм, затрагивающий лишь некоторых из нас. Трудоголизм больше похож на насморк – с каждым случается время от времени. И мы вспомнили об этой болезни не затем, чтобы обсудить причины и лечение, а чтобы поднять вопрос об отношении руководителя к трудоголикам. Если вы станете эксплуатировать таких людей до изнеможения, в стиле испанской теории, то рано или поздно потеряете их. Неважно, насколько отчаянно проект нуждается в их сверхурочных часах, вы не должны допускать, чтобы эти часы вычитались из личной жизни сотрудников. Потеря хорошего сотрудника того не стоит. Эта мысль выходит за узкие рамки вопросов трудоголизма и продолжается в более сложной области осмысленной производительности.</p>
+<p>В следующий раз, слушая чьи-либо соображения по поводу производительности, обратите внимание, употребляет ли говорящий слово текучка. Скорее всего – нет. За многие годы мы стали свидетелями многочисленных споров о производительности и прочли сотни статей по этой теме, но ни один специалист не мог ничего внятного сказать о текучести кадров. Но какой смысл обсуждать одно, не вспоминая о другом?</p>
+<p>Рассмотрим некоторые типичные меры, предпринимаемые для повышения производительности: • Давление на людей, цель которого – получить больше человеко-часов • Автоматизация процесса разработки продукта • Пренебрежение качеством продукта (более подробно в главе 4) • Стандартизация процедур Каждая из этих мер может сделать работу менее интересной и захватывающей. Следовательно, процесс повышения производительности связан с риском увеличения текучести рабочей силы. Разумеется, производительность невозможно увеличивать без этого. Просто всегда следует учитывать текучесть кадров, принимая решение стремиться к увеличению производительности. В противном случае можно получить «повышение», которое будет компенсировано потерей ключевых сотрудников.</p>
+<p>--- Page 17 ---</p>
+<p>Производительность следует определять как отношение выгоды к затратам, где выгода – экономия, выраженная в долларах, плюс прибыль от выполненной работы, а затраты – полная стоимость проекта, включая стоимость замены сотрудников, сгоревших на работе.</p>
+<p>Под давлением люди работают не лучше, а всего лишь быстрее.  Чтобы работать быстрее, им приходится жертвовать качеством продукта и собственным удовлетворением от работы.</p>
+<p>Сильные эмоции являются показателем того, что одна из инстинктивных ценностей находится под угрозой. Начинающий руководитель может полагать, что работу можно сделать, не затрагивая человеческих эмоций, но если у вас есть хотя бы небольшой опыт руководства, вы полностью уверены в обратном. Наша работа даѐт много возможностей для проявления эмоций. Скорее всего, вы легко вспомните по меньшей мере один случай, когда эмоциональный всплеск был вызван чем-то, связанным исключительно с работой. Подумайте об этом случае и задайтесь вопросом (вероятно, в который уже раз) – откуда взялись все эти эмоции? Не имея никакой информации о данном конкретном случае, мы готовы спорить, что причиной была угроза самооценке. В личной жизни причины эмоциональных реакций многочисленны и разнообразны, но на рабочем месте главным источником душевных потрясений является самооценка, находящаяся под угрозой.</p>
+<p>--- Page 18 ---</p>
+<p>Руководители ставят под угрозу качество продукта, устанавливая невозможные сроки его сдачи. Но они вовсе не задумываются об этом; они полагают, что такие действия ставят перед сотрудниками интересную задачу, которая поможет им стремиться к совершенству. Опытные (вернее, заезженные) сотрудники знают, что все не так. Они понимают, что под дулом автомата их старания будут чрезмерно стеснены.</p>
+<p>Единственное, чем можно будет пожертвовать, – это качество. Крайняя степень давления сроков заставит их принести качество в жертву. Они станут заметать проблемы под ковѐр, чтобы разобраться с ними в последний момент или вовсе оставить в продукте на «радость» конечному пользователю. Они будут сдавать продукты нестабильные и незавершѐнные. Они возненавидят свою работу, но какой у них выбор?</p>
+<p>Мы, руководители, склонны считать качество лишь одним из свойств продукта, чем-то, что можно регулировать в зависимости от потребностей рынка. Качество – вроде шоколадного соуса на пломбире домашнего приготовления – каждый добавляет по вкусу. Взгляд создателя на качество совсем иной. Поскольку самооценка сильно связана с качеством продукта, он, создатель, устанавливает собственные стандарты. Удовлетворительный для него минимум более-менее соответствует высшему уровню качества, достигнутому им в прошлом. И это неизбежно более высокий стандарт, чем тот, что необходим рынку и за который рынок готов платить.</p>
+<p>Рынку абсолютно плевать на такой уровень качества». Прочтите эти слова и прослезитесь, потому что они почти всегда правдивы. Люди могут с пеной у рта говорить о качестве и горько жаловаться на его отсутствие, но когда приходит время платить за качество, их действительные ценности выходят на поверхность. В проекте по разработке программного обеспечения вы можете представить пользователям следующее объяснение: «На основе эмпирических данных мы можем прогнозировать, что Среднее Время Между Сбоями для этого продукта в настоящий момент составляет примерно один час и двенадцать минут. Если мы сдадим продукт вовремя, то есть сегодня, он будет иметь низкую стабильность. Если мы затратим ещѐ три недели, то можем прогнозировать увеличение СВМС до двух тысяч часов, что есть вполне достойный результат». После этого можете ожидать потока недовольного бормотания со всех сторон. Пользователи объяснят, что качество ценят точно так же, как все, но три недели стоят серьѐзных денег.</p>
+<p>Что касается индустрии программного обеспечения, то она приучила клиентов принимать как должное внутрикорпоративные прикладные программы со средней плотностью изъянов от одного до трех на сотню строк кода! И – какова ирония – этот катастрофический результат зачастую относят на низкую сознательность разработчиков в том, что касается качества. То есть тех же, кого обвиняют в желании «до бесконечности</p>
+<p>--- Page 19 ---</p>
+<p>возиться с программой во имя качества», ещѐ и осуждают за низкое качество. Давайте-ка найдѐм тех, кто действительно виноват. Тот, кто платит пианисту, почему-то предлагает играть плохую музыку. Сообщество пользователей программного обеспечения продемонстрировало свои стандарты качества, регулярно подвергая процесс разработки </p>
+<p>неимоверному временному давлению, а затем принимая продукты низкого качества8.</p>
+<p>Такие слова могут показаться обличительной речью, направленной против пользователей программного обеспечения и стандартов рынка в целом, но не стоит воспринимать их подобным образом. Мы должны исходить из того, что люди, финансирующие наш труд, находятся в здравом уме и способны принять разумный компромисс между качеством и стоимостью. Основная идея здесь в том, что осознаваемая клиентом потребность в качестве зачастую не столь велика, как аналогичная потребность разработчика. Существует естественное противоречие. Снижение качества продукта, вероятно, приведѐт к тому, что некоторые люди откажутся от покупки, но сокращение рыночной доли – прямое следствие любого подобного снижения качества – зачастую компенсируется увеличением прибылей на каждую проданную единицу продукта. Бегство от совершенства  – так мы называем ситуацию, когда стандарты качества устанавливает покупатель, а не создатель. Стандарты, основанные на существующем рыночном качестве, имеют смысл лишь до тех пор, пока вы не обращаете внимания на настроение и эффективность труда разработчиков. В долгосрочной перспективе рыночные стандарты качества обходятся дороже. Какой урок отсюда следует?  Качество, серьѐзно превосходящее запросы конечного пользователя, есть средство достижения более высокой производительности. Если вы сомневаетесь в этом, вообразите следующий глубокомысленный эксперимент: спросите сто человек с улицы, какая культура или нация прославилась благодаря высокому качеству. Предсказываем, что более половины людей сегодня ответят «японская». Теперь спросите у другой сотни людей, какая культура или нация известна высокой производительностью. И опять можно ожидать, что большинство ответят «японская». Нация, признанная лидером в области качества, столь же известна своей высокой продуктивностью. Постойте. Как же возможно, что более высокое качество сосуществует с более высокой производительностью? Ведь это противоречит прописной истине, что повышение качества продукта означает увеличение его себестоимости. Вот подсказка Тадзимы (Tajima) и Мацубары (Matsubara), двух авторитетных комментаторов японского феномена: В Японии компромисс между качеством и стоимостью не существует. Здесь почто все </p>
+<p>считают, что высокое качество приводит к сокращению стоимости9.</p>
+<p>Именно об этом Филип Кросби (Philip СговЬу) написал книгу «Quality Is Free» (Качество бесплатно), опубликованную в 1979 году. В этой работе Кросби привѐл многочисленные примеры и чѐтко доказал, что если исполнитель работы устанавливает удовлетворяющий его самого стандарт качества, то увеличение производительности </p>
+<p>компенсирует удорожание более высокого качества10.</p>
+<p>--- Page 20 ---</p>
+<p>В 1954 году англичанин Сирил Паркинсон выразил мнение, что работа растѐт, заполняя </p>
+<p>любое отведѐнное под неѐ время. Сейчас это мнение известно как закон Паркинсона11. Если не знать, что весьма немногие руководители проходят обучение менеджменту, можно подумать, что существует спецшкола, в которой они посещают интенсивный курс по закону Паркинсона и его вариациям. Даже руководители, не знающие вообще ничего о менеджменте, цепляются за эту аксиоматическую истину – закон Паркинсона, руководящую людьми и их отношением к работе. Он даѐт им крайнюю убеждѐнность в том, что единственный способ добиться выполнения работы – это установить невозможно</p>
+<p>--- Page 21 ---</p>
+<p>Закон Паркинсона и закон Ньютона  </p>
+<p>В законе Паркинсона вовсе нет ничего аксиоматичного. Это даже не закон в том смысле, в каком является им закон Ньютона. Ньютон был учѐным, он исследовал гравитационный эффект, следуя строжайшему научному методу. Его теория была принята лишь после тщательных проверок и экспериментов. Закон Ньютона выдержал испытание временем – около двухсот лет исследований. Паркинсон учѐным не был. Он не собирал данные и, вероятно, даже не понимал правил статистических заключений. Паркинсон был юмористом. Его «закон» получил такое распространение не потому, что он соответствовал действительности. Просто шутка была забавная. Разумеется, закон Паркинсона кажется нам забавным, поскольку в нем есть частичка истины. Паркинсон приводит примеры действия своего закона в рамках вымышленной правительственной бюрократической машины, прообразом которой, по мнению некоторых, является Британская почтовая служба. Бюрократия подвержена таким проблемам, потому что еѐ сотрудники почти не получают удовлетворения непосредственно от рабочих задач. Но вы-то, вероятно, не состоите в бюрократии. А если и состоите, то изо всех сил стараетесь устроить так, чтобы ваших людей еѐ воздействие не затрагивало, потому что в противном случае они никогда ничего не сделают. В результате ваши люди имеют возможность получать от работы удовлетворение. Из этого следует простая истина, которую имеет смысл озвучить: Закон Паркинсона наверняка не применим к вашим людям.  Их жизнь слишком коротка, чтобы они стали отлынивать от работы. Раз им нравится работа, они не склонны растягивать еѐ до бесконечности, поскольку это лишь отсрочит удовлетворение, ради которого все они стараются. Они не меньше вашего желают выполнить работу, но только с тем условием, что им не придѐтся нарушать собственные стандарты качества.</p>
+<p>Каждый руководитель хотя бы раз в жизни вынужден иметь дело с сотрудником, который избегает работы, или же не имеет стандарта качества, или просто не может сделать работу. Разве это не подтверждает закон Паркинсона? В здоровой рабочей обстановке причинами стагнации для некоторых людей становятся недостаток компетенции, нехватка уверенности, а также неопределѐнность цели проекта и отсутствие интеграции с командой. Ни в одном из этих случаев временное давление помочь не способно. Скажем, когда сотрудник вяло работает и кажется, что он не задумывается о качестве своих результатов, это верный признак того, что бедняга подавлен сложностью работы. Ему не нужно более сильное давление. Ему нужна смена деятельности, возможно, просто перевод в другую компанию. Даже в тех редких случаях, когда давление на человека остаѐтся единственным вариантом, руководитель должен это давление оказывать последним. Эффект гораздо сильнее, когда давление исходит от команды. Нам встречались случаи однородных команд, где руководителям пришлось бы занимать очередь, чтобы покричать на единственного человека, который не старается вмести со всеми. В последующих главах мы ещѐ не раз вернѐмся к командам и разумному их формированию. А пока речь не о том, что действует. Речь о том, что не действует: не действует отношение к сотрудникам, основанное на законе Паркинсона. Оно способно лишь</p>
+<p>--- Page 23 ---</p>
+<p>Почему программисту приходится работать интенсивнее, чтобы уложиться в оценку аналитика, чем в случае, когда оценку выполняет он сам? Есть соблазн объяснить такие показатели простыми погрешностями в данных. Но если вы согласитесь с нами в том, что плохие прогнозы всегда являются фактором, снижающим мотивацию, не будет никакой необходимости пытаться пренебречь полученными данными. Системные аналитики более склонны к точным оценкам, чем программисты или руководители. Системный аналитик, как правило, владеет той же информацией о поставленной задаче, но его не сдерживает природный оптимизм исполнителя или политические и финансовые взгляды шефа. Более того, системные аналитики имеют больший опыт в оценке, они способны предсказывать результаты более точно, поскольку уже занимались этим в прошлом и делали соответствующие выводы.</p>
+<p>«Когда расписание проекта совершенно необоснованно и нереалистично, и притом никакой объѐм сверхурочных не позволяет уложиться в сроки, команда, работающая над проектом, начинает испытывать </p>
+<p>злость и отчаяние… боевой дух падает до предела»16</p>
+<p>--- Page 24 ---</p>
+<p>Проекты, в которых шеф не оказывал временного давления вообще («Разбудите меня, </p>
+<p>когда все будет готово»), характеризовались самой высокой производительностью 18 . Конечно, изложенное не позволяет сказать, что закон Паркинсона вообще никак не действует на разработчиков. Но наводит на интересные мысли, не так ли? Решение о том, оказывать ли временное давление на проект, следует принимать так же, как решение о наказании ребѐнка. Если вы безупречно выбираете время и правомерность очевидна, положительный эффект вероятен. Если же вы делаете это постоянно, то это уже признак ваших собственных проблем.</p>
+<p>Слегка перефразировав закон Паркинсона, мы получим утверждение, до боли правдивое для многих организаций: Организационная работа увеличивается в масштабах, занимая весь рабочий день.</p>
+<p>--- Page 25 ---</p>
+<p>Все мы очень обеспокоены вопросом повышения производительности. От этой проблемы уже не избавиться посредством простых решений, все такие решения были найдены и задействованы уже очень давно. Однако некоторые организации чувствуют себя намного лучше других. Мы убеждены, что их лидеры не используют какие-либо исключительно продвинутые технологии. Их более высокую производительность можно полностью объяснить более эффективными способами работы с людьми, иным подходом к планированию рабочего пространства и иной корпоративной культурой, а также реализацией мер, которые мы обсудим в частях II, III и IV.</p>
+<p>Семь сирен  </p>
+<p>Ложные надежды, порождаемые простыми технологическими способами нерешения проблемы, подобны Сиренам, соблазнявшим несчастного Одиссея. Каждая тянется к вам со своим собственным чарующим посланием, предлагая привлекательный, но никуда не ведущий ложный путь. Пока вы верите этим сиренам, вы будете сопротивляться нелѐгкому труду, необходимому для построения здоровой корпоративной культуры. Терзающие вас сирены – свойство отрасли, в которой вы работаете. Мы обнаружили семь сирен в области, которую лучше всего знаем. Вот сирены разработки программного обеспечения: Семь ложных надежд руководителя проекта по разработке программного обеспечения  1. Существует ещѐ не изученный новый трюк, который поднимет производительность до небес. Ответ : вы недостаточно глупы, чтобы пропустить нечто столь фундаментальное. Вы постоянно исследуете новые подходы и пробуете те, что кажутся наиболее осмысленными. Ни одна из мер уже принятых и ни одна из тех, что вы ещѐ можете принять, не позволит</p>
+<p>--- Page 26 ---</p>
+<p>поднять производительность до небес. Что они, однако, могут, – так это держать всех в форме: людям нравится думать, учиться и расти. Мысль же о том, что существует волшебное новшество, которое вы пропустили, – это мысль пораженческая, и ею умело пользуются те, кто волшебные новшества продают.</p>
+<p>Технологии развиваются с такой скоростью, что невозможно за всем 4. успевать. Ответ : Да, технологии развиваются быстро, но (вот опять иллюзия высоких технологий) ваши труды по большей части к высоким технологиям не относятся. Машины изменились очень сильно, но бизнес, связанный с разработкой программного обеспечения, всегда был довольно статичен. Мы все так же тратим большую часть времени на требования и спецификации, на низкотехнологичные аспекты нашей работы. Производительность индустрии программного обеспечения растѐт на 3-5% в год, что лишь немногим больше, чем </p>
+<p>показатели в автомобильной или сталелитейной индустрии19. 5. Смена языка даст гигантские преимущества. Ответ : Выбор языка имеет значение, потому что он влияет на способ решения проблемы, но опять же, язык оказывает влияние лишь на этапе реализации. Благодаря преувеличениям, некоторые из новых языков попадают в разряд лаетрила. Не исключено, что новое приложение лучше написать, например на PowerBuilder™, а не на COBOL, но даже до появления PowerBuilder существовали способы лучшие, чем COBOL: специализированные инструменты, упрощаюшие запросы и обновления. Если последние несколько десятилетий вы не проспали у голубого телеэкрана, то смена языка не сильно вам поможет. Она может повысить производительность процентов на пять (вряд ли с этим стоит считаться), но не более того. 6. Из-за отставания следует немедленно удвоить производительность. Ответ : Отставание разработки, о котором так много говорят, – это миф. Все мы знаем, что в конечном итоге любой проект обходится дороже, чем было запланировано в начале. Поэтому стоимость системы, не созданной в прошлом году (потому что не было ресурсов), принято оптимистично считать равной половине стоимости этой же системы, будь она создана, или даже менее того. Проект, попавший в капкан мифического отставания, находится там потому, что выгода от него явно недостаточна, чтобы служить причиной вообще этот проект затевать, даже если оценки стоимости крайне оптимистичны. Если бы вы знали реальную стоимость проекта, то верно понимали бы его смысл: экономическая неудача. Этот проект из отстающих следует перевести в категорию предназначенных для мусорной корзины.</p>
+<p>--- Page 27 ---</p>
+<ol>
+<li>Люди будут лучше работать, если как следует на них надавить. Ответ : Нет, не будут. Но будут меньше любить свою работу. Как видим, один сплошной негатив. Если давление на людей способствует снижению производительности, а установка самых последних техно-фенечек тоже не сильно спасает, чем же должен заниматься руководитель?  </li>
+</ol>
+<p>Это и есть руководство  </p>
+<p>На заре моей карьеры разработчика мне выпала честь работать в проекте под руководством Шерон Ввйнберг (Sharon Weinberg). Сейчас она является президентом компании Codd and Date Consulting Group. Эта женщина – яркий пример того, что я теперь привык называть просвещѐнным руководством. Как-то раз шѐл снег, и я, переборов своѐ болезненное состояние, притащился на работу, чтобы собрать нашу шаткую систему воедино – в демонстрационную версию для пользователей. Шерон зашла и обнаружила меня за консолью. Она исчезла и вернулась через несколько минут с миской супа. Когда она влила в меня этот суп, я почувствовал прилив бодрости и спросил, как она умудряется находить время на такие вещи, ведь ей ещѐ нужно решать столько вопросов, связанных с руководством проектом. Она улыбнулась своей неповторимой улыбкой и сказала: «Том, это и есть руководство».  Т. Д.  </p>
+<p>Шерон знала то, что знают инстинктивно все хорошие руководители: назначение руководителя не в том, чтобы заставить людей работать, а в том, чтобы создать им условия для работы.</p>
+<p>--- Page 33 ---</p>
+<p>Что не влияет на производительность  </p>
+<p>Исследуя результаты состязаний, мы обнаружили, что следующие факторы слабо влияли на производительность или не влияли вовсе: • Язык : Разработчики, использовавшие старые языки, такие как COBOL или Fortran, выполняли задание не хуже тех, кто писал на Pascal и С. Внутри каждой языковой группы распределение производительности было таким же, как в целом по выборке. Единственным исключением из этого наблюдения стал язык ассемблера: участники, писавшие на ассемблере, сильно отстали от всех остальных языковых групп. (Впрочем, люди, пишущие на ассемблере, привыкли к такому положению вещей.) • Опыт : Люди с десятилетним опытом не превосходили по производительности тех, у кого опыта было всего два года. Опыт и производительность никак не коррелировали, разве что люди, менее шести месяцев имевшие дело с языком, работали не так эффективно, как другие участники.</p>
+<p>--- Page 34 ---</p>
+<p>Количество недочѐтов : Около трети участников выполняли упражнение с нулевым количеством недочѐтов. В целом не было отмечено снижения производительности из-за более высокой точности работы. (Более того, в среднем эта треть участников выполняла задание быстрее, чем участники, допускавшие недочѐты.) Зарплата : Уровень зарплаты достаточно сильно варьировался для выборки. Между зарплатой и производительностью наблюдалась весьма слабая связь. Лучшая половина получала на десять процентов больше худшей, но работала почти в два раза эффективнее. Распределение производительности для любого уровня зарплаты было примерно таким же, </p>
+<p>как для выборки в целом25. Опять же ничего удивительного, поскольку большинство таких особенностей отмечалось ранее. Немного более удивительными были факторы, которые, как мы выяснили, на производительность влияли.</p>
+<p>любые два человека из одной организации, как правило, имеют близкую производительность</p>
+<p>Это означает, что лучшие работники накапливаются в определѐнных организациях, в то время как в других собираются худшие. Этот эффект Харлан Миллз (Harlan Mills) предсказал в 1981 году:  </p>
+<p>Такой разброс26 в производительности отдельных программистов понятен, но существует точно такой же разброс в производительности организаций, </p>
+<p>разрабатывающих программное обеспечение27. Software Productivity</p>
+<p>--- Page 36 ---</p>
+<p>Первая четверть, то есть участники, быстрее и эффективнее других выполнившие задание, имеют рабочие места, существенно отличающиеся от тех, что достались последней четверти. Наиболее производительные работают в более тихих, более уединѐнных, более </p>
+<p>просторных и лучше защищѐнных от внешнего вмешательства местах28.</p>
+<p>Представленные данные ещѐ не доказывают, что более качественные рабочие места способствуют повышению производительности. Они, возможно, лишь указывают, что люди с более высокой производительностью склонны работать в организациях, предоставляющих такие рабочие места. Имеет ли это значение для вас?</p>
+<p>--- Page 37 ---</p>
+<p>Полная стоимость рабочего места одного разработчика составляет небольшой процент от его зарплаты. Насколько небольшой зависит от таких факторов, как стоимость площадей и уровень зарплаты, а также от выбора между арендой и покупкой офиса. В целом </p>
+<p>он лежит в диапазоне от 6 до 16% 29</p>
+<p>--- Page 41 ---</p>
+<p>Если офисная среда слишком раздражает людей, они начинают искать места, где можно спрятаться. Они бронируют конференц-залы, или отправляются в библиотеку, или идут пить кофе и не возвращаются. Нет, они вовсе не ходят на тайные свидания и не готовят политический переворот, они лишь прячутся, чтобы поработать. Это хорошая новость – вашим людям требуется удовлетворение от сделанной работы. Они на многое готовы ради этого. В кризисной ситуации они приложат все усилия, чтобы найти для работы нормальное место.</p>
+<p>--- Page 42 ---</p>
+<p>Закон Гилба»:  Если вам нужно представить что-либо в количественной форме, это можно измерить каким-то способом, который даст лучшие результаты, чем в случае, если не проводить измерений вовсе.    </p>
+<p>Закон Гилба не гарантирует, что измерения будут бесплатными или даже дешѐвыми, и они могут оказаться далѐкими от идеала – но это все равно лучше, </p>
+<p>чем ничего35. Т. Д.</p>
+<p>--- Page 44 ---</p>
+<p>Важность этой таблицы в контексте уровня шума должна быть очевидна: тридцать процентов своего времени люди чувствительны к шуму, а все остальное время они генерируют шум. </p>
+<p>--- Page 45 ---</p>
+<p>Во время работы в одиночестве человек в идеале находится в состоянии, которое </p>
+<p>психологи называют потоком40. Поток – это состояние глубокого, почти медитативного погружения в работу. В этом состоянии человек испытывает лѐгкое чувство эйфории и не замечает течения времени: «Я начал работать. Когда оторвался, прошло уже три часа». Человек не прикладывает сознательных усилий, потому что работа, кажется, идѐт потоком. Вы часто бывали в этом состоянии, поэтому нам не нужно его описывать. Не все виды работы требуют состояния потока для достижения хорошей производительности, но для любого, кто связан с проектированием, дизайном, разработкой, письмом или подобными задачами, поток – необходимость. Это задачи, требующие сильного импульса. И только в потоке подобная работа продвигается хорошо. К сожалению, поток нельзя «включать» по желанию. Требуется медленное погружение в предмет, не менее пятнадцати минут концентрации, прежде чем появится это состояние. В период погружения вы особенно чувствительны к шуму и остановкам. Шумная среда может затруднить или сделать невозможным вход в поток. Из потока вас может легко вывести направленное непосредственно на вас воздействие (скажем, ваш телефон) или назойливый шум («Внимание! Сообщение для Пола Портулаки! Пол Портулака, позвоните по внутреннему номеру…»). После каждого такого вмешательства требуется дополнительное время для возврата в поток. И в это время работа стоит на месте.</p>
+<p>Если в среднем входящий телефонный звонок отнимает пять минут, а ваш период повторного входа в поток – пятнадцать минут, общая стоимость такого звонка, исчисляемая в потерянном времени потока (непосредственной работы), – двадцать минут. Десяток телефонных звонков израсходуют половину рабочего дня. Ещѐ десяток других вмешательств, и вот уже рабочий день пропал. Именно поэтому «С девяти до пяти здесь совершенно невозможно работать». Здесь важна не только потеря времени, но ещѐ и сопровождающее эту потерю раздражение. Сотрудник, который постоянно пытается войти в поток и постоянно вынужден отвлекаться, – человек недовольный. Как только он приближается к включению в работу, рабочая среда тут же возвращает его на землю. Вместо желанной предельной концентрации он постоянно находится в беспорядочной смене действий, присущей современному офису. Поставьте себя в положение участницы, заполнившей свою анкету для военных манѐвров разработчиков следующим образом (табл. 10.2):  </p>
+<p>Таблица 10.2. Фрагмент журнала с конкурса разработчиков</p>
+<p>--- Page 46 ---</p>
+<p>Учѐт времени в потоке не очень сложен. Вместо того чтобы заносить в журнал часы, люди заносят часы непрерывной  работы. Чтобы получить честные данные, следует исключить чувство вины за слишком малое количество часов непрерывной работы. Люди должны быть уверены, что не по их собственной вине им удаѐтся лишь час или два в неделю поработать не отвлекаясь; скорее, это вина организации, которая не предоставляет им среду, способствующую работе в потоке. Разумеется, такие данные не должны попасть в отдел финансов. Для расчѐта зарплаты все равно придѐтся сохранить механизм учѐта часов присутствия.</p>
+<p>Схема учѐта, фиксирующая часы в потоке вместо часов присутствия, даѐт весьма серьѐзную двойную выгоду. Во-первых, она фокусирует внимание ваших людей на важности времени потока. Узнав, что каждый рабочий день должен позволять им по меньшей мере два-три часа работать не отвлекаясь, они примут меры, чтобы защитить эти часы. Если они</p>
+<p>--- Page 47 ---</p>
+<p>яснее осознают действие отвлечений , то смогут защищаться от случайных вмешательств со стороны коллег. Во-вторых, эта схема позволяет оценить, насколько разумно тратится время на рабочие задачи. Если предполагается, что завершение продукта требует трех тысяч потоко-часов, у вас есть веская причина полагать, что две трети пути пройдено, если зафиксированы затраты двух тысяч потоко-часов. Подобное заключение, сделанное на основании часов присутствия, было бы глупым и опасным.</p>
+<p>Если отношение продолжительности непрерывной работы к общей продолжительности рабочего дня достаточно высокое, порядка сорока процентов, значит, среда позволяет людям при необходимости работать в потоке. Намного меньший показатель свидетельствует о раздражении сотрудников и снижении эффективности их работы.</p>
+<p>Чтобы выполнить ту же работу, сотрудники в пространстве с фактором 0,10 должны присутствовать на рабочем месте в 3,8 раза дольше, чем сотрудники из пространства с фактором «С», равным 0,38. Это означает, что выполнение работы в экономичном пространстве может привести к потерям производительности, убыток от которых будет превышать экономию на пространстве.</p>
+<p>Не удивляйтесь, если при первоначальных замерах окажется, что фактор «С» стремится к нулю. Кое-кто может даже посмеяться над вашими попытками зафиксировать часы непрерывной работы: «В этом балагане не существует ничего подобного». Не отчаивайтесь. Помните, что вы не просто собираете данные, вы помогаете изменить отношение людей к проблеме. Регулярно фиксируя часы непрерывной работы, вы придаѐте официальный тон идее, что люди должны хотя бы иногда работать не отвлекаясь.</p>
+<p>--- Page 48 ---</p>
+<p>В большинстве офисов, что мы видим сегодня, шума и помех достаточно, чтобы затруднить серьѐзные мыслительные процессы до невозможности. Это тем более прискорбно, что ваши сотрудники каждое утро приносят с собой свои светлые головы. И они могли бы использовать их на ваше благо, причѐм без дополнительных затрат, если бы обстановка у них на рабочем месте была немного тише и спокойнее.</p>
+<p>Теперь просто расслабьтесь и вообразите не столь сложный мир, в котором телефон</p>
+<p>--- Page 49 ---</p>
+<p>ещѐ не изобрели. Вы отправляете записку с предложением пообедать или встретиться и в ответ тоже получаете записку. Все планирование идѐт с некоторым опережением. Совершенно естественно потратить утром полчаса на то, чтобы прочитать почту и ответить на неѐ. В вашей жизни нет громкого звона.</p>
+<p>--- Page 53 ---</p>
+<p>В шестидесятые годы исследователи Корнелльского университета провели ряд тестов, в которых определялось воздействие музыки на работающего человека. Они опросили группу студентов факультета информатики и разделили их на две подгруппы. В первую вошли те, кому нравилась фоновая музыка в процессе работы или учѐбы, во вторую – те, кому музыка мешала. Затем половину участников каждой из подгрупп поместили в тихую аудиторию, а вторую половину – в аудиторию, оборудованную наушниками с возможностью выбирать музыку. Участники в обеих аудиториях получили задачу по программированию на Фортране. Никого не удивило, что участники обеих аудиторий одинаково быстро и качественно справились с задачей. Как знает любой ребѐнок, выполняющий под музыку</p>
+<p>--- Page 54 ---</p>
+<p>домашнее задание по математике, музыка не затрагивает часть мозга, отвечающую за математические действия, еѐ прослушиванием занят другой мозговой центр. Однако в Корнелльском эксперименте был ещѐ скрытый фактор. В постановке задачи требовалось, чтобы поток выходных данных формировался посредством ряда преобразований над числами из потока входных данных. Так, участникам предлагалось сдвинуть каждое число на две цифры влево, затем разделить его на сто, и так далее порядка десяти операций. И хотя в спецификации об этом не было сказано явно, конечным результатом всех преобразований над числом оказывалось обязательно само это число. Некоторые участники поняли это, а некоторые нет. Подавляющее большинство </p>
+<p>догадавшихся работало в тихой аудитории42. Многие из повседневных задач, выполняемых профессиональными работниками, обсчитываются в центре последовательной обработки левого полушария. Музыка не особо мешает такой работе, поскольку еѐ восприятием занимается правое холистическое полушарие мозга. Но не все задачи могут выполняться в левом полушарии. Есть ещѐ и моменты просветления, когда вы восклицаете «Ага!», обнаружив короткий путь, позволяющий сэкономить много месяцев или даже лет работы. Такое творческое озарение требует работы правого полушария. Если правое полушарие занято прослушиванием фортепианного концерта, возможность творческого озарения исчезает. Творческий штраф, налагаемый средой, отличается коварством. Поскольку творческие способности и без того проявляются нерегулярно, мы часто не замечаем, что они стали проявляться реже. Творческое мышление человека не нормировано. Подавление творческого мышления накапливается с течением времени. Организация становится менее работоспособной, люди без всякого вдохновения вымучивают результаты, а лучшие сотрудники покидают компанию.</p>
+<p>--- Page 55 ---</p>
+<p>Руководство, если оно хорошее, должно убедиться, что сотрудникам просторно, что им не мешают посторонние шумы, что существует достаточно способов найти уединение и создать разумные рабочие места. Единообразию в этом подходе места нет. Если люди вешают странные картинки, оставляют беспорядок на столах или передвигают мебель с целью объединения кабинетов, вам остаѐтся лишь ухмыльнуться и смириться с этим. Как только они добьются своего, то смогут перестать думать о среде и полностью отдадутся работе.</p>
+<p>--- Page 56 ---</p>
+<p>Генеральный план есть попытка навязать тоталитарный порядок. Единое, а значит, единообразное видение руководит всем. Нет двух мест, в которых одна задача решалась бы по-разному. Побочный эффект тоталитарного подхода в том, что историческая оценка здания не меняется с течением времени. Александер предлагает вместо генерального плана использовать мета-план. Это философия, согласно которой здание может расти эволюционным путѐм, постепенно выполняя потребности тех, кто его занимает. Ме-таплан состоит из трех частей: • философии постепенного роста; • набора шаблонов или общих принципов дизайна, регулирующих рост; • локального влияния на дизайн тех, кто занимает пространство. В рамках метаплана объекты эволюционируют и посредством многочисленных лѐгких изменений превращаются в университетские городки и сообщества взаимосвязанных зданий. Проявляя уважение к общим принципам, они сохраняют внешнюю гармонию, но не становятся одинаковыми. Подобно старым обжитым деревням, они со временем</p>
+<p>--- Page 57 ---</p>
+<p>приобретают некий шарм. Александер называет это органическим порядком (рис. 13.1). Этот естественный, или же органический, порядок появляется как следствие идеального равновесия между потребностями отдельных элементов среды и потребностями среды в целом. В органичной среде каждое место уникально, а различные места объединяются – все до единого – в глобальное целое, доступное восприятию всех составляющих частей.</p>
+<p>--- Page 58 ---</p>
+<p>Люди не могут эффективно работать, если их рабочие места слишком изолированы или слишком открыты. Хорошее рабочее место сбалансировано… На рабочем месте вы чувствуете себя уютнее, если за спиной у вас стена… Перед вами не должно быть пустой стены ближе чем в 2,5 метрах. (В процессе работы вы время от времени поднимаете глаза, чтобы дать им отдохнуть, сфокусироваться на чем-то не столь близком, как стол. Если пустая стена ближе, чем в 2,5 метрах, глаза не изменят фокусировку и не смогут отдохнуть. В таком случае вы почувствуете тесноту.)… Вы не должны слышать звуки, существенно отличающиеся от тех, что производите вы сами. Рабочее место должно быть достаточно изолированным, чтобы блокировать все такие звуки. Существуют свидетельства, что человек может лучше сосредоточиться на задаче, если люди вокруг него заняты такими же задачами, а не чем-нибудь ещѐ… Рабочее место должно позволять обращать взгляд в разные стороны.  </p>
+<p>A Pattern Language (Язык шаблонов) 46</p>
+<p>--- Page 63 ---</p>
+<p>подходом, поощряющим вас добиваться успеха при помощи следующей формулы: • найдите подходящих людей; • сделайте так, чтобы они были счастливы и не хотели уходить; • дайте им волю</p>
+<p>--- Page 65 ---</p>
+<p>Потребность в единообразии – признак неуверенности со стороны руководства. Для сильного руководителя не имеет значения, как стригутся участники команды или носят ли они галстуки. Гордость такого руководителя связана только с достижениями сотрудников.</p>
+<p>--- Page 66 ---</p>
+<p>Наиболее успешный руководитель будоражит локальную энтропию, нанимая подходящих людей и разрешая им быть собой, пусть даже приходится отступать от корпоративных норм. Когда у вашей организации начнѐтся трупное окоченение, орган, находящийся под вашим контролем, будет ещѐ жив и здоров.</p>
+<p>--- Page 71 ---</p>
+<p>Если речь идѐт о фирме-разработчике, она станет оптимизировать своѐ существование, эксплуатируя людей, мошенничая с рабочими местами, не делая ничего, чтобы сохранить источник собственной энергии – человеческие ресурсы, своѐ единственное достояние. </p>
+<p>Если люди работают в компании лишь год или два, единственный способ сохранить лучших людей – быстро их повышать. Это означает, что новички будут попадать на руководящие посты начального уровня. У них общего опыта может быть не более пяти лет, а опыта работы в компании – меньше двух.</p>
+<p>Эти цифры приводят в замешательство. Человек с трудовым стажем, скажем, в сорок лет проведѐт пять из них в качестве обычного сотрудника, а ещѐ тридцать пять – в качестве руководителя. Получается чрезмерно высокая и узкая иерархия. Пятнадцать процентов персонала выполняют работу, а восемьдесят пять управляют. Тогда лишь десять процентов затрат приходится на работников, а девяносто на вознаграждение руководителей. Даже Марксу не могло присниться такое утяжеление верхушки капиталистической пирамиды.</p>
+<p>Многие из нас начали верить, что именно в компаниях с быстрыми повышениями происходит все интересное. Это естественно, поскольку в молодости мы склонны стремиться вперѐд. Но с корпоративной точки зрения именно поздние повышения являются признаком благополучия.</p>
+<p>--- Page 77 ---</p>
+<p>В Австралии, где забастовки отнимают примерно половину рабочего времени, существует очаровательная форма протеста – «работа по правилам». Вместо того чтобы уходить с работы, сотрудники открывают толстую книгу рабочих процедур и заявляют: «Будем работать по букве инструкций, пока вы не выполните наши требования». К примеру, когда авиадиспетчеры начинают работать по правилам, они могут посадить лишь один самолѐт в семь минут. У врача при таком подходе к работе вырезание аппендицита занимает неделю. Введение Методологии открывает возможность «работы по правилам» во многих других областях экономики. Люди могут строго следовать букве Методологии, и работа в этом случае практически остановится.</p>
+<p>--- Page 78 ---</p>
+<p>Весной 1932 года эксперты по производительности провели ряд испытаний в Hawthorne Western Electric Company, чтобы определить влияние различных параметров среды на производительность. Они пробовали увеличивать освещѐнность и заметили, что производительность увеличилась. Затем они попробовали снизить освещѐнность и заметили, что производительность увеличилась ещѐ больше. Они предположили, что если отключить свет совсем, производительность выбьет потолок. Было похоже, что влияние оказывает не изменение, но сам его факт. Людям было приятно, что на них обращали внимание, их </p>
+<p>интриговала новизна. Явление получило название эффекта Готорна (Hawthorne Effect)58</p>
+<p>--- Page 79 ---</p>
+<p>Грубо говоря, люди работают лучше, когда пробуют что-то новое. Внимательное изучение литературы по улучшению производительности может убедить вас, что всякое улучшение происходит вследствие эффекта Готорна. В рекламе замечательных достоинств средства для улучшения производительности X неизменно присутствуют цифры, полученные при первом применении этого X. Редко когда можно встретить исследование, анализирующее «улучшения» десятилетней давности на предмет их теперешнего статуса. Вероятно, статуса уже никакого нет. Лишь с малой толикой цинизма мы подписываемся под воззрением, что именно эффект Готорна является причиной улучшения производительности в большинстве случаев</p>
+<p>Вспомните о каком-нибудь особенно приятном переживании, связанном с работой. Что делало его настолько приятным? Упрощѐнный ответ – вызов. С хорошим опытом работы всегда связана определѐнная доля сложностей. А теперь остановитесь на одном приятном воспоминании того периода. Прокрутите его мысленно, как видеоплѐнку. Возможно, это было собрание, или разговор в курилке, или ночное бдение, или последовавший за ним завтрак. Если вы похожи на многих из нас, такие воспоминания красочны и удивительно подробны. Вы сможете вспомнить звуки и отдельные голоса, увидеть выражения лиц, вспомнить обстановку. А теперь сделайте стоп-кадр и изучите внимательно изображение. Где здесь вызов? Мы готовы поспорить, что он в ваших воспоминаниях не фигурирует вовсе, а если и фигурирует, то лишь на самом далѐком плане. На переднем же плане среди всех наших ценных воспоминаний о работе – командное взаимодействие. Когда группа людей сплавляется в значимое целое, полностью изменяется характер работы. Вызов в работе важен, но не сам по себе. Он важен потому, что позволяет нам сфокусироваться на чем-то всем вместе. Вызов – это инструмент, объединяющий нас. В тех рабочих группах, где люди получают наибольшее удовлетворение от работы и действуют на пределе своих возможностей, командное взаимодействие – это все. Именно благодаря взаимодействиям люди терпят все, выкладываются на полную катушку, преодолевают чудовищные трудности.</p>
+<p>--- Page 80 ---</p>
+<p>Команда, прошедшая кристаллизацию, – это группа людей, столь сильно связанных, что целое становится больше суммы составляющих его частей. Производительность этой команды выше, чем производительность тех же людей, не перешедших порог кристаллизации. И, что столь же важно, удовольствие от работы также выше, чем можно было бы ожидать, учитывая природу работы. В некоторых случаях кристаллизованная команда может замечательно себя чувствовать, работая над задачей, которую другие посчитали бы откровенно скучной. Как только начинается кристаллизация команды, вероятность успеха очень резко возрастает. Команда может стать неумолимой силой, стремящейся к успеху. Управлять этой стихией – одно удовольствие. Вы проводите большую часть рабочего дня, убирая препятствия с их пути, расчищая тропинку, чтобы зевак случайно не затоптали: «Так, народ, минуточку внимания. Сделайте шаг назад и придержите свои шляпы». Управление в традиционном смысле этого слова им не нужно и уж точно не нужны дополнительные стимулы. Они уже обладают собственным импульсом. Причины такого явления не столь сложны: команды по природе своей склонны формироваться при наличии целей. (Скажем, спортивная команда. Может ли она вообще существовать без цели?) До кристаллизации команды еѐ участники, возможно, имели различные цели. Однако в процессе кристаллизации каждый поверил в общую цель. Эта корпоративная цель обретает особую важность по причине еѐ значимости для группы. И хотя сама по себе цель может казаться участникам команды выбранной наудачу, они стремятся к еѐ достижению с невероятным напором.</p>
+<p>--- Page 81 ---</p>
+<p>Цели корпораций всегда будут казаться людям выбранными случайно (как и сами корпорации), но случайность цели не означает, что еѐ никто никогда не воспримет. Будь это верно, у нас не было бы спорта. Цели в спорте всегда абсолютно произвольны. Вселенной нет дела до того, что белый шарик перемещается между воротами команды Аргентины на одной стороне поля и воротами команды Италии на другой. Но многие люди увлекаются процессом и болеют за результаты. Их вовлеченность – функция ячеек общества, к которым они принадлежат.</p>
+<p>--- Page 82 ---</p>
+<p>Есть несколько характерных признаков того, что произошла кристаллизация команды. Самый важный – низкая текучесть кадров в проектах и в ходе выполнения чѐтко сформулированных заданий. Участники команды никуда не собираются идти, пока не сделают работу. Вещи, имевшие огромное значение до кристаллизации (деньги, положение, перспективы повышений), после кристаллизации становятся не столь важными или же совсем неважными. Вряд ли кто-то уйдѐт из такой команды из-за банальной возможности небольшой прибавки к зарплате.</p>
+<p>Участники хорошей команды испытывают ощущение элитарности. Они чувствуют, что составляют нечто уникальное, что они выше всякой заурядности. Они проявляют смелость, достойную спецназа, что может отчасти раздражать людей, не входящих в группу. Неизбежно появляется и чувство общего владения продуктом, созданным командой, прошедшей кристаллизацию. Участникам приятно, что все их имена написаны на продукте или какой-то его части. Каждый готов к критике со стороны коллег. Командное пространство украшено видами продукта в различных стадиях готовности. И последний признак кристаллизации – очевидное удовольствие от работы. В таких командах царит атмосфера процветания. Общение протекает легко, уверенно и тепло.</p>
+<p>--- Page 91 ---</p>
+<p>Лучший успех – тот, в котором нет очевидного участия руководства, а команда работает как содружество равных. Лучший начальник – тот, кто может повторять это раз за разом, не давая участникам команды догадаться, что ими «руководят». Таких руководителей их собственные коллеги считают просто удачливыми. У них все получается словно само собой. У них есть команды, рвущиеся в бой, проекты, быстро набирающие ход, и до самого конца все вокруг такого руководителя работают с энтузиазмом. Эти руководители никогда не напрягаются. Выглядит все настолько просто, что никто не верит, что они вообще руководят.</p>
+<p>--- Page 92 ---</p>
+<p>Такое отношение открытого кимоно прямо противоположно оборонительному руководству. Вы не пытаетесь защититься от людей, которых поставили в доверенное положение. И в таком доверенном положении находятся все ваши сотрудники. А если вы не можете доверить человеку какую-то автономную деятельность, он для вас бесполезен.</p>
+<p>Человек, сообщающий по телефону, что он здоров, готов к работе, возвышающей его собственные интересы. Назначение на такую работу является подтверждением компетентности в определѐнных областях, предоставляет в этих областях самостоятельность и ответственность. Руководители здоровых сотрудников стараются уважать автономию, единожды предоставив еѐ. Они понимают, что неудача работника будет иметь плохие последствия для руководителя, но это лишь правила игры. Они готовы время от времени преодолевать препятствия, прямой результат неудачи одного из сотрудников. Когда такое происходит, они подозревают, что сами никогда не сделали бы такой ошибки, если бы выполняли работу, а не занимались руководством. Ну и что? Вы сделали все возможное, чтобы найти подходящего человека на определѐнную должность, и теперь нет смысла менять решение задним числом.</p>
+<p>--- Page 96 ---</p>
+<p>Утверждение, что продукт, не доведѐнный до идеала, «достаточно хорош», – это похоронный звон для кристаллизующейся команды. Невозможно найти импульс для объединения ваших людей в общем удовлетворении от сдачи продукта среднего качества. Противоположный подход – «лишь идеал для нас достаточно приемлем» – даѐт команде настоящий шанс. Этот культ качества является сильнейшим катализатором для формирования команды. Он связывает команду воедино, отделяя еѐ участников от всего остального мира. Вспомним, что остальному миру на качество вообще наплевать. Да, все голосуют за качество, но если оно стоит лишнюю копейку, вы начинаете быстро познавать настоящее отношение к качеству со стороны тех, кто платит.</p>
+<p>--- Page 98 ---</p>
+<p>Вы пошли бы на то, чтобы сделать своих людей более производительными, более ориентированными на достижение цели, но при этом менее управляемыми? Ответ на такой вопрос проводит черту между великими руководителями и обычными, средними. Средний руководитель слишком неуверен, чтобы распрощаться с атрибутикой руководства. Великий руководитель знает, что людей в любом случае нельзя контролировать разумными способами и сущность успешного руководства в том, чтобы задать нужное направление для участников проекта, а потом разогреть команду до такого состояния, чтобы ничто не могло помешать успеху, даже руководитель.</p>
+<p>Возможно, это оскорбит ваши чувства руководителя, но руководитель обычно не входит в команду, которой управляет. Команды создаются из людей равных, которые и функционируют как равные. Руководитель чаще всего находится за пределами команды, время от времени подчѐркивая направления развития и убирая с дороги административные и процедурные препятствия. По определению руководитель не является равным и не может поэтому стать частью группы равных.</p>
+<p>--- Page 99 ---</p>
+<p>Некоторая разнородность может стать огромным подспорьем для кристаллизации команды. Добавьте одного разработчика, имеющего физические недостатки, в только что сформированную рабочую группу, и шансы кристаллизации немедленно возрастут. Такой же эффект может дать сотрудничающий студент или бывший секретарь, для которого это первый проект после переподготовки. Любой элемент разнородности имеет символическое значение для участников команды. Это чѐткий сигнал того, что допустимо не быть клоном, допустимо не вписываться в корпоративный шаблон универсального пластикового человека.</p>
+<p>--- Page 101 ---</p>
+<p>Пилотный проект – это такой, в котором вы откладываете в сторону толстый том стандартов и пробуете новый, неизученный метод. Новый метод вам не знаком, поэтому поначалу можно ожидать низкой производительности. Такова цена изменений. Обратная сторона медали – повышение производительности в результате применения нового метода. Кроме того, добавляется ещѐ эффект Готорна – прирост энергии и интерес, наполняющий людей, когда они изучают что-то новое и непривычное. Могут ли эти два плюса перевесить минус кривой обучения? Было бы безрассудством предполагать, что могут всегда. Большое значение имеет природа вносимых изменений, а также продолжительность проекта, способности его участников, степень веры людей в изучаемый метод.</p>
+<p>--- Page 112 ---</p>
+<p>Так почему же руководители разрешают или даже поощряют сверхурочный труд? Джерри Вейнберг (Jerry Weinberg) представил нечто вроде ответа: он предполагает, что мы работаем сверхурочно не для того, чтобы успеть сделать работу, но для того, чтобы оградить себя от обвинений, когда работа не </p>
+<p>будет сделана в установленные сроки76.</p>
+<p>--- Page 113 ---</p>
+<p>Будучи руководителем, вы, возможно, убедили себя, что должны быть главным тренером команды или команд, находящихся в подчинении. Определѐнно, эта модель широко применялась в прошлом, когда в отраслях высоких технологий начальники являлись одновременно признанными специалистами в технологиях, которыми овладевали подчинѐнные. Но сегодня в типичной команде интеллектуальных работников существуют разнообразные направления специализации, и лишь некоторыми из этих направлений владеет начальник. Такой начальник обучает далеко не всех участников команды. А как же остальные? Мы все больше убеждаемся, что участники команды в большинстве случаев сами способны обучать друг друга.</p>
+<p>Обучение, как его ни называй, – важный фактор успешного взаимодействия участников команды. Оно обеспечивает координацию, а также личный профессиональный рост для всех участников. Оно ещѐ и доставляет удовольствие. Мы вспоминаем такое обучение, почти как религиозный опыт. Мы чувствуем себя в долгу перед теми, кто учил нас, и с радостью расплачиваемся, обучая других. Ритуал обучения просто невозможен, если люди не чувствуют себя в безопасности. В атмосфере достаточно сильной конкуренции просто безумие позволить кому-то увидеть, что вас обучают. Ведь это будет очевидным свидетельством, что в определѐнной области у вас меньше знаний, чем у обучающего. Точно таким же безумием является и обучение другого человека, поскольку он в конечном итоге может воспользоваться вашей помощью, чтобы вас же и обойти.</p>
+<p>Затруднение внутрикомандного обучения есть прямое следствие внутренней конкуренции. Поскольку обучение жизненно необходимо для процветания команды, все, что делает руководитель для повышения конкуренции в команде, можно считать травлей. Вот некоторые действия начальства, оказывающие чаще всего отравляющее воздействие на команду: • ежегодный пересмотр зарплаты или заслуг; • целеориентированное управление (management by objectives, MBO); • восхваление определѐнных сотрудников за выдающиеся достижения; • награды, призы и бонусы, связанные с производительностью; • измерения производительности практически в любой форме. Минутку, но разве это не те самые вещи, которые так много времени или даже большую его часть отнимают у руководителей? Как ни прискорбно, да. И все же эти действия с большой вероятностью оказывают отравляющее воздействие. У. Эдварде Деминг (W. Edwards Deming) в своей книге «Out of the Crisis» (Выход из криз</p>
+<p>--- Page 114 ---</p>
+<p>На страницах этой книги мы упоминали и обсуждали спортивные команды в качестве метафоры, обозначающей хорошо скоординированную рабочую группу. И теперь мы вынуждены подчеркнуть своѐ растущее разочарование в этой метафоре. Сегодня нас больше всего беспокоит, что спортивные команды подразумевают конкуренцию. Футбольные, баскетбольные, бейсбольные команды состязаются в пределах своих лиг, но также пропагандируют достаточно сильную внутреннюю конкуренцию. Скажем, игроки «запасные» не должны испытывать ни малейшего желания конкурировать с основным составом. Да, конечно, они болеют за основной состав, но вряд ли они от чистого сердца желают ему выглядеть звѐздной командой.  </p>
+<p>В средней школе я был самым низкорослым членом нашей сборной баскетбольной команды. Я до сих пор помню парня, который должен был сфолить, чтобы меня выпустили на площадку. Его звали Даг Тиммер-ман. Он был чертовски одарѐнный игрок и почти никогда не фолил. Я любил его как брата, и все же…  Т. Д.  </p>
+<p>Мы все видели, как спортивные команды побеждают, несмотря на ошибки одного из участников. Мы также видели, как отдельные игроки замечательно себя чувствуют, в то время как их команда безнадѐжно проигрывает. Таким образом, успех или поражение отдельного человека никак не связаны с успехом или неудачей группы в целом. Таков изъян ситуации, лишь обостряющий любую зарождающуюся тенденцию к конкуренции. Контрастирующий пример – хор или музыкальная группа, создающие практически идеальную связь между успехом или неудачей одного человека и успехом или неудачей всей группы. (Никто и никогда не поблагодарит вас за хорошее пение, если хор в целом пел отвратно.) Так что мы должны запоздало сообщить, что музыкальный ансамбль – более подходящая метафора для слаженной рабочей группы.</p>
+<p>--- Page 116 ---</p>
+<p>Побеждают организации, которые создают продукты, имеющие наибольшую ценность</p>
+<p>--- Page 117 ---</p>
+<p>для клиентов. Если организация создаѐт продукты, вызывающие лишь зевоту, она проигрывает, даже если создание продуктов очень и очень эффективно. Если проект выполняется со сбоями, но при этом создаѐтся продукт, имеющий высокую привлекательность, то этот проект следует предпочесть проекту, эффективно создающему ерунду. Процесс ничего не стоит, если применяется в проектах, не достойных существования.</p>
+<p>Когда модернизация процесса становится самоцелью («Даѐшь Уровень 3 к концу года!»), пугающие проекты откладываются на потом. К сожалению, именно эти пугающие проекты – вероятно, те самые, которые достойны осуществления. Все проекты, приносящие реальную выгоду, связаны и с реальными рисками. Именно проект, обладающий новизной, новаторскими или изобретательскими нотками, имеет шансы заполучить внимание и финансы покупателя. Возможно даже, что ваш самый знаменитый своим провалом проект – тот, что на год задержался, в три с половиной раза превысил оценочную стоимость, с трудом проходит системные испытания и все ещѐ требует присутствия инженеров с дефибрилляторами, чтобы дышать, – по-прежнему остаѐтся лучшим из проектов вашей организации за многие-многие годы.</p>
+<p>--- Page 119 ---</p>
+<p>Поднятие планки означает увеличение рисков. Чем больше ваш опыт, тем большим рискам вы подвергаетесь. Глупо поступать иначе.</p>
+<p>Настоящий прогресс в модернизации процесса приводит к увеличению потребности в более квалифицированных кадрах.</p>
+<p>--- Page 120 ---</p>
+<p>Это и есть Тѐмная Сторона, ибо она соблазняет безопасным поведением и отсутствием риска и, следовательно, низкоприбыльными проектами.</p>
+<p>--- Page 123 ---</p>
+<p>Вы можете представить себя за терпеливым объяснением собственному ребѐнку: «Я знаю, что ты хочешь велосипед, но сейчас ведь не твой день рождения и не Рождество, а именно эти даты календаря позволяют тебе разумно ожидать подарка. Если ты накопил нужную сумму из денег на карманные расходы, то можешь купить велосипед сам.» И вас может раздражать не-очень-логичный-ответ вроде: «Но я хочу велосипед! Прямо сейчас хочу.» Когда мы логически аргументируем перемены, одним из подходов является перечисление преимуществ нового мира, избавляющих от недостатков старого. Но задумайтесь: кто способствовал образованию существующей ситуации? Кто хозяева способов, которые мы сейчас используем в работе? Могут ли эти люди принять за оскорбление попытки урезать текущий режим работы? Ещѐ как могут. Уильям Бриджес (William Bridges) в книге «Managing Transitions» (Управление развитием) советует никогда </p>
+<p>не принижать значение прежнего пути 84 . Вместо этого следует воспевать прежние достижения, чтобы способствовать переменам. К примеру: «Ребята, система CGS проработала четырнадцать лет. По нашим оценкам она идеально справилась более чем с миллионом взлѐтов и посадок. Аппаратная платформа технически устарела, а кроме того, появилась новая технология удалѐнного сканирования, преимуществами которой мы можем воспользоваться. Сейчас у нас есть шанс перепланировать и заново выстроить всю систему. Нам нужны вы и ваш опыт, накопленный за годы успешного использования CGS, чтобы этот проект удался».</p>
+<p>МАНТРА: Основная реакция на перемены не логическая, но эмоциональная.</p>
+<p>--- Page 124 ---</p>
+<p>В модели Сатир изменение происходит в момент появления внешнего элемента – катализатора изменений. Без катализатора невозможно осознание необходимости изменений. Внешним элементом может быть внешняя сила или же осознание изменений вашего мира.</p>
+<p>Новый статус-кво достигается, когда то, что раньше считалось изменением, становится</p>
+<p>--- Page 125 ---</p>
+<p>Интересное свойство человеческих эмоций: чем больнее переход через Хаос, тем выше субъективная оценка нового статус-кво – конечно, если его удаѐтся достичь.</p>
+<p>рутиной.</p>
+<p>Модель Сатир очень важна, потому что показывает, что Хаос есть неотъемлемая составляющая изменений. Используя более наивную двухступенчатую модель, мы не ожидаем хаоса. И когда он наступает, мы ошибочно принимаем его за новый статус кво. И раз новый статус кво кажется столь хаотичным, мы думаем: «Ой-ой, кажется, ошибочка вышла, давайте-ка вернѐмся к прежнему варианту». Призыв к возврату обязательно будет услышан чѐтко и ясно посреди любых амбициозных перемен. Если же вы ожидаете хаоса, ваши шансы успешно его пережить значительно повышаются.</p>
+<p>Изменения не могут даже начаться, если люди не чувствуют себя в безопасности. А они чувствуют себя в безопасности, если знают, что не будут унижены или понижены в должности за то, что предложили перемены или попытались перемены пройти. Временная утрата мастерства достаточно сильно стесняет большинство из нас; стоит только в Хаосе появиться очагу паники, и все рванут под защиту прежнего статус-кво. Наша врождѐнная боязнь Хаоса помогает объяснить, почему изучать что-либо, будучи ребѐнком, настолько проще, чем изучать то же, будучи взрослым.</p>
+<p>Как ни парадоксально, изменения могут быть успешными лишь в том случае, если неудача (хотя бы до некоторой степени) также допустима.</p>
+<p>--- Page 127 ---</p>
+<p>Когда вы считаете траты вложением, а не расходами, это называется капитализацией средств.</p>
+<p>В бухгалтерии принято считать, что зарплаты – это расходы, но не вложение средств.</p>
+<p>Этот человеческий капитал может быть существенным, и ошибочное представление о подобных вложениях как о невосполнимых расходах может приводить руководителей к действиям, разрушающим ценные вложения организаций.</p>
+<p>Сколько ваша компания вложила в вас и ваших коллег? Простой способ оценить порядок сумм – представить, что случится, если уйдѐт один из вас.</p>
+<p>--- Page 129 ---</p>
+<p>Шесть месяцев на то, чтобы подняться от отрицательного вклада до уровня своего предшественника? Для нового разработчика приложений этот прогноз может оказаться разумным, но, вероятно, будет в корне неверен для человека, вступающего в команду с чуть более сложными рабочими задачами. Когда мы заставляем своих клиентов конкретизировать время разгона для новых сотрудников, большинству из них приходится допускать длину взлѐтной полосы, превышающую шесть месяцев. По оценке одного нашего клиента, создателя анализаторов сетевых протоколов и пакетов, разгон нового сотрудника занимает более двух лет. И эта фирма нанимает лишь людей, которые уверенно владеют базовыми технологиями, так что два года занимает изучение предметной области и врастание в команду. Общая сумма вложений для каждого нового сотрудника, таким образом, составляет чуть больше 150 000 долларов. Предположим теперь, что наступило очередное сокращение, и компания должна задуматься, не уволить ли такого человека. Конечно, постоянных расходов на зарплату и иных накладных расходов в таком случае не будет, но 150 000 долларов инвестиций компания потеряет. Если компания примет во внимание этот факт, она, возможно, поймѐт, что не может позволить себе потерять столь ценный ресурс.</p>
+<p>--- Page 130 ---</p>
+<p>В любом случае организации, решившейся на преобразование, приходится столкнуться со следующим неизбежным риском: Обучение ограничено способностью организации сохранять своих людей.  При высокой текучести кадров обучение не даѐт результатов или вовсе не происходит. В таких организациях попытки изменить навыки работников или внедрить новые процедуры оказываются бесполезными упражнениями. Более того, они могут оказывать вредное воздействие, повышая текучесть кадров.</p>
+<p>--- Page 131 ---</p>
+<p>Если ключевое обучение не происходит ни на вершине, ни внизу, оно должно происходить где-то посередине. Это означает, что в большинстве организаций центр обучения наиболее естественным образом возникает на уровне среднего менеджмента – института с сильно испорченной репутацией. Это хорошо согласуется с нашим наблюдением, что успешно обучающимся организациям всегда свойственно наличие сильных руководителей среднего звена.</p>
+<p>Полезно отметить, что сокращения, когда таковые происходят, почти всегда направлены на средний менеджмент. Иными словами, общеизвестное действо «уменьшения расходов», происходящее каждые несколько лет, часто осуществляется за счѐт способностей</p>
+<p>--- Page 132 ---</p>
+<p>организации к обучению. После таких экспериментов центр обучения организации может оказаться уничтоженным.</p>
+<p>Практически в каждой компании есть нечто, что компания называет Командой Руководителей, и такая команда обычно состоит из равных руководителей среднего звена. Как мы ранее говорили, недостаточно назвать группу командой, чтобы она начала проявлять свойства команды. Это по-прежнему будет разобщѐнный коллектив индивидуумов, не имеющих общих целей, общих ценностей или сочетающихся умений. Обычно это верно для большинства так называемых команд руководителей.</p>
+<p>--- Page 133 ---</p>
+<p>Самый страшный грех руководителя – впустую тратить чужое время. Судя по формулировке, легко избежать такого греха, но не на практике. У вас как руководителя есть собственные потребности, и эти потребности могут противоречить вашему намерению сохранять и мудро расходовать время своих подчинѐнных.</p>
+<p>--- Page 134 ---</p>
+<p>Настоящее рабочее собрание созывается, когда есть реальная потребность в совместном обдумывании некоторых вопросов всеми собравшимися. Смысл собрания в том, чтобы достичь общего мнения. Такое собрание – почти по определению событие спонтанное. Спонтанность предполагает, что это собрание отсутствует в расписании. Любые регулярные сборища, таким образом, попадают под подозрение, что имеют своей целью церемонии, а не достижение консенсуса.</p>
+<p>Организации нуждаются в церемониях. Абсолютно разумно созывать собрания со строго церемониальными целями, особенно на промежуточных проектных финишах, когда приходят новые люди или же чтобы отметить хорошую работу группы. Такие собрания не тратят впустую ничьѐ время. Они отвечают на реально существующую потребность в признании. Они закрепляют членство в группе – его важность и ценность. Однако церемониальные собрания, закрепляющие лишь начальственность начальника, – пустая трата времени.</p>
+<p>--- Page 135 ---</p>
+<p>Проекты начинаются с планирования и проектирования, и на этой стадии наиболее эффективны маленькие команды. Когда важно проектирование (а так оно и есть для всех проектов кроме примитивных), оно может занимать до половины всего времени проекта. Это позволяет предложить идеальный план набора людей, иллюстрируемый рис. 33.1:</p>
+<p>--- Page 137 ---</p>
+<p>Идея в том, что дробление времени работника интеллектуальной сферы на многочисленных задачах гарантирует, что ему или ей придѐтся участвовать в двух или более различных рабочих группах, ни одна из которых не имеет хороших шансов на кристаллизацию в настоящую команду. Дробление времени практически наверняка отравляет команду, но имеет ещѐ и другой коварный эффект: время человека всегда тратится впустую. Сотрудник, у которого множество заданий (немного новых разработок, поддержка устаревшего продукта, поддержка продаж, а может быть, ещѐ и поддержка пользователей), затрачивает значительную часть рабочего дня на переключение. Это время в большой степени невидимо. Работник откладывает задачу по проектированию, чтобы ответить на телефонный звонок, работает с позвонившим двадцать минут, рассказывая о том, как перенастроить базу данных в одном из ранних продуктов компании, а затем возвращается к проектированию. Если постоять рядом с этим человеком с секундомером, вы навряд ли заметите потерянное время. Потери скрыты в медленном возврате к проектированию, они являются прямым результатом прерванного потока. Дробление особенно вредоносно, когда две задачи требуют качественно различных рабочих привычек. Так, смешивание проектирования (требующего много времени на погружение, относительной тишины и качественного времени взаимодействия с небольшой группой людей) с задачей поддержки по телефону (требующей постоянного прерывания, постоянной доступности, быстрой смены фокуса) гарантированно минимизирует ход работы над той из задач, которая требует большего сосредоточения. Время, впустую затрачиваемое на попытки включиться обратно в работу, можно оценить лишь по раздражительности работника. Вы можете никогда не услышать об этой проблеме, потому что столкнувшиеся с ней люди с большой степенью вероятности будут винить только себя самих.</p>
+<p>--- Page 139 ---</p>
+<p>Организация, преуспевшая в создании достойной общины, сохраняет своих людей. Когда чувство общины достаточно сильно, никто не хочет уходить. Вложения в человеческий капитал сохраняются, а высшее руководство обнаруживает, что склонно увеличивать вложения. Когда компания увеличивает вложения в людей, люди работают лучше, лучше относятся к себе и компании. Это ещѐ больше снижает вероятность, что они уйдут. Закрепление положительных эффектов идѐт исключительно на пользу.</p>
+<p>Разумеется, даже лучшее чувство общины-на-работе не гарантирует, что вы сохраните всех своих людей навсегда. Некоторые поймут, что им пора уходить, чтобы продолжить карьеру или по иным причинам. Однако когда люди уходят из такой организации, они выбирают время таким образом, чтобы минимизировать неудобства для общины. Это великое благо для всех, кто занят в проектной работе, потому что сотрудники не уходят посреди проекта. Один лишь этот эффект стоит больше, чем любая модернизация процессов, которую может предпринять ваша организация в ближайшие десять лет.</p>
+<p>До сих пор мы обсуждали лишь осязаемые выгоды, исчисляемые в долларах и центах. Но здесь действует и неосязаемое, нечто, что для вас должно иметь большее значение, чем все остальное. Чтобы понять, что это, загляните всего на секунду в отдалѐнное будущее, в тот день, когда вы будете близки к кончине. Вы на смертном одре в почтѐнном возрасте, скажем, ста одного года. Вы не испытываете дискомфорта, всего лишь старость. В этом возрасте все ваши мысли обращены в прошлое. Вы подводите итоги. И спрашиваете себя: что было важным в моей жизни, а что не имело значения? Неудивительно, прямо скажем, что многие ваши заботы, сводившие вас с ума много лет назад (скажем, стабилизация ужасной под-версии 27 продукта WhizBang v6.1.1), не слишком весомы в предсмертной оценке. Нет, с гораздо большей вероятностью вы будете думать о тѐплых семейных отношениях, детях и внуках, о доме и воспоминаниях, связанных с ним. Какие-нибудь вещи, имеющие отношение к вашей работе? Да, конечно, было приятно способствовать достижению Информационной Эры зрелости. Было приятно подниматься к вершине компании, практически до предела возможного, и получить свой шанс указывать направления. Было мило. Но не забывайте, что вам также удалось создать настоящую общину внутри этой компании, которую люди любили и уважали и которой были преданы. Вот это действительно достижение. И оно должно отчѐтливо фигурировать в списке главных достижений вашей жизни. Такое удовольствие – возможно, подобное тому, какое испытывал Микеланджело, когда размышлял о сделанном им – не должно быть как-то связано с материальной ценностью достижения. Потому что это было творение. Это было Искусство, скажете вы себе, и человек, благодаря которому это стало возможным, – Мастер своего Дела.</p>
+<p>Ладно, пусть община – хорошо, и построить общину на рабочем месте – превосходная цель. Как это делается? Мы не берѐм на себя смелость утверждать, что существует формула для столь сложной задачи. Формулы нет. Подобно любому произведению искусства, ваш успех в создании общины потребует серьѐзного таланта, мужества и творческого подхода. И ещѐ чудовищных затрат времени. Эту работу вы не сделаете самостоятельно; в лучшем случае вы послужите катализатором. Ваше творение не будет напоминать чьѐ-либо ещѐ.</p>
+<p>--- Page 140 ---</p>
+<p>Так что вместо формулы мы предлагаем пример, всего один пример. Он связан с одной из наших клиентских компаний, с компанией, где один инициативный руководитель сделал шаг вперѐд и изменил культуру навсегда. Этот каталитический гений убедил организацию строиться вокруг школы, в состав которой входят детский сад, центр дошкольной подготовки и первые пять классов начальной школы. В эту школу ходят дети сотрудников компании. Несомненно, вы способны усмотреть в этом рационализацию, основанную на деньгах, уникальное преимущество компании, нуждающейся в найме программистов и инженеров на сложном рынке труда. Но чтобы увидеть, какова роль школы в создании общины, вам нужно посетить компанию. Нужно увидеть собственным глазами, как каждый день учителя проводят всех учеников через объекты компании. Получается шумный, смешной, торжествующе глупый парад маленьких взвинченных ребятишек, которые со всеми здороваются. Их за километр слышно. В этот момент прекращается всякая работа. Родители обнимают детей. По окончании парада всем обеспечено хорошее настроение. Представьте, каково быть человеком, благодаря которому это стало возможным. Представьте, что сможете вспомнить это в возрасте ста одного года.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-footer__link md-footer__link--next" aria-label="Next: Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>

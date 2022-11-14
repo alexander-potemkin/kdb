@@ -1,0 +1,3086 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Неотвлекаемые - My KDB</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My KDB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Неотвлекаемые
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My KDB
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        CHANGELOG
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Excerpts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Excerpts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
+        Sprint How to Solve Big problems in 5 days
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chaos%20Monkeys/" class="md-nav__link">
+        Chaos Monkeys
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Culture%20codes%20examples/" class="md-nav__link">
+        Culture codes examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gumroad/" class="md-nav__link">
+        Работа в Gumroad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hacking%20growth/" class="md-nav__link">
+        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inspired/" class="md-nav__link">
+        Marty Cagan - Inspired How To
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
+        Intercom on jobs-to-be-done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
+        Jobs to Be Done
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marketplaces%20notes/" class="md-nav__link">
+        Про маркетплейсы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
+        Marty_Cagan___Inspired___How_To_
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Matryoshka. Как Вести Бизнес С Иностранцами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Software%20runways%20book/" class="md-nav__link">
+        Software runways book
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Superhuman/" class="md-nav__link">
+        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
+        The Everything Store. Джефф Безос И Эра Amazon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
+        The Jobs to Be Done Playbook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
+        The Knowledge Illusion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
+        The Ultimate Guide to Project Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../YC%20Startup%20School/" class="md-nav__link">
+        Startup School
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zero%20to%20One/" class="md-nav__link">
+        Zero to One
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zettelkasten/" class="md-nav__link">
+        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
+        Адская Паутина. Как Выжить В Мире Нарциссизма
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
+        Антихрупкость. Как Извлечь Выгоду Из Хаоса
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
+        "Великая шахматная доска" Збигнева Бжезинского
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
+        Бизнес В Стиле Virgin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
+        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
+        Брак Под Микроскопом. Физиология Половой Жизни Человека
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
+        Брось Себе Вызов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
+        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
+        ВкусВилл
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
+        Власть, Влияние И Политика В Организациях
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
+        Всегда Вовремя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
+        Вы, Разумеется, Шутите, Мистер Фейнман!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
+        Горник
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
+        Капра Фритьоф "Дао физики"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
+        Даосские Секреты Любви
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
+        Дж. Ханк Рейнвотер
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        Дилемма Инноватора
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
+        Доставляя Счастье
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
+        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        Заклинание Для Хамелеона
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
+        Змеи В Костюмах
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Игра Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
+        Крейг Эштон - Извините, я иностранец
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
+        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
+        Искусство Быть Другим
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
+        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
+        История веры и религиозных идей Том 1 Мирча Элиаде
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
+        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
+        Квота, Или Сторонники Изобилия
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
+        Кельтские Мифы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
+        Книга по Agile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Книга
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
+        Кофе и капуста
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Боно Латеральное мышление
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
+        Легко Не Будет
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Ловушки Мышления
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
+        Лучшие Притчи Дзэн
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        Магия Утра
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
+        Мальчик, Которого Растили Как Собаку
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
+        Мир В Каждом Шаге
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
+        Мировой Порядок
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
+        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="md-nav__link">
+        На Крючке
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
+        На Пределе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Наука Общения
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
+        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
+        Не Делай Это
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
+        Невидимая Горилла
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Неотвлекаемые
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Неотвлекаемые
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    Metadata
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    Highlights
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
+        Никаких Правил. Уникальная Культура Netflix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения”
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
+        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
+        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
+        Он. Глубинные Аспекты Мужской Психологии
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
+        Открывая Организации Будущего
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
+        Кон М. Agile оценка и планирование проектов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
+        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
+        «По ту сторону бомб и санкций» А. Вучо
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
+        Под Тенью Сатурна
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
+        Лучшие притчи дзэн: обычные истории о людях необычайных
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
+        Пробуждение Тигра - Исцеление Травмы
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Психология Влияния
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
+        Путеводитель По Лжи
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        Радикальное Принятие
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
+        Рэй Далио
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
+        Сделано, Чтобы Прилипать
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
+        Сейчас!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
+        Сказание О Кентавре Хироне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
+        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        Счастливое Старение
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
+        Тайная Опора. Привязанность В Жизни Ребенка
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        Тень Эндера
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
+        Траблшутинг
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
+        Тридцать Шесть Стратагем. Китайские Секреты Успеха
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Гласс Роберт - Факты и заблуждения профессионального программирования
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
+        Фрикомыслие. Нестандартные Подходы К Решению Проблем
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
+        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        Демарко-Т-Человеческий-фактор
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
+        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
+        Яндекс.Книга
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Journal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Journal" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Journal
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
+        BeOS operating system review
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
+        Kubernetes vs Docker Swarm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
+        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
+        Заметки из Египта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
+        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
+        Нижний Новгород
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
+        Про Китай (год ~2011)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
+        Про Сахалин
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
+        Про Киргизию
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
+        Рейс Санкт-Петербург - Цюрих
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
+        OpenRPA & OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
+        Generic SW project hand-over
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
+        Sales channels
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
+        Working Backwards: Amazon's Culture of Innovation: My notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
+        Мои заметки на основании разных лекций (кажется, YC)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        Заметки про нарциссизм и нарциссов
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
+        Переговоры (заметки с тренинга)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
+        Площадки для запуска продукта
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
+        Про подъём денег
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        Список вопросов для подведения итогов с сотрудниками
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        Про ТРИЗ, изобретатель-решатель
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
+        Мои заметки про уловки в разработке (аутсорсинг)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
+        ФРИИ, выход на американский рынок
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Recipes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
+        ActivityWatch (Screen Time on Linux)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
+        Android crash debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
+        BitRise build HowTo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
+        CapRover (local kind of Heroku)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
+        ChatSDK (draft)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
+        Server setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
+        CloudRon (managed apps)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
+        CloudSigma API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
+        Docker (on Ubuntu)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
+        GitHub Pages config
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/GitLab/" class="md-nav__link">
+        GitLab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
+        HEIC to PNG converter (not tested)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
+        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
+        InvizBox with custom OpenVPN <not working!>
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Jitsi/" class="md-nav__link">
+        Jitsi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
+        Kamai time tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
+        Kubernetes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MacOS/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
+        Mattermost + Audio & Video calls + S3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
+        MkDocs - GitBook alternative, on GitHub pages
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Monit/" class="md-nav__link">
+        Monit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
+        Nessus server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
+        Network connectivity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
+        OPNSense on KVM hosting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFire/" class="md-nav__link">
+        OpenFire
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
+        OpenFlow & WSL on Windows Server (notes)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
+        HowTo use OpenFlow queues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
+        Картинки сделать в сторе
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
+        PostgreSQL notes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
+        Proxy (tinyproxy)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/S3%20things/" class="md-nav__link">
+        S3 things
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
+        Swagger (&GitHub)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
+        Networking on Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
+        Unnattended upgrades
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
+        Ubuntu
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
+        VPN (Wireguard)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/Various/" class="md-nav__link">
+        1Password to Bitwarden migration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
+        certbot wildcard certificate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
+        n8n configuration on CapRover
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
+        ssmtp (e-mail sending to outside)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Clojure/" class="md-nav__link">
+        Basic information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
+        Cloud IDE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
+        Managed PostgreSQL self-hosted
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Research/ZenGarden/" class="md-nav__link">
+        ZenGarden
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    Metadata
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#highlights" class="md-nav__link">
+    Highlights
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">Неотвлекаемые</h1>
+<p><img alt="rw-book-cover" src="https://readwise-assets.s3.amazonaws.com/static/images/default-book-icon-5.25188386e520.png" /></p>
+<h2 id="metadata">Metadata</h2>
+<ul>
+<li>Author: [[Нир Эяль, Джули Ли]]</li>
+<li>Full Title: Неотвлекаемые</li>
+<li>Category: #books</li>
+</ul>
+<h2 id="highlights">Highlights</h2>
+<ul>
+<li>Реальность нашего века такова, что если мы не умеем справляться с отвлекающими факторами, то нашим мозгом манипулируют помехи и мы впустую тратим свое время. (Location 147)</li>
+<li>В будущем люди во всем мире будут делиться на две категории: на тех, кто позволяет другим руководить и манипулировать своим вниманием и жизнью, и на тех, кто с гордостью может сказать о себе: «Я ни на что не отвлекаюсь». (Location 160)</li>
+<li>Противоядие от импульсивности — взвешенность. Если спланировать все заранее, дело обязательно будет доведено до конца. (Location 168)</li>
+<li>Нужно научиться избегать отвлекающих факторов. Чтобы жить так, как вы хотите, надо не только делать правильные вещи, но и не делать того, о чем вы точно пожалеете. (Location 294)</li>
+<li>Представьте себе горизонтальную прямую, отображающую ценность всего, что вы делаете в течение дня. Справа на ней лежат действия с положительным знаком; слева — с отрицательным. Муки Тантала: вечная тяга к недостижимому Правую часть прямой обозначим словом «вовлечение», от глагола «влечь» со значением «тащить, тянуть». Вовлечением мы можем называть действия, притягивающие нас к тому, к чему мы стремимся в жизни. Все, что размещается с левой стороны, обозначим однокоренным словом с противоположным значением — «отвлечение». В нашем случае это как бы оттягивание внимания, переключение его на что-то другое. Отвлечение мешает воплощать картину жизни, которую мы себе рисуем. Любые поступки — неважно, к какой категории они относятся: вовлечения или отвлечения, — провоцируются раздражителями, внутренними либо внешними. Внутренние раздражители подают нам сигнал изнутри. Когда урчит в животе, мы начинаем искать, чем бы перекусить. Когда холодно, достаем куртку, чтобы согреться. А когда грустно, одиноко или тревожно, ищем поддержки, например звоним другу или любимому человеку. В свою очередь, внешние раздражители — это знаки в окружающей среде, сообщающие нам, что сейчас следует что-то сделать, такие как «пинь», «динь», «дзинь», побуждающие нас проверить почту, открыть срочное сообщение, ответить на звонок. Роль внешнего раздражителя может сыграть и человек, например сослуживец, притормозивший у вашего рабочего стола. Или вещь вроде телевизора, который одним своим присутствием в комнате призывает себя включить. Итоговое действие, будь оно вызвано внутренними или внешними раздражителями, либо соответствует общему намерению, либо противоречит ему. Вовлечение помогает нам достигать целей; отвлечение отдаляет нас от них. Главная проблема, разумеется, в том, что наш мир напичкан вещами, словно созданными для того, чтобы нас отвлекать; и так было всегда. (Location 321)</li>
+<li>1971 году психолог Герберт Саймон пророчески писал: «Обилие информации ведет к нехватке чего-то другого… к дефициту внимания»5. Ученые считают, что внимательность и сосредоточенность — это исходный материал для креативности и расцвета личности (Location 360)</li>
+<li>Сосредоточенные люди честны с самими собой так же, как с другими. (Location 396)</li>
+<li>Отвлечение препятствует достижению целей. Это любое действие, отдаляющее вас от того, чего вы в действительности хотите. Вовлечение способствует достижению целей. Это любое действие, приближающее вас к тому, чего вы в действительности хотите. И вовлечение, и отвлечение провоцируются раздражителями. Внешние раздражители побуждают к действию, подавая сигналы из окружающей среды. Внутренние раздражители побуждают к действию, подавая сигналы изнутри. (Location 404)</li>
+<li>Мы думаем, что жаждем удовольствия, но в действительности нами управляет стремление избавить себя от страдания, вызываемого неутоленным желанием. (Location 493)</li>
+<li>То есть стремление избавиться от дискомфорта — это коренная побудительная причина всех наших поступков; все остальное — это непосредственные причины. (Location 499)</li>
+<li>Без понимания и исправления коренных причин мы обрекаем себя на роль беспомощных жертв в трагедии, которую сами и разыгрываем. (Location 520)</li>
+<li>Чанс зашла в тупик. «Я знала, что, как бы я ни старалась, я не смогу поручиться, что все будет хорошо, и теперь я задним умом понимаю, что Striiv дал мне то, чем я могла управлять и в чем — добиться успеха». По ее словам, в это особенно трудное время Striiv помогал ей справиться. «Это было бегство от действительности», — писала она мне. (Location 551)</li>
+<li>Большинство людей не хотят признавать печальную истину: отвлечение — это всегда нездоровое бегство от действительности. Выбор между благотворным вовлечением и провальным отвлечением зависит от того, насколько хорошо мы справляемся с досадными внутренними раздражителями. (Location 556)</li>
+<li>Лишь осознав свое страдание, можно начать справляться с ним и выбирать более удачные способы борьбы с неверными побуждениями. (Location 567)</li>
+<li>Выявите коренную причину отвлечения. Вас отвлекают не технические устройства, а нечто более глубокое. Не путайте непосредственные причины с коренными. Основа мотивации — это исключительно желание избавиться от дискомфорта. Если в прошлом какой-то образ действия действительно приносил вам облегчение, вероятно, вы будете прибегать к нему и в дальнейшем. Все, что избавляет от дискомфорта, способно вызывать привыкание, но это не значит, что этому невозможно противостоять. Понимая, что руководит вашими поступками, вы можете принять меры и взять ситуацию под контроль. (Location 585)</li>
+<li>Поэт XVIII века Сэмюэл Джонсон сказал об этом так: «Моя жизнь — это долгое бегство от самого себя» (Location 609)</li>
+<li>Печально, но факт: мы с вами, вероятно, никогда в жизни не будем абсолютно счастливыми. Эпизодические вспышки радости? Непременно. Отдельные приступы эйфории? Конечно. Ах, вам случается горланить Happy Фаррелла Уильямса в одних трусах? Ну, хорошо, а кому нет? Но радость без конца, как в кино, или «жили они счастливо до конца своих дней»? И не надейтесь. Это миф. Так уж сложилось, что подобное счастье никогда не длится долго. Процесс эволюции снабдил нас мозгом, почти неизменно пребывающим в состоянии неудовлетворенности. Мы устроены так по очень простой причине. Вот что, к примеру, говорится об этом в научной статье, опубликованной в журнале Review of General Psychology: «Если б чувства довольства и наслаждения были неизменными, вероятно, стимул для поддержания стремления к новым благам и достижениям был бы слишком слаб»3. Другими словами, чувство довольства для нашего вида не было выгодным. Наши предки упорно трудились и двигались вперед именно потому, что эволюция навсегда лишила их покоя; такими мы остаемся и по сей день. К сожалению, те самые черты, которые достались нашим предшественникам в ходе эволюции и, постоянно побуждая их к действию, помогали им выжить, сегодня могут нам навредить. Есть четыре психологических фактора, которые делают чувство довольства преходящим. Начнем с первого — скуки. Просто поразительно (если не возмутительно), на что может решиться человек, чтобы избавиться от скуки. В 2014 году журнал Science опубликовал результаты эксперимента, в ходе которого участников просили посидеть в комнате пятнадцать минут и подумать4. Комната была пуста, если не считать устройства, позволявшего участникам нанести себе легкий, но все же болезненный удар электрическим током. «Но с какой стати кому-то это делать?» — быть может, спросите вы. Перед началом эксперимента участников опрашивали, и все они сказали, что готовы заплатить за то, чтобы не получать удар током. Но, оставшись в одиночестве в комнате с этим устройством и не зная, чем еще себя занять, 67 процентов мужчин и 25 процентов женщин нанесли себе удар током, причем многие не единожды. Авторы статьи завершают ее такими словами: «Люди предпочитают действие размышлению, пусть даже это действие настолько неприятно, что в обычной ситуации они готовы заплатить, лишь бы избежать его. Неподготовленный ум не любит оставаться наедине с самим собой». А потому неудивительно, что из двадцати пяти популярнейших в Америке сайтов большинство поставляют нам средства спасения от каждодневной рутины, будь то шопинг, сплетни о знаменитостях или дозированное социальное взаимодействие5. Второй из психологических факторов, побуждающих нас отвлекаться, — это сдвиг в сторону негативного; выражается он в том, что «негативные события приобретают большую значимость и притягивают к себе больше внимания, чем события нейтральные и позитивные»6. Как отмечалось в одной из научных статей, «очевидно, что одна из основополагающих и всепроникающих особенностей психики — придавать больше значения плохому, а не хорошему»7. Пессимизм такого рода проявляется в самом раннем возрасте. Признаки сдвига в сторону негативного маленькие дети демонстрируют уже в семь месяцев, что позволяет говорить о врожденном характере этой склонности. И еще один факт: как говорят ученые, печальные события обычно запоминаются лучше, чем радостные8. Исследования показали, что люди чаще вспоминают грустные моменты своего детства, даже если в целом считают эту пору своей жизни счастливой. В процессе эволюции сдвиг в сторону негативного, несомненно, давал преимущество. Хорошее — это прекрасно, однако плохое способно убить — вот почему мы в первую очередь отмечаем и запоминаем именно плохое. Полезно, но какая тоска! Третий фактор — склонность к навязчивому обдумыванию неприятных ситуаций. Если вам случалось снова и снова мысленно возвращаться к тому, что вы сделали или что сделали с вами, или вспоминать о том, чего у вас нет, хотя вам это нужно, и вы никак не могли остановиться, значит, вы испытали на себе то, что психологи называют руминацией. Подобное «пассивное сравнивание нынешнего положения с неким недостигнутым стандартом» может выражаться в самокритических мыслях, например: «Ну почему я никогда не могу сделать все как следует?»9 Вот что пишут об этом в одной научной статье: «Размышляя о том, что пошло не так и как исправить положение, можно найти причину неудачи и альтернативные способы действия, что в конечном счете позволяет избежать ошибок и помогает справляться с подобными ситуациями в дальнейшем»10. Еще одна потенциально полезная черта, но, боже мой, сколько от нее бед! Скука, сдвиг в сторону негативного, руминация — все это мешает нам сосредоточиться. Однако четвертый фактор, наверное, самый беспощадный. Гедонистическая адаптация — склонность быстро возвращаться к исходному уровню субъективного благополучия, что бы с нами ни случалось, — это подвох в исполнении матери-природы. Мы считаем, будто то или иное событие сделает нас счастливее, но этого не происходит или происходит, но не надолго. К примеру, люди, которым необычайно повезло, — например, они выиграли в лотерее, — рассказывали, что вещи, прежде их радовавшие, утратили свою притягательность, и в результате счастливцы вернулись к прежнему уровню субъективного благополучия11. В книге The Pursuit of Happiness («Погоня за счастьем») Дэвид Майерс пишет: «Любое желанное переживание — страстная любовь, душевный подъем, радость от приобретения, упоение успехом — преходяще»12. Подобно первым трем факторам, гедонистическая адаптация, конечно, давала преимущества в ходе эволюции. Как поясняет автор одной научной статьи, «человек постоянно стремится к счастью, не ведая, что в целом его усилия тщетны»13. И что теперь? Печально вступает тромбон? Неужели тщетность — наш удел? Отнюдь нет. Как мы уже знаем, неудовлетворенность — это неотъемлемая движущая сила, которая, при умелом руководстве, способна помочь нам улучшить положение, так же как помогала она нашим доисторическим предкам. Неудовлетворенность и дискомфорт по умолчанию доминируют в нашем сознании, но мы можем направить их так, чтобы они нас мотивировали, а не разрушали. Не будь этого вечного беспокойства, присущего нашему виду, мы жили бы сейчас гораздо хуже, а может, и давно бы вымерли. Именно неудовлетворенность побуждает нас делать все, что мы делаем, в том числе охотиться, искать, творить и приспосабливаться. И даже такие бескорыстные поступки, как помощь другим, вырастают из потребности избавиться от чувства вины и несправедливости. Неутолимая жажда большего и лучшего — вот что заставляет нас свергать тиранов; толкает к изобретению технологий, меняющих мир и спасающих жизни; и тайно питает наши честолюбивые мечты об исследовании космоса и путешествиях к другим планетам. Неудовлетворенность — первопричина достижений и ошибок человечества. Чтобы использовать ее силу себе во благо, мы должны отречься от ошибочного представления, что, если человек несчастлив, значит, он ненормален; совсем наоборот. (Location 613)</li>
+<li>Если вы хотите не отвлекаться, вы должны научиться справляться с дискомфортом. (Location 729)</li>
+<li>Без использования приемов, позволяющих ослабить соблазн, мысленное воздержание дает обратный результат. Бывает, что подавление желания провоцирует появление навязчивых мыслей, и желание лишь усиливается. Вы способны управлять исходящими изнутри отвлекающими факторами, меняя к ним свое отношение. Вы можете по-новому взглянуть на раздражитель, на поставленную задачу и на собственный характер. (Location 817)</li>
+<li>Мы не можем держать под контролем чувства и мысли, всплывающие в нашем сознании, однако мы способны контролировать свои действия по отношению к ним. (Location 826)</li>
+<li>Взглянув по-новому на досаждающий внутренний раздражитель, мы лишаем его силы. Шаг 1. Выявите ощущение, предшествующее акту отвлечения. Шаг 2. Опишите внутренний раздражитель. Шаг 3. Исследуйте отрицательное ощущение с любопытством, а не с презрением. Шаг 4. Будьте особенно бдительны в переходные моменты. (Location 911)</li>
+<li>Ян Богост исследует, что такое удовольствие, и этим зарабатывает на жизнь. (Location 921)</li>
+<li>«Оказывается, — пишет он, — удовольствие остается удовольствием, даже если оно не доставляет особой радости»1. Каково, а? Разве удовольствие не должно быть приятным? Необязательно, утверждает Богост. Отбрасывая свое представление о том, каким должно быть удовольствие, мы можем иначе взглянуть на поставленные задачи. Элемент игры, говорит Богост, можно привнести в любую сложную задачу. И пусть эта игра необязательно будет приятной, но она способна избавить от дискомфорта — главной (помните это) движущей силы отвлечения. (Location 927)</li>
+<li>Как таковые удовольствие и игра необязательно должны быть приятными; они могут стать средствами, помогающими сохранять сосредоточенность. (Location 940)</li>
+<li>обращайте пристальное внимание на детали, доводя их до идиотизма, даже до абсурда». (Location 967)</li>
+<li>работа в условиях ограничений — это ключ к креативности и удовольствию. (Location 973)</li>
+<li>люди находят удовольствие в самых разных занятиях, которые другим представляются не особенно интересными. (Location 978)</li>
+<li>Я лично научился концентрироваться на нудном труде, написании книг, обнаружив в своей работе элемент тайны. Я пишу, чтобы ответить на интересные вопросы и найти оригинальные решения для старых проблем. Припомним популярный афоризм: «Лекарство от скуки — любопытство. Лекарства от любопытства не существует» (Location 985)</li>
+<li>Удовольствие — в поиске разнообразия, которого другие не замечают. Разнообразие прорывается сквозь скуку и монотонность и раскрывает свою красоту. (Location 993)</li>
+<li>помните: увидеть новизну можно, только когда мы даем себе время целиком сосредоточиться на задаче и углубиться в поиски разнообразия. Неважно, что мы делаем: проверяем, способны ли выполнить задачу лучше и быстрее, чем в прошлый раз, или день за днем бросаем вызов неизвестному, но именно поиск разгадки этих тайн превращает дискомфорт, от которого мы стремимся отвлечься, в увлеченность своим занятием. (Location 998)</li>
+<li>Игра необязательно должна быть приятной, но она должна удерживать ваше внимание. (Location 1012)</li>
+<li>Целый ряд исследований подтверждает, что люди, умеющие себе посочувствовать, в целом считают себя более благополучными. (Location 1116)</li>
+<li>Важно взять на себя ответственность за свои поступки, не раздувая ядовитое чувство вины, от которого становится только хуже и из-за которого, как ни парадоксально, мы начинаем отвлекаться еще чаще, пытаясь заглушить болезненный стыд. (Location 1130)</li>
+<li>Хороший практический метод — беседовать с собой так, как вы могли бы разговаривать с другом. Довольно хорошо себя зная, мы становимся самыми непримиримыми своими критиками, а ведь если б мы поговорили с собой, как с другом, нуждающимся в помощи, то могли бы увидеть ситуацию такой, какая она есть в действительности. Скажите себе, например, «Ничего страшного, без этого невозможно совершенствоваться» или «Да, трудно, но ты движешься вперед», — так вы скорее победите неуверенность в себе. (Location 1140)</li>
+<li>Взглянув по-новому на внутренние раздражители, на задачу и на свой характер, вы начнете лучше справляться с тягой к отвлечению, идущей изнутри; эти приемы проверены на практике, и они работают. Мы можем контролировать мешающие нам внутренние раздражители, спокойно наблюдая за чувством дискомфорта, а не реагируя на него. Или по-новому взглянуть на стоящую перед нами задачу, глубже сконцентрировавшись на ней и получив от нее удовольствие. И наконец, главное: мы можем взглянуть по-новому на самих себя, чтобы избавиться от ограничивающих нас представлений. Если мы считаем, что нам не хватает силы воли, ее и вправду будет не хватать. Если мы решаем, что не способны устоять перед искушением, так оно и произойдет. Если мы говорим себе, что по природе своей не способны к чему-то, мы будем верить себе на слово. К счастью, вы не обязаны верить всему, что думаете; вы беспомощны только тогда, когда такими себя считаете. (Location 1147)</li>
+<li>Мы можем контролировать мешающие нам внутренние раздражители, спокойно наблюдая за чувством дискомфорта, а не реагируя на него. (Location 1150)</li>
+<li>Вовлечение приближает нас к тому, к чему мы стремимся в жизни, а отвлечение отдаляет от этого. (Location 1175)</li>
+<li>Пока мы не научимся контролировать желание сбежать от неприятных ощущений, мы всегда будем искать быстрые способы облегчить свое страдание. (Location 1178)</li>
+<li>Немецкий писатель и философ Иоганн Вольфганг фон Гёте считал, что будущее человека определяет один простой факт: «Зная, как вы тратите свое время, я знаю, что из вас может выйти»1. (Location 1182)</li>
+<li>Если мы не планируем свои дни сами, за нас это делает кто-нибудь другой. (Location 1197)</li>
+<li>в первую очередь нужно решить, не что вы собираетесь делать, а почему надо это делать. А значит, начать нужно с ваших ценностей. По словам Расса Хэрриса, автора книги «Ловушка счастья»[10], ценности — это «как мы хотим жить, что хотим отстаивать и как хотим взаимодействовать с окружающим миром»5 (Location 1203)</li>
+<li>Мы не можем достичь своих ценностей, так же как не можем, закончив работу над картиной, достичь креативности. Ценность подобна путеводной звезде: это неподвижная точка, помогающая выбирать курс, когда надо принимать решения. Некоторые ценности пронизывают все сферы жизни, но большинство из них относятся лишь к какой-нибудь одной. Например, быть полноценным членом команды, как правило, можно только на работе. Быть любящим супругом и родителем — это для семейного круга. Быть человеком, стремящимся к мудрости или хорошей физической форме, — это для самого себя. Проблема в том, что мы не находим времени на свои ценности. Мы непроизвольно тратим чересчур много времени на одну сферу жизни в ущерб другим. Мы засиживаемся на работе в ущерб воплощению своих ценностей в кругу семьи или друзей. Если мы доводим себя до изнурения заботами о детях, то начинаем игнорировать свое тело, сознание, друзей и не даем себе быть тем человеком, каким хотим быть. Если мы постоянно пренебрегаем своими ценностями, то превращаемся в того, кем не можем гордиться, а жизнь лишается равновесия и как бы съеживается. Это отвратительное ощущение, как ни парадоксально, заставляет нас больше отвлекаться: мы пытаемся убежать от недовольства, но не решаем проблему по-настоящему. (Location 1210)</li>
+<li>Мы можем сказать «нет» отвлечению, только если отведем в расписании определенное время на вовлечение (на занятия, приближающие нас к тому, чего мы хотим от жизни). Без предварительного планирования вовлечение от отвлечения отличить невозможно. (Location 1242)</li>
+<li>Нельзя назвать что-то отвлечением, не разобравшись прежде, от чего вы отвлекаетесь. (Location 1246)</li>
+<li>Самый эффективный способ предусмотреть время на вовлечение — это таймбоксинг (Location 1252)</li>
+<li>«формулирование реализационных намерений», (Location 1255)</li>
+<li>Этот прием позволяет предусмотреть время на вовлечение в каждой из сфер жизни. Цель — заполнить все свободное место в календаре, чтобы четко представлять, как собираешься тратить время каждый день. Не так важно, что вы делаете со своим временем: критерий успеха — это сделали ли вы то, что планировали. (Location 1258)</li>
+<li>Соблюдение плана с разграничением времени — это единственный способ понять, отвлекаетесь ли вы. (Location 1267)</li>
+<li>Чтобы составить график на неделю по методу таймбоксинга, нужно определить, сколько времени вы хотите уделить каждой из жизненных сфер. Сколько времени вы собираетесь потратить на себя, на важные отношения, на работу? Заметьте: под работой подразумевается не только оплачиваемый труд. (Location 1269)</li>
+<li>При каком распределении времени по жизненным сферам вы сумеете следовать своим ценностям? Для начала сделайте себе шаблон календаря на неделю — и пусть эта неделя будет идеальной[12]. Кроме того, каждую неделю отводите себе по пятнадцать минут на размышления, как улучшить свой календарь. В этом вам помогут два вопроса. Вопрос 1 (размышление): когда (если свериться с расписанием) я делал то, что планировал, а когда отвлекался? (Location 1275)</li>
+<li>Если вы поддались внутреннему раздражителю и отвлеклись, то какими способами будете справляться с ним, когда он проявится в следующий раз? (Location 1285)</li>
+<li>Вопрос 2 (улучшение): могу ли я что-то изменить в календаре, чтобы у меня появилось время для реализации своих ценностей? (Location 1292)</li>
+<li>взгляните на свое расписание. Меня интересует не то, что вы сделали, а то, что вы письменно обязались сделать. Как выглядит ваш календарь: он скрупулезно заполнен с помощью метода таймбоксинга или практически пуст? Отражает ли он ваше истинное «я»? Позволяете ли вы другим людям отнимать свое время или оберегаете этот бесценный ограниченный ресурс? (Location 1308)</li>
+<li>Отражает ли календарь ваши ценности? Чтобы быть тем, кем вы хотите, нужно выделять время на реализацию своих ценностей. Планируйте свой день по методу таймбоксинга. Три сферы жизни (вы, отношения, работа) — это основа, помогающая наметить, на что вы будете расходовать время. (Location 1323)</li>
+<li>Контролируйте вклад, а не результат (Location 1331)</li>
+<li>Как и любой ценный предмет, вы нуждаетесь в уходе и заботе, которые, в свою очередь, требуют времени. Так же как вы не станете прогуливать встречу с руководителем, вы никогда не должны пренебрегать договоренностями, которых достигли с собой. Ведь кто лучше, чем вы сами, поможет вам жить так, как вы хотите? Физические упражнения, сон, здоровая еда, чтение, прослушивание аудиокниг — все это способы инвестировать в себя. Кто-то прибегает к техникам осознанности и духовного единения или к размышлениям; им может потребоваться время на медитацию. Другие ценят мастерство; им нужно время, чтобы спокойно позаниматься своим хобби. Забота о себе — центральная из сфер жизни, поскольку две другие зависят от здоровья и благополучия человека. Если вы не заботитесь о себе, это сказывается на отношениях с людьми. Да и работа страдает, если у вас не хватает времени на то, чтобы поддерживать свое физическое и психическое здоровье. (Location 1335)</li>
+<li>Что касается базовых потребностей, в расписании нужно отвести время на сон, гигиену и полноценное питание. Быть может, вам кажется, что удовлетворить эти потребности легко, но я, признаюсь, прежде чем научился тщательно планировать день, часто засиживался на работе допоздна, после чего запихивал в себя на ужин двойной чизбургер и картошку фри и запивал все это упоительным шоколадным коктейлем, что отнюдь не сочеталось со здоровым образом жизни, который я рисовал себе в мечтах. Выделив время на реализацию своих ценностей в центральной сфере («вы»), вы получите возможность продумать свой календарь и отчетливо представить, какими качествами обладает человек, которым вы хотите стать. Кроме того, имея сильное тело и здравый ум, вы гораздо чаще будете доводить начатое до конца и выполнять свои обещания. (Location 1349)</li>
+<li>Моя задача — в нужное время предоставить своему телу место для отдыха, а что будет потом, это от меня не зависит. (Location 1379)</li>
+<li>когда речь идет о времени, нужно перестать беспокоиться о результатах, которые мы не можем контролировать, а сконцентрироваться на своем вкладе, который мы контролировать способны. Мы можем надеяться на то, что, затратив время на какое-то дело, получим положительный результат, но не можем ожидать его с уверенностью. Мы контролируем только время, которое вкладываем в задачу. Смогу ли я заснуть в любой момент; осенит ли меня гениальная идея по поводу следующей книги, когда я сяду за стол, — все это зависит не только от меня, но ясно одно: я не смогу сделать то, что хочу, если не окажусь в нужном месте в нужное время, будь то в постели, когда хочу спать, или за столом, когда хочу хорошенько поработать. В случае моего отсутствия неудача гарантирована. Мы склонны считать, будто можем решить проблему отвлечения, если постараемся за каждую минуту делать больше, но чаще всего реальная проблема — в нехватке времени на то, что мы намеревались сделать. (Location 1390)</li>
+<li>В первую очередь спланируйте время на себя. Вы находитесь в центральной из трех сфер жизни. Если вы не выделяете время на себя, это сказывается и на других двух сферах. Присутствуйте там, где пообещали быть. Вы не всегда способны контролировать то, что получите, потратив время, но вы способны контролировать время, которое вкладываете в задачу. Вклад гораздо четче, чем результат. Чтобы жить так, как мы хотим, сосредоточиться нужно только на одном — на выделении времени для реализации своих ценностей. (Location 1407)</li>
+<li>В бизнесе остаточный бенефициар — это тот болван, которому достается все оставшееся после ликвидации компании (как правило, немного). В жизни наши любимые люди заслуживают большего, но если мы не планируем свое время тщательно, то их удел — довольствоваться долей остаточных бенефициаров. (Location 1423)</li>
+<li>Одна из главных моих ценностей — быть заботливым, во все вникающим и веселым отцом. Я всячески стремлюсь ее воплощать, но быть постоянно вовлеченным родителем не всегда «удобно». Клиент сообщает в письме, что у меня упал сайт; водопроводчик присылает СМС, что у него задержался поезд, и просит договориться на другое время; банк извещает о неожиданном платеже по моей карте. В это время моя дочь сидит и ждет, когда я сыграю следующую карту в джин-рамми[14]. Чтобы такого не происходило, я каждую неделю специально планирую время, которое проведу с дочерью, так же как я выделяю время на деловую встречу или на себя. Как-то раз мы с ней потратили целый вечер на то, чтобы придумать, чем мы можем заняться в городе. Свои идеи мы записали на полосках бумаги; их получилось больше ста. Мы свернули все эти полоски и положили в нашу «развлекательную банку». Теперь каждую пятницу мы просто вытаскиваем из развлекательной банки очередную бумажку и делаем то, что на ней написано. Иногда идем в музей, иногда играем в парке или едем на другой конец города в знаменитое кафе-мороженое. Это время зарезервировано специально для нас. Если честно, «развлекательная банка» не всегда срабатывает так безупречно, как хотелось бы. Трудновато, например, собраться с силами и вылезти на детскую площадку, когда в Нью-Йорке мороз. В такие дни нас обоих гораздо больше привлекают чашка горячего какао и пара глав из «Гарри Поттера». Но важно то, что при составлении расписания на неделю приоритетом для меня теперь служит воплощение моих ценностей. Благодаря тому, что выделено время на нас двоих, я могу быть таким отцом, каким стремлюсь быть. С моей женой Джули мы также заботимся о том, чтобы у нас оставалось время друг для друга. Дважды в месяц у нас по плану что-нибудь особенное. Иногда мы идем на концерт, иногда балуем себя экзотической едой. Но обычно просто гуляем часами и разговариваем. Неважно, чем мы решим заняться, важно то, что мы знаем: в наших расписаниях это время железно закреплено за нами и мы не пойдем ни на какие компромиссы. Если время не выделено, день очень легко заполняется другими делами: то нужно сбегать в магазин, то прибраться в доме. Благодаря тому, что я специально планирую время на Джули, я могу реализовать одну из своих ценностей — близость с любимым человеком. Никому другому я не могу так открыться, как ей, но это возможно лишь при условии, что у нас есть время. (Location 1427)</li>
+<li>я каждую неделю специально планирую время, которое проведу с дочерью, так же как я выделяю время на деловую встречу или на себя. Как-то раз мы с ней потратили целый вечер на то, чтобы придумать, чем мы можем заняться в городе. Свои идеи мы записали на полосках бумаги; их получилось больше ста. Мы свернули все эти полоски и положили в нашу «развлекательную банку». Теперь каждую пятницу мы просто вытаскиваем из развлекательной банки очередную бумажку и делаем то, что на ней написано. Иногда идем в музей, иногда играем в парке или едем на другой конец города в знаменитое кафе-мороженое. Это время зарезервировано специально для нас. Если честно, «развлекательная банка» не всегда срабатывает так безупречно, как хотелось бы. Трудновато, например, собраться с силами и вылезти на детскую площадку (Location 1434)</li>
+<li>если моей жене нужна была помощь, почему она просто не попросила? Впоследствии я понял, что разобраться, в чем ты можешь быть полезен, — это тоже работа. Джули не могла мне объяснить, чем я могу помочь, потому что ее голова уже была занята дюжиной предстоящих дел. Ей хотелось, чтобы я проявил инициативу, просто взял и начал помогать. А я не знал как. Я понятия об этом не имел, поэтому либо тупо стоял как столб, либо ускользал по-тихому, чтобы позаниматься чем-то другим. По этому сценарию прошло много-много вечеров; заканчивались они обидами, а порой и слезами. В один из дней, когда мы с Джули проводили время вместе, мы сели, составили список всех домашних дел, которые делает каждый из нас, и проверили, не упустили ли мы чего-то. Сравнив список Джули (казавшийся бесконечным) с моим, я словно проснулся: оказывается, равенства, которому я в браке придаю такое значение, у нас нет и нужно что-то предпринять. Мы договорились поделить домашние обязанности на двоих и, самое главное, включили их в свои расписания; теперь мы точно знали, когда они будут выполняться. (Location 1479)</li>
+<li>Возможно, самое убедительное свидетельство в пользу того, что дружеское общение влияет на долголетие, — это результаты продолжающегося по сей день Гарвардского исследования развития взрослых3. Начиная с 1938 года ученые отслеживали физическое здоровье и социальные привычки 724 человек. И вот что сказал, выступая на конференции TED, нынешний руководитель исследования Роберт Уолдингер: «Из этого исследования продолжительностью 75 лет с предельной ясностью следует одно: хорошие взаимоотношения делают нас счастливее и здоровее. И точка». Социально изолированные люди, по словам Уолдингера, «менее счастливы; у них раньше начинает ухудшаться здоровье; раньше отмечается спад мозговой активности; [и] они живут меньше, чем люди, которые не одиноки»4. Уолдингер предупреждает: «Дело не только в количестве друзей… Качество близких взаимоотношений — вот что имеет значение». (Location 1511)</li>
+<li>Как угасает дружба? Она умирает с голоду. Но, позволяя дружбе умирать с голоду, мы недокармливаем также свое тело и разум. Раз дружба питается совместным времяпрепровождением — как нам найти на это время? Несмотря на нашу занятость и наличие детей, мы с друзьями завели обычай, гарантирующий регулярные общие встречи. Мы называем это кибуцем, что в переводе с иврита означает «собрание». Раз в две недели четыре пары, включая нас с женой, встречаются на пикнике, чтобы обсудить очередной вопрос. Вопросы бывают разные, от глубоких — например, «Можете ли вы выбрать что-то одно, чему вас научили родители и за что вы им благодарны?» — до более практических — «Нужно ли заставлять детей учиться тому, чего им не хочется, — играть на пианино и тому подобное?» Наличие темы, во-первых, помогает обойтись без пустых разговоров о спорте и погоде и позволяет откровенно обсудить действительно важные вещи; во-вторых, не дает нам разделиться по половому признаку, как часто случается, когда семейные пары собираются вместе: мужчины группируются в одном уголке, женщины — в другом. У нас есть «вопрос дня», и мы ведем общий разговор. Самое главное в этих сборищах — постоянство: во что бы то ни стало каждые две недели «кибуц» значится у нас в календарях — на том же месте, в тот же час. Нет бесконечного обмена письмами с обсуждением запутанной логистики. Для большей простоты каждая пара привозит с собой свою еду, чтобы не надо было ни готовиться, ни убирать. Если какая-то из пар не смогла приехать, ничего страшного: «кибуц» все равно проходит по плану. Встреча длится около двух часов, и всякий раз я уезжаю со свежими идеями и открытиями. А самое главное, я чувствую, как мы сближаемся. Независимо от того, какой вид деятельности удовлетворяет вашу потребность в дружбе, необходимо предусмотреть для него время в календаре. Время, которое мы проводим с друзьями, — это не просто приятные посиделки; это вклад в наше здоровье и благополучие. (Location 1538)</li>
+<li>ЗАПОМНИТЕ Люди, которых вы любите, достойны большего, чем то время, которое у вас осталось. Если человек важен для вас, регулярно предусматривайте для него время в календаре. Зарезервировать для своей «второй половины» время, чтобы побыть вместе, — этого мало. Добавьте в календарь домашние дела, чтобы разделить их по справедливости. Недостаток тесного дружеского общения может быть опасен для здоровья. Заботьтесь о сохранении важных отношений: находите время для регулярных встреч. (Location 1566)</li>
+<li>СФЕРЫ ЖИЗНИ Работа — это жизненная сфера, на которую, в отличие от двух других, вы выделите время и без моих напоминаний. В том, что касается работы, у вас, возможно, и нет особого выбора. Но поскольку работа отнимает больше активного времени, чем любая другая сфера, нужно позаботиться, чтобы это время согласовывалось с вашими ценностями. Работа помогает человеку реализовывать такие ценности, как сотрудничество, трудолюбие и настойчивость. Кроме того, она позволяет выделить время на значимые вещи. Как ни печально, у многих из нас рабочий день — это сплошная суматоха и неразбериха: постоянное отрывание от работы, бессмысленные совещания, нескончаемый поток электронных писем… К счастью, это можно исправить. Мы можем делать больше и жить лучше — нужно только разъяснить друг другу на работе, какие у кого ценности и ожидания. Четкое понимание того, как именно мы проводим время на работе, питает и укрепляет главное качество конструктивных рабочих отношений — доверие. У каждой компании своя политика. Но поговорим о том, каким образом работники справляются со своими обязанностями. Многие руководители лишь смутно представляют себе, как их сотрудники расходуют время. Но и для большинства работников главная загадка — это как тратить время и на работе, и вне ее. Насколько он должен быть готов делать что-то по работе в нерабочее время? Обязан ли он посещать неформальные встречи и другие принудительно-увеселительные мероприятия? Предполагают ли начальники и клиенты, что он согласен в последнюю минуту выполнять неотложные поручения? Нужно ли предупредить жену о том, что он будет пропадать по ночам, если руководителям вздумается развлечься в центре города? Это важные вопросы, ведь от ответов на них напрямую зависит наше расписание и, следовательно, сколько времени у нас остается на другие сферы жизни. Один из последних опросов показал, что 83 процента работающих людей в нерабочее время проверяют электронную почту1. Также выяснилось, что две трети опрошенных берут с собой в отпуск устройства для работы, например ноутбуки и смартфоны. Около половины опрошенных признались, что они, бывало, отсылали по работе электронные письма, сидя за столом с родственниками или друзьями. Когда человек допоздна засиживается на работе или вынужден в свободное время отвечать на сообщения, у него остается меньше времени на семью и друзей, а также на самого себя. А если эти требования выходят за рамки того, на что он рассчитывал, то доверие и лояльность могут улетучиться, а его собственное здоровье и отношения — разрушиться. Проблема в том, что обычно мы получаем ответы на эти вопросы только после того, как уже согласились на должность. Руководителю тоже приходится разгадывать множество загадок. Когда на задачу или проект уходит больше времени, чем планировалось, и ожидания не оправдываются, ему остается только гадать, в чем причина. Может быть, сотруднику не хватает квалификации? Или мотивации? Может, он в поисках новой работы? Как он расходует время? При снижении эффективности руководители часто начинают требовать, чтобы сотрудники больше трудились и задерживались на работе. Но эта обычная рефлекторная реакция означает, что работники должны отдавать больше, чем планировали, из-за чего рабочие отношения становятся напряженными и сотрудники начинают неявными способами выражать свой протест. Как это проявляется? Часто, не отдавая себе в этом отчета, мы начинаем больше заниматься второстепенными делами, тормозить за рабочим столом, слишком много болтать с сослуживцами и в целом делать меньше. Бывает и так, что мы (быть может, неосознанно) вредим своей компании, занимаясь псевдоработой — задачами, которые выглядят как работа, но не соответствуют основным приоритетам компании. (Вот вам примеры: увлечение любимыми проектами в ущерб другим, корпоративные интриги, избыточная электронная переписка, ненужные совещания.) Такая форма протеста набирает силу, когда людей заставляют перерабатывать. В целом, согласно результатам исследований, у людей, проводящих на работе больше пятидесяти пяти часов в неделю, падает производительность; более того, они чаще ошибаются и чаще загружают сотрудников бессмысленной работой, из-за чего времени тратится еще больше, а делается еще меньше2. Как остановить это безумие? Подробное расписание, составленное по методу таймбоксинга, помогает прояснить суть одного из самых важных соглашений — о доверии между работодателями и работниками. Регулярно просматривая это расписание, обе стороны получают возможность принимать обоснованные решения относительно того, должным ли образом тратится время сотрудника, и помогать ему выделять ресурс на более важные задачи. (Location 1579)</li>
+<li>Согласно поведенческой модели Фогга, для совершения поступка (П) необходимо одновременное наличие трех составляющих: мотивации (M), способности (С) и раздражителя (Р). В кратком виде это выглядит так: П = MСР. Мотивация — это «энергия для действия», полагает профессор психологии Рочестерского университета Эдвард Диси3. При высокой мотивации есть сильное желание и требуемая энергия для совершения действия, а при ее отсутствии энергии на выполнение задачи не хватает. Между тем в формуле Фогга способность связана с легкостью совершения действия. Проще говоря, чем дело труднее, тем меньше вероятность, что человек его сделает. И наоборот: чем дело легче, тем эта вероятность выше. Когда человеку хватает мотивации и способностей, он готов к тому или иному поступку. Но без важнейшей третьей составляющей этот поступок не будет совершен. Всегда нужен раздражитель, который сообщит, что сейчас делать. (Location 1785)</li>
+<li>Согласно результатам исследования, опубликованным в Journal of Experimental Psychology: Human Perception and Performance, если человек получает уведомление на мобильный телефон, но не отвечает на него, он отвлекается точно так же, как если бы он ответил на сообщение или звонок6. Еще один факт: авторы исследования, проведенного при Техасском университете в Остине, полагают, что «само присутствие смартфона провоцирует “утечку мозга”, поскольку доля внимания направлена на сдерживание автоматических реакций и, соответственно, не может быть задействована в решении текущей задачи». Если телефон находится в поле зрения, мозгу приходится прилагать массу усилий, чтобы его игнорировать, если же телефон далеко или его не видно, мозг способен сосредоточиться на текущей задаче. К счастью, не все внешние раздражители ослабляют внимание. Мы во многом можем использовать их с выгодой для себя. Например, короткие текстовые сообщения со словами поддержки действительно помогают бросить курить7. Данные масштабного исследования, в котором участвовали десять стран, «безусловно, свидетельствуют о полезности… вмешательств для ослабления тяги к курению»8. Итак, внешние раздражители в принципе могут приносить пользу, но, когда их слишком много, они губительны для продуктивности и счастья. В таком случае как нам отличить полезные внешние раздражители от вредных? Разгадка — в ответе на ключевой вопрос: Работает этот раздражитель на меня или я работаю на него? (Location 1825)</li>
+<li>Предполагалось, что открытая планировка офисов будет стимулировать обмен идеями и совместную работу. Но, к сожалению, согласно масштабному исследованию 2016 года, проанализировавшему обстановку в трехстах с лишним офисах газетных издательств, этот тренд привел к росту отвлечения10. (Location 1949)</li>
+<li>Учитывая, какое влияние отвлечение оказывает на наши когнитивные способности, можно утверждать только одно: пришло время действовать, подобно Беки Ричардс. Нет, я не призываю носить в офисах ярко-оранжевые жилеты, словно кричащие «Не отвлекать!», и не настаиваю на перепланировке — я предлагаю конкретный эффективный метод, позволяющий оградить работников от помех. Сделайте карточку, и напишите на ней крупным шрифтом простую просьбу к проходящим мимо: «СЕЙЧАС МНЕ НУЖНО СОСРЕДОТОЧИТЬСЯ. ПОДОЙДИТЕ, ПОЖАЛУЙСТА, ПОПОЗЖЕ». Прикрепите такую карточку к экрану своего компьютера, чтобы ваши сослуживцы знали: вы не хотите отвлекаться. В отличие от наушников на голове, такой призыв будет понят однозначно. Подобно тому как яркие жилеты уменьшают число ошибок при выдаче лекарств, карточка на мониторе подает сигнал сослуживцам, что вы не хотите отвлекаться Несмотря на то что такая просьба на мониторе понятна практически любому, все же советую обсудить свою цель с коллегами. Такой разговор может побудить их последовать вашему примеру и послужит исходной точкой для дискуссии о важности сосредоточенной работы. Но иногда необходимо в еще более явной форме потребовать, чтобы вас никто не отвлекал, особенно если вы работаете на дому. Моя жена, следуя принципу блокировки нежелательных внешних раздражителей, купила на Amazon за несколько долларов броский ободок для волос. Она называет его «короной концентрации»; вделанные в него светодиодные лампочки окружают ее голову сиянием, посылая сигнал, который просто невозможно игнорировать. Надевая ободок, она ясно дает понять нашей дочери (и мне), что отрывать ее от работы можно лишь в крайнем случае. Действует просто волшебно. «Корона концентрации» дает нам с дочерью понять, что жена сейчас ни на что не отвлекается Жилет, карточка на мониторе, подсвеченная корона… Какой бы способ вы ни выбрали, чтобы устранить нежелательные стимулы, исходящие от других людей, вы должны подать четкий сигнал: я не хочу, чтобы меня отрывали. Это поможет коллегам и домочадцам притормозить и оценить свои действия, прежде чем они нарушат вашу сосредоточенность. (Location 1955)</li>
+<li>Почему электронная почта — хроническая проблема? Ответ на этот вопрос кроется в нашей психологии. Возможно, именно электронная почта положила начало всем продуктам, формирующим наши привычки. Во-первых, мы получаем от нее переменное вознаграждение. В известном эксперименте Берреса Фредерика Скиннера[15] голуби клевали клавиши чаще, если схема подкрепления постоянно менялась. Точно так же непредсказуемость электронных писем заставляет нас проверять и «клевать» почту снова и снова4. В ответ мы получаем хорошие новости и плохие, увлекательную информацию и глупости, письма от самых близких и любимых людей и от безымянных незнакомцев. Эта неопределенность притягивает нас как магнит: нам хочется посмотреть, что там в ящике на этот раз. И мы снова и снова жмем на клавиши и проводим по экрану пальцем, беспрестанно пытаясь выйти из неприятного состояния ожидания. Во-вторых, у нас есть выраженная склонность к взаимному обмену: мы чувствуем себя обязанными «платить той же монетой». Когда кто-то говорит «привет» или протягивает нам руку, нас тянет ответить тем же; если мы этого не сделаем, то нарушим устойчивую социальную норму и это покажется невежливым. В личном общении взаимная учтивость привлекательна, но в онлайн-пространстве она может приводить к массе проблем. И наконец (и это, наверное, самое существенное), электронная почта — это инструмент, которым мы практически не можем не пользоваться. У большинства из нас от нее зависит работа; она так вплетена в рабочую среду и личную жизнь, что полный отказ от нее опасен: так можно и средств к существованию лишиться. Но, как и многие другие вещи, отнимающие больше времени и внимания, чем хотелось бы, электронную почту можно взять под контроль. (Location 2018)</li>
+<li>Чтобы получать меньше электронных писем, нужно отправлять меньше электронных писем. (Location 2057)</li>
+<li>Просто удивительно, сколь многие вопросы утрачивают свою насущность, когда даешь им время отлежаться. (Location 2078)</li>
+<li>Но что, если отправителю все равно нужно обсудить с вами свой вопрос и он не может справиться с проблемой самостоятельно? Тем лучше! Сложные вопросы удачнее разрешаются при личном общении, а не в электронной переписке, где выше риск недопонимания. Главное — просьба обсуждать с вами сложные проблемы только в «часы работы» позволяет сделать общение более плодотворным и уменьшить поток электронной корреспонденции. (Location 2083)</li>
+<li>Несомненно, на то чтобы разобраться с нежелательными электронными письмами, требуется время, но, защитив свой ящик от ненужных сообщений, вы увидите, как их поток превратится в едва заметную струйку. (Location 2130)</li>
+<li>Все больше появляется подтверждений тому, что просматривать письма крупными порциями гораздо эффективнее, чем проверять почту в течение дня8. Причина в том, что мозгу требуется время на переключение с одной задачи на другую, поэтому лучше сосредоточиться и ответить сразу на все письма. Я знаю, о чем вы сейчас подумали: нельзя же ждать весь день, чтобы проверить почту. Понимаю. Мне тоже нужно заглядывать в свой ящик, чтобы удостовериться, что там нет ничего срочного. Наша проблема не в проверке почты — мы страдаем от привычки ее перепроверять. (Location 2136)</li>
+<li>По словам Джейсона Фрида, сидеть в групповом чате — все равно что «проводить весь день на совещании, список участников которого произволен, а повестка дня отсутствует»1. Это мнение обращает на себя внимание еще и потому, что компания Basecamp, основанная Фридом, разработала популярное приложение для групповых чатов. Однако Фрид понимает: в интересах компании — заботиться, чтобы ее клиенты не перегорали на работе. Именно поэтому он дает советы пользователям приложений для групповых чатов, будь то Basecamp, Slack, WhatsApp или другие сервисы. «Мы выяснили, что эпизодическое использование групповых чатов в определенных ситуациях имеет немалый смысл, — пишет Фрид у себя в посте. — Но гораздо меньше смысла в том, чтобы по умолчанию превращать чаты в основное средство общения в компании. Кусочек — да. Целый пирог — нет… Какие только беды не случаются, когда компания большую часть времени начинает мыслить в режиме “строчка за раз”». По мнению Фрида, программы, которые мы используем, определяют, как мы чувствуем себя на работе, поэтому к групповым чатам стоит прибегать лишь время от времени. «Вы измотаны, изнурены и тревожны? Или спокойны, невозмутимы и собранны? Это не просто расположение духа — это состояния, обусловленные программами, которыми вы пользуетесь, и действиями, к которым они вас подталкивают». И хотя именно режим реального времени определяет уникальность групповых чатов, Фрид считает, что «прямо сейчас должно быть исключением, а не правилом»2. Итак, вот четыре основных правила эффективного управления групповыми чатами. Правило 1: пользуйтесь чатом как сауной Групповые чаты следует использовать так же, как другие каналы синхронного общения. Вы же не стали бы участвовать в телефонной конференции, длящейся целый день, так почему нужно делать исключение для группового чата? Фрид рекомендует «относиться к чатам как к сауне: побыть немного и выйти… Оставаться там слишком долго — вредно для здоровья». Еще один вариант — запланировать в групповом чате общую встречу, чтобы все подключились к ней в назначенное время. В этом случае групповой чат — отличный способ сократить число личных встреч. (Location 2206)</li>
+<li>«Не нужно, чтобы все были на связи, — советует Фрид. — Чем меньше чат, тем он лучше. (Location 2254)</li>
+<li>Главное — позаботиться, чтобы каждый из участников чата был способен сделать вклад в разговор и вынести из него что-то ценное для себя. (Location 2258)</li>
+<li>Один из самых простых способов избавиться от лишних совещаний — потребовать от организаторов, чтобы соблюдались два условия. Первое: они должны распространить среди участников программу с указанием обсуждаемой проблемы. Нет программы — нет совещания. Второе: они должны письменно изложить возможное решение проблемы в краткой форме. Достаточно одной-двух страниц: описание проблемы, ход мыслей устроителей, их рекомендации. (Location 2306)</li>
+<li>За исключением случаев, когда совещание созывается в связи с чрезвычайной ситуацией или когда нужно дать сотрудникам возможность рассказать, что их беспокоит (к этому мы вернемся в пятой части книги). (Location 2317)</li>
+<li>если совещание все-таки назначено, нужно соблюдать правила общения, которые мы изложили в предыдущей главе. Неважно, собираетесь вы онлайн или офлайн, — приглашайте участников выборочно и постарайтесь «зайти и выйти» быстро. (Location 2326)</li>
+<li>Сделайте все возможное, чтобы созвать совещание было трудно. Чтобы совещание состоялось, его организатор должен передать участникам программу и краткую информацию по вопросу, планируемому к обсуждению. Совещания нужны для того, чтобы выработать общее мнение. За редким исключением творческий поиск решения должен предшествовать совещанию и проводиться в очень маленьких группах. Вовлекайтесь в процесс полностью. На совещаниях люди прибегают к гаджетам, чтобы спастись от монотонности и скуки, из-за чего совещание становится еще более унылым. Используйте на совещании только один ноутбук. Решить задачу гораздо сложнее, если в руках у всех гаджеты. Оставьте технические устройства за дверью; исключение — единственный ноутбук для презентации и ведения записей. (Location 2383)</li>
+<li>Исследование, проведенное специалистами Принстонского университета, показало, что, когда объекты в поле зрения человека представлены беспорядочно, ему хуже даются когнитивные задачи, чем когда вещи расставлены аккуратно1. Этот эффект наблюдается и в цифровой среде, что подтверждает исследование, результаты которого были опубликованы в научном журнале Behaviour &amp; Information Technology2. Нет ничего удивительного в том, что мозгу сложнее отыскивать нужное, если перед глазами нет порядка: каждый ярлык, открытая вкладка или лишняя закладка навязчиво напоминают о чем-то недоделанном или неизученном. Когда внешних раздражителей много, мозг чаще ненароком отключается от текущей задачи. По мнению Софи Лерой из Университета Миннесоты, переключение с одного на другое плохо сказывается на концентрации, поскольку так называемое остаточное внимание затрудняет возврат к делу (Location 2574)</li>
+<li>Устранение из поля зрения ненужных внешних раздражителей упорядочивает рабочую среду и освобождает сознание, позволяя ему сконцентрироваться на действительно важных вещах. (Location 2593)</li>
+<li>Ленты новостей, как, например, в социальных сетях, созданы, чтобы удерживать ваше внимание. (Location 2845)</li>
+<li>Обязательства снижают вероятность отвлечения. Они помогают нам оставаться верными решениям, которые мы принимаем заблаговременно. (Location 2928)</li>
+<li>Focusmate. Его миссия — помогать людям по всему миру сохранять сосредоточенность, а средство для заключения договоров об усилиях — видеоконференции в режиме один на один. (Location 3011)</li>
+<li>Договор об усилиях предотвращает отвлечение, затрудняя выполнение нежелательных действий. (Location 3024)</li>
+<li>«у людей, как правило, выше мотивация к избеганию потерь, чем к извлечению выгод». Потеря приносит боли больше, чем прибыль — радости. Именно на эту иррациональную склонность, известную как «отвращение к потере», опираются стратегии поведенческих экономистов. (Location 3062)</li>
+<li>ЗАПОМНИТЕ Договор о цене устанавливает стоимость вашего отвлечения. Доказано, что это чрезвычайно мощный фактор мотивации. Договоры о цене наиболее эффективны, когда есть возможность устранить внешние раздражители, заставляющие вас отвлекаться. Договоры о цене лучше всего работают, когда отвлечение имеет временный характер. Заключить договор о цене бывает трудно. Мы боимся это делать, поскольку понимаем, что нам придется выполнить то, чего мы всячески избегали. Прежде чем заключать договор о цене, научитесь сочувствовать себе. (Location 3166)</li>
+<li>Поговорим об эксперименте, который в 2011 году провела группа психологов из Стэнфордского университета1. Молодой исследователь по имени Кристофер Брайан решил проверить, что произойдет, если побудить людей чуть-чуть иначе взглянуть на себя. Сначала он попросил две группы зарегистрированных избирателей ответить на вопросы, относящиеся к предстоящим выборам. В вопросах для первой группы содержался глагол «избирать» — например: «Насколько важно для вас избирать кандидатов?» Вторая группа отвечала на аналогичные вопросы, но с существительным «избиратель» — например: «Насколько важно для вас быть избирателем?»2 Различие в формулировках может показаться ничтожным, однако результаты были невероятными: «в числе самых значительных из когда-либо наблюдавшихся в экспериментах с объективной оценкой явки избирателей», — писали Брайан и его соавторы в статье, опубликованной в журнале Proceedings of the National Academy of Sciences3. Оказалось, что из группы тех, кому попался вопросник со словом «избиратель», на выборы пришли гораздо больше людей, чем из группы, где участников спрашивали о намерении «избирать» кандидатов. Это было настолько удивительно, что исследователи, стремясь подтвердить обоснованность полученных результатов, воспроизвели свой эксперимент в период других выборов. Все осталось по-прежнему: группа «избирателей» заметно обошла группу тех, кто «избирал». Брайан сделал такой вывод: «Вероятно, люди охотнее идут на выборы, когда голосование представлено как способ самовыражения — как символ самобытного характера человека, а не просто как образ действий». Самовосприятие ощутимо влияет на поведение, и его воздействие распространяется далеко за пределы кабинки для голосования. Личность указывает мозгу один из кратчайших когнитивных путей, позволяющий заранее делать сложный выбор, что облегчает принятие решений. (Location 3182)</li>
+<li>В ходе одного из исследований, результаты которого публиковались в Journal of Consumer Research, специалисты тестировали фразы, употребляемые людьми в ситуациях, когда те сталкиваются с необходимостью сделать выбор4. Так, участникам эксперимента предлагали неполезные для здоровья продукты. Первой группе велели отвечать «Я не могу», а второй — «Я не стану». Когда эксперимент подходил к концу, каждому участнику предложили на выбор шоколадный или злаковый батончик. Среди участников группы «Я не стану» таких, кто на выходе выбрал более полезный продукт, оказалось почти вдвое больше. Авторы исследования объясняют такое различие в поведении участников «психологическим раскрепощением» тех, кто говорил «Я не стану». И полученные ими результаты аналогичны результатам эксперимента с избирателями: «Я не могу» относится к поведению, в то время как «Я не стану» характеризует человека. Чтобы направить силу самооценки на предотвращение отвлечения, мы можем заключить с собой личностный договор: предварительное обязательство перед своим «я» (каким мы себе его рисуем), помогающее добиваться того, чего мы действительно хотим. Есть такой старый анекдот: «Как узнать, что перед тобой вегетарианец?» — «Не волнуйся, он сам тебе скажет». «Вегетарианца» здесь можно заменить любым наименованием — хоть «марафонцем», хоть «морпехом», — анекдот не утратит смысла. Я пять лет был вегетарианцем. Любой, кто пробовал отказываться от мяса, знает, что друзья в таких случаях всегда спрашивают: «А ты не скучаешь по мясу? Оно же вкусное!» Конечно, я скучал по мясу! Но когда я начал называть себя вегетарианцем, то, что раньше казалось аппетитным, утратило это качество. Еда, которую я раньше любил, стала невкусной из-за того, что я иначе характеризовал себя. Я не то что не мог есть мясо — я был вегетарианцем, а вегетарианец мясо есть не станет. Заключая с собой личностный договор, я ограничивал свой, но отказываться от мяса мне теперь было не сложно. Это не было повинностью или бременем — я просто этого не делал, подобно тому как благочестивые мусульмане не употребляют алкоголь, а набожные иудеи не едят свинину. Равняясь в поступках на свое «я», мы делаем выбор, ориентируясь на представление о себе. А теперь давайте подумаем, какие новые личностные качества помогли бы вам бороться с отвлечением. Вы, наверное, уже поняли, почему название этой книги «Неотвлекаемые». Вот ваше новое наименование! Считая себя человеком, который ни на что не отвлекается, вы черпаете силы в своем новом «я». Вы можете опереться на это новое качество, чтобы объяснить другим, почему вы «странно» себя ведете, например: скрупулезно планируете время, отказываетесь мгновенно реагировать на каждое уведомление, прикрепляете к монитору карточку с призывом вас не отрывать. Такие поступки ничуть не страннее других проявлений самобытности, таких как, например, ношение религиозных одеяний или следование определенной диете. Пришло время ни на что не отвлекаться и гордиться этим! Рассказать другим о своем новом «я» — отличный способ скрепить свой договор. Замечали ли вы, что в большинстве религий последователей побуждают проповедовать свою веру? Миссионерская деятельность помогает привлекать новых последователей, но с психологической точки зрения попытки обратить в свою веру — это больше, чем призыв к неверующим примкнуть к пастве. Последние исследования свидетельствуют о том, что подобные наставления существенно укрепляют мотивацию наставника и его приверженность идее. Исследователи Лорен Эскрайс-Винклер и Айелет Фишбах проводили эксперименты с разными группами людей — от рабочих, оставшихся без работы и ищущих себе другую, до детей, столкнувшихся с трудностями в школе. Результаты неизменно показывали, что у человека, обучающего других, мотивация к переменам в собственном поведении сильнее, чем если бы он сам обучался у специалиста5. Но есть ли у нас право учить других тому, в чем мы сами еще не совсем разобрались? Стоит ли нам наставлять кого-то, если мы далеки от совершенства? Исследования показывают: когда мы учим других, наше поведение меняется даже существеннее, чем когда мы признаем свое несовершенство6. Как отмечают Эскрайс-Винклер и Фишбах в MIT Sloan Management Review, если человек признает свои ошибки, он способен понять, где свернул не на ту дорогу, и при этом его представление о себе не меняется к худшему7. Обучая других, мы выстраиваем свое новое «я», ведь так мы помогаем людям избежать своих ошибок. Еще одно средство укрепить свое «я» — ритуалы. Вернемся к религиозной теме. Многие религиозные обряды соблюдать непросто, особенно неверующим. Молиться пять раз в день, обратившись в сторону Мекки, или читать молитву перед каждым приемом пищи — все это требует усилий. Тем не менее верующие, строго соблюдающие обряды, делают все это в обязательном порядке, не задавая вопросов. Что, если бы мы могли позаимствовать толику подобной преданности для выполнения трудных задач? Представьте, что вы способны сконцентрироваться на чем угодно и дисциплинированы как истинно верующие. Результаты одного из последних исследований позволяют предположить, что ритуалы — на работе и в повседневной жизни — оказывают на человека сильнейшее воздействие. В ходе эксперимента профессор Гарвардской школы бизнеса Франческа Джино и ее коллеги оценивали, как ритуалы влияют на способность самоконтроля у людей, стремящихся похудеть8. Первую группу участников попросили в течение пяти дней внимательно следить за тем, что они едят. Вторую группу обучили определенному ритуалу: прежде чем начинать есть, они должны были, во-первых, нарезать еду; во-вторых, разложить кусочки симметрично на тарелке; и в-третьих, три раза постучать по еде вилкой. Согласен, глупо, но на редкость эффективно. Участники эксперимента, соблюдавшие этот ритуал, в среднем потребляли меньше калорий, меньше жира и меньше сахара, чем их коллеги из «внимательной» группы. По словам профессора Джино, ритуалы «могут казаться пустой тратой времени. Однако, как позволяет предположить наше исследование, они весьма действенны». «Даже если ритуалы не встроены в вековую традицию, — продолжает она, — они помогают нам дисциплинировать себя и усиливать самоконтроль»[25]. Согласно общепринятому мнению, убеждения определяют наше поведение, но верно и обратное9. Свидетельства о важности ритуалов подкрепляют и мысль о необходимости строго следовать расписанию, о чем мы упоминали во второй части книги. Чем тверже мы придерживаемся своих планов, тем больше укрепляем свое «я». Мы можем ввести в свою жизнь и ритуалы, напоминающие нам о том, кто мы такие. У меня, например, есть такой ритуал: каждое утро я повторяю несколько коротких «мантр», подпитывающих мое «я». Кроме того, при любой возможности я называю себя «неотвлекаемым». Например, если мне предстоит поработать дома, то, прежде чем сконцентрироваться на своей задаче, я говорю жене и дочери, что сейчас ни на что не отвлекаюсь. А еще активирую функцию «Не беспокоить», которая автоматически отправляет ответные сообщения любому, кто попытается со мной связаться в то время, пока я должен сохранять сосредоточенность. Я даже заказал футболки с надписью НЕОТВЛЕКАЕМЫЙ на груди, чтобы подпитывать свое «я» каждый раз, когда вижу себя в зеркале или кто-нибудь интересуется, что это у меня за надпись. Заключив с собой личностный договор, мы можем увидеть себя такими, какими хотим. Неважно, о каком образе действий идет речь: о том, что мы едим, о том, как обращаемся с другими людьми, или о том, как справляемся с отвлечением, — этот прием помогает изменить наши действия так, чтобы они соответствовали нашим ценностям. Мы склонны считать свое «я» раз и навсегда сложившимся, но на самом деле наше представление о себе — это всего лишь мыслительная привычка, а привычки, как мы уже знаем, можно менять к лучшему. (Location 3211)</li>
+<li>Самовосприятие определяет наше поведение. Люди склонны равняться в своих поступках на представления о себе. Личностный договор — это предварительное обязательство перед своим «я». Действуя в соответствии с самовосприятием, можно предотвращать отвлечение. Станьте тем, кем вы себя именуете. Так вы повышаете вероятность соответствующих действий. Называйте себя неотвлекаемым. Делитесь с другими. Обучая других людей, вы становитесь более приверженными своей цели, даже если все еще испытываете трудности. Отличный способ научиться ни на что не отвлекаться — рассказывать друзьям о том, что вы узнали из этой книги и как меняется ваша жизнь. Введите в свою жизнь ритуалы. Повторение «мантр», соблюдение расписания и другие повторяющиеся действия подпитывают ваше «я» и определяют дальнейшие поступки. (Location 3334)</li>
+<li>Отвлечение — результат несовершенной корпоративной культуры (Location 3352)</li>
+<li>Первый из факторов связан с тем, что исследователи называют «рабочим напряжением». Этот фактор присутствует в среде, где сотрудники вынуждены оправдывать высокие ожидания, но при этом не могут ничего контролировать. Стэнсфелд добавил, что такое напряжение могут испытывать как офисные сотрудники, так и производственные рабочие, и сравнил это чувство с ощущениями работника конвейера, лишенного возможности отрегулировать его скорость, даже если что-нибудь случается (Location 3388)</li>
+<li>Второй фактор, провоцирующий развитие депрессии на рабочем месте, — это «несоответствие усилий вознаграждению»: сотрудники не получают особой благодарности за свой тяжелый труд ни в виде дополнительных выплат, ни в виде признания заслуг. В основе обоих факторов — как рабочего напряжения, так и несоответствия усилий вознаграждению — лежит невозможность контролировать ситуацию, считает Стэнсфелд. (Location 3398)</li>
+<li>Чтобы избавиться от дискомфорта, мы хватаемся за свои гаджеты; при невозможности контролировать ситуацию — тянемся к техническим устройствам, чтобы почувствовать себя лучше. Проверка электронной почты, присоединение к разговору в групповом чате создают у нас ощущение продуктивной деятельности независимо от того, занимаемся ли мы на самом деле чем-нибудь полезным. (Location 3410)</li>
+<li>Вот что сказал Перлоу один из консультантов BCG: «Партнерам больше нравится слышать “да”, чем “нет”, и я стараюсь дать им то, чего они хотят». Если руководитель присылает электронное письмо в то время, когда человек обычно находится с семьей или спит, оно будет прочитано и ответ будет отправлен. Если руководитель желает созвать совещание, дабы обсудить то, что ему вздумалось, подчиненные все бросят и придут на совещание, невзирая на неотложные дела. Если руководитель полагает, что подчиненным стоит задержаться на работе (независимо от того, какие у них планы), что ж, вы догадываетесь, что произойдет. Внедрение новых технологий в эту разъедающую рабочую атмосферу лишь усугубляет ситуацию. Перлоу описывает, что принуждение сотрудников постоянно находиться на связи растет с каждым новым витком так называемого цикла реагирования. (Location 3439)</li>
+<li>Чем больше запросов, тем выше принуждение к реагированию: почтовый ящик переполняется, сообщения изливаются нескончаемым потоком. И вскоре круглосуточное реагирование становится (Location 3461)</li>
+<li>Доказано, что в рабочей среде, где высокие ожидания сочетаются с невозможностью для работников управлять ситуацией, развивается депрессия. В депрессивном состоянии человек страдает. Когда человеку плохо, отвлечение помогает убежать от страдания и вернуть себе ощущение, что он способен контролировать ситуацию. Чрезмерное увлечение технологиями на работе — это симптом несовершенства корпоративной культуры. Чем шире использование технологий, тем глубже проблемы; цикл реагирования становится бесконечным. (Location 3480)</li>
+<li>Исследователи выявили пять ключевых показателей, при низком значении которых распадаются даже успешные команды. Первые четыре — это надежность; понятная структура; смысл работы и ее значение. Однако пятый, несомненно, главный показатель служит основой для остальных четырех. Это то, что называют психологической защищенностью. Розовски поясняет: Члены команд, чувствующие себя более защищенными психологически, реже уходят из Google, чаще задействуют потенциал разнообразных идей, выдвигаемых коллегами, вносят более значимый вклад, и руководители вдвое чаще называют их результативными. Термин «психологическая защищенность» предложила Эми Эдмондсон, специалист по внутриорганизационному поведению из Гарварда. Выступая на конференции TEDx, Эдмондсон определила психологическую защищенность как «убеждение, что тебя никто не накажет и не унизит из-за того, что ты высказал идею, опасение, ошибочное мнение или задал вопрос»3. Высказываться нетрудно, но если ты чувствуешь себя психологически незащищенным, то будешь держать свои опасения и идеи при себе. И снова Розовски: Оказывается, все мы не любим совершать действия, которые могут отрицательно повлиять на представление других о нашей компетентности, осведомленности и настрое. Несмотря на то что такого рода самозащита на рабочем месте — естественная тактика, она губительна для эффективности командной работы. С другой стороны, чем сильнее у членов команды чувство безопасности при взаимодействии друг с другом, тем скорее они будут признавать ошибки, сотрудничать и брать на себя новые роли. Психологическая безопасность — это противоядие от депрессивных факторов рабочей среды, выявленных в ходе исследования Стэнсфелда и Кэнди. И это тот волшебный компонент, который открыли для себя команды BCG, начав регулярно встречаться, чтобы решить стоящую перед ними задачу — обеспечить сотрудников свободным временем. Понимание, что твой голос важен, что ты не винтик в равнодушной и неизменной машине, положительно влияет на уровень благополучия. Как в команде — да и в компании в целом — создать ощущение психологической безопасности? Выступая на TEDx, Эдмондсон описала три шага, которые помогут это сделать. Шаг 1. «Преподнесите предстоящую работу как обучающую, а не как исполнительскую задачу». Поскольку исход неясен, сделайте акцент на том, что «нам важна каждая светлая голова и каждый голос». Шаг 2. «Признайте, что и сами ошибаетесь». Руководители должны давать понять подчиненным, что ни у кого нет ответов на все вопросы, — все мы в одной лодке. Шаг 3. «Лидеры должны имитировать любопытство и задавать много вопросов»4. Эдмондсон подчеркивает, что организации — особенно те, которые работают в условиях неопределенности и взаимозависимости между членами команды, — нуждаются в высоком уровне мотивации и психологической защищенности; такую атмосферу она называет «обучающей зоной». Именно в обучающей зоне команды работают с максимальной отдачей и сотрудники могут свободно поднимать волнующие их вопросы, не боясь, что их раскритикуют или уволят. В этой зоне они могут решать проблемы, например, пристрастия к техническим устройствам и отвлечения, и никто не осудит их, и не обвинит в том, что они просто не хотят вносить свою лепту. Именно здесь они могут воспользоваться преимуществами корпоративной культуры, освобождающей их от навязчивых внутренних раздражителей, внушающих человеку, что он не может ни на что влиять. Только те компании, которые выделяют своим сотрудникам психологически безопасное место для совместной работы над проблемами, способны решить самые важные из своих задач. Формирование атмосферы, где сотрудники могут обсуждать существующие проблемы, — это тест на качество корпоративной культуры (Location 3576)</li>
+<li>Не нужно страдать молча. Рабочее место, где люди не могут поговорить о чрезмерном увлечении технологиями, — это место, где люди молчат и о других важных проблемах (а также о своих гениальных идеях). Важно сознавать, что мнение каждого имеет значение. В командах, где заботятся о психологической защищенности и содействуют открытому обсуждению острых вопросов, не только меньше проблем с отвлечением, но и более счастливые сотрудники. (Location 3632)</li>
+<li>у Slack, как это ни удивительно, нет такой проблемы. Если бы вам довелось пройти по головному офису компании в Сан-Франциско, в вестибюле вам бросилась бы в глаза надпись белыми буквами на ярко-розовом фоне: «Поработай усердно и иди домой». В Кремниевой долине на подобный девиз совсем не ожидаешь наткнуться, особенно в компании, создавшей тот самый инструмент, который не дает людям оторваться от работы, даже когда они ушли домой. Тем не менее в Slack четко понимают, когда нужно разлогиниться. Судя по статье, опубликованной в 2015 году в журнале Inc., где Slack назвали компанией года, этот девиз не только слова2. К 18:30 «офисы Slack уже практически пусты». Автор статьи подчеркивает: «Так хочет [СЕО Slack] Баттерфилд». Но ведь сотрудники Slack, конечно же, снова логинятся, как только добираются до дома, правда? Неправда. Более того, использование Slack после ухода с работы не поощряется. По словам Амира Шевата, бывшего директора Slack по связям с разработчиками, люди здесь знают, когда нужно отсоединиться. «Невежливо отправлять личные сообщения в нерабочее время и в выходные», — добавляет он. Корпоративная культура Slack — пример атмосферы, в которой люди не позволяют вовлекать себя в безумный цикл реагирования, ставший привычным для многих современных компаний. (Location 3649)</li>
+<li>В интервью сайту OpenView Labs Билл Макейтис, занимавший в Slack пост директора по маркетингу, отмечал: «Нужно, чтобы у человека было время, когда он может работать, не отрываясь…3 Вот почему — если говорить о Slack или электронной почте — я всегда захожу туда и проверяю сообщения в специально отведенное для этого время, а затем возвращаюсь к работе». (Location 3670)</li>
+<li>В Slack, утверждает он, «быть вне доступа — это нормально». При личных встречах с сотрудниками он с фанатичной настойчивостью фокусирует на них все свое внимание. «Когда я выделяю кому-то время, я концентрируюсь на сто процентов и во время встречи никогда не заглядываю в телефон. Для меня это сверхважно». Чтобы избавиться от звуковых уведомлений и звонков, типичных для современных совещаний, он реализует идею «взлома внешних раздражителей», которая была рассмотрена в третьей части. Шеват объяснил, как сотрудники Slack применяют предварительные обязательства (подобные тем, о которых мы упоминали в четвертой части книги), чтобы в нерабочее время находиться офлайн. У Slack есть встроенная функция «Не беспокоить», пользователь может включить ее, если ему необходимо сосредоточиться на чем-то важном, например на работе или на общении с родными или друзьями. Шеват рассказал мне, что, если сотрудник Slack попытается отправить сообщение в неурочное время, «он нарвется на режим “Не беспокоить”. Этот режим включается автоматически с окончанием рабочего дня, поэтому никто из сотрудников не получает личных сообщений, пока не вернется на работу». (Location 3679)</li>
+<li>В первой части книги вы узнали, что справиться с привычкой к отвлечению можно, но сначала нужно разобраться, что происходит у вас внутри. Если внутренние раздражители сигнализируют о необходимости психологической разгрузки, человек найдет способы (разумные или нет) избавиться от дискомфорта. Заботясь о том, чтобы у сотрудников была возможность заявить о проблемах, руководство компании помогает своей команде снимать психологическое напряжение, а именно его Стэнсфелд и Кэнди считают характерным признаком токсичной рабочей атмосферы. Но каким образом такая крупная компания, как Slack, добивается, чтобы услышан был каждый? Здесь на помощь компании приходит ее собственный продукт. Групповые чаты обеспечивают регулярные обсуждения, формируют чувство психологической защищенности и позволяют быстро достичь согласия. Как это получается? Невероятно, но Шеват доверяет эмодзи[27]. В Slack для всего есть свой канал, говорит он, «для тех, кто хочет вместе обедать; для тех, кто хочет делиться фотографиями; и даже канал, посвященный “Звездным войнам”». Эти каналы не только избавляют от реплик не по теме, забивающих ящики электронной почты и делающих невыносимыми совещания, это безопасное место для обратной связи с сотрудниками. Из всех многочисленных каналов руководство Slack серьезнее всего относится к каналам обратной связи. Они предназначены не только для обмена мнениями о выпущенных продуктах, но и для обмена мыслями о том, как совершенствоваться компании. В #slack-culture и #slack-ama сотрудники могут задать руководителям любой вопрос. «Люди публикуют свои предложения, — говорит Шеват, — и это поощряется». Есть даже специальный канал #beef-tweets, где можно высказать свое «фи» о продуктах компании. «Иногда комментарии бывают очень резкими», — признает Шеват, но важно то, что их высказывают и принимают к сведению. Именно здесь приходят на помощь эмодзи. «Руководители дают сотрудникам понять, что их отзыв прочитан, добавляя эмодзи с изображением глаз. А когда проблема в данный момент рассматривается или решается, ставят галочку», — объясняет Шеват. Slack нашла способ сообщать сотрудникам о том, что их услышали и предпринимают ответные действия. Конечно, групповые чаты подходят не для любого разговора и не для любой компании. В Slack регулярно проводят и общие совещания, на которых сотрудники могут напрямую задать вопросы высшему руководству. Но независимо от формата общения, когда у работников есть канал для обратной связи и они знают, что их слышат те, кто может помочь, они чувствуют, что у них есть право голоса. Главное — это не как осуществляется обратная связь, а как руководство ее использует и на нее реагирует. Это крайне важно для благополучия компании и ее сотрудников. (Location 3698)</li>
+<li>Когда ставишь какую-нибудь компанию в пример, всегда рискуешь. В бестселлерах Джима Коллинза «От хорошего к великому» и «Построенные навечно»[28] рассказывается о компаниях, которые в итоге не очень-то долго просуществовали, и о компаниях, оказавшихся не такими уж великими4. (Location 3735)</li>
+<li>Умение сохранять сосредоточенность — это навык, который пригодится нашим детям независимо от того, какую форму принимает их отвлечение и какую дорогу они выберут в жизни. (Location 3904)</li>
+<li>Перестаньте перекладывать вину. Когда родителям не нравится, как дети себя ведут, они, естественно, ищут объяснения, помогающие избавиться от ответственности. В «технопанике» нет ничего нового. Книги, радио, видеоигры… История родительства полна примеров моральной паники в отношении вещей, которые якобы заставляют детей странно себя вести. Технологии — не зло. Технические устройства, используемые детьми правильно и умеренно, могут приносить пользу; чрезмерное (и слишком ограниченное) их использование способно наносить небольшой вред. Научите детей ни на что не отвлекаться. Это умение будет приносить им пользу всю жизнь. (Location 3912)</li>
+<li>Ричард Райан и его коллега Эдвард Диси — ученые, которых больше всего цитируют в мире, когда речь заходит о движущих силах человеческого поведения. Их теорию самоопределения единодушно считают основополагающей концепцией психического здоровья, и с тех пор, как в 1970-х годах они приступили к исследованиям, несчетное множество экспериментов подтверждают их выводы1. Подобно тому, как организму человека для правильного функционирования требуются три компонента (белки, углеводы и жиры), человеческой психике, утверждают Райан и Диси, для благополучия требуются три составляющие: автономия, компетентность и взаимосвязь с другими людьми. Когда тело голодает, мы чувствуем голодные спазмы; когда недокармливают психику, появляются беспокойство, тревожность и другие симптомы, свидетельствующие, что чего-то не хватает. Теория самоопределения объясняет, почему дети, которые не получают необходимых психологических питательных веществ, иногда ведут себя не так, как следует, например слишком много времени проводят перед экранами. По мнению Райана, такое поведение связано, скорее, не с гаджетами, а в первую очередь с причиной склонности детей к отвлечению. Когда потребности в автономии, компетентности и взаимосвязи удовлетворяются не в полной мере, дети подпитывают свою психику отвлечением. (Location 3925)</li>
+<li>Другими словами, чем меньше ребенок ходил в школу, тем лучше он сосредоточивался. Как такое возможно? Психолог Сюзанна Гаскинс, на протяжении нескольких десятков лет занимавшаяся исследованиями в поселениях майя, рассказала NPR, что индейцы майя предоставляют своим детям огромную свободу. «Цель ставит не мама, которой для достижения цели потом приходится задействовать уловки и награды, нет, цель ставит сам ребенок. А родители, как могут, помогают ее достичь», — говорит Гаскинс. Родители майя «твердо убеждены, что каждый ребенок лучше знает, что ему нужно, и цели достигаются, только если ребенок этого хочет»3. (Location 3962)</li>
+<li>По словам Рогофф, «вполне возможно, дети отказываются от самостоятельного контроля над своим вниманием, когда этим постоянно управляют взрослые»4. Иначе говоря, дети могут привыкнуть к отсутствию контроля с их стороны и, как результат, начать много отвлекаться. Исследование Райана указывает, когда внимание детей начинает ускользать. «Как только дети поступают в среднюю школу[30], как только они начинают выходить из закрепленного за ними “домашнего” класса и попадают в более строгую, полицейскую обстановку, где звенят звонки, где оставляют после уроков и наказывают, они сразу понимают, что эта атмосфера по сути своей отнюдь не мотивирующая», — говорит он5. Исследователь Роберт Эпштейн, написавший статью «Миф о подростковом мозге» для Scientific American, пришел к похожему выводу: «Мои исследования показывают, что в США к подросткам применяется в десять с лишним раз больше ограничений, чем к обычным взрослым, вдвое больше ограничений, чем к американским морским пехотинцам на службе, и даже вдвое больше ограничений, чем к опасным уголовным преступникам в заключении»6. Конечно, в подобную строгую атмосферу попадает не каждый американский учащийся, но становится ясно, почему столь многим детям не удается находить мотивацию в школе: их потребность в автономии, в исследовании своих интересов не удовлетворяется. «Мы контролируем их в школе, и ничего удивительного, что после этого им хочется окунуться в атмосферу, где они чувствуют себя свободными и автономными, — говорит Райан. — (Location 3974)</li>
+<li>В отличие от жизни офлайн, в сети у детей есть огромная свобода; у них есть автономия, позволяющая им самим всем заправлять и экспериментировать с творческими стратегиями решения проблем. «В пространстве интернета, как правило, бессчетное множество вариантов и возможностей и гораздо меньше контроля и надзора со стороны взрослых, — считает Райан. — Поэтому в сети подросток ощущает себя свободным, компетентным и связанным со сверстниками, особенно если в привычном окружении чересчур много контроля и ограничений или оно недостаточно его стимулирует». (Location 3998)</li>
+<li>Дети стремятся к компетентности — к мастерству, достижениям и росту (Location 4014)</li>
+<li>Разработчики технологий знают, насколько потребителям нравится выходить на новые уровни, получать новых подписчиков и зарабатывать лайки: это быстрый отклик на достижения, оставляющий приятное чувство. «Когда дети занимаются в школе тем, что им не нравится и что они не ценят, когда они не надеются на улучшения, не стоит удивляться, — говорит Райан, — что в свободное время они занимаются тем, в чем чувствуют себя вполне компетентными». (Location 4034)</li>
+<li>У детей есть потребность во взаимосвязи — в ощущении, что они важны для других людей, а другие люди важны для них (Location 4040)</li>
+<li>Поведением управляют внутренние раздражители. Чтобы понять, как помочь детям справиться с тягой к отвлечению, нужно сначала выявить глубинную проблему. Дети нуждаются в психологических питательных веществах. Как и взрослым людям, детям, чтобы преуспеть, требуются автономия, компетентность и взаимосвязь с другими людьми. Отвлечение компенсирует дефицит. Если психологические потребности детей не удовлетворяются в реальном мире, они восполняют их где-то еще — часто в виртуальном пространстве. Детям нужны альтернативы. Родители помогут детям уравновесить виртуальный и реальный миры, если предоставят им больше возможностей для автономии, компетентности и взаимосвязи в офлайн-среде. Четырехкомпонентная модель сосредоточенности пригодится и детям. Обучите их приемам, помогающим справляться с тягой к отвлечению, и, самое главное, своим примером покажите, как ни на что не отвлекаться. (Location 4121)</li>
+<li>Отводите время на совместное вовлечение Если вы хотите помочь своим детям справиться с тягой к отвлечению, то в первую очередь вы должны разговаривать с ними о людях, а не о технологиях. (Location 4137)</li>
+<li>Обдумав вместе с детьми расписание, которое отражало бы их ценности, вы поможете им выделить время на сферу их собственного здоровья и субъективного благополучия, позаботиться, чтобы у них хватало времени на отдых, гигиену, физические упражнения и правильное питание. Мы с женой, например, не заставляем свою дочь ложиться спать в определенное время, но взяли за правило знакомить ее с результатами исследований, демонстрирующими важность полноценного сна. Когда она поняла, насколько сон важен для ее благополучия, то быстро сообразила, что утыкаться в экран после девяти вечера, а потом наутро вставать в школу, — это плохая идея, отвлечение, несовместимое с одной из ее ценностей, здоровьем. Как вы догадываетесь, она выделила себе время для отдыха в течение дня. Изредка она опаздывает на назначенную вечернюю встречу с подушкой, но расписание, в котором эта встреча обозначена, задает ей направление, помогает следить за собой и контролировать свое поведение, а значит, жить в соответствии со своими ценностями. (Location 4181)</li>
+<li>Позволяя детям самостоятельно контролировать свое время, мы делаем им огромный подарок. Не страшно, если иногда они будут терпеть неудачу: неудача — часть процесса обучения. (Location 4236)</li>
+<li>Следует быть готовыми корректировать семейное расписание, но, кроме этого, нужно привлекать детей к процессу планирования и выполнять обязательства друг перед другом. Обучая детей составлять собственное расписание и сохранять сосредоточенность, мы прививаем им свои ценности. ЗАПОМНИТЕ Научите детей вовлечению. Учитывая, как много в жизни детей потенциально отвлекающих факторов, важно научить их отводить время на вовлечение. Дети могут научиться выделять время на то, что для них важно, так же, как как вы научились составлять четкое расписание. Если дети не умеют планировать свое время, они будут отвлекаться. Нет ничего страшного в том, чтобы позволить ребенку совершить ошибку. На ошибках учатся. Покажите детям, как скорректировать их расписание, чтобы им хватало времени на реализацию своих ценностей. (Location 4277)</li>
+<li>Когда ребенок становится старше, проверить его готовность к тому или иному техническому устройству можно так: выясните, знает ли он о встроенных функциях отключения внешних раздражителей и умеет ли ими пользоваться. (Location 4349)</li>
+<li>Прежде чем позволите детям нырнуть, научите их плавать. Не разрешайте им принимать участие в том, что для них рискованно, пока они не будут к этому готовы, прямо как в бассейне. Проверяйте, готовы ли дети пользоваться гаджетами. Показатель готовности — способность ребенка справляться с отвлечением при помощи приложений, отключающих внешние раздражители. Детям нужно спать. Мало чем можно оправдать наличие в детской комнате телевизора и других потенциально отвлекающих факторов. Проследите, чтобы ничто не мешало вашим детям хорошо отдыхать. Не становитесь нежелательным внешним раздражителем. Относитесь к планам своих детей с уважением, не отвлекайте их, когда они сосредоточены, будь то работа или игра. (Location 4390)</li>
+<li>Когда моя дочь в пять лет стала требовать: «Время айпада!», не соглашаясь ни на какие компромиссы, мы с женой поняли: нужно что-то делать. Сначала мы успокоились, а затем постарались с пониманием отнестись к ее потребностям. Воспользовавшись советом Ричарда Райана, мы как можно доходчивее объяснили ей, что, когда гаджетов в жизни слишком много, от этого страдают другие занятия. В то время моя дочь ходила в детский сад и училась определять время, поэтому нам удалось ей объяснить, что на ее любимые занятия есть столько-то времени, и не больше. Если она тратит слишком много времени на приложения и видео, значит, его меньше остается на игры с друзьями в парке, на бассейн и на общение с мамой и папой. Еще мы рассказали ей, что приложения и видео в айпаде сделаны очень умными людьми и они специально придумали все так, чтобы она не могла оторваться и ее все время тянуло что-нибудь посмотреть. Важно, чтобы дети понимали мотивы разработчиков игр и социальных сетей: такие продукты не только дают нам за наши деньги радость и возможности для общения — они завладевают нашим временем и вниманием. Может показаться, что втолковывать все это пятилетней девочке еще рано, но мы чувствовали — нужно, чтобы она могла решать, как пользоваться экранными устройствами, и устанавливать свои правила. (Location 4404)</li>
+<li>Не нужно недооценивать способность ребенка принять предварительное обязательство и следовать ему. Это могут сделать даже маленькие дети, если установят себе правила и разберутся, как пользоваться таймером или другими ограничивающими устройствами. Потребительский скептицизм — здравое чувство. Понимание, что компании-разработчики заинтересованы в том, чтобы приучить детей постоянно что-то смотреть или во что-то играть, — важная составляющая медиаграмотности. Отдайте контроль детям. Дети могут научиться управлять своим временем и вниманием, только если будут тренироваться контролировать свое поведение. (Location 4474)</li>
+<li>«фаббинга» (это слово было изобретено рекламным агентством McCann для словаря Macquarie)5. Phubbing образовано слиянием слов phone (телефон) и snubbing (пренебрежительное обхождение) и означает «игнорирование человека или ситуации посредством сосредоточения на телефоне или другом мобильном устройстве». Составители словаря попросили специалистов придумать слово, которым люди могут обозначать эту проблему. (Location 4547)</li>
+<li>Отвлечение не позволяет полностью сосредоточиться на общении с важными для вас людьми. Помехи мешают устанавливать тесные социальные связи. Препятствуйте распространению нездоровых форм поведения. «Социальные антитела» помогают людям защищаться от вредоносных форм поведения, налагая на них табу. Установите новые социальные нормы. Мы можем справиться с проблемой отвлечения в кругу друзей так же, как общество справляется с курением, подчеркивая, что брать в руки гаджеты, когда общаешься с другими людьми, неприемлемо. Держите наготове несколько вежливых фраз, например вопрос «Все в порядке?», чтобы отбить у нарушителей желание зависнуть в телефоне. (Location 4582)</li>
+<li>Отвлечение наносит ущерб даже самым близким отношениям; за возможность быть на связи порой приходится платить отдалением от человека, который находится рядом. (Location 4652)</li>
+<li>«Не отвлекаться — значит изо всех сил стараться делать то, что решил делать». «Стараться» — значит «делать что-нибудь с усердием, с большим рвением»3. Речь не идет о том, чтобы быть безупречным и никогда не терпеть поражений. Я по-прежнему временами борюсь с тягой к отвлечению. А когда я напряжен или у меня внезапно меняется расписание, то могу сбиться с курса. К счастью, пять лет, потраченные на исследования и написание этой книги, научили меня, как противостоять отвлечению и побеждать. Иногда я отвлекаюсь, но теперь знаю, что с этим делать. Приемы, которые я освоил, позволили мне контролировать в жизни то, что раньше было неподвластно. Я честен с собой так же, как с другими, я живу в соответствии со своими ценностями, выполняю свои обязательства перед любимыми людьми и работаю плодотворнее, чем когда-либо. (Location 4661)</li>
+<li>Отвлечение может стать помехой для самых близких отношений. Мгновенная доступность в цифровом пространстве дается ценой отдаления от тех, кто рядом. Пары, перестающие отвлекаться, отвоевывают себе время, чтобы побыть вместе. Четыре шага по пути к сосредоточенности высвободят время на любимого человека. Теперь ваша очередь научиться ни на что не отвлекаться. (Location 4684)</li>
+<li>Резюме Глава 1. Чтобы жить так, как мы хотим, нужно не только поступать правильно; но и стараться не поступать неправильно. Глава 2. Вовлечение приближает вас к тому, чего вы по-настоящему хотите; отвлечение отдаляет от этого. Не отвлекаться — значит изо всех сил стараться делать то, что решил делать. Часть I. Возьмите внутренние раздражители под контроль Глава 3. Мотивация — это стремление избавиться от дискомфорта. Выявляйте коренные, а не непосредственные причины отвлечения. Глава 4. Учитесь справляться с дискомфортом, а не пытайтесь избавиться от него, отвлекаясь. Глава 5. Не пытайтесь активно подавлять свои порывы: от этого они лишь станут сильнее. Лучше понаблюдайте за ними и дайте им сойти на нет. Глава 6. Взгляните по-новому на внутренние раздражители. Выявите негативную эмоцию, предшествующую отвлечению, опишите ее и исследуйте с любопытством, а не с презрением. Глава 7. Взгляните по-новому на задачу. Превратите ее в игру, «обращая пристальное внимание на детали, доводя их до идиотизма, даже до абсурда». Специально ищите в ней новизну. Глава 8. Взгляните по-новому на свой характер. Что вы говорите себе, имеет значение. Сила воли иссякает, только если вы верите, что это возможно. Не говорите о себе, что вы «легко отвлекаетесь» или «предрасположены к зависимостям». Часть II. Отводите время на вовлечение Глава 9. Переводите свои ценности во время. Планируйте день, используя метод таймбоксинга — сделайте шаблон расписания. Глава 10. Выделите время на себя. Запланируйте вклад, и результат появится. Глава 11. Выделите время на важные отношения. Вашим близким нужно не только ваше время: разделите с ними домашние обязанности. Предусмотрите в расписании время на друзей. Глава 12. Согласуйте свое расписание с руководителями. Часть III. Взломайте внешние раздражители Глава 13. О каждом внешнем раздражителе задавайте себе вопрос: работает этот раздражитель на меня или я работаю на него? Способствует он вовлечению или отвлечению? Глава 14. Защищайте свою сосредоточенность. Если вы не хотите, чтобы вас отвлекали, сигнализируйте об этом. Глава 15. Чтобы получать меньше электронных писем, отправляйте меньше электронных писем. Проверяя почту, маркируйте каждое сообщение, указывая, когда на него требуется ответить, и отвечайте в то время, которое вы для этого выделили. Глава 16. В групповые чаты заходите и выходите в запланированное время. Приглашайте в чат только нужных людей и не используйте этот канал, чтобы «думать вслух». Глава 17. Сделайте так, чтобы созвать совещание было труднее. Нет программы — нет совещания. Совещания нужны, чтобы выработать общее мнение, а не для того, чтобы решить проблемы. Оставьте технические устройства за дверью переговорной; исключение — один-единственный ноутбук. Глава 18. Заходите в отвлекающие приложения с компьютера, а не с телефона. Наведите порядок в приложениях и настройте уведомления. Не пренебрегайте функцией «Не беспокоить». Глава 19. Отключите уведомления на рабочем столе компьютера. Устраните любые потенциально отвлекающие факторы из рабочей среды. Глава 20. Сохраняйте статьи, найденные в сети, в приложении Pocket, чтобы изучить их строго в запланированное в расписании время. Применяйте прием многоканальной многозадачности. Глава 21. Используйте расширения для браузера, позволяющие извлекать пользу из социальных сетей, не поддаваясь при этом многочисленным отвлекающим факторам[31]. Часть IV. Предотвращайте отвлечение с помощью договоров Глава 22. Противоядие от импульсивности — взвешенность. Спланируйте заранее, когда вы сможете отвлечься. Глава 23. Применяйте договоры об усилиях: затрудняйте выполнение нежелательных действий. Глава 24. Применяйте договоры о цене: пусть отвлечение обходится вам дорого. Глава 25. Применяйте личностные договоры — предварительные обязательства перед своим «я». Называйте себя неотвлекаемыми. Часть V. Как перестать отвлекаться на рабочем месте Глава 26. Работа в режиме «всегда на связи» сводит человека с ума. Глава 27. Чрезмерное увлечение технологиями — это симптом несовершенства корпоративной культуры. Коренная причина этого — отсутствие «психологической защищенности». Глава 28. Чтобы сформировать в компании атмосферу сосредоточенности, начните с малого: найдите способы содействовать открытому обсуждению проблем среди сотрудников. Часть VI. Как научить детей не отвлекаться и почему нам всем нужны психологические питательные вещества Глава 29. Выявите коренные причины отвлечения у детей. Расскажите им о четырехкомпонентной модели сосредоточенности. Глава 30. Позаботьтесь о том, чтобы удовлетворялись психологические потребности детей. Каждый человек нуждается в автономии, компетентности и взаимосвязи с другими людьми. Если потребности детей не подпитываются в реальном мире, они стараются восполнить их дефицит онлайн. Глава 31. Научите детей составлять расписание, используя метод таймбоксинга. Позвольте им предусмотреть в нем те занятия, которые им нравятся, в том числе онлайн. Глава 32. Помогайте детям справляться с нежелательными внешними раздражителями. Объясните им, как отключать уведомления на гаджетах, и сами не отвлекайте детей, когда они заняты. Глава 33. Помогайте детям заключать с собой договоры и объясните им, что справляться с отвлечением — это их обязанность. Учите детей тому, что отвлечение — это решаемая проблема, а умение ни на что не отвлекаться — важный навык. Часть VII. Как не отвлекаться, взаимодействуя с людьми Глава 34. Как только кто-нибудь из ваших друзей всецело сосредоточится на телефоне, спросите у него: «Вижу, ты завис в телефоне. Что-нибудь случилось?» Глава 35. Уберите из своей спальни все гаджеты и сделайте так, чтобы в определенное время доступ к интернету автоматически отключался. (Location 4691)</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Невидимая Горилла" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Невидимая Горилла
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-footer__link md-footer__link--next" aria-label="Next: Никаких Правил. Уникальная Культура Netflix" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Никаких Правил. Уникальная Культура Netflix
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      
+    
+  </body>
+</html>
