@@ -1,1 +1,1 @@
-# kdb
+My text based knowledge database.

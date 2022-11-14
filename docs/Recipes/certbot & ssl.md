@@ -1,9 +1,21 @@
-# certbot wildcard
-- digital ocean plugin and config: https://www.digitalocean.com/community/tutorials/how-to-acquire-a-let-s-encrypt-certificate-using-dns-validation-with-certbot-dns-digitalocean-on-ubuntu-20-04
-- gandi plugin: https://github.com/obynio/certbot-plugin-gandi
-- and that seems to be a hexonet plugin: https://gist.github.com/gfdsa/f35272ec22277412068f96e6dc13cac3
+# certbot wildcard certificate
 
-### Gandi certbot plugin
+Wildcard certificate works **only** with DNS challenge.
+
+For this challenge to work certbot plugin is required, which will perform DNS manipulations to satisfy the challenge.
+
+If your provider doesn't provide certbot plugin, you can 'redirect' specific sub-domain to the provider who support it - could be Digital Ocean.
+
+Here are the (not yet tested) steps to make it work:
+-   create a DNS zone [[acme.MyDomain.com](http://acme.mydomain.com/)] at DO
+-   create 3 NS records at DeprecatedDNS provider for acme.MyDomain.com to point to ns1,2,3.digitalocean.com
+- create CNAME at DeprecatedDNS provider for _acme-challenge.MyDomain.com that points to _acme-challenge.acme.MyDomain.com
+-   use certbot digital ocean plugin, as described [here](https://www.digitalocean.com/community/tutorials/how-to-acquire-a-let-s-encrypt-certificate-using-dns-validation-with-certbot-dns-digitalocean-on-ubuntu-20-04)
+-   pray, it should work
+
+In my particular case I have found that Gandi have certbot plugin: https://github.com/obynio/certbot-plugin-gandi and hexonet seems to have plugin as well: https://gist.github.com/gfdsa/f35272ec22277412068f96e6dc13cac3
+
+### Gandi certbot howto
 ```bash
 sudo pip install certbot-plugin-gandi
 
