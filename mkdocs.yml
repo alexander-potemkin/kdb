@@ -1,5 +1,5 @@
 site_name: My KDB
 theme:
-  name: 'bootstrap'
+  name: gitbook
 markdown_extensions:
     - nl2br
