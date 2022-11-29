@@ -20,5 +20,5 @@ jobs:
       - run: echo '```' >> docs/CHANGELOG.md
       - run: cat docs/CHANGELOG.md
       - run: pip install mkdocs-material
-      - run: pip install mkdocs-bootstrap
+      - run: pip install mkdocs-gitbook
       - run: mkdocs gh-deploy --force
