@@ -1,5 +1,5 @@
 site_name: My KDB
 theme:
-  name: alabaster
+  name: traefik-labs
 markdown_extensions:
     - nl2br
