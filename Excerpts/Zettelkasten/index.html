@@ -1,2802 +1,798 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
-    
-    
-      
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Zettelkasten: как один немецкий учёный стал невероятно продуктивным - My KDB</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
-        
-      
-      
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
+    <script src="../../js/jquery-1.10.2.min.js" defer></script>
+    <script src="../../js/bootstrap-3.3.7.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
 
-    
-    
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
-  
-    
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#zettelkasten" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My KDB</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="My KDB" class="md-header__button md-logo" aria-label="My KDB" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../CHANGELOG/" class="nav-link">CHANGELOG</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Excerpts <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../5days%20problem%20solving%20spring/" class="dropdown-item">Sprint How to Solve Big problems in 5 days</a>
+</li>
+                                    
+<li>
+    <a href="../Chaos%20Monkeys/" class="dropdown-item">Chaos Monkeys</a>
+</li>
+                                    
+<li>
+    <a href="../Culture%20codes%20examples/" class="dropdown-item">Culture codes examples</a>
+</li>
+                                    
+<li>
+    <a href="../Gumroad/" class="dropdown-item">Работа в Gumroad</a>
+</li>
+                                    
+<li>
+    <a href="../Hacking%20growth/" class="dropdown-item">Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success</a>
+</li>
+                                    
+<li>
+    <a href="../Inspired/" class="dropdown-item">Marty Cagan - Inspired How To</a>
+</li>
+                                    
+<li>
+    <a href="../Intercom%20-%20JTBD/" class="dropdown-item">Intercom on jobs-to-be-done</a>
+</li>
+                                    
+<li>
+    <a href="../Jobs%20to%20Be%20Done/" class="dropdown-item">Jobs to Be Done</a>
+</li>
+                                    
+<li>
+    <a href="../Marketplaces%20notes/" class="dropdown-item">Про маркетплейсы</a>
+</li>
+                                    
+<li>
+    <a href="../Marty_Cagan___Inspired___How_To_/" class="dropdown-item">Marty_Cagan___Inspired___How_To_</a>
+</li>
+                                    
+<li>
+    <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="dropdown-item">Matryoshka. Как Вести Бизнес С Иностранцами</a>
+</li>
+                                    
+<li>
+    <a href="../Software%20runways%20book/" class="dropdown-item">Software runways book</a>
+</li>
+                                    
+<li>
+    <a href="../Superhuman/" class="dropdown-item">How Superhuman Built an Engine to Find Product-Market Fit First Round Review</a>
+</li>
+                                    
+<li>
+    <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="dropdown-item">The Everything Store. Джефф Безос И Эра Amazon</a>
+</li>
+                                    
+<li>
+    <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="dropdown-item">The Jobs to Be Done Playbook</a>
+</li>
+                                    
+<li>
+    <a href="../The%20Knowledge%20Illusion/" class="dropdown-item">The Knowledge Illusion</a>
+</li>
+                                    
+<li>
+    <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="dropdown-item">The Ultimate Guide to Project Management</a>
+</li>
+                                    
+<li>
+    <a href="../YC%20Startup%20School/" class="dropdown-item">Startup School</a>
+</li>
+                                    
+<li>
+    <a href="../Zero%20to%20One/" class="dropdown-item">Zero to One</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Zettelkasten: как один немецкий учёный стал невероятно продуктивным</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="dropdown-item">Адская Паутина. Как Выжить В Мире Нарциссизма</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="dropdown-item">Антихрупкость. Как Извлечь Выгоду Из Хаоса</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="dropdown-item">"Великая шахматная доска" Збигнева Бжезинского</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="dropdown-item">Бизнес В Стиле Virgin</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="dropdown-item">Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="dropdown-item">Брак Под Микроскопом. Физиология Половой Жизни Человека</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="dropdown-item">Брось Себе Вызов</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="dropdown-item">Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="dropdown-item">ВкусВилл</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="dropdown-item">Власть, Влияние И Политика В Организациях</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="dropdown-item">Всегда Вовремя</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="dropdown-item">Вы, Разумеется, Шутите, Мистер Фейнман!</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="dropdown-item">Горник</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="dropdown-item">Капра Фритьоф "Дао физики"</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="dropdown-item">Даосские Секреты Любви</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="dropdown-item">Дж. Ханк Рейнвотер</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="dropdown-item">Дилемма Инноватора</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="dropdown-item">Доставляя Счастье</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="dropdown-item">Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="dropdown-item">Заклинание Для Хамелеона</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="dropdown-item">Змеи В Костюмах</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="dropdown-item">Игра Эндера</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="dropdown-item">Крейг Эштон - Извините, я иностранец</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="dropdown-item">Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="dropdown-item">Искусство Быть Другим</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="dropdown-item">О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="dropdown-item">История веры и религиозных идей Том 1 Мирча Элиаде</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="dropdown-item">Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="dropdown-item">Квота, Или Сторонники Изобилия</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="dropdown-item">Кельтские Мифы</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="dropdown-item">Книга по Agile</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="dropdown-item">Книга</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="dropdown-item">Код Дурова. Реальная История «ВКонтакте» И Ее Создателя</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="dropdown-item">Кофе и капуста</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="dropdown-item">Боно Латеральное мышление</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="dropdown-item">Легко Не Будет</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="dropdown-item">Ловушки Мышления</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="dropdown-item">Лучшие Притчи Дзэн</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="dropdown-item">Магия Утра</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="dropdown-item">Мальчик, Которого Растили Как Собаку</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="dropdown-item">Мир В Каждом Шаге</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="dropdown-item">Мировой Порядок</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="dropdown-item">Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="dropdown-item">На Крючке</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="dropdown-item">На Пределе</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="dropdown-item">Наука Общения</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="dropdown-item">Начни С Малого. Правила Ведения Бизнеса От Основателя Subway</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="dropdown-item">Не Делай Это</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="dropdown-item">Невидимая Горилла</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="dropdown-item">Неотвлекаемые</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="dropdown-item">Никаких Правил. Уникальная Культура Netflix</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="dropdown-item">Никола Тесла: “Мои изобретения”</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="dropdown-item">Никола Тесла: “Мои изобретения” - автобиография и сборник работ</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="dropdown-item">Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="dropdown-item">Он. Глубинные Аспекты Мужской Психологии</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="dropdown-item">Открывая Организации Будущего</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="dropdown-item">Кон М. Agile оценка и планирование проектов</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="dropdown-item">Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="dropdown-item">«По ту сторону бомб и санкций» А. Вучо</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="dropdown-item">Под Тенью Сатурна</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="dropdown-item">Лучшие притчи дзэн: обычные истории о людях необычайных</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="dropdown-item">Пробуждение Тигра - Исцеление Травмы</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="dropdown-item">Психология Влияния</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="dropdown-item">Путеводитель По Лжи</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="dropdown-item">Радикальное Принятие</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="dropdown-item">Рэй Далио</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="dropdown-item">Сделано, Чтобы Прилипать</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="dropdown-item">Сейчас!</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="dropdown-item">Сказание О Кентавре Хироне</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="dropdown-item">Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="dropdown-item">Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="dropdown-item">Счастливое Старение</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="dropdown-item">Тайная Опора. Привязанность В Жизни Ребенка</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="dropdown-item">Тень Эндера</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="dropdown-item">Траблшутинг</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="dropdown-item">Тридцать Шесть Стратагем. Китайские Секреты Успеха</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="dropdown-item">Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="dropdown-item">Гласс Роберт - Факты и заблуждения профессионального программирования</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="dropdown-item">Фрикомыслие. Нестандартные Подходы К Решению Проблем</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="dropdown-item">Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="dropdown-item">Демарко-Т-Человеческий-фактор</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="dropdown-item">Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся</a>
+</li>
+                                    
+<li>
+    <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="dropdown-item">Яндекс.Книга</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Journal <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Journal/BeOS%20article/" class="dropdown-item">BeOS operating system review</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="dropdown-item">Kubernetes vs Docker Swarm</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/MIM%20with%20Last.FM/" class="dropdown-item">Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Travel%20-%20Egypt/" class="dropdown-item">Заметки из Египта</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="dropdown-item">Мой "Терминал" или как Буш младший перешёл дорогу лично мне</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="dropdown-item">Нижний Новгород</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="dropdown-item">Про Китай (год ~2011)</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="dropdown-item">Про Сахалин</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="dropdown-item">Про Киргизию</a>
+</li>
+                                    
+<li>
+    <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="dropdown-item">Рейс Санкт-Петербург - Цюрих</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Notes/OpenRPA%20queues/" class="dropdown-item">OpenRPA & OpenFlow queues</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/SW%20hand-over%20requirements/" class="dropdown-item">Generic SW project hand-over</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/Sales%20channels/" class="dropdown-item">Sales channels</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/Working%20Backwards%20Methodology/" class="dropdown-item">Working Backwards: Amazon's Culture of Innovation: My notes</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="dropdown-item">Мои заметки на основании разных лекций (кажется, YC)</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="dropdown-item">Заметки про нарциссизм и нарциссов</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="dropdown-item">Переговоры (заметки с тренинга)</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="dropdown-item">Площадки для запуска продукта</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="dropdown-item">Про подъём денег</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="dropdown-item">Список вопросов для подведения итогов с сотрудниками</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="dropdown-item">Про ТРИЗ, изобретатель-решатель</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="dropdown-item">Мои заметки про уловки в разработке (аутсорсинг)</a>
+</li>
+                                    
+<li>
+    <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="dropdown-item">ФРИИ, выход на американский рынок</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Recipes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="dropdown-item">ActivityWatch (Screen Time on Linux)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Android%20crash%20debug/" class="dropdown-item">Android crash debug</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/BitRise%20build%20HowTo/" class="dropdown-item">BitRise build HowTo</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="dropdown-item">CapRover (local kind of Heroku)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/ChatSDK/" class="dropdown-item">ChatSDK (draft)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="dropdown-item">Server setup</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="dropdown-item">CloudRon (managed apps)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/CloudSigma%20API/" class="dropdown-item">CloudSigma API</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="dropdown-item">Docker (on Ubuntu)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/GitHub%20Pages/" class="dropdown-item">GitHub Pages config</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/GitLab/" class="dropdown-item">GitLab</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/HEIC%20to%20PNG/" class="dropdown-item">HEIC to PNG converter (not tested)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="dropdown-item">How to setup single button keyboard switcher on Linux Mint (Cinnamon)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="dropdown-item">InvizBox with custom OpenVPN <not working!></a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Jitsi/" class="dropdown-item">Jitsi</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Kimai%20time%20tracker/" class="dropdown-item">Kamai time tracker</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Kubernetes/" class="dropdown-item">Kubernetes</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/MacOS/" class="dropdown-item">MacOS</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="dropdown-item">Mattermost + Audio & Video calls + S3</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="dropdown-item">MkDocs - GitBook alternative, on GitHub pages</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Monit/" class="dropdown-item">Monit</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Nessus%20server/" class="dropdown-item">Nessus server</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Network%20connectivity/" class="dropdown-item">Network connectivity</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="dropdown-item">OPNSense on KVM hosting</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/OpenFire/" class="dropdown-item">OpenFire</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="dropdown-item">OpenFlow & WSL on Windows Server (notes)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="dropdown-item">HowTo use OpenFlow queues</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="dropdown-item">Картинки сделать в сторе</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/PostgreSQL/" class="dropdown-item">PostgreSQL notes</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="dropdown-item">Proxy (tinyproxy)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/S3%20things/" class="dropdown-item">S3 things</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="dropdown-item">Swagger (&GitHub)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="dropdown-item">Networking on Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="dropdown-item">Unnattended upgrades</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Ubuntu/" class="dropdown-item">Ubuntu</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/VPN%20%28Wireguard%29/" class="dropdown-item">VPN (Wireguard)</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/Various/" class="dropdown-item">1Password to Bitwarden migration</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/certbot%20%26%20ssl/" class="dropdown-item">certbot wildcard certificate</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="dropdown-item">n8n configuration on CapRover</a>
+</li>
+                                    
+<li>
+    <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="dropdown-item">ssmtp (e-mail sending to outside)</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Research/Clojure/" class="dropdown-item">Basic information</a>
+</li>
+                                    
+<li>
+    <a href="../../Research/Cloud%20IDE/" class="dropdown-item">Cloud IDE</a>
+</li>
+                                    
+<li>
+    <a href="../../Research/Self%20Managed%20PostgreSQL/" class="dropdown-item">Managed PostgreSQL self-hosted</a>
+</li>
+                                    
+<li>
+    <a href="../../Research/ZenGarden/" class="dropdown-item">ZenGarden</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
 
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            My KDB
-          </span>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Zero%20to%20One/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Zettelkasten: как один немецкий учёный стал невероятно продуктивным
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
         </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-    
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="My KDB" class="md-nav__button md-logo" aria-label="My KDB" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    My KDB
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        Home
-      </a>
-    </li>
-  
 
     
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../CHANGELOG/" class="md-nav__link">
-        CHANGELOG
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Excerpts
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Excerpts" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Excerpts
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../5days%20problem%20solving%20spring/" class="md-nav__link">
-        Sprint How to Solve Big problems in 5 days
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Chaos%20Monkeys/" class="md-nav__link">
-        Chaos Monkeys
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Culture%20codes%20examples/" class="md-nav__link">
-        Culture codes examples
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Gumroad/" class="md-nav__link">
-        Работа в Gumroad
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Hacking%20growth/" class="md-nav__link">
-        Hacking Growth - How Todays Fastest Growing Companies Drive Breakout Success
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Inspired/" class="md-nav__link">
-        Marty Cagan - Inspired How To
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Intercom%20-%20JTBD/" class="md-nav__link">
-        Intercom on jobs-to-be-done
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Jobs%20to%20Be%20Done/" class="md-nav__link">
-        Jobs to Be Done
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Marketplaces%20notes/" class="md-nav__link">
-        Про маркетплейсы
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Marty_Cagan___Inspired___How_To_/" class="md-nav__link">
-        Marty_Cagan___Inspired___How_To_
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Matryoshka.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D0%B5%D1%81%D1%82%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%98%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
-        Matryoshka. Как Вести Бизнес С Иностранцами
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Software%20runways%20book/" class="md-nav__link">
-        Software runways book
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Superhuman/" class="md-nav__link">
-        How Superhuman Built an Engine to Find Product-Market Fit First Round Review
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../The%20Everything%20Store.%20%D0%94%D0%B6%D0%B5%D1%84%D1%84%20%D0%91%D0%B5%D0%B7%D0%BE%D1%81%20%D0%98%20%D0%AD%D1%80%D0%B0%20Amazon/" class="md-nav__link">
-        The Everything Store. Джефф Безос И Эра Amazon
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../The%20Jobs%20to%20Be%20Done%20Playbook/" class="md-nav__link">
-        The Jobs to Be Done Playbook
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../The%20Knowledge%20Illusion/" class="md-nav__link">
-        The Knowledge Illusion
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../The%20Ultimate%20Guide%20to%20Project%20Management/" class="md-nav__link">
-        The Ultimate Guide to Project Management
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../YC%20Startup%20School/" class="md-nav__link">
-        Startup School
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Zero%20to%20One/" class="md-nav__link">
-        Zero to One
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Zettelkasten: как один немецкий учёный стал невероятно продуктивным
-      </a>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-nav__link">
-        Адская Паутина. Как Выжить В Мире Нарциссизма
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%90%D0%BD%D1%82%D0%B8%D1%85%D1%80%D1%83%D0%BF%D0%BA%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%B0%D0%BA%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D1%8C%20%D0%92%D1%8B%D0%B3%D0%BE%D0%B4%D1%83%20%D0%98%D0%B7%20%D0%A5%D0%B0%D0%BE%D1%81%D0%B0/" class="md-nav__link">
-        Антихрупкость. Как Извлечь Выгоду Из Хаоса
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%91%D0%B6%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B4%D0%BE%D1%81%D0%BA%D0%B0/" class="md-nav__link">
-        "Великая шахматная доска" Збигнева Бжезинского
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%92%20%D0%A1%D1%82%D0%B8%D0%BB%D0%B5%20Virgin/" class="md-nav__link">
-        Бизнес В Стиле Virgin
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%91%D0%BE%D0%BC%D0%B1%D0%B0%D1%80%20%D0%90.%2C%20%D0%91%D0%BB%D0%B0%D0%B9%D1%82%20%D0%A7.%20-%20%D0%97%D0%B0%20%D0%91%D0%BE%D1%80%D1%82%D0%BE%D0%BC%20%D0%9F%D0%BE%20%D0%A1%D0%B2%D0%BE%D0%B5%D0%B9%20%D0%92%D0%BE%D0%BB%D0%B5.%20%D0%9D%D0%B5%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%BC%D0%BE%D0%B5%20%D0%9F%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%281975/" class="md-nav__link">
-        Бомбар А., Блайт Ч. - За Бортом По Своей Воле. Немыслимое Путешествие (1975
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%91%D1%80%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%B4%20%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC.%20%D0%A4%D0%B8%D0%B7%D0%B8%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%9F%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0/" class="md-nav__link">
-        Брак Под Микроскопом. Физиология Половой Жизни Человека
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%91%D1%80%D0%BE%D1%81%D1%8C%20%D0%A1%D0%B5%D0%B1%D0%B5%20%D0%92%D1%8B%D0%B7%D0%BE%D0%B2/" class="md-nav__link">
-        Брось Себе Вызов
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%92%D0%B7%D1%80%D0%BE%D1%81%D0%BB%D1%8B%D0%B5%20%D0%B4%D0%B5%D1%82%D0%B8%20%D0%B0%D0%BB%D0%BA%D0%BE%D0%B3%D0%BE%D0%BB%D0%B8%D0%BA%D0%BE%D0%B2/" class="md-nav__link">
-        Дженет Дж. Войтиц «Взрослые дети алкоголиков: семья, работа, отношения»
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%92%D0%BA%D1%83%D1%81%D0%92%D0%B8%D0%BB%D0%BB/" class="md-nav__link">
-        ВкусВилл
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%92%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%20%D0%98%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%20%D0%92%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%D1%85/" class="md-nav__link">
-        Власть, Влияние И Политика В Организациях
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%92%D1%81%D0%B5%D0%B3%D0%B4%D0%B0%20%D0%92%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D1%8F/" class="md-nav__link">
-        Всегда Вовремя
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%92%D1%8B%2C%20%D0%A0%D0%B0%D0%B7%D1%83%D0%BC%D0%B5%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%A8%D1%83%D1%82%D0%B8%D1%82%D0%B5%2C%20%D0%9C%D0%B8%D1%81%D1%82%D0%B5%D1%80%20%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD%21/" class="md-nav__link">
-        Вы, Разумеется, Шутите, Мистер Фейнман!
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%93%D0%BE%D1%80%D0%BD%D0%B8%D0%BA/" class="md-nav__link">
-        Горник
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%94%D0%B0%D0%BE%20%D1%84%D0%B8%D0%B7%D0%B8%D0%BA%D0%B8/" class="md-nav__link">
-        Капра Фритьоф "Дао физики"
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%94%D0%B0%D0%BE%D1%81%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%9B%D1%8E%D0%B1%D0%B2%D0%B8/" class="md-nav__link">
-        Даосские Секреты Любви
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%94%D0%B6.%20%D0%A5%D0%B0%D0%BD%D0%BA%20%D0%A0%D0%B5%D0%B9%D0%BD%D0%B2%D0%BE%D1%82%D0%B5%D1%80/" class="md-nav__link">
-        Дж. Ханк Рейнвотер
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%94%D0%B8%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
-        Дилемма Инноватора
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8F%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D1%8C%D0%B5/" class="md-nav__link">
-        Доставляя Счастье
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%96%D0%B8%D0%B2%D0%B8%2C%20%D0%92%D0%BA%D0%B0%D0%BB%D1%8B%D0%B2%D0%B0%D0%B9%2C%20%D0%A1%D0%B4%D0%BE%D1%85%D0%BD%D0%B8.%20%D0%A0%D0%B5%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%B6%20%D0%A1%20%D0%A2%D0%B5%D0%BC%D0%BD%D0%BE%D0%B9%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%8B%20%D0%9A%D1%80%D0%B5%D0%BC%D0%BD%D0%B8%D0%B5%D0%B2%D0%BE%D0%B9%20%D0%94%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B/" class="md-nav__link">
-        Живи, Вкалывай, Сдохни. Репортаж С Темной Стороны Кремниевой Долины
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%97%D0%B0%D0%BA%D0%BB%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%94%D0%BB%D1%8F%20%D0%A5%D0%B0%D0%BC%D0%B5%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
-        Заклинание Для Хамелеона
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%97%D0%BC%D0%B5%D0%B8%20%D0%92%20%D0%9A%D0%BE%D1%81%D1%82%D1%8E%D0%BC%D0%B0%D1%85/" class="md-nav__link">
-        Змеи В Костюмах
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%98%D0%B3%D1%80%D0%B0%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
-        Игра Эндера
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%98%D0%B7%D0%B2%D0%B8%D0%BD%D0%B8%D1%82%D0%B5%20%D1%8F%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B5%D1%86/" class="md-nav__link">
-        Крейг Эштон - Извините, я иностранец
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%98%D1%81%D0%BA%D1%80%D0%B5%D0%BD%D0%BD%D1%8F%D1%8F%20%D0%9B%D0%BE%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C.%20%D0%9A%D0%BB%D1%8E%D1%87%20%D0%9A%20%D0%97%D0%B0%D0%B2%D0%BE%D0%B5%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%9D%D0%B0%20%D0%92%D1%81%D1%8E%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C/" class="md-nav__link">
-        Искренняя Лояльность. Ключ К Завоеванию Клиентов На Всю Жизнь
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%91%D1%8B%D1%82%D1%8C%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%BC/" class="md-nav__link">
-        Искусство Быть Другим
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%9E%20%D0%9A%D0%BE%D0%BD%D0%BD%D0%BE%D1%80%20%D0%94./" class="md-nav__link">
-        О’Коннор Д. - Искусство системного мышления. Необходимые знания о системах и творческом подходе к решению проблем (Искусство думать)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%80%D1%8B%20%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B3%D0%B8%D0%BE%D0%B7%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B4%D0%B5%D0%B9%20%D0%A2%D0%BE%D0%BC%201%20%D0%9C%D0%B8%D1%80%D1%87%D0%B0%20%D0%AD%D0%BB%D0%B8%D0%B0%D0%B4%D0%B5/" class="md-nav__link">
-        История веры и религиозных идей Том 1 Мирча Элиаде
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9A%D0%B0%D0%BA%20%D0%A1%D1%82%D0%B0%D1%82%D1%8C%20%D0%A0%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%BC%D1%83%20%D0%A1%D0%B5%D0%B1%D0%B5.%20%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D1%8B%D0%B9%20%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D1%82%D0%B8%D0%BA%2C%20%D0%98%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%91%D0%B8%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BE%D0%BC/" class="md-nav__link">
-        Как Стать Родителем Самому Себе. Счастливый Невротик, Или Как Пользоваться Биокомпьютером
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9A%D0%B2%D0%BE%D1%82%D0%B0%2C%20%D0%98%D0%BB%D0%B8%20%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%8F/" class="md-nav__link">
-        Квота, Или Сторонники Изобилия
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9A%D0%B5%D0%BB%D1%8C%D1%82%D1%81%D0%BA%D0%B8%D0%B5%20%D0%9C%D0%B8%D1%84%D1%8B/" class="md-nav__link">
-        Кельтские Мифы
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0%20%D0%BF%D0%BE%20Agile/" class="md-nav__link">
-        Книга по Agile
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
-        Книга
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9A%D0%BE%D0%B4%20%D0%94%D1%83%D1%80%D0%BE%D0%B2%D0%B0.%20%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%C2%AB%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5%C2%BB%20%D0%98%20%D0%95%D0%B5%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
-        Код Дурова. Реальная История «ВКонтакте» И Ее Создателя
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9A%D0%BE%D1%84%D0%B5%20%D0%B8%20%D0%BA%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B0/" class="md-nav__link">
-        Кофе и капуста
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9B%D0%B0%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
-        Боно Латеральное мышление
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9B%D0%B5%D0%B3%D0%BA%D0%BE%20%D0%9D%D0%B5%20%D0%91%D1%83%D0%B4%D0%B5%D1%82/" class="md-nav__link">
-        Легко Не Будет
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9B%D0%BE%D0%B2%D1%83%D1%88%D0%BA%D0%B8%20%D0%9C%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
-        Ловушки Мышления
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B5%20%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D1%8D%D0%BD/" class="md-nav__link">
-        Лучшие Притчи Дзэн
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9C%D0%B0%D0%B3%D0%B8%D1%8F%20%D0%A3%D1%82%D1%80%D0%B0/" class="md-nav__link">
-        Магия Утра
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9C%D0%B0%D0%BB%D1%8C%D1%87%D0%B8%D0%BA%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE%20%D0%A0%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D0%B8%20%D0%9A%D0%B0%D0%BA%20%D0%A1%D0%BE%D0%B1%D0%B0%D0%BA%D1%83/" class="md-nav__link">
-        Мальчик, Которого Растили Как Собаку
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9C%D0%B8%D1%80%20%D0%92%20%D0%9A%D0%B0%D0%B6%D0%B4%D0%BE%D0%BC%20%D0%A8%D0%B0%D0%B3%D0%B5/" class="md-nav__link">
-        Мир В Каждом Шаге
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9C%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA/" class="md-nav__link">
-        Мировой Порядок
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9C%D1%83%D0%B4%D1%80%D0%BE%D1%81%D1%82%D1%8C%20%D0%A2%D0%BE%D0%BB%D0%BF%D1%8B/" class="md-nav__link">
-        Мудрость Толпы. Почему Вместе Мы Умнее, Чем Поодиночке, И Как Коллективный Разум Влияет На Бизнес, Экономику, Общество И Государство
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B0%20%D0%9A%D1%80%D1%8E%D1%87%D0%BA%D0%B5/" class="md-nav__link">
-        На Крючке
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B0%20%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5/" class="md-nav__link">
-        На Пределе
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B0%D1%83%D0%BA%D0%B0%20%D0%9E%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
-        Наука Общения
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B0%D1%87%D0%BD%D0%B8%20%D0%A1%20%D0%9C%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE.%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%92%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0%20%D0%9E%D1%82%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20Subway/" class="md-nav__link">
-        Начни С Малого. Правила Ведения Бизнеса От Основателя Subway
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B5%20%D0%94%D0%B5%D0%BB%D0%B0%D0%B9%20%D0%AD%D1%82%D0%BE/" class="md-nav__link">
-        Не Делай Это
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B5%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%B0%D1%8F%20%D0%93%D0%BE%D1%80%D0%B8%D0%BB%D0%BB%D0%B0/" class="md-nav__link">
-        Невидимая Горилла
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B5%D0%BE%D1%82%D0%B2%D0%BB%D0%B5%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5/" class="md-nav__link">
-        Неотвлекаемые
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B8%D0%BA%D0%B0%D0%BA%D0%B8%D1%85%20%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB.%20%D0%A3%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D0%B0%20Netflix/" class="md-nav__link">
-        Никаких Правил. Уникальная Культура Netflix
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
-        Никола Тесла: “Мои изобретения”
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%A2%D0%B5%D1%81%D0%BB%D0%B0%20%D0%9C%D0%BE%D0%B8%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F%20-%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D0%B8%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F%20%D0%B8%20%D1%81%D0%B1%D0%BE%D1%80%D0%BD%D0%B8%D0%BA%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82/" class="md-nav__link">
-        Никола Тесла: “Мои изобретения” - автобиография и сборник работ
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%BE%D0%BD%D0%BE%D0%B2%20-%D0%91%D0%BE%D0%B3%20%D0%91%D0%B5%D0%B7%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%8B.%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8%2020%D1%81%D1%83%D0%BC%D0%B0%D1%81%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%2C%20%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%B2%D1%88%D0%B8%D1%85%20%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%A1%20%D0%9D%D1%83%D0%BB%D1%8F%20-%202011/" class="md-nav__link">
-        Николай Кононов -Бог Без Машины. Истории 20сумасшедших, Сделавших В России Бизнес С Нуля - 2011
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9E%D0%BD.%20%D0%93%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B%20%D0%9C%D1%83%D0%B6%D1%81%D0%BA%D0%BE%D0%B9%20%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8/" class="md-nav__link">
-        Он. Глубинные Аспекты Мужской Психологии
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8F%20%D0%9E%D1%80%D0%B3%D0%B0%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8%20%D0%91%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B3%D0%BE/" class="md-nav__link">
-        Открывая Организации Будущего
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9E%D1%86%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%B8%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/" class="md-nav__link">
-        Кон М. Agile оценка и планирование проектов
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%20%D0%92%20%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%20%D0%9F%D1%83%D1%82%D0%B8.%20%D0%9A%D0%B0%D0%BA%20%D0%9F%D1%80%D0%B5%D0%BE%D0%B4%D0%BE%D0%BB%D0%B5%D1%82%D1%8C%20%D0%9A%D1%80%D0%B8%D0%B7%D0%B8%D1%81%20%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B3%D0%BE%20%D0%92%D0%BE%D0%B7%D1%80%D0%B0%D1%81%D1%82%D0%B0%20%D0%98%20%D0%9D%D0%B0%D0%B9%D1%82%D0%B8%20%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%A1%D0%BC%D1%8B%D1%81%D0%BB%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8/" class="md-nav__link">
-        Перевал В Середине Пути. Как Преодолеть Кризис Среднего Возраста И Найти Новый Смысл Жизни
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9F%D0%BE%20%D1%82%D1%83%20%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%20%D0%B1%D0%BE%D0%BC%D0%B1%20%D0%B8%20%D1%81%D0%B0%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%90%20%D0%92%D1%83%D1%87%D0%BE/" class="md-nav__link">
-        «По ту сторону бомб и санкций» А. Вучо
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9F%D0%BE%D0%B4%20%D0%A2%D0%B5%D0%BD%D1%8C%D1%8E%20%D0%A1%D0%B0%D1%82%D1%83%D1%80%D0%BD%D0%B0/" class="md-nav__link">
-        Под Тенью Сатурна
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9F%D1%80%D0%B8%D1%82%D1%87%D0%B8%20%D0%94%D0%B7%D0%B5%D0%BD/" class="md-nav__link">
-        Лучшие притчи дзэн: обычные истории о людях необычайных
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9F%D1%80%D0%BE%D0%B1%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D0%B8%D0%B3%D1%80%D0%B0%20-%20%D0%98%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%A2%D1%80%D0%B0%D0%B2%D0%BC%D1%8B/" class="md-nav__link">
-        Пробуждение Тигра - Исцеление Травмы
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9F%D1%81%D0%B8%D1%85%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%92%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
-        Психология Влияния
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%20%D0%9F%D0%BE%20%D0%9B%D0%B6%D0%B8/" class="md-nav__link">
-        Путеводитель По Лжи
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/" class="md-nav__link">
-        Радикальное Принятие
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A0%D1%8D%D0%B9%20%D0%94%D0%B0%D0%BB%D0%B8%D0%BE/" class="md-nav__link">
-        Рэй Далио
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%2C%20%D0%A7%D1%82%D0%BE%D0%B1%D1%8B%20%D0%9F%D1%80%D0%B8%D0%BB%D0%B8%D0%BF%D0%B0%D1%82%D1%8C/" class="md-nav__link">
-        Сделано, Чтобы Прилипать
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81%21/" class="md-nav__link">
-        Сейчас!
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A1%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%9E%20%D0%9A%D0%B5%D0%BD%D1%82%D0%B0%D0%B2%D1%80%D0%B5%20%D0%A5%D0%B8%D1%80%D0%BE%D0%BD%D0%B5/" class="md-nav__link">
-        Сказание О Кентавре Хироне
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A1%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%9B%D0%B8%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%D0%9A%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%98%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B9%20%D0%92%20%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B9%2C%20%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B9%20%D0%98%20%D0%A1%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8/" class="md-nav__link">
-        Сможет Ли Россия Конкурировать? История Инноваций В Царской, Советской И Современной России
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A1%D0%BF%D1%80%D0%B8%D0%BD%D1%82%20%D0%BD%D0%B0%20%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
-        Эрик Бертран Ларссен - Без жалости к себе Раздвинь границы своих возможностей
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A1%D1%87%D0%B0%D1%81%D1%82%D0%BB%D0%B8%D0%B2%D0%BE%D0%B5%20%D0%A1%D1%82%D0%B0%D1%80%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
-        Счастливое Старение
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A2%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D0%9E%D0%BF%D0%BE%D1%80%D0%B0.%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%92%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B8%20%D0%A0%D0%B5%D0%B1%D0%B5%D0%BD%D0%BA%D0%B0/" class="md-nav__link">
-        Тайная Опора. Привязанность В Жизни Ребенка
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A2%D0%B5%D0%BD%D1%8C%20%D0%AD%D0%BD%D0%B4%D0%B5%D1%80%D0%B0/" class="md-nav__link">
-        Тень Эндера
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A2%D1%80%D0%B0%D0%B1%D0%BB%D1%88%D1%83%D1%82%D0%B8%D0%BD%D0%B3/" class="md-nav__link">
-        Траблшутинг
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A2%D1%80%D0%B8%D0%B4%D1%86%D0%B0%D1%82%D1%8C%20%D0%A8%D0%B5%D1%81%D1%82%D1%8C%20%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B0%D0%B3%D0%B5%D0%BC.%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B%20%D0%A3%D1%81%D0%BF%D0%B5%D1%85%D0%B0/" class="md-nav__link">
-        Тридцать Шесть Стратагем. Китайские Секреты Успеха
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A3%D1%80%D0%BE%D0%BA%D0%B8%20%D0%A1%D0%B0%D0%BC%D0%BE%D0%B8%D1%81%D1%86%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%2C%20%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%98%D0%B7%20%D0%9E%D0%BF%D1%8B%D1%82%D0%B0%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D0%A5%D0%B8%D1%80%D1%83%D1%80%D0%B3%D0%B0%20%D0%A1%20%D0%98%D1%81%D0%BA%D0%BB%D1%8E%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%9F%D0%B0%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
-        Уроки Самоисцеления, Извлеченные Из Опыта Работы Хирурга С Исклюительными Пациентами
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A4%D0%B0%D0%BA%D1%82%D1%8B%20%D0%B8%20%D0%B7%D0%B0%D0%B1%D0%BB%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D1%84%D0%B5%D1%81%D1%81%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
-        Гласс Роберт - Факты и заблуждения профессионального программирования
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A4%D1%80%D0%B8%D0%BA%D0%BE%D0%BC%D1%8B%D1%81%D0%BB%D0%B8%D0%B5.%20%D0%9D%D0%B5%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5%20%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4%D1%8B%20%D0%9A%20%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E%20%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC/" class="md-nav__link">
-        Фрикомыслие. Нестандартные Подходы К Решению Проблем
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A5%D0%B0%D0%BE%D1%81.%20%D0%9A%D0%B0%D0%BA%20%D0%91%D0%B5%D1%81%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA%20%D0%9C%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D0%9D%D0%B0%D1%88%D1%83%20%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%20%D0%9A%20%D0%9B%D1%83%D1%87%D1%88%D0%B5%D0%BC%D1%83/" class="md-nav__link">
-        Хаос. Как Беспорядок Меняет Нашу Жизнь К Лучшему
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80/" class="md-nav__link">
-        Демарко-Т-Человеческий-фактор
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%AF%2C%20%D0%A2%D1%8B%2C%20%D0%9E%D0%BD%2C%20%D0%9E%D0%BD%D0%B0%20%D0%98%20%D0%94%D1%80%D1%83%D0%B3%D0%B8%D0%B5%20%D0%98%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D1%86%D1%8B.%20%D0%9E%D0%B1%20%D0%98%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0%D1%85%2C%20%D0%9A%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D1%85%20%D0%9C%D1%8B%20%D0%A1%D1%82%D1%8B%D0%B4%D0%B8%D0%BC%D1%81%D1%8F/" class="md-nav__link">
-        Я, Ты, Он, Она И Другие Извращенцы. Об Инстинктах, Которых Мы Стыдимся
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0/" class="md-nav__link">
-        Яндекс.Книга
-      </a>
-    </li>
-  
-
-            
-          
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#zettelkasten" class="nav-link">Zettelkasten: как один немецкий учёный стал невероятно продуктивным</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Journal
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Journal" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Journal
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/BeOS%20article/" class="md-nav__link">
-        BeOS operating system review
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Kubernetes%20vs%20Docker%20Swarm/" class="md-nav__link">
-        Kubernetes vs Docker Swarm
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/MIM%20with%20Last.FM/" class="md-nav__link">
-        Reverse engineering a HTTP based app or man-in-the-middle HTTP level proxy
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Travel%20-%20Egypt/" class="md-nav__link">
-        Заметки из Египта
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Travel%20-%20%D0%9C%D0%BE%D0%B9%20%22%D0%A2%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB%22%20%D0%B8%D0%BB%D0%B8%20%D0%BE%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D0%B0%20%D1%81%20%D0%91%D1%83%D1%88%D0%B5%D0%BC/" class="md-nav__link">
-        Мой "Терминал" или как Буш младший перешёл дорогу лично мне
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Travel%20-%20%D0%9D%D0%B8%D0%B6%D0%BD%D0%B8%D0%B9%20%D0%9D%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%28%D0%B3%D0%BE%D0%B4%20%D0%B2%20%D0%BF%D1%80%D0%BE%D0%BC%D0%B5%D0%B6%D1%83%D1%82%D0%BA%D0%B5%202006-2010%29/" class="md-nav__link">
-        Нижний Новгород
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%82%D0%B0%D0%B9/" class="md-nav__link">
-        Про Китай (год ~2011)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Travel%20-%20%D0%9F%D1%80%D0%BE%20%D0%A1%D0%B0%D1%85%D0%B0%D0%BB%D0%B8%D0%BD/" class="md-nav__link">
-        Про Сахалин
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Travel%20%D0%9F%D1%80%D0%BE%20%D0%9A%D0%B8%D1%80%D0%B3%D0%B8%D0%B7%D0%B8%D1%8E/" class="md-nav__link">
-        Про Киргизию
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Journal/Travel%20%D0%A0%D0%B5%D0%B9%D1%81%20%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%20-%20%D0%A6%D1%8E%D1%80%D0%B8%D1%85%20%28%D0%B3%D0%BE%D0%B4%D0%B0%202006%20-%202010%29/" class="md-nav__link">
-        Рейс Санкт-Петербург - Цюрих
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          Notes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Notes" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Notes
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/OpenRPA%20queues/" class="md-nav__link">
-        OpenRPA & OpenFlow queues
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/SW%20hand-over%20requirements/" class="md-nav__link">
-        Generic SW project hand-over
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/Sales%20channels/" class="md-nav__link">
-        Sales channels
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/Working%20Backwards%20Methodology/" class="md-nav__link">
-        Working Backwards: Amazon's Culture of Innovation: My notes
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%9C%D1%8B%D1%81%D0%BB%D0%B8%20%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D0%B1%D0%B0%D0%B7%D0%B5%20YC%20Startup%20School/" class="md-nav__link">
-        Мои заметки на основании разных лекций (кажется, YC)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
-        Заметки про нарциссизм и нарциссов
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%9F%D0%B5%D1%80%D0%B5%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8B/" class="md-nav__link">
-        Переговоры (заметки с тренинга)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D0%B0/" class="md-nav__link">
-        Площадки для запуска продукта
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%9F%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B4%D1%8A%D1%91%D0%BC%20%D0%B4%D0%B5%D0%BD%D0%B5%D0%B3/" class="md-nav__link">
-        Про подъём денег
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D0%B2%20%D1%81%20%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
-        Список вопросов для подведения итогов с сотрудниками
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%A2%D0%A0%D0%98%D0%97%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
-        Про ТРИЗ, изобретатель-решатель
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%A3%D0%BB%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B2%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5/" class="md-nav__link">
-        Мои заметки про уловки в разработке (аутсорсинг)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Notes/%D0%A4%D0%A0%D0%98%D0%98%2C%20%D0%B2%D1%8B%D1%85%D0%BE%D0%B4%20%D0%BD%D0%B0%20%D0%B0%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D1%8B%D0%BD%D0%BE%D0%BA/" class="md-nav__link">
-        ФРИИ, выход на американский рынок
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
-          Recipes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Recipes" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          Recipes
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/ActivityWatch%20%28Screen%20Time%20on%20Linux%29/" class="md-nav__link">
-        ActivityWatch (Screen Time on Linux)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Android%20crash%20debug/" class="md-nav__link">
-        Android crash debug
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/BitRise%20build%20HowTo/" class="md-nav__link">
-        BitRise build HowTo
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/CapRover%20%28local%20kind%20of%20Heroku%29/" class="md-nav__link">
-        CapRover (local kind of Heroku)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/ChatSDK/" class="md-nav__link">
-        ChatSDK (draft)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Cloaked%20OpenVPN%20server%20setup/" class="md-nav__link">
-        Server setup
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/CloudRon%20%28managed%20apps%29/" class="md-nav__link">
-        CloudRon (managed apps)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/CloudSigma%20API/" class="md-nav__link">
-        CloudSigma API
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Docker%20%28on%20Ubuntu%29/" class="md-nav__link">
-        Docker (on Ubuntu)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/GitHub%20Pages/" class="md-nav__link">
-        GitHub Pages config
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/GitLab/" class="md-nav__link">
-        GitLab
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/HEIC%20to%20PNG/" class="md-nav__link">
-        HEIC to PNG converter (not tested)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/How%20to%20setup%20single%20button%20keyboard%20switcher%20on%20Linux/" class="md-nav__link">
-        How to setup single button keyboard switcher on Linux Mint (Cinnamon)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/InvizBox%20with%20custom%20OpenVPN%20%3Cnot%20working%21%3E/" class="md-nav__link">
-        InvizBox with custom OpenVPN <not working!>
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Jitsi/" class="md-nav__link">
-        Jitsi
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Kimai%20time%20tracker/" class="md-nav__link">
-        Kamai time tracker
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Kubernetes/" class="md-nav__link">
-        Kubernetes
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/MacOS/" class="md-nav__link">
-        MacOS
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Mattermost%20%2B%20Audio%20%26%20Video%20calls%20%2B%20S3/" class="md-nav__link">
-        Mattermost + Audio & Video calls + S3
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/MkDocs%20on%20GitHub%20Pages/" class="md-nav__link">
-        MkDocs - GitBook alternative, on GitHub pages
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Monit/" class="md-nav__link">
-        Monit
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Nessus%20server/" class="md-nav__link">
-        Nessus server
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Network%20connectivity/" class="md-nav__link">
-        Network connectivity
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/OPNSense%20on%20KVM%20hosting/" class="md-nav__link">
-        OPNSense on KVM hosting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/OpenFire/" class="md-nav__link">
-        OpenFire
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/OpenFlow%20%26%20WSL%20on%20Windows%20Server%20%28notes%29/" class="md-nav__link">
-        OpenFlow & WSL on Windows Server (notes)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/OpenRPA%20%26%20OpenFlow%20queues/" class="md-nav__link">
-        HowTo use OpenFlow queues
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Pictures%20for%20AppStore%20%26%20Google%20Play/" class="md-nav__link">
-        Картинки сделать в сторе
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/PostgreSQL/" class="md-nav__link">
-        PostgreSQL notes
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Proxy%20%28tinyproxy%29/" class="md-nav__link">
-        Proxy (tinyproxy)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/S3%20things/" class="md-nav__link">
-        S3 things
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Swagger%20%28%26GitHub%29/" class="md-nav__link">
-        Swagger (&GitHub)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Ubuntu%20-%20Networking%20on%20Ubuntu/" class="md-nav__link">
-        Networking on Ubuntu
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Ubuntu%20-%20Unnattended%20upgrades/" class="md-nav__link">
-        Unnattended upgrades
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Ubuntu/" class="md-nav__link">
-        Ubuntu
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/VPN%20%28Wireguard%29/" class="md-nav__link">
-        VPN (Wireguard)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/Various/" class="md-nav__link">
-        1Password to Bitwarden migration
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/certbot%20%26%20ssl/" class="md-nav__link">
-        certbot wildcard certificate
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/n8n%20configuration%20on%20CapRover/" class="md-nav__link">
-        n8n configuration on CapRover
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Recipes/ssmtp%20%28e-mail%20sending%20to%20outside%29/" class="md-nav__link">
-        ssmtp (e-mail sending to outside)
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Research
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Research" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Research
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Research/Clojure/" class="md-nav__link">
-        Basic information
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Research/Cloud%20IDE/" class="md-nav__link">
-        Cloud IDE
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Research/Self%20Managed%20PostgreSQL/" class="md-nav__link">
-        Managed PostgreSQL self-hosted
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Research/ZenGarden/" class="md-nav__link">
-        ZenGarden
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
 
 <h1 id="zettelkasten">Zettelkasten: как один немецкий учёный стал невероятно продуктивным</h1>
 <p>Annotation summary:</p>
@@ -2811,85 +807,81 @@
 <p>вспомните, почему их соединили. 5. Пишите своими словами. Не ĸопипастите! Если вам попалась интересная идея, и вы хотите добавить её в Zettelkasten, вам стоит объяснить её своими словами, таĸ, чтобы вы точно могли понять её суть годы спустя. Не превращайте Zettelkasten в свалĸу перепостов информации. 6. Продолжайте ссылаться. Всегда добавляйте ĸ заметĸам ссылĸи, чтобы знать, отĸуда пришла идея. Это предупредит плагиат и позволит легĸо вернуться ĸ оригиналу информации. 7. Добавляйте свои собственные мысли в Zettelkasten. Если у вас есть мысли, добавьте их в Zettelkasten заметĸами, придерживаясь принципов атомарности и автономии, а таĸже соединяя их с другими заметĸами. 8. Не переживайте из-за струĸтуры. Не волнуйтесь о том, чтобы ĸласть заметĸи в папĸи или униĸальные заранее составленные ĸатегории. Каĸ сформулировал это Шмидт, в Zettelkasten «нет привилегированных позиций», «нет верха или низа». Струĸтура создаётся органичесĸи. 9. Добавляйте заметĸи для связи. Каĸ тольĸо вы начнёте соединять вроде бы случайные заметĸи, добавьте заметĸи для связи. Это специальные заметĸи, созданные чтобы соединять вместе другие заметĸи и объяснять их связи. 10. Добавляйте заметĸи-оглавления. Каĸ тольĸо идеи начнут соединяться в темы, добавьте заметĸи-оглавления. Они содержат подборĸи ссылоĸ на другие заметĸи, ĸоторые выстраивают идеи в определённый порядоĸ истории, повествования или аргументации. 11. Ниĸогда не удаляйте. Не удаляйте старые заметĸи. Вместо того, соединяйте их с новыми заметĸами, ĸоторые объясняют, что не таĸ со старыми заметĸами. Таĸим</p>
 <p>--- Page 22 ---</p>
 <p>Highlight (yellow):</p>
-<p>образом ваш Zettelkasten будет отображать, ĸаĸ ваше мышление эволюционировало со временем, что предупредит сĸлонность ĸ запоздалым суждениям. Более того, если вы ничего не удалите, то сĸорее всего снова найдёте идеи, ĸоторые в ĸонечном счёте оĸазались правильными. 12. Добавляйте заметĸи без страха. У вас ниĸогда не будет слишĸом много информации в Zettelkasten. Самое худшее, что может случиться, что вы добавите заметĸу, ĸоторую не сможете сразу использовать. Но добавление заметĸи ниĸогда не сломает ваш Zettelkasten и не испортит его фунĸциональность. Помните, у Лумана было 90 000 заметоĸ в Zettelkasten.</p>
-
-
-
-
-
-                
-              </article>
+<p>образом ваш Zettelkasten будет отображать, ĸаĸ ваше мышление эволюционировало со временем, что предупредит сĸлонность ĸ запоздалым суждениям. Более того, если вы ничего не удалите, то сĸорее всего снова найдёте идеи, ĸоторые в ĸонечном счёте оĸазались правильными. 12. Добавляйте заметĸи без страха. У вас ниĸогда не будет слишĸом много информации в Zettelkasten. Самое худшее, что может случиться, что вы добавите заметĸу, ĸоторую не сможете сразу использовать. Но добавление заметĸи ниĸогда не сломает ваш Zettelkasten и не испортит его фунĸциональность. Помните, у Лумана было 90 000 заметоĸ в Zettelkasten.</p></div>
             </div>
-          
-          
         </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../Zero%20to%20One/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Zero to One" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Zero to One
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../%D0%90%D0%B4%D1%81%D0%BA%D0%B0%D1%8F%20%D0%9F%D0%B0%D1%83%D1%82%D0%B8%D0%BD%D0%B0.%20%D0%9A%D0%B0%D0%BA%20%D0%92%D1%8B%D0%B6%D0%B8%D1%82%D1%8C%20%D0%92%20%D0%9C%D0%B8%D1%80%D0%B5%20%D0%9D%D0%B0%D1%80%D1%86%D0%B8%D1%81%D1%81%D0%B8%D0%B7%D0%BC%D0%B0/" class="md-footer__link md-footer__link--next" aria-label="Next: Адская Паутина. Как Выжить В Мире Нарциссизма" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Адская Паутина. Как Выжить В Мире Нарциссизма
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
             </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 </div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-      
-    
-  </body>
+
+    </body>
 </html>
