@@ -1,5 +1,5 @@
 site_name: My KDB
 theme:
-  name: 'material'
+  name: 'bootstrap'
 markdown_extensions:
     - nl2br
