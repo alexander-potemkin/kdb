@@ -1,5 +1,5 @@
 site_name: My KDB
 theme:
-  name: traefik-labs
+  name: material
 markdown_extensions:
     - nl2br
